@@ -1,0 +1,167 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  10 JUN 2024 16:24
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/host/thesis/project/main
+(/home/host/thesis/project/main.tex
+LaTeX2e <2024-06-01>
+L3 programming layer <2024-05-27>
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count268
+\l__pdf_internal_box=\box52
+) (./main.aux (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendixA.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 8.
+ (./Abstract/abstract.tex)
+
+[1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+\openout2 = `"1. Introduction/main.aux"'.
+
+ (./1. Introduction/main.tex)
+
+[2
+
+]
+\openout2 = `"2. Literature Review/main.aux"'.
+
+ (./2. Literature Review/main.tex)
+
+[3
+
+
+
+]
+\openout2 = `"3. System Design/main.aux"'.
+
+ (./3. System Design/main.tex)
+
+[4
+
+
+
+]
+\openout2 = `"4. Hardware Integration/main.aux"'.
+
+ (./4. Hardware Integration/main.tex)
+
+[5
+
+
+
+]
+\openout2 = `"5. Software Development/main.aux"'.
+
+ (./5. Software Development/main.tex)
+
+[6
+
+
+
+]
+\openout2 = `"6. System Integration and Testing/main.aux"'.
+
+ (./6. System Integration and Testing/main.tex)
+
+[7
+
+
+
+]
+\openout2 = `"7. Experimental Results/main.aux"'.
+
+ (./7. Experimental Results/main.tex)
+
+[8
+
+
+
+]
+\openout2 = `"8. Discussion/main.aux"'.
+
+ (./8. Discussion/main.tex)
+
+[9
+
+
+
+]
+\openout2 = `"9. Conclusion and Future Works/main.aux"'.
+
+ (./9. Conclusion and Future Works/main.tex)
+
+[10
+
+
+
+]
+No file main.bbl.
+\openout2 = `"A. Appendices/appendixA.aux"'.
+
+(./A. Appendices/appendixA.tex)
+
+[11
+
+
+
+] (./main.aux (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendixA.aux))
+ ***********
+LaTeX2e <2024-06-01>
+L3 programming layer <2024-05-27>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 722 strings out of 475051
+ 19218 string characters out of 5763935
+ 1929891 words of memory out of 5000000
+ 23383 multiletter control sequences out of 15000+600000
+ 562316 words of font info for 50 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 35i,6n,50p,1117b,197s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on main.pdf (11 pages, 89457 bytes).
+PDF statistics:
+ 70 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
