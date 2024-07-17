@@ -1,20 +1,109 @@
-\documentclass{article}
+\documentclass[12pt,a4paper,final]{report}
 
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{bookmark}
+\usepackage{titlesec}
+\usepackage{textcomp} % For \MakeUppercase
+\usepackage[backend=bibtex, style=numeric]{biblatex}
+
+% Specify line-spacing to 1.5
+\onehalfspacing
+
+% Specify margin
+\geometry{top=2.5cm,bottom=2.5cm,left=3cm,right=2cm,headheight=14.5pt}
+
+% Adjust \chapter margins
+\titlespacing*{\chapter}{0pt}{0pt}{10pt} % Adjust these values as needed
+
+
+% Add header and footer
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+% Redefine \chaptermark to remove the period after the chapter number
+\renewcommand{\chaptermark}[1]{%
+  \markboth{\MakeUppercase{Chapter \thechapter\ #1}}{}}
+\fancyhead[R]{\leftmark} % Left-align the chapter name
+\fancyfoot[R]{Page \thepage} % Right-align page number in the footer
+% Remove header line
+\renewcommand{\headrulewidth}{0pt}
+
+
+% Ensuring plain pages (like chapter starting pages) also use the fancy style
+\fancypagestyle{plain}{
+    \fancyhf{} % Clear all header and footer fields
+    \fancyfoot[R]{Page \thepage} % Right-align page number in the footer
+    \renewcommand{\headrulewidth}{0pt} % Remove header line on plain pages
+}
+\pagenumbering{Roman}
+
+% Change Chapter formatting
+\titleformat{\chapter}[hang]
+    {\normalfont\huge\bfseries}
+    {\thechapter}
+    {1em}
+    {}
+
+% Add bibliography resources
+\addbibresource{references.bib}
+
+% Redefine \@dottedtocline to remove dots in \tableofcontents
+\makeatletter
+\renewcommand{\@dottedtocline}[5]{%
+  \ifnum #1>\c@tocdepth \else
+    \vskip \z@ \@plus.2\p@
+    {\leftskip #2\relax \rightskip \@tocrmarg \parfillskip -\rightskip
+     \parindent #2\relax\@afterindenttrue
+     \interlinepenalty\@M
+     \leavevmode
+     \@tempdima #3\relax
+     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+     {#4}\nobreak
+     \leaders\hbox{} \hfill \nobreak
+     \hb@xt@\@pnumwidth{\hfil\normalfont \normalcolor #5}%
+     \par}%
+  \fi}
+\makeatother
+
+% Start thesis
 \begin{document}
+
+% Title according to guidelines
+\includepdf[pages={1,2}]{Pre-introduction/abschlussarbeit_titel-1.pdf}
+
 \title{Robotic Workcell for Automated Bending Process}
 
 \author{Shivam Shivam}
 
-\maketitle
+\date{July 2024}
 
 %Abstract
-\input{Abstract/abstract.tex}
+\input{Pre-introduction/abstract.tex}
+
+%Table of contents and other information
+\tableofcontents
+\listoffigures
+\listoftables
+\include{Pre-introduction/symbols}
+\include{Pre-introduction/acronyms}
+% \{Symbols and Forumulas}
+% \chapter[syms]{Symbols and Formulas}
+% reset page number
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
 
 \include{1. Introduction/main}
 
 \include{2. Literature Review/main}
 
 \include{3. System Design/main}
+% Hello Wolrd!\cite[page 233]{lamport1994latex}
 
 \include{4. Hardware Integration/main}
 
@@ -28,7 +117,8 @@
 
 \include{9. Conclusion and Future Works/main}
 
-\bibliography{}
+% Add all the references here
+\printbibliography
 
 \include{A. Appendices/appendixA}
 \end{document}
