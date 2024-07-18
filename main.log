@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  17 JUL 2024 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  17 JUL 2024 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -312,73 +312,173 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen174
 \titlewidthlast=\dimen175
 \titlewidthfirst=\dimen176
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/datatool/datatool.sty
+Package: datatool 2019/09/27 v2.32 (NLCT)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks28
+\XKV@tempa@toks=\toks29
+)
+\XKV@depth=\count303
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count304
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count305
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count306
+\FP@xia=\count307
+\FP@xib=\count308
+\FP@xfa=\count309
+\FP@xfb=\count310
+\FP@rega=\count311
+\FP@regb=\count312
+\FP@regs=\count313
+\FP@times=\count314
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count315
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks30
+\@dtl@tmpcount=\count316
+\dtl@tmplength=\skip69
+\dtl@sortresult=\count317
+\@dtl@numgrpsepcount=\count318
+\@dtl@datatype=\count319
+\dtl@codeA=\count320
+\dtl@codeB=\count321
+\@dtl@foreach@level=\count322
+)
+\dtlcolumnnum=\count323
+\dtlrownum=\count324
+\@dtl@before=\toks31
+\@dtl@after=\toks32
+\@dtl@colhead=\toks33
+\dtlcurrentrow=\toks34
+\dtlbeforerow=\toks35
+\dtlafterrow=\toks36
+\dtlforeachlevel=\count325
+\c@DTLrowi=\count326
+\c@DTLrowii=\count327
+\c@DTLrowiii=\count328
+\c@DTLrow=\count329
+\dtl@rowi=\count330
+\dtl@rowii=\count331
+\dtl@rowiii=\count332
+\@dtl@curi=\toks37
+\@dtl@previ=\toks38
+\@dtl@nexti=\toks39
+\@dtl@curii=\toks40
+\@dtl@previi=\toks41
+\@dtl@nextii=\toks42
+\@dtl@curiii=\toks43
+\@dtl@previii=\toks44
+\@dtl@nextiii=\toks45
+\@dtl@elements=\count333
+\@dtl@list=\toks46
+\@dtl@rowa=\toks47
+\@dtl@rowb=\toks48
+\@dtl@toksA=\toks49
+\@dtl@toksB=\toks50
+\@dtl@write=\write3
+\@dtl@read=\read2
+\dtl@entrycr=\count334
+\dtl@omitlines=\count335
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count303
+\lrq@indent=\count336
  (/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count304
-\c@listtotal=\count305
-\c@listcount=\count306
-\c@liststart=\count307
-\c@liststop=\count308
-\c@citecount=\count309
-\c@citetotal=\count310
-\c@multicitecount=\count311
-\c@multicitetotal=\count312
-\c@instcount=\count313
-\c@maxnames=\count314
-\c@minnames=\count315
-\c@maxitems=\count316
-\c@minitems=\count317
-\c@citecounter=\count318
-\c@maxcitecounter=\count319
-\c@savedcitecounter=\count320
-\c@uniquelist=\count321
-\c@uniquename=\count322
-\c@refsection=\count323
-\c@refsegment=\count324
-\c@maxextratitle=\count325
-\c@maxextratitleyear=\count326
-\c@maxextraname=\count327
-\c@maxextradate=\count328
-\c@maxextraalpha=\count329
-\c@abbrvpenalty=\count330
-\c@highnamepenalty=\count331
-\c@lownamepenalty=\count332
-\c@maxparens=\count333
-\c@parenlevel=\count334
-\blx@tempcnta=\count335
-\blx@tempcntb=\count336
-\blx@tempcntc=\count337
-\c@blx@maxsection=\count338
-\blx@maxsegment@0=\count339
-\blx@notetype=\count340
-\blx@parenlevel@text=\count341
-\blx@parenlevel@foot=\count342
-\blx@sectionciteorder@0=\count343
-\blx@sectionciteorderinternal@0=\count344
-\blx@entrysetcounter=\count345
-\blx@biblioinstance=\count346
-\labelnumberwidth=\skip69
-\labelalphawidth=\skip70
-\biblabelsep=\skip71
-\bibitemsep=\skip72
-\bibnamesep=\skip73
-\bibinitsep=\skip74
-\bibparsep=\skip75
-\bibhang=\skip76
-\blx@bcfin=\read2
-\blx@bcfout=\write3
+\c@tabx@nest=\count337
+\c@listtotal=\count338
+\c@listcount=\count339
+\c@liststart=\count340
+\c@liststop=\count341
+\c@citecount=\count342
+\c@citetotal=\count343
+\c@multicitecount=\count344
+\c@multicitetotal=\count345
+\c@instcount=\count346
+\c@maxnames=\count347
+\c@minnames=\count348
+\c@maxitems=\count349
+\c@minitems=\count350
+\c@citecounter=\count351
+\c@maxcitecounter=\count352
+\c@savedcitecounter=\count353
+\c@uniquelist=\count354
+\c@uniquename=\count355
+\c@refsection=\count356
+\c@refsegment=\count357
+\c@maxextratitle=\count358
+\c@maxextratitleyear=\count359
+\c@maxextraname=\count360
+\c@maxextradate=\count361
+\c@maxextraalpha=\count362
+\c@abbrvpenalty=\count363
+\c@highnamepenalty=\count364
+\c@lownamepenalty=\count365
+\c@maxparens=\count366
+\c@parenlevel=\count367
+\blx@tempcnta=\count368
+\blx@tempcntb=\count369
+\blx@tempcntc=\count370
+\c@blx@maxsection=\count371
+\blx@maxsegment@0=\count372
+\blx@notetype=\count373
+\blx@parenlevel@text=\count374
+\blx@parenlevel@foot=\count375
+\blx@sectionciteorder@0=\count376
+\blx@sectionciteorderinternal@0=\count377
+\blx@entrysetcounter=\count378
+\blx@biblioinstance=\count379
+\labelnumberwidth=\skip70
+\labelalphawidth=\skip71
+\biblabelsep=\skip72
+\bibitemsep=\skip73
+\bibnamesep=\skip74
+\bibinitsep=\skip75
+\bibparsep=\skip76
+\bibhang=\skip77
+\blx@bcfin=\read3
+\blx@bcfout=\write4
 \blx@langwohyphens=\language25
-\c@mincomprange=\count347
-\c@maxcomprange=\count348
-\c@mincompwidth=\count349
+\c@mincomprange=\count380
+\c@maxcomprange=\count381
+\c@mincompwidth=\count382
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -388,88 +488,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count350
-\c@savedafterword=\count351
-\c@annotator=\count352
-\c@savedannotator=\count353
-\c@author=\count354
-\c@savedauthor=\count355
-\c@bookauthor=\count356
-\c@savedbookauthor=\count357
-\c@commentator=\count358
-\c@savedcommentator=\count359
-\c@editor=\count360
-\c@savededitor=\count361
-\c@editora=\count362
-\c@savededitora=\count363
-\c@editorb=\count364
-\c@savededitorb=\count365
-\c@editorc=\count366
-\c@savededitorc=\count367
-\c@foreword=\count368
-\c@savedforeword=\count369
-\c@holder=\count370
-\c@savedholder=\count371
-\c@introduction=\count372
-\c@savedintroduction=\count373
-\c@namea=\count374
-\c@savednamea=\count375
-\c@nameb=\count376
-\c@savednameb=\count377
-\c@namec=\count378
-\c@savednamec=\count379
-\c@translator=\count380
-\c@savedtranslator=\count381
-\c@shortauthor=\count382
-\c@savedshortauthor=\count383
-\c@shorteditor=\count384
-\c@savedshorteditor=\count385
-\c@labelname=\count386
-\c@savedlabelname=\count387
-\c@institution=\count388
-\c@savedinstitution=\count389
-\c@lista=\count390
-\c@savedlista=\count391
-\c@listb=\count392
-\c@savedlistb=\count393
-\c@listc=\count394
-\c@savedlistc=\count395
-\c@listd=\count396
-\c@savedlistd=\count397
-\c@liste=\count398
-\c@savedliste=\count399
-\c@listf=\count400
-\c@savedlistf=\count401
-\c@location=\count402
-\c@savedlocation=\count403
-\c@organization=\count404
-\c@savedorganization=\count405
-\c@origlocation=\count406
-\c@savedoriglocation=\count407
-\c@origpublisher=\count408
-\c@savedorigpublisher=\count409
-\c@publisher=\count410
-\c@savedpublisher=\count411
-\c@language=\count412
-\c@savedlanguage=\count413
-\c@origlanguage=\count414
-\c@savedoriglanguage=\count415
-\c@pageref=\count416
-\c@savedpageref=\count417
-\shorthandwidth=\skip77
-\shortjournalwidth=\skip78
-\shortserieswidth=\skip79
-\shorttitlewidth=\skip80
-\shortauthorwidth=\skip81
-\shorteditorwidth=\skip82
-\locallabelnumberwidth=\skip83
-\locallabelalphawidth=\skip84
-\localshorthandwidth=\skip85
-\localshortjournalwidth=\skip86
-\localshortserieswidth=\skip87
-\localshorttitlewidth=\skip88
-\localshortauthorwidth=\skip89
-\localshorteditorwidth=\skip90
+\c@afterword=\count383
+\c@savedafterword=\count384
+\c@annotator=\count385
+\c@savedannotator=\count386
+\c@author=\count387
+\c@savedauthor=\count388
+\c@bookauthor=\count389
+\c@savedbookauthor=\count390
+\c@commentator=\count391
+\c@savedcommentator=\count392
+\c@editor=\count393
+\c@savededitor=\count394
+\c@editora=\count395
+\c@savededitora=\count396
+\c@editorb=\count397
+\c@savededitorb=\count398
+\c@editorc=\count399
+\c@savededitorc=\count400
+\c@foreword=\count401
+\c@savedforeword=\count402
+\c@holder=\count403
+\c@savedholder=\count404
+\c@introduction=\count405
+\c@savedintroduction=\count406
+\c@namea=\count407
+\c@savednamea=\count408
+\c@nameb=\count409
+\c@savednameb=\count410
+\c@namec=\count411
+\c@savednamec=\count412
+\c@translator=\count413
+\c@savedtranslator=\count414
+\c@shortauthor=\count415
+\c@savedshortauthor=\count416
+\c@shorteditor=\count417
+\c@savedshorteditor=\count418
+\c@labelname=\count419
+\c@savedlabelname=\count420
+\c@institution=\count421
+\c@savedinstitution=\count422
+\c@lista=\count423
+\c@savedlista=\count424
+\c@listb=\count425
+\c@savedlistb=\count426
+\c@listc=\count427
+\c@savedlistc=\count428
+\c@listd=\count429
+\c@savedlistd=\count430
+\c@liste=\count431
+\c@savedliste=\count432
+\c@listf=\count433
+\c@savedlistf=\count434
+\c@location=\count435
+\c@savedlocation=\count436
+\c@organization=\count437
+\c@savedorganization=\count438
+\c@origlocation=\count439
+\c@savedoriglocation=\count440
+\c@origpublisher=\count441
+\c@savedorigpublisher=\count442
+\c@publisher=\count443
+\c@savedpublisher=\count444
+\c@language=\count445
+\c@savedlanguage=\count446
+\c@origlanguage=\count447
+\c@savedoriglanguage=\count448
+\c@pageref=\count449
+\c@savedpageref=\count450
+\shorthandwidth=\skip78
+\shortjournalwidth=\skip79
+\shortserieswidth=\skip80
+\shorttitlewidth=\skip81
+\shortauthorwidth=\skip82
+\shorteditorwidth=\skip83
+\locallabelnumberwidth=\skip84
+\locallabelalphawidth=\skip85
+\localshorthandwidth=\skip86
+\localshortjournalwidth=\skip87
+\localshortserieswidth=\skip88
+\localshorttitlewidth=\skip89
+\localshortauthorwidth=\skip90
+\localshorteditorwidth=\skip91
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -489,19 +589,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count418
-\c@textcitetotal=\count419
-\c@textcitemaxnames=\count420
-\c@biburlbigbreakpenalty=\count421
-\c@biburlbreakpenalty=\count422
-\c@biburlnumpenalty=\count423
-\c@biburlucpenalty=\count424
-\c@biburllcpenalty=\count425
+\c@textcitecount=\count451
+\c@textcitetotal=\count452
+\c@textcitemaxnames=\count453
+\c@biburlbigbreakpenalty=\count454
+\c@biburlbreakpenalty=\count455
+\c@biburlnumpenalty=\count456
+\c@biburlucpenalty=\count457
+\c@biburllcpenalty=\count458
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count426
+\c@smartand=\count459
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -511,8 +611,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count427
-\c@bbx:relatedtotal=\count428
+\c@bbx:relatedcount=\count460
+\c@bbx:relatedtotal=\count461
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -541,7 +641,7 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2024-05-27 L3 programming layer (loader) 
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count429
+\l__color_backend_stack_int=\count462
 \l__pdf_internal_box=\box57
 ))
 Package biblatex Info: ... and expl3
@@ -553,42 +653,42 @@ Package: xparse 2024-05-08 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
-\@quotelevel=\count430
-\@quotereset=\count431
+\@quotelevel=\count463
+\@quotereset=\count464
  (./main.aux (./Pre-introduction/symbols.aux) (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count432
+\scratchcounter=\count465
 \scratchdimen=\dimen177
 \scratchbox=\box58
-\nofMPsegments=\count433
-\nofMParguments=\count434
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count435
+\nofMPsegments=\count466
+\nofMParguments=\count467
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count468
 \MPscratchDim=\dimen178
-\MPnumerator=\count436
-\makeMPintoPDFobject=\count437
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count469
+\makeMPintoPDFobject=\count470
+\everyMPtoPDFconversion=\toks52
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -603,7 +703,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring OFF on input line 74.
+Package hyperref Info: Link coloring OFF on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -650,48 +750,48 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout3 = `main-blx.bib'.
+\openout4 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 74.
-Package biblatex Info: Reference segment=0 on input line 74.
+Package biblatex Info: Reference section=0 on input line 75.
+Package biblatex Info: Reference segment=0 on input line 75.
 <Pre-introduction/abschlussarbeit_titel-1.pdf, id=4, 597.50786pt x 845.04686pt>
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 78.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 78.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 78.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 <Pre-introduction/abschlussarbeit_titel-1.pdf, id=8, page=1, 597.50786pt x 845.04686pt>
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 78.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 78.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 78.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 78.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 
 
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 78.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 [1
 
@@ -700,17 +800,17 @@ Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 us
 <Pre-introduction/abschlussarbeit_titel-1.pdf, id=55, page=2, 597.50786pt x 845.04686pt>
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 2>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 78.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 2>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 78.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 
 
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 2>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 77.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 78.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 [2
 
@@ -731,8 +831,8 @@ l.33 ...{7.3}Results and Analysis}{7}{section.7.3}
                                                   % [1
 
 ])
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
 
 
@@ -740,18 +840,18 @@ l.33 ...{7.3}Results and Analysis}{7}{section.7.3}
 pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90 \listoffigures
+l.91 \listoffigures
                     [2] (./main.lof)
-\tf@lof=\write5
-\openout5 = `main.lof'.
+\tf@lof=\write6
+\openout6 = `main.lof'.
 
 
 
 [3
 
 ] (./main.lot)
-\tf@lot=\write6
-\openout6 = `main.lot'.
+\tf@lot=\write7
+\openout7 = `main.lot'.
 
 
 
@@ -768,7 +868,12 @@ l.90 \listoffigures
 ]
 \openout2 = `Pre-introduction/acronyms.aux'.
 
- (./Pre-introduction/acronyms.tex)
+ (./Pre-introduction/acronyms.tex
+\dtldb@acronym=\toks53
+\dtlkeys@acronym=\toks54
+\dtlrows@acronym=\count471
+\dtlcols@acronym=\count472
+)
 
 [6
 
@@ -904,23 +1009,27 @@ Appendix A.
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-27>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19516 strings out of 475051
- 344800 string characters out of 5763935
+ 21664 strings out of 475051
+ 376887 string characters out of 5763935
  1938891 words of memory out of 5000000
- 41822 multiletter control sequences out of 15000+600000
- 560233 words of font info for 43 fonts, out of 8000000 for 9000
+ 43890 multiletter control sequences out of 15000+600000
+ 563345 words of font info for 54 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,17n,81p,1872b,1221s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,17n,93p,1872b,1391s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (20 pages, 304700 bytes).
+Output written on main.pdf (20 pages, 305711 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
- 338 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 416 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 500000)
  351 words of extra memory for PDF output out of 10000 (max. 10000000)
 

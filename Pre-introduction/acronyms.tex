@@ -1,1 +1,17 @@
 \chapter*{Acronyms}
+
+% Load the acronyms
+\DTLloaddb{acronym}{Pre-introduction/acronyms.csv}
+
+% Sort the data by the first column (short)
+\DTLsort{Short}{acronym}
+
+\begin{table}[ht]
+\begin{tabular}{l@{\hspace{2cm}}l}
+    \DTLforeach{acronym}{\short=Short, \full=Full}{%
+    \vspace{5pt} % Adjust the amount of space as needed
+    \textbf{\short} & \full \\
+    }
+\end{tabular}
+\label{tab:acronyms}
+\end{table}
