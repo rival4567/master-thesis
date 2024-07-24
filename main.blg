@@ -2,43 +2,45 @@ This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: biblatex.bst
-White space in argument---line 10 of file main.aux
+A level-1 auxiliary file: Pre-introduction/symbols.aux
+A level-1 auxiliary file: Pre-introduction/acronyms.aux
+White space in argument---line 12 of file main.aux
  : \@input{1.
  :            Introduction/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 20 of file main.aux
+White space in argument---line 19 of file main.aux
  : \@input{2.
  :            Literature Review/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 27 of file main.aux
+White space in argument---line 25 of file main.aux
  : \@input{3.
  :            System Design/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 35 of file main.aux
+White space in argument---line 30 of file main.aux
  : \@input{4.
  :            Hardware Integration/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 40 of file main.aux
+White space in argument---line 35 of file main.aux
  : \@input{5.
  :            Software Development/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 46 of file main.aux
+White space in argument---line 41 of file main.aux
  : \@input{6.
  :            System Integration and Testing/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 51 of file main.aux
+White space in argument---line 49 of file main.aux
  : \@input{7.
  :            Experimental Results/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 56 of file main.aux
+White space in argument---line 54 of file main.aux
  : \@input{8.
  :            Discussion/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 58 of file main.aux
+White space in argument---line 56 of file main.aux
  : \@input{9.
  :            Conclusion and Future Works/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 62 of file main.aux
+White space in argument---line 60 of file main.aux
  : \@input{A.
  :            Appendices/appendixA.aux}
 I'm skipping whatever remains of this command
@@ -62,45 +64,45 @@ Database file #2: references.bib
 Biblatex version: 3.20
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 3 entries,
+You've used 2 entries,
             6402 wiz_defined-function locations,
-            1216 strings with 9218 characters,
-and the built_in function-call counts, 14940 in all, are:
-= -- 1076
-> -- 312
-< -- 81
-+ -- 433
-- -- 114
-* -- 951
-:= -- 1781
+            1208 strings with 9131 characters,
+and the built_in function-call counts, 4864 in all, are:
+= -- 247
+> -- 148
+< -- 26
++ -- 102
+- -- 52
+* -- 234
+:= -- 639
 add.period$ -- 0
-call.type$ -- 3
-change.case$ -- 43
+call.type$ -- 2
+change.case$ -- 8
 chr.to.int$ -- 42
-cite$ -- 4
-duplicate$ -- 1519
-empty$ -- 1256
-format.name$ -- 136
-if$ -- 3080
+cite$ -- 2
+duplicate$ -- 403
+empty$ -- 455
+format.name$ -- 46
+if$ -- 1055
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 2
 missing$ -- 0
-newline$ -- 80
-num.names$ -- 110
-pop$ -- 754
+newline$ -- 36
+num.names$ -- 41
+pop$ -- 379
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 10
 quote$ -- 0
-skip$ -- 497
+skip$ -- 235
 stack$ -- 0
-substring$ -- 1804
-swap$ -- 309
-text.length$ -- 80
-text.prefix$ -- 2
+substring$ -- 367
+swap$ -- 96
+text.length$ -- 45
+text.prefix$ -- 1
 top$ -- 1
-type$ -- 90
+type$ -- 56
 warning$ -- 0
-while$ -- 244
+while$ -- 98
 width$ -- 0
-write$ -- 78
+write$ -- 35
 (There were 10 error messages)
