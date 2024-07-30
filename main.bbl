@@ -17,6 +17,62 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global/global}
+  \entry{russmann2015industry}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=RM}{%
+         family={R{\"u}{\ss}mann},
+         familyi={R\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lorenz},
+         familyi={L\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Gerbert},
+         familyi={G\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Waldner},
+         familyi={W\bibinitperiod},
+         given={Manuela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Justus},
+         familyi={J\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EP}{%
+         family={Engel},
+         familyi={E\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Harnisch},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM+1}
+    \strng{fullhash}{RMLMGPWMJJEPHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Industry 4.0: The future of productivity and growth in
+  manufacturing industries}
+    \field{year}{2015}
+  \endentry
+
   \entry{visor_user_manual}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=S}{%
