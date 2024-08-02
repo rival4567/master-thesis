@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  29 JUL 2024 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  2 AUG 2024 14:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -655,7 +655,7 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
 \@quotelevel=\count463
 \@quotereset=\count464
- (./main.aux (./Pre-introduction/symbols.aux) (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendixA.aux))
+ (./main.aux (./Pre-introduction/symbols.aux) (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendix.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
@@ -873,6 +873,11 @@ l.94 \listoffigures
 \dtlkeys@acronym=\toks54
 \dtlrows@acronym=\count471
 \dtlcols@acronym=\count472
+
+Overfull \hbox (4.19307pt too wide) in paragraph at lines 10--17
+[][]
+ []
+
 )
 
 [6
@@ -886,7 +891,7 @@ l.94 \listoffigures
  (./1. Introduction/main.tex
 Chapter 1.
 (./1. Introduction/1.1 Background/background.tex
-<1. Introduction/1.1 Background/exhibit2.png, id=221, 840.13875pt x 527.9725pt>
+<1. Introduction/1.1 Background/exhibit2.png, id=235, 840.13875pt x 527.9725pt>
 File: 1. Introduction/1.1 Background/exhibit2.png Graphic file (type png)
 <use 1. Introduction/1.1 Background/exhibit2.png>
 Package pdftex.def Info: 1. Introduction/1.1 Background/exhibit2.png  used on input line 17.
@@ -958,12 +963,12 @@ Chapter 5.
  (./6. System Integration and Testing/main.tex
 Chapter 6.
 (./6. System Integration and Testing/6.1 Integration Tests/tests.tex) (./6. System Integration and Testing/6.2 Calibration Procedures/calibration.tex
-<6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG, id=266, 1156.32pt x 622.12425pt>
+<6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG, id=279, 1156.32pt x 622.12425pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>
 Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG  used on input line 14.
 (pdftex.def)             Requested size: 455.24411pt x 244.92474pt.
-<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=267, 1866.975pt x 1058.95625pt>
+<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=280, 1866.975pt x 1058.95625pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG>
 Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG  used on input line 21.
@@ -1033,41 +1038,44 @@ Chapter 9.
 
 
 ]
-\openout2 = `"A. Appendices/appendixA.aux"'.
+\openout2 = `"A. Appendices/appendix.aux"'.
 
- (./A. Appendices/appendixA.tex
+ (./A. Appendices/appendix.tex
 Appendix A.
-)
+(./A. Appendices/apXA1.tex
+Overfull \hbox (2.49162pt too wide) in paragraph at lines 1--1
+|[]\OT1/cmr/bx/n/17.28 Software and De-vel-op-ment En-vi-ron-ment Ver-sions| 
+ []
+
+
 
 [17
 
 
-] (./main.aux (./Pre-introduction/symbols.aux) (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendixA.aux))
+]))
+
+[18] (./main.aux (./Pre-introduction/symbols.aux) (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendix.aux))
  ***********
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-27>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21916 strings out of 475051
- 389658 string characters out of 5763935
+ 21936 strings out of 475051
+ 389963 string characters out of 5763935
  1938891 words of memory out of 5000000
- 44011 multiletter control sequences out of 15000+600000
+ 44016 multiletter control sequences out of 15000+600000
  565352 words of font info for 60 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 94i,17n,93p,1872b,1521s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,17n,93p,1872b,1519s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/host/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti0800.600pk> </home/host/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/host/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0800.600pk></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (26 pages, 1117421 bytes).
+Output written on main.pdf (27 pages, 1122195 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
- 95 named destinations out of 1000 (max. 500000)
- 358 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 513 PDF objects out of 1000 (max. 8388607)
+ 422 compressed objects within 5 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
