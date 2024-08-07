@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  2 AUG 2024 14:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  7 AUG 2024 09:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -485,7 +485,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count383
@@ -603,10 +603,10 @@ File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip22
 \c@smartand=\count459
 )
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
@@ -614,21 +614,17 @@ File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count460
 \c@bbx:relatedtotal=\count461
 ))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -891,7 +887,7 @@ Overfull \hbox (4.19307pt too wide) in paragraph at lines 10--17
  (./1. Introduction/main.tex
 Chapter 1.
 (./1. Introduction/1.1 Background/background.tex
-<1. Introduction/1.1 Background/exhibit2.png, id=235, 840.13875pt x 527.9725pt>
+<1. Introduction/1.1 Background/exhibit2.png, id=238, 840.13875pt x 527.9725pt>
 File: 1. Introduction/1.1 Background/exhibit2.png Graphic file (type png)
 <use 1. Introduction/1.1 Background/exhibit2.png>
 Package pdftex.def Info: 1. Introduction/1.1 Background/exhibit2.png  used on input line 17.
@@ -912,7 +908,11 @@ Package pdftex.def Info: 1. Introduction/1.1 Background/exhibit2.png  used on in
 
  (./2. Literature Review/main.tex
 Chapter 2.
-(./2. Literature Review/2.1 Robotic Automation in Manufacturing/automation.tex) (./2. Literature Review/2.2 Bending Processes/bending.tex) (./2. Literature Review/2.4 Computer Vision in Industrial Automation/vision.tex)
+(./2. Literature Review/2.1 Robotic Automation in Manufacturing/automation.tex
+
+LaTeX Warning: Citation 'kassowrobotsblog' on page 4 undefined on input line 1.
+
+) (./2. Literature Review/2.2 Bending Processes/bending.tex) (./2. Literature Review/2.4 Computer Vision in Industrial Automation/vision.tex)
 
 [4
 
@@ -963,20 +963,11 @@ Chapter 5.
  (./6. System Integration and Testing/main.tex
 Chapter 6.
 (./6. System Integration and Testing/6.1 Integration Tests/tests.tex) (./6. System Integration and Testing/6.2 Calibration Procedures/calibration.tex
-<6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG, id=279, 1156.32pt x 622.12425pt>
-File: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG Graphic file (type png)
-<use 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>
-Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG  used on input line 14.
-(pdftex.def)             Requested size: 455.24411pt x 244.92474pt.
-<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=280, 1866.975pt x 1058.95625pt>
+<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=281, 1866.975pt x 1058.95625pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG>
-Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG  used on input line 21.
+Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG  used on input line 9.
 (pdftex.def)             Requested size: 455.24411pt x 258.21043pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 
 [9
@@ -984,16 +975,28 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
- <./6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>]
+ <./6. System Integration and Testing/6.2 Calibration Procedures/tcp.png>]
+<6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG, id=289, 1156.32pt x 622.12425pt>
+File: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG Graphic file (type png)
+<use 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>
+Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG  used on input line 38.
+(pdftex.def)             Requested size: 409.71692pt x 220.43321pt.
 
-[10 <./6. System Integration and Testing/6.2 Calibration Procedures/tcp.png>]
-Overfull \hbox (2.6152pt too wide) in paragraph at lines 60--61
+
+[10 <./6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>]
+<6. System Integration and Testing/6.2 Calibration Procedures/graph.png, id=300, 922.44624pt x 806.01125pt>
+File: 6. System Integration and Testing/6.2 Calibration Procedures/graph.png Graphic file (type png)
+<use 6. System Integration and Testing/6.2 Calibration Procedures/graph.png>
+Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/graph.png  used on input line 63.
+(pdftex.def)             Requested size: 455.24411pt x 397.77768pt.
+
+Overfull \hbox (2.6152pt too wide) in paragraph at lines 71--72
 []\OT1/cmr/bx/n/12 Setup Cal-i-bra-tion Tar-gets\OT1/cmr/m/n/12 : Place cal-i-bra-tion tar-gets within the robot's workspace
  []
 
-) (./6. System Integration and Testing/6.3 Performance Evaluation/performance.tex
 
-[11]))
+
+[11 <./6. System Integration and Testing/6.2 Calibration Procedures/graph.png>]) (./6. System Integration and Testing/6.3 Performance Evaluation/performance.tex))
 
 [12]
 \openout2 = `"7. Experimental Results/main.aux"'.
@@ -1059,23 +1062,32 @@ Overfull \hbox (2.49162pt too wide) in paragraph at lines 1--1
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-27>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21936 strings out of 475051
- 389963 string characters out of 5763935
+ 21949 strings out of 475051
+ 390674 string characters out of 5763935
  1938891 words of memory out of 5000000
- 44016 multiletter control sequences out of 15000+600000
+ 44028 multiletter control sequences out of 15000+600000
  565352 words of font info for 60 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 94i,17n,93p,1872b,1519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,17n,93p,1872b,1332s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/host/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti0800.600pk> </home/host/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/host/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0800.600pk></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (27 pages, 1122195 bytes).
+Output written on main.pdf (27 pages, 1169238 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 366 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 521 PDF objects out of 1000 (max. 8388607)
+ 427 compressed objects within 5 object streams
+ 109 named destinations out of 1000 (max. 500000)
+ 371 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -16,7 +16,7 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global/global}
+\datalist[entry]{nyt/global//global/global/global}
   \entry{russmann2015industry}{article}{}{}
     \name{author}{7}{}{%
       {{hash=RM}{%
@@ -66,6 +66,8 @@
     \strng{fullhash}{RMLMGPWMJJEPHM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{title}{Industry 4.0: The future of productivity and growth in
@@ -84,10 +86,41 @@
     \strng{fullhash}{S1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labeldatesource}{nodate}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{title}{VISOR\textsuperscript{\textregistered} User Manual Software
   Version 2.8}
+  \endentry
+
+  \entry{kassowrobotsblog}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=SA}{%
+         family={Steger},
+         familyi={S\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SA1}
+    \strng{fullhash}{SA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{Accessed: 2024-08-07}
+    \field{title}{What is Robotic Process Automation(RPA)? The Complete 2024
+  Guide}
+    \verb{url}
+    \verb https://www.kassowrobots.com/blog/what-is-robotic-process-automation-
+    \verb rpa
+    \endverb
+    \field{year}{2024}
+    \field{urlday}{07}
+    \field{urlmonth}{08}
+    \field{urlyear}{2024}
   \endentry
 \enddatalist
 \endinput

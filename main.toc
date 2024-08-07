@@ -24,13 +24,13 @@
 \contentsline {section}{\numberline {5.4}Web Interface Design}{8}{section.5.4}%
 \contentsline {chapter}{\numberline {6}System Integration and Testing}{9}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Integration Tests}{9}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Robotics Calibration}{9}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Calibration}{9}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{9}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{10}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{11}{subsection.6.2.3}%
 \contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{11}{subsection.6.2.4}%
-\contentsline {section}{\numberline {6.3}Performance Evaluation}{11}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{11}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.3}Performance Evaluation}{12}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{12}{subsection.6.3.1}%
 \contentsline {chapter}{\numberline {7}Experimental Results}{13}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Setup and Methodology}{13}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Data Collection}{13}{section.7.2}%
