@@ -8,39 +8,39 @@ White space in argument---line 12 of file main.aux
  : \@input{1.
  :            Introduction/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 29 of file main.aux
+White space in argument---line 43 of file main.aux
  : \@input{2.
  :            Literature Review/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 38 of file main.aux
+White space in argument---line 52 of file main.aux
  : \@input{3.
  :            System Design/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 43 of file main.aux
+White space in argument---line 57 of file main.aux
  : \@input{4.
  :            Hardware Integration/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 48 of file main.aux
+White space in argument---line 62 of file main.aux
  : \@input{5.
  :            Software Development/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 54 of file main.aux
+White space in argument---line 68 of file main.aux
  : \@input{6.
  :            System Integration and Testing/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 63 of file main.aux
+White space in argument---line 76 of file main.aux
  : \@input{7.
  :            Experimental Results/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 68 of file main.aux
+White space in argument---line 81 of file main.aux
  : \@input{8.
  :            Discussion/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 70 of file main.aux
+White space in argument---line 83 of file main.aux
  : \@input{9.
  :            Conclusion and Future Works/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 76 of file main.aux
+White space in argument---line 87 of file main.aux
  : \@input{A.
  :            Appendices/appendix.aux}
 I'm skipping whatever remains of this command
@@ -61,48 +61,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: references.bib
+I was expecting a `,' or a `}'---line 10 of file references.bib
+ :   
+ :   year         = {2024},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Biblatex version: 3.20
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 4 entries,
+You've used 6 entries,
             6402 wiz_defined-function locations,
-            1219 strings with 9573 characters,
-and the built_in function-call counts, 25725 in all, are:
-= -- 1907
-> -- 619
-< -- 91
-+ -- 1010
-- -- 366
-* -- 1627
-:= -- 3327
+            1240 strings with 12277 characters,
+and the built_in function-call counts, 46911 in all, are:
+= -- 3761
+> -- 831
+< -- 138
++ -- 1761
+- -- 455
+* -- 3109
+:= -- 6032
 add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 29
+call.type$ -- 6
+change.case$ -- 45
 chr.to.int$ -- 66
-cite$ -- 6
-duplicate$ -- 2753
-empty$ -- 2109
-format.name$ -- 206
-if$ -- 4891
+cite$ -- 10
+duplicate$ -- 5193
+empty$ -- 3827
+format.name$ -- 377
+if$ -- 8916
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 10
 missing$ -- 0
-newline$ -- 123
-num.names$ -- 123
-pop$ -- 1181
+newline$ -- 218
+num.names$ -- 205
+pop$ -- 1977
 preamble$ -- 1
-purify$ -- 47
+purify$ -- 81
 quote$ -- 0
-skip$ -- 588
+skip$ -- 907
 stack$ -- 0
-substring$ -- 3378
-swap$ -- 471
-text.length$ -- 111
-text.prefix$ -- 3
+substring$ -- 6797
+swap$ -- 813
+text.length$ -- 165
+text.prefix$ -- 5
 top$ -- 1
-type$ -- 124
+type$ -- 192
 warning$ -- 0
-while$ -- 437
+while$ -- 799
 width$ -- 0
-write$ -- 120
-(There were 10 error messages)
+write$ -- 213
+(There were 11 error messages)

@@ -16,7 +16,84 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global/global}
+\datalist[entry]{nty/global//global/global/global}
+  \entry{BAI2020107776}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=BC}{%
+         family={Bai},
+         familyi={B\bibinitperiod},
+         given={Chunguang},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Dallasega},
+         familyi={D\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=OG}{%
+         family={Orzes},
+         familyi={O\bibinitperiod},
+         given={Guido},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sarkis},
+         familyi={S\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Industry 4.0, Technology, Sustainability, Hesitant fuzzy set,
+  Cumulative prospect theory, VIKOR}
+    \strng{namehash}{BC+1}
+    \strng{fullhash}{BCDPOGSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The fourth industrial revolution, also labelled Industry 4.0, was beget
+  with emergent and disruptive intelligence and information technologies. These
+  new technologies are enabling ever-higher levels of production efficiencies.
+  They also have the potential to dramatically influence social and
+  environmental sustainable development. Organizations need to consider
+  Industry 4.0 technologies contribution to sustainability. Sufficient
+  guidance, in this respect, is lacking in the scholarly or practitioner
+  literature. In this study, we further examine Industry 4.0 technologies in
+  terms of application and sustainability implications. We introduce a measures
+  framework for sustainability based on the United Nations Sustainable
+  Development Goals; incorporating various economic, environmental and social
+  attributes. We also develop a hybrid multi-situation decision method
+  integrating hesitant fuzzy set, cumulative prospect theory and VIKOR. This
+  method can effectively evaluate Industry 4.0 technologies based on their
+  sustainable performance and application. We apply the method using secondary
+  case information from a report of the World Economic Forum. The results show
+  that mobile technology has the greatest impact on sustainability in all
+  industries, and nanotechnology, mobile technology, simulation and drones have
+  the highest impact on sustainability in the automotive, electronics, food and
+  beverage, and textile, apparel and footwear industries, respectively. Our
+  recommendation is to take advantage of Industry 4.0 technology adoption to
+  improve sustainability impact but each technology needs to be carefully
+  evaluated as specific technology will variably influence industry and
+  sustainability dimensions. Investment in such technologies should consider
+  appropriate priority investment and championing.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.ijpe.2020.107776
+    \endverb
+    \field{issn}{0925-5273}
+    \field{pages}{107776}
+    \field{title}{Industry 4.0 technologies assessment: A sustainability
+  perspective}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0925527320301559
+    \endverb
+    \field{volume}{229}
+    \field{journaltitle}{International Journal of Production Economics}
+    \field{year}{2020}
+  \endentry
+
   \entry{russmann2015industry}{article}{}{}
     \name{author}{7}{}{%
       {{hash=RM}{%
@@ -66,8 +143,6 @@
     \strng{fullhash}{RMLMGPWMJJEPHM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
-    \field{labeldatesource}{}
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{title}{Industry 4.0: The future of productivity and growth in
@@ -86,7 +161,6 @@
     \strng{fullhash}{S1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labeldatesource}{nodate}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{title}{VISOR\textsuperscript{\textregistered} User Manual Software
@@ -106,8 +180,6 @@
     \strng{fullhash}{SA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2024}
-    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{note}{Accessed: 2024-08-07}
@@ -121,6 +193,59 @@
     \field{urlday}{07}
     \field{urlmonth}{08}
     \field{urlyear}{2024}
+  \endentry
+
+  \entry{8361333}{inproceedings}{}{}
+    \name{author}{5}{}{%
+      {{hash=YS}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Sida},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=XW}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Wenjun},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zhihao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Zude},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=PDT}{%
+         family={Pham},
+         familyi={P\bibinitperiod},
+         given={Duc\bibnamedelima Truong},
+         giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \keyw{Collaboration;Three-dimensional displays;Robot sensing
+  systems;Cameras;Service robots;Manufacturing;human-robot
+  collaboration;manufacturing;multi-source vision perception;data fusion}
+    \strng{namehash}{YS+1}
+    \strng{fullhash}{YSXWLZZZPDT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{booktitle}{2018 IEEE 15th International Conference on Networking,
+  Sensing and Control (ICNSC)}
+    \verb{doi}
+    \verb 10.1109/ICNSC.2018.8361333
+    \endverb
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Multi-source vision perception for human-robot collaboration
+  in manufacturing}
+    \field{year}{2018}
   \endentry
 \enddatalist
 \endinput
