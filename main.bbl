@@ -94,6 +94,56 @@
     \field{year}{2020}
   \endentry
 
+  \entry{CHEN2001199}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=CIM}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={I-Ming},
+         giveni={I\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{Modular robot, Component technology, Agile manufacturing,
+  Reconfigurable automation}
+    \strng{namehash}{CIM1}
+    \strng{fullhash}{CIM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    This article describes the development of a component-based technology
+  robot workcell that can be rapidly configured to perform a specific
+  manufacturing task. The workcell is conceived with standard and
+  inter-operable components including actuator modules, rigid link connectors
+  and tools that can be assembled into robots with arbitrary geometry and
+  degrees of freedom. The reconfigurable “plug-and-play” robot kinematic
+  and dynamic modeling algorithms are developed. These algorithms are the basis
+  for the control and simulation of reconfigurable robots. The concept of robot
+  configuration optimization is introduced for the effective use of the rapidly
+  reconfigurable robots. Control and communications of the workcell components
+  are facilitated by a workcell-wide TCP/IP network and device-level CAN-bus
+  networks. An object-oriented simulation and visualization software for the
+  reconfigurable robot is developed based on Windows NT. Prototypes of the
+  robot workcells configured to perform the light-machining task and the
+  positioning task are constructed and demonstrated.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0736-5845(00)00028-4
+    \endverb
+    \field{issn}{0736-5845}
+    \field{number}{3}
+    \field{pages}{199\bibrangedash 213}
+    \field{title}{Rapid response manufacturing through a rapidly reconfigurable
+  robotic workcell}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0736584500000284
+    \endverb
+    \field{volume}{17}
+    \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+    \field{year}{2001}
+  \endentry
+
   \entry{russmann2015industry}{article}{}{}
     \name{author}{7}{}{%
       {{hash=RM}{%
@@ -165,6 +215,7 @@
     \field{sortinithash}{S}
     \field{title}{VISOR\textsuperscript{\textregistered} User Manual Software
   Version 2.8}
+    \field{year}{2024}
   \endentry
 
   \entry{kassowrobotsblog}{online}{}{}

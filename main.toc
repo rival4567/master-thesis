@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Objectives}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Scope of the Study}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Scope}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Thesis Structure}{3}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Robotic Automation in Manufacturing}{4}{section.2.1}%
@@ -39,7 +39,8 @@
 \contentsline {chapter}{\numberline {9}Conclusion and Future Works}{15}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Summary}{15}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Recommendations for Future Research}{15}{section.9.2}%
-\contentsline {chapter}{\numberline {A}Appendix}{17}{appendix.A}%
-\contentsline {section}{\numberline {A1}Software and Development Environment Versions}{17}{section.A.1}%
-\contentsline {section}{\numberline {A2}Reduction in Manual Labor}{18}{section.A.2}%
-\contentsline {section}{\numberline {A3}Cost reduction}{18}{section.A.3}%
+\contentsline {chapter}{Bibliography}{i}{section.9.2}%
+\contentsline {chapter}{\numberline {A}Appendix}{ii}{appendix.A}%
+\contentsline {section}{\numberline {A1}Software and Development Environment Versions}{ii}{section.A.1}%
+\contentsline {section}{\numberline {A2}Reduction in Manual Labor}{iii}{section.A.2}%
+\contentsline {section}{\numberline {A3}Cost reduction}{iii}{section.A.3}%
