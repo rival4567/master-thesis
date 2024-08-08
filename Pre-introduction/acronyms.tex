@@ -7,11 +7,11 @@
 \DTLsort{Short}{acronym}
 
 \begin{table}[ht]
-\begin{tabular}{l@{\hspace{2cm}}p{11.5cm}}
-    \DTLforeach{acronym}{\short=Short, \full=Full}{%
-    \vspace{5pt} % Adjust the amount of space as needed
-    \textbf{\short} & \full \\
-    }
-\end{tabular}
-\label{tab:acronyms}
+    \label{tab:acronyms}
+    \begin{tabular}{l@{\hspace{2cm}}p{11.2573cm}}
+        \DTLforeach{acronym}{\short=Short, \full=Full}{%
+        \vspace{5pt} % Adjust the amount of space as needed
+        \textbf{\short} & \full \\
+        }
+    \end{tabular}
 \end{table}
