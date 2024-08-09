@@ -41,6 +41,6 @@
 \contentsline {section}{\numberline {9.2}Recommendations for Future Research}{15}{section.9.2}%
 \contentsline {chapter}{Bibliography}{i}{section.9.2}%
 \contentsline {chapter}{\numberline {A}Appendix}{ii}{appendix.A}%
-\contentsline {section}{\numberline {A1}Software and Development Environment Versions}{ii}{section.A.1}%
+\contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{ii}{section.A.1}%
 \contentsline {section}{\numberline {A2}Reduction in Manual Labor}{iii}{section.A.2}%
 \contentsline {section}{\numberline {A3}Cost reduction}{iii}{section.A.3}%
