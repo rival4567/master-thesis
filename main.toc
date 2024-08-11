@@ -7,39 +7,40 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Robotic Automation in Manufacturing}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Automated Bending Processes}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Computer Vision in Industrial Automation}{4}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Web Interfaces for Industrial Systems}{5}{section.2.4}%
-\contentsline {chapter}{\numberline {3}System Design}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{6}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Hardware Selection}{6}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Software Architecture}{6}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Hardware Integration}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Installation and Configuration}{7}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Communication Protocols}{7}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Safety Considerations}{7}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Software Development}{8}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Control Software}{8}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{8}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{8}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Web Interface Design}{8}{section.5.4}%
-\contentsline {chapter}{\numberline {6}System Integration and Testing}{9}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Integration Tests}{9}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Calibration}{9}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{9}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{10}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{11}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{11}{subsection.6.2.4}%
-\contentsline {section}{\numberline {6.3}Performance Evaluation}{12}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{12}{subsection.6.3.1}%
-\contentsline {chapter}{\numberline {7}Experimental Results}{13}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Setup and Methodology}{13}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Data Collection}{13}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Results and Analysis}{13}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Discussion}{14}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{15}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Summary}{15}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{15}{section.9.2}%
-\contentsline {chapter}{Bibliography}{i}{section.9.2}%
+\contentsline {section}{\numberline {2.3}Robotic System}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Computer Vision in Industrial Automation}{4}{section.2.4}%
+\contentsline {section}{\numberline {2.5}User Interfaces for Industrial Systems}{5}{section.2.5}%
+\contentsline {chapter}{\numberline {3}System Design}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Hardware Selection}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Software Architecture}{7}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Hardware Integration}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Installation and Configuration}{8}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Communication Protocols}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Safety Considerations}{8}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Software Development}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Control Software}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{9}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{9}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Web Interface Design}{9}{section.5.4}%
+\contentsline {chapter}{\numberline {6}System Integration and Testing}{10}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Integration Tests}{10}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Calibration}{10}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{10}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{11}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{12}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{12}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Performance Evaluation}{13}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{13}{subsection.6.3.1}%
+\contentsline {chapter}{\numberline {7}Experimental Results}{14}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Setup and Methodology}{14}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Data Collection}{14}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Results and Analysis}{14}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Discussion}{15}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{16}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Summary}{16}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{16}{section.9.2}%
+\contentsline {chapter}{Bibliography}{17}{section.9.2}%
 \contentsline {chapter}{\numberline {A}Appendix}{ii}{appendix.A}%
 \contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{ii}{section.A.1}%
 \contentsline {section}{\numberline {A2}Reduction in Manual Labor}{iii}{section.A.2}%
