@@ -12,35 +12,35 @@ White space in argument---line 48 of file main.aux
  : \@input{2.
  :            Literature Review/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 79 of file main.aux
+White space in argument---line 103 of file main.aux
  : \@input{3.
  :            System Design/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 84 of file main.aux
+White space in argument---line 111 of file main.aux
  : \@input{4.
  :            Hardware Integration/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 89 of file main.aux
+White space in argument---line 116 of file main.aux
  : \@input{5.
  :            Software Development/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 95 of file main.aux
+White space in argument---line 122 of file main.aux
  : \@input{6.
  :            System Integration and Testing/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 103 of file main.aux
+White space in argument---line 130 of file main.aux
  : \@input{7.
  :            Experimental Results/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 108 of file main.aux
+White space in argument---line 135 of file main.aux
  : \@input{8.
  :            Discussion/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 110 of file main.aux
+White space in argument---line 137 of file main.aux
  : \@input{9.
  :            Conclusion and Future Works/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 116 of file main.aux
+White space in argument---line 143 of file main.aux
  : \@input{A.
  :            Appendices/appendix.aux}
 I'm skipping whatever remains of this command
@@ -66,45 +66,45 @@ Warning--I'm ignoring Wilkinson's extra "title" field
 Biblatex version: 3.20
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 14 entries,
+You've used 21 entries,
             6402 wiz_defined-function locations,
-            1322 strings with 20443 characters,
-and the built_in function-call counts, 134562 in all, are:
-= -- 11177
-> -- 2041
-< -- 370
-+ -- 4820
-- -- 1094
-* -- 9538
-:= -- 16929
+            1406 strings with 30756 characters,
+and the built_in function-call counts, 206470 in all, are:
+= -- 17274
+> -- 2824
+< -- 540
++ -- 7153
+- -- 1437
+* -- 14940
+:= -- 25753
 add.period$ -- 0
-call.type$ -- 14
-change.case$ -- 139
+call.type$ -- 21
+change.case$ -- 208
 chr.to.int$ -- 91
-cite$ -- 26
-duplicate$ -- 14647
-empty$ -- 11072
-format.name$ -- 1074
-if$ -- 25733
+cite$ -- 40
+duplicate$ -- 22541
+empty$ -- 17132
+format.name$ -- 1660
+if$ -- 39670
 int.to.chr$ -- 0
-int.to.str$ -- 27
+int.to.str$ -- 41
 missing$ -- 0
-newline$ -- 616
-num.names$ -- 550
-pop$ -- 5100
+newline$ -- 968
+num.names$ -- 837
+pop$ -- 7796
 preamble$ -- 1
-purify$ -- 247
+purify$ -- 375
 quote$ -- 0
-skip$ -- 2356
+skip$ -- 3529
 stack$ -- 0
-substring$ -- 20890
-swap$ -- 2366
-text.length$ -- 403
-text.prefix$ -- 13
+substring$ -- 32383
+swap$ -- 3699
+text.length$ -- 596
+text.prefix$ -- 22
 top$ -- 1
-type$ -- 464
+type$ -- 702
 warning$ -- 0
-while$ -- 2160
+while$ -- 3288
 width$ -- 0
-write$ -- 603
+write$ -- 948
 (There were 10 error messages)

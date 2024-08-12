@@ -9,10 +9,11 @@
 \contentsline {section}{\numberline {2.2}Automated Bending Processes}{4}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Robotic System}{4}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Computer Vision in Industrial Automation}{4}{section.2.4}%
-\contentsline {section}{\numberline {2.5}User Interfaces for Industrial Systems}{6}{section.2.5}%
-\contentsline {chapter}{\numberline {3}System Design}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Hardware Selection}{8}{section.3.2}%
+\contentsline {section}{\numberline {2.5}User Interfaces for Industrial Systems}{5}{section.2.5}%
+\contentsline {chapter}{\numberline {3}System Design}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Hardware Selection}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}VISOR\textsuperscript {\textregistered } Vision Sensor}{7}{subsection.3.2.1}%
 \contentsline {section}{\numberline {3.3}Software Architecture}{8}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Hardware Integration}{9}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Installation and Configuration}{9}{section.4.1}%
