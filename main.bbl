@@ -174,6 +174,61 @@
     \field{urlyear}{2024}
   \endentry
 
+  \entry{10070046}{inproceedings}{}{}
+    \name{author}{5}{}{%
+      {{hash=IMT}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={Md.\bibnamedelima Touhidul},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=HIR}{%
+         family={Hameem},
+         familyi={H\bibinitperiod},
+         given={Imtiaz\bibnamedelima Reza},
+         giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Saha},
+         familyi={S\bibinitperiod},
+         given={Shuvra},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CMJR}{%
+         family={Chowdhury},
+         familyi={C\bibinitperiod},
+         given={Mohammad Jamilur\bibnamedelima Reza},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+      {{hash=DME}{%
+         family={Deowan},
+         familyi={D\bibinitperiod},
+         given={Md.\bibnamedelima Ether},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \keyw{Performance
+  evaluation;Costs;Navigation;Wheelchairs;Simulation;Operating systems;Signal
+  processing;Robot Operating System;Gazebo;Autonomous Navigation;Cloud
+  Control;rosbridge}
+    \strng{namehash}{IMT+1}
+    \strng{fullhash}{IMTHIRSSCMJRDME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{booktitle}{2023 3rd International Conference on Robotics, Electrical
+  and Signal Processing Techniques (ICREST)}
+    \verb{doi}
+    \verb 10.1109/ICREST57604.2023.10070046
+    \endverb
+    \field{pages}{175\bibrangedash 180}
+    \field{title}{A Simulation of a Robot Operating System Based Autonomous
+  Wheelchair with Web Based HMI Using Rosbridge}
+    \field{year}{2023}
+  \endentry
+
   \entry{russmann2015industry}{article}{}{}
     \name{author}{7}{}{%
       {{hash=RM}{%
@@ -432,6 +487,96 @@
     \field{year}{2019}
   \endentry
 
+  \entry{Wilkinson}{article}{}{}
+    \name{author}{11}{}{%
+      {{hash=WA}{%
+         family={Wilkinson},
+         familyi={W\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gonzales},
+         familyi={G\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Hoey},
+         familyi={H\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kontak},
+         familyi={K\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Dian},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Torname},
+         familyi={T\bibinitperiod},
+         given={Noah},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sinclaire},
+         familyi={S\bibinitperiod},
+         given={Amelia},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HZ}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Zhao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Allspaw},
+         familyi={A\bibinitperiod},
+         given={Jordan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Platt},
+         familyi={P\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yanco},
+         familyi={Y\bibinitperiod},
+         given={Holly},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WA+1}
+    \strng{fullhash}{WAGMHPKDWDTNSAHZAJPRYH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb doi:10.1515/pjbr-2021-0023
+    \endverb
+    \field{number}{1}
+    \field{pages}{392\bibrangedash 401}
+    \field{title}{Design guidelines for human–robot interaction with
+  assistive robot manipulation systems}
+    \verb{url}
+    \verb https://doi.org/10.1515/pjbr-2021-0023
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Paladyn}
+    \field{year}{2021}
+  \endentry
+
   \entry{Xiao_2019}{article}{}{}
     \name{author}{2}{}{%
       {{hash=XZ}{%
@@ -539,6 +684,49 @@
     \field{title}{Multi-source vision perception for human-robot collaboration
   in manufacturing}
     \field{year}{2018}
+  \endentry
+
+  \entry{9761203}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=ZL}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Longfei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Konz},
+         familyi={K\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{Image edge detection;Image segmentation;Task analysis;Robot sensing
+  systems;Sensors;Feature detection;Three-dimensional
+  displays;Assembly;computer vision (CV);deep learning;inspection;machine
+  intelligence;machine learning;manufacturing;production;robotics;survey}
+    \strng{namehash}{ZLZLKN1}
+    \strng{fullhash}{ZLZLKN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{doi}
+    \verb 10.1109/TSMC.2022.3166397
+    \endverb
+    \field{number}{1}
+    \field{pages}{105\bibrangedash 117}
+    \field{title}{Computer Vision Techniques in Manufacturing}
+    \field{volume}{53}
+    \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics:
+  Systems}
+    \field{year}{2023}
   \endentry
 \enddatalist
 \endinput

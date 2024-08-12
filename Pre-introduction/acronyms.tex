@@ -1,17 +1,20 @@
 \chapter*{Index of Abbreviations}
 
+\newcommand{\acrlabel}[1]{\label{acro:#1}\textbf{#1}}
+
 % Load the acronyms
 \DTLloaddb{acronym}{Pre-introduction/acronyms.csv}
 
 % Sort the data by the first column (short)
 \DTLsort{Short}{acronym}
 
-\begin{table}[ht]
-    \label{tab:acronyms}
-    \begin{tabular}{l@{\hspace{2cm}}p{11.2573cm}}
-        \DTLforeach{acronym}{\short=Short, \full=Full}{%
-        \vspace{5pt} % Adjust the amount of space as needed
-        \textbf{\short} & \full \\
-        }
-    \end{tabular}
-\end{table}
+\begin{longtable}{l@{\hspace{2cm}}p{11.2573cm}}
+    \endfirsthead
+    \endhead
+    \endfoot
+    \endlastfoot
+    % Iterate through the CSV data and fill the table
+    \DTLforeach{acronym}{\short=Short, \full=Full}{
+        \acrlabel{\short} & \full \\    
+    }
+\end{longtable}

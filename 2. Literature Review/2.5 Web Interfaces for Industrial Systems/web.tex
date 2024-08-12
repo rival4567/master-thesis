@@ -1,21 +1,19 @@
-% An effective user interface (UI) is crucial for monitoring and controlling robotic systems. The UI should provide real-time feedback, allow for easy control of the robot, and be accessible to users with varying levels of expertise. Web-based interfaces have gained popularity due to their accessibility and ease of deployment.
 
-% Research by Brown et al. (2019) and Nguyen et al. (2020) has emphasized the importance of intuitive UI design in enhancing user experience and system performance. Features such as real-time visualization of robotic motion, status indicators, and interactive controls are essential for effective UI. Developing a web interface for the robotic workcell can significantly enhance its usability and facilitate remote monitoring and control.
 
 Product development process can greatly benefit from the integration of
 the digital twin models. According to \cite{SEMERARO2021103469}, digital twin (DT) embeds a "virtual" image of the reality
 constantly synchronized with the real operating scenario to provide sound information (knowledge model) to reality interpretation model to draw sound decisions.
 
-In manufacturing a digital twin can replicate an individual machine, a cell, a complete line. Digital twin and virtual commissioning are two terms that often come when
+In manufacturing industry, a digital twin can replicate an individual machine, a cell, a complete line. Digital twin and virtual commissioning are two terms that often come when
 talking about Industry 4.0. Both use virtual representations of physical systems to save time, enable better training, and identify improvement opportunities, among other benefits. However, the digital twin requires a physical equivalent with \hyperref[tab:acronyms]{IoT} technology for data transfer. Virtual commissioning requires simulation of all the signals with their timings and sensors and actuator responses.
 It can exist without a physical system. \cite{digitaltwinblog}
 
-Digital twin enables the creation of high-performance products and optimize production systems by allowing early estimations and later reconfigurations. The connectivity of Industry 4.0 technologies is highlighted as a key strategy for achieving the most efficient product specifications in technical and economic terms for the manufacturer. 
+Digital twin enables the creation of high-performance products and optimize production systems by allowing early estimations and later re-configurations. The connectivity of Industry 4.0 technologies is highlighted as a key strategy for achieving the most efficient product specifications in technical and economic terms for the manufacturer. 
 Simulations with a digital production twin open up new possibilities in production integration.
 \cite{WAGNER201988}
 
 
-In this thesis, virtual commissioning is first accomplished in order to speed up the development process. Next step is to get the data from the real robotic system and use it to test and verify the virtual model.
+In this thesis, virtual commissioning is first accomplished in order to speed up the development process. The next step is to get the data from the real robotic system and use it to test and verify the virtual model.
 This will be the digital twin model which will help in:
 \begin{enumerate}
     \item Identify collision points in the real world and use it to plan trajectory.
@@ -23,9 +21,9 @@ This will be the digital twin model which will help in:
     \item Offer testing opportunities for a new product model.
 \end{enumerate}
 
- Similarly, Md. Touhidul Islam et al. (2023) showcased a web-based Human-Machine Interface (HMI) for a ROS-based autonomous wheelchair, highlighting the potential of web interfaces in enhancing the usability of assistive robotics.
+A functional UI is required for monitoring and controlling robotic systems. When envisioning the design principles for UIs, the UI should be understandable, reliable and accessible. \cite{Wilkinson}
+The UI should be designed for an untrained user, offer feedback, have robust error handling in case of system failure, and usable for users with varying levels of experience. Web-based interfaces have gained popularity due to their accessibility and ease of deployment.
 Versatile and accessible UI could be created using web technologies and ROS for robot control.
-In this paper \cite{Xiao_2019}, a web-based interface that utilizes ROS alongside HTML5, Javascript and C++, allows for remote control, real-time monitoring, and 3D visualization of robots.
+In the paper by Zixuan Xiao \cite{Xiao_2019}, a web-based interface is created that utilizes ROS alongside HTML5, Javascript and C++, allows for remote control, real-time monitoring, and 3D visualization of robots.
+It uses Ros3Djs library to simulate the motion of the robot on web interface. ROS-based dashboard is also developed for an autonomous wheelchair using Rosbridge in \cite{10070046}, highlighting the potential of open source technologies to build a digital twin.
 
-
-In the realm of Human-Robot Interaction (HRI), Christos Papadopoulos et al. (2018) created a web interface that enables non-experts to teach robots new assembly tasks, emphasizing the significance of user-friendly design in collaborative robotics. W. A. M. Fernando et al. (2022) developed a web-based learning environment for ROS applications that integrates with the Gazebo simulator, offering a valuable tool for both education and practical development. These studies illustrate how web-based interfaces are transforming robotic systems by making them more intuitive, accessible, and applicable across various domains.
