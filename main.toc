@@ -41,8 +41,8 @@
 \contentsline {chapter}{\numberline {9}Conclusion and Future Works}{17}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Summary}{17}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Recommendations for Future Research}{17}{section.9.2}%
-\contentsline {chapter}{Bibliography}{18}{section.9.2}%
-\contentsline {chapter}{\numberline {A}Appendix}{ii}{appendix.A}%
-\contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{ii}{section.A.1}%
-\contentsline {section}{\numberline {A2}Reduction in Manual Labor}{iii}{section.A.2}%
-\contentsline {section}{\numberline {A3}Cost reduction}{iii}{section.A.3}%
+\contentsline {chapter}{Bibliography}{i}{section.9.2}%
+\contentsline {chapter}{\numberline {A}Appendix}{iv}{appendix.A}%
+\contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{iv}{section.A.1}%
+\contentsline {section}{\numberline {A2}Reduction in Manual Labor}{v}{section.A.2}%
+\contentsline {section}{\numberline {A3}Cost reduction}{v}{section.A.3}%
