@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {2.1}Robotic Automation in Manufacturing}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Automated Bending Processes}{4}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Robotic System}{4}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Computer Vision in Industrial Automation}{4}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Computer Vision in Industrial Automation}{5}{section.2.4}%
 \contentsline {section}{\numberline {2.5}User Interfaces for Industrial Systems}{5}{section.2.5}%
 \contentsline {chapter}{\numberline {3}System Design}{7}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{7}{section.3.1}%
