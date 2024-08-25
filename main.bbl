@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,8 +16,8 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global/global}
-  \entry{BAI2020107776}{article}{}{}
+\datalist[entry]{nty/global//global/global}
+  \entry{BAI2020107776}{article}{}
     \name{author}{4}{}{%
       {{hash=BC}{%
          family={Bai},
@@ -94,7 +94,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{BARNES2010339}{article}{}{}
+  \entry{BARNES2010339}{article}{}
     \name{author}{5}{}{%
       {{hash=BM}{%
          family={Barnes},
@@ -168,7 +168,7 @@
     \field{year}{2010}
   \endentry
 
-  \entry{BREZANI2022298}{article}{}{}
+  \entry{BREZANI2022298}{article}{}
     \name{author}{3}{}{%
       {{hash=BS}{%
          family={Brezani},
@@ -235,7 +235,7 @@
     \field{year}{2022}
   \endentry
 
-  \entry{BURGOSARTIZZU2010138}{article}{}{}
+  \entry{BURGOSARTIZZU2010138}{article}{}
     \name{author}{5}{}{%
       {{hash=BAXP}{%
          family={Burgos-Artizzu},
@@ -313,7 +313,7 @@
     \field{year}{2010}
   \endentry
 
-  \entry{CHEN2001199}{article}{}{}
+  \entry{CHEN2001199}{article}{}
     \name{author}{1}{}{%
       {{hash=CIM}{%
          family={Chen},
@@ -363,7 +363,7 @@
     \field{year}{2001}
   \endentry
 
-  \entry{COIFMAN1998271}{article}{}{}
+  \entry{COIFMAN1998271}{article}{}
     \name{author}{4}{}{%
       {{hash=CB}{%
          family={Coifman},
@@ -435,7 +435,7 @@
     \field{year}{1998}
   \endentry
 
-  \entry{digitaltwinblog}{online}{}{}
+  \entry{digitaltwinblog}{online}{}
     \name{author}{2}{}{%
       {{hash=I}{%
          family={Industry},
@@ -465,7 +465,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{10070046}{inproceedings}{}{}
+  \entry{10070046}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=IMT}{%
          family={Islam},
@@ -520,7 +520,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{7892717}{inproceedings}{}{}
+  \entry{7892717}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=K}{%
          family={Krishna},
@@ -571,7 +571,7 @@
     \field{year}{2016}
   \endentry
 
-  \entry{PANERU2021103940}{article}{}{}
+  \entry{PANERU2021103940}{article}{}
     \name{author}{2}{}{%
       {{hash=PS}{%
          family={Paneru},
@@ -626,7 +626,7 @@
     \field{year}{2021}
   \endentry
 
-  \entry{russmann2015industry}{article}{}{}
+  \entry{russmann2015industry}{article}{}
     \name{author}{7}{}{%
       {{hash=RM}{%
          family={R{\"u}{\ss}mann},
@@ -682,7 +682,7 @@
     \field{year}{2015}
   \endentry
 
-  \entry{SEMERARO2021103469}{article}{}{}
+  \entry{SEMERARO2021103469}{article}{}
     \name{author}{4}{}{%
       {{hash=SC}{%
          family={Semeraro},
@@ -751,7 +751,7 @@
     \field{year}{2021}
   \endentry
 
-  \entry{visor_user_manual}{manual}{}{}
+  \entry{visor_user_manual}{manual}{}
     \name{author}{1}{}{%
       {{hash=S}{%
          family={SENSOPART},
@@ -769,7 +769,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{kassowrobotsblog}{online}{}{}
+  \entry{kassowrobotsblog}{online}{}
     \name{author}{1}{}{%
       {{hash=SA}{%
          family={Steger},
@@ -797,7 +797,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{THROOP2005281}{article}{}{}
+  \entry{THROOP2005281}{article}{}
     \name{author}{4}{}{%
       {{hash=TJ}{%
          family={Throop},
@@ -864,7 +864,7 @@
     \field{year}{2005}
   \endentry
 
-  \entry{WAGNER201988}{article}{}{}
+  \entry{WAGNER201988}{article}{}
     \name{author}{6}{}{%
       {{hash=WR}{%
          family={Wagner},
@@ -951,7 +951,7 @@
     \field{year}{2019}
   \endentry
 
-  \entry{Wilkinson}{article}{}{}
+  \entry{Wilkinson}{article}{}
     \name{author}{11}{}{%
       {{hash=WA}{%
          family={Wilkinson},
@@ -1041,7 +1041,7 @@
     \field{year}{2021}
   \endentry
 
-  \entry{Xiao_2019}{article}{}{}
+  \entry{Xiao_2019}{article}{}
     \name{author}{2}{}{%
       {{hash=XZ}{%
          family={Xiao},
@@ -1097,7 +1097,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{8361333}{inproceedings}{}{}
+  \entry{8361333}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=YS}{%
          family={Yang},
@@ -1150,7 +1150,7 @@
     \field{year}{2018}
   \endentry
 
-  \entry{9761203}{article}{}{}
+  \entry{9761203}{article}{}
     \name{author}{3}{}{%
       {{hash=ZL}{%
          family={Zhou},
