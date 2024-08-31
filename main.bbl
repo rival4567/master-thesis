@@ -520,6 +520,28 @@
     \field{year}{2023}
   \endentry
 
+  \entry{jordan2016robots}{book}{}
+    \name{author}{1}{}{%
+      {{hash=JJM}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={John\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Mit Press}%
+    }
+    \strng{namehash}{JJM1}
+    \strng{fullhash}{JJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Robots}
+    \field{year}{2016}
+  \endentry
+
   \entry{7892717}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=K}{%

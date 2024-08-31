@@ -13,35 +13,42 @@
 \contentsline {chapter}{\numberline {3}System Design}{7}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{7}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Hardware Selection}{7}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}VISOR\textsuperscript {\textregistered } Vision Sensor}{7}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Software Architecture}{8}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Hardware Integration}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Installation and Configuration}{9}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Communication Protocols}{9}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Safety Considerations}{9}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Software Development}{10}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Control Software}{10}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{10}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{10}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Web Interface Design}{10}{section.5.4}%
-\contentsline {chapter}{\numberline {6}System Integration and Testing}{11}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Integration Tests}{11}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Calibration}{11}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{11}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{12}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{13}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{13}{subsection.6.2.4}%
-\contentsline {section}{\numberline {6.3}Performance Evaluation}{14}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{14}{subsection.6.3.1}%
-\contentsline {chapter}{\numberline {7}Experimental Results}{15}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Setup and Methodology}{15}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Data Collection}{15}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Results and Analysis}{15}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Discussion}{16}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{17}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Summary}{17}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{17}{section.9.2}%
-\contentsline {chapter}{Bibliography}{i}{section.9.2}%
+\contentsline {subsection}{\numberline {3.2.1}Kassow Robot KR1410}{7}{subsection.3.2.1}%
+\contentsline {subsubsection}{Increased Safety}{7}{subsection.3.2.1}%
+\contentsline {subsubsection}{More Flexibility}{8}{subsection.3.2.1}%
+\contentsline {subsubsection}{Cost-effective}{8}{subsection.3.2.1}%
+\contentsline {subsubsection}{Great Scalability}{8}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}VISOR\textsuperscript {\textregistered } Vision Sensor}{8}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Software Architecture}{9}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Hardware Integration}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Installation and Configuration}{10}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Robot Unit}{10}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Communication Protocols}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Safety Considerations}{11}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Software Development}{12}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Control Software}{12}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{12}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{12}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Web Interface Design}{12}{section.5.4}%
+\contentsline {chapter}{\numberline {6}System Integration and Testing}{13}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Integration Tests}{13}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Calibration}{13}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{13}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{14}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{15}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{15}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Performance Evaluation}{16}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{16}{subsection.6.3.1}%
+\contentsline {chapter}{\numberline {7}Experimental Results}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Setup and Methodology}{17}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Data Collection}{17}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Results and Analysis}{17}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Discussion}{18}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{19}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Summary}{19}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{19}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Control Software Update}{19}{subsection.9.2.1}%
+\contentsline {chapter}{Bibliography}{i}{subsection.9.2.1}%
 \contentsline {chapter}{\numberline {A}Appendix}{iv}{appendix.A}%
 \contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{iv}{section.A.1}%
 \contentsline {section}{\numberline {A2}Reduction in Manual Labor}{v}{section.A.2}%
