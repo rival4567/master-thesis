@@ -27,27 +27,27 @@
 \contentsline {section}{\numberline {4.3}Safety Considerations}{11}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Software Development}{12}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Control Software}{12}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{12}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{12}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Web Interface Design}{12}{section.5.4}%
-\contentsline {chapter}{\numberline {6}System Integration and Testing}{13}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Integration Tests}{13}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Calibration}{13}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{13}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{14}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{15}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{15}{subsection.6.2.4}%
-\contentsline {section}{\numberline {6.3}Performance Evaluation}{16}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{16}{subsection.6.3.1}%
-\contentsline {chapter}{\numberline {7}Experimental Results}{17}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Setup and Methodology}{17}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Data Collection}{17}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Results and Analysis}{17}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Discussion}{18}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{19}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Summary}{19}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{19}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Control Software Update}{19}{subsection.9.2.1}%
+\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{14}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{14}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Web Interface Design}{14}{section.5.4}%
+\contentsline {chapter}{\numberline {6}System Integration and Testing}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Integration Tests}{15}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Calibration}{15}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{15}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{16}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{17}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{17}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Performance Evaluation}{18}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{18}{subsection.6.3.1}%
+\contentsline {chapter}{\numberline {7}Experimental Results}{19}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Setup and Methodology}{19}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Data Collection}{19}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Results and Analysis}{19}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Discussion}{20}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{21}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Summary}{21}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{21}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Control Software Update}{21}{subsection.9.2.1}%
 \contentsline {chapter}{Bibliography}{i}{subsection.9.2.1}%
 \contentsline {chapter}{\numberline {A}Appendix}{iv}{appendix.A}%
 \contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{iv}{section.A.1}%

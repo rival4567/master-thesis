@@ -46,12 +46,10 @@
     }
     \keyw{Industry 4.0, Technology, Sustainability, Hesitant fuzzy set,
   Cumulative prospect theory, VIKOR}
-    \strng{namehash}{BC+1}
+    \strng{namehash}{BCDPOGSJ1}
     \strng{fullhash}{BCDPOGSJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
     \field{abstract}{%
     The fourth industrial revolution, also labelled Industry 4.0, was beget
   with emergent and disruptive intelligence and information technologies. These
@@ -92,560 +90,6 @@
     \field{volume}{229}
     \field{journaltitle}{International Journal of Production Economics}
     \field{year}{2020}
-  \endentry
-
-  \entry{BARNES2010339}{article}{}
-    \name{author}{5}{}{%
-      {{hash=BM}{%
-         family={Barnes},
-         familyi={B\bibinitperiod},
-         given={Michael},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=DT}{%
-         family={Duckett},
-         familyi={D\bibinitperiod},
-         given={Tom},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=CG}{%
-         family={Cielniak},
-         familyi={C\bibinitperiod},
-         given={Grzegorz},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=SG}{%
-         family={Stroud},
-         familyi={S\bibinitperiod},
-         given={Graeme},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=HG}{%
-         family={Harper},
-         familyi={H\bibinitperiod},
-         given={Glyn},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \keyw{AdaBoost, Machine learning, Potatoes, Visual inspection of produce,
-  Blemish detection}
-    \strng{namehash}{BM+1}
-    \strng{fullhash}{BMDTCGSGHG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{abstract}{%
-    This paper introduces novel methods for detecting blemishes in potatoes
-  using machine vision. After segmentation of the potato from the background, a
-  pixel-wise classifier is trained to detect blemishes using features extracted
-  from the image. A very large set of candidate features, based on statistical
-  information relating to the colour and texture of the region surrounding a
-  given pixel, is first extracted. Then an adaptive boosting algorithm
-  (AdaBoost) is used to automatically select the best features for
-  discriminating between blemishes and non-blemishes. With this approach,
-  different features can be selected for different potato varieties, while also
-  handling the natural variation in fresh produce due to different seasons,
-  lighting conditions, etc. The results show that the method is able to build
-  “minimalist” classifiers that optimise detection performance at low
-  computational cost. In experiments, blemish detectors were trained for both
-  white and red potato varieties, achieving 89.6% and 89.5% accuracy,
-  respectively.%
-    }
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.jfoodeng.2010.01.010
-    \endverb
-    \field{issn}{0260-8774}
-    \field{number}{3}
-    \field{pages}{339\bibrangedash 346}
-    \field{title}{Visual detection of blemishes in potatoes using minimalist
-  boosted classifiers}
-    \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0260877410000142
-    \endverb
-    \field{volume}{98}
-    \field{journaltitle}{Journal of Food Engineering}
-    \field{year}{2010}
-  \endentry
-
-  \entry{BREZANI2022298}{article}{}
-    \name{author}{3}{}{%
-      {{hash=BS}{%
-         family={Brezani},
-         familyi={B\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=HR}{%
-         family={Hrasko},
-         familyi={H\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=VP}{%
-         family={Vojtas},
-         familyi={V\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \keyw{Unsupervised learning, performance improvement of industrial
-  processes, object recognition, pseudo-ground truth, AI, machine learning in
-  Industry}
-    \strng{namehash}{BSHRVP1}
-    \strng{fullhash}{BSHRVP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{abstract}{%
-    Data mining from unstructured data can be skillfully employed to improve
-  the performance of manufacturing or industrial processes. The main goal of
-  this paper is to create a fast emergency aid system for object detection in
-  SME industrial premises. The basic assumption is that SMEs do not have any
-  IT-trained personnel, and the solution has to be unsupervised edge computing.
-  We use several off-the-shelf models of deep neural networks pre-trained for
-  smart city applications, ready for online object recognition and edge
-  computing. Our system works without any retraining, additional annotation, or
-  human intervention. Specifically, we present heuristics for the automated
-  creation of PGT (Pseudo-Ground Truth). Based on PGT, we can automatically
-  decide which model is the best in the specific environment. We present an
-  application of fully automated enhancing image capture camera outputs to
-  smarter ones. We evaluate our system in a controlled experiment.
-  Low-resolution cameras and large areas cause problems for our method. We
-  present a proof-of-concept for improving our system even in these challenging
-  situations. The benefit is a knowledge extraction in a simple and inexpensive
-  way to expand the organizations’ databases with information from
-  unstructured data from CCTV/IP cameras.%
-    }
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.procs.2022.01.228
-    \endverb
-    \field{issn}{1877-0509}
-    \field{note}{3rd International Conference on Industry 4.0 and Smart
-  Manufacturing}
-    \field{pages}{298\bibrangedash 307}
-    \field{title}{Smart extensions to regular cameras in the industrial
-  environment}
-    \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S187705092200237X
-    \endverb
-    \field{volume}{200}
-    \field{journaltitle}{Procedia Computer Science}
-    \field{year}{2022}
-  \endentry
-
-  \entry{BURGOSARTIZZU2010138}{article}{}
-    \name{author}{5}{}{%
-      {{hash=BAXP}{%
-         family={Burgos-Artizzu},
-         familyi={B\bibinithyphendelim A\bibinitperiod},
-         given={Xavier\bibnamedelima P.},
-         giveni={X\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=RA}{%
-         family={Ribeiro},
-         familyi={R\bibinitperiod},
-         given={Angela},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=TA}{%
-         family={Tellaeche},
-         familyi={T\bibinitperiod},
-         given={Alberto},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=PG}{%
-         family={Pajares},
-         familyi={P\bibinitperiod},
-         given={Gonzalo},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=FQC}{%
-         family={Fernández-Quintanilla},
-         familyi={F\bibinithyphendelim Q\bibinitperiod},
-         given={Cesar},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \keyw{Computer vision, Precision agriculture, Weed detection, Parameter
-  setting, Genetic algorithms}
-    \strng{namehash}{BAXP+1}
-    \strng{fullhash}{BAXPRATAPGFQC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{abstract}{%
-    This work presents several developed computer-vision-based methods for the
-  estimation of percentages of weed, crop and soil present in an image showing
-  a region of interest of the crop field. The visual detection of weed, crop
-  and soil is an arduous task due to physical similarities between weeds and
-  crop and to the natural and therefore complex environments (with
-  non-controlled illumination) encountered. The image processing was divided in
-  three different stages at which each different agricultural element is
-  extracted: (1) segmentation of vegetation against non-vegetation (soil), (2)
-  crop row elimination (crop) and (3) weed extraction (weed). For each stage,
-  different and interchangeable methods are proposed, each one using a series
-  of input parameters which value can be changed for further refining the
-  processing. A genetic algorithm was then used to find the best value of
-  parameters and method combination for different sets of images. The whole
-  system was tested on several images from different years and fields,
-  resulting in an average correlation coefficient with real data (bio-mass) of
-  84%, with up to 96% correlation using the best methods on winter cereal
-  images and of up to 84% on maize images. Moreover, the method’s low
-  computational complexity leads to the possibility, as future work, of
-  adapting them to real-time processing.%
-    }
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.imavis.2009.05.009
-    \endverb
-    \field{issn}{0262-8856}
-    \field{number}{1}
-    \field{pages}{138\bibrangedash 149}
-    \field{title}{Analysis of natural images processing for the extraction of
-  agricultural elements}
-    \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0262885609001140
-    \endverb
-    \field{volume}{28}
-    \field{journaltitle}{Image and Vision Computing}
-    \field{year}{2010}
-  \endentry
-
-  \entry{CHEN2001199}{article}{}
-    \name{author}{1}{}{%
-      {{hash=CIM}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={I-Ming},
-         giveni={I\bibinithyphendelim M\bibinitperiod},
-      }}%
-    }
-    \keyw{Modular robot, Component technology, Agile manufacturing,
-  Reconfigurable automation}
-    \strng{namehash}{CIM1}
-    \strng{fullhash}{CIM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{abstract}{%
-    This article describes the development of a component-based technology
-  robot workcell that can be rapidly configured to perform a specific
-  manufacturing task. The workcell is conceived with standard and
-  inter-operable components including actuator modules, rigid link connectors
-  and tools that can be assembled into robots with arbitrary geometry and
-  degrees of freedom. The reconfigurable “plug-and-play” robot kinematic
-  and dynamic modeling algorithms are developed. These algorithms are the basis
-  for the control and simulation of reconfigurable robots. The concept of robot
-  configuration optimization is introduced for the effective use of the rapidly
-  reconfigurable robots. Control and communications of the workcell components
-  are facilitated by a workcell-wide TCP/IP network and device-level CAN-bus
-  networks. An object-oriented simulation and visualization software for the
-  reconfigurable robot is developed based on Windows NT. Prototypes of the
-  robot workcells configured to perform the light-machining task and the
-  positioning task are constructed and demonstrated.%
-    }
-    \verb{doi}
-    \verb https://doi.org/10.1016/S0736-5845(00)00028-4
-    \endverb
-    \field{issn}{0736-5845}
-    \field{number}{3}
-    \field{pages}{199\bibrangedash 213}
-    \field{title}{Rapid response manufacturing through a rapidly reconfigurable
-  robotic workcell}
-    \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0736584500000284
-    \endverb
-    \field{volume}{17}
-    \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
-    \field{year}{2001}
-  \endentry
-
-  \entry{COIFMAN1998271}{article}{}
-    \name{author}{4}{}{%
-      {{hash=CB}{%
-         family={Coifman},
-         familyi={C\bibinitperiod},
-         given={Benjamin},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Beymer},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=MP}{%
-         family={McLauchlan},
-         familyi={M\bibinitperiod},
-         given={Philip},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=MJ}{%
-         family={Malik},
-         familyi={M\bibinitperiod},
-         given={Jitendra},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \keyw{Traffic surveillance, Wide-area detection, Vehicle tracking, Video
-  image processing, Machine vision}
-    \strng{namehash}{CB+1}
-    \strng{fullhash}{CBBDMPMJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{abstract}{%
-    Increasing congestion on freeways and problems associated with existing
-  detectors have spawned an interest in new vehicle detection technologies such
-  as video image processing. Existing commercial image processing systems work
-  well in free-flowing traffic, but the systems have difficulties with
-  congestion, shadows and lighting transitions. These problems stem from
-  vehicles partially occluding one another and the fact that vehicles appear
-  differently under various lighting conditions. We are developing a
-  feature-based tracking system for detecting vehicles under these challenging
-  conditions. Instead of tracking entire vehicles, vehicle features are tracked
-  to make the system robust to partial occlusion. The system is fully
-  functional under changing lighting conditions because the most salient
-  features at the given moment are tracked. After the features exit the
-  tracking region, they are grouped into discrete vehicles using a common
-  motion constraint. The groups represent individual vehicle trajectories which
-  can be used to measure traditional traffic parameters as well as new metrics
-  suitable for improved automated surveillance. This paper describes the issues
-  associated with feature based tracking, presents the real-time implementation
-  of a prototype system, and the performance of the system on a large data set.
-  ©%
-    }
-    \verb{doi}
-    \verb https://doi.org/10.1016/S0968-090X(98)00019-9
-    \endverb
-    \field{issn}{0968-090X}
-    \field{number}{4}
-    \field{pages}{271\bibrangedash 288}
-    \field{title}{A real-time computer vision system for vehicle tracking and
-  traffic surveillance}
-    \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0968090X98000199
-    \endverb
-    \field{volume}{6}
-    \field{journaltitle}{Transportation Research Part C: Emerging Technologies}
-    \field{year}{1998}
-  \endentry
-
-  \entry{digitaltwinblog}{online}{}
-    \name{author}{2}{}{%
-      {{hash=I}{%
-         family={Industry},
-         familyi={I\bibinitperiod},
-      }}%
-      {{hash=T}{%
-         family={Trends},
-         familyi={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{IT1}
-    \strng{fullhash}{IT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{I}
-    \field{sortinithash}{I}
-    \field{note}{Accessed: 2024-07-12}
-    \field{title}{Digital Twins and Virtual Commissioning in the Manufacturing
-  Industry (Updated for 2023)}
-    \verb{url}
-    \verb https://www.visualcomponents.com/blog/digital-twins-and-virtual-commi
-    \verb ssioning-in-industry-4-0/
-    \endverb
-    \field{year}{2022}
-    \field{urlday}{12}
-    \field{urlmonth}{07}
-    \field{urlyear}{2024}
-  \endentry
-
-  \entry{10070046}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=IMT}{%
-         family={Islam},
-         familyi={I\bibinitperiod},
-         given={Md.\bibnamedelima Touhidul},
-         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-      {{hash=HIR}{%
-         family={Hameem},
-         familyi={H\bibinitperiod},
-         given={Imtiaz\bibnamedelima Reza},
-         giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=SS}{%
-         family={Saha},
-         familyi={S\bibinitperiod},
-         given={Shuvra},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=CMJR}{%
-         family={Chowdhury},
-         familyi={C\bibinitperiod},
-         given={Mohammad Jamilur\bibnamedelima Reza},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  R\bibinitperiod},
-      }}%
-      {{hash=DME}{%
-         family={Deowan},
-         familyi={D\bibinitperiod},
-         given={Md.\bibnamedelima Ether},
-         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \keyw{Performance
-  evaluation;Costs;Navigation;Wheelchairs;Simulation;Operating systems;Signal
-  processing;Robot Operating System;Gazebo;Autonomous Navigation;Cloud
-  Control;rosbridge}
-    \strng{namehash}{IMT+1}
-    \strng{fullhash}{IMTHIRSSCMJRDME1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{I}
-    \field{sortinithash}{I}
-    \field{booktitle}{2023 3rd International Conference on Robotics, Electrical
-  and Signal Processing Techniques (ICREST)}
-    \verb{doi}
-    \verb 10.1109/ICREST57604.2023.10070046
-    \endverb
-    \field{pages}{175\bibrangedash 180}
-    \field{title}{A Simulation of a Robot Operating System Based Autonomous
-  Wheelchair with Web Based HMI Using Rosbridge}
-    \field{year}{2023}
-  \endentry
-
-  \entry{jordan2016robots}{book}{}
-    \name{author}{1}{}{%
-      {{hash=JJM}{%
-         family={Jordan},
-         familyi={J\bibinitperiod},
-         given={John\bibnamedelima M},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Mit Press}%
-    }
-    \strng{namehash}{JJM1}
-    \strng{fullhash}{JJM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{J}
-    \field{sortinithash}{J}
-    \field{title}{Robots}
-    \field{year}{2016}
-  \endentry
-
-  \entry{7892717}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=K}{%
-         family={Krishna},
-         familyi={K\bibinitperiod},
-      }}%
-      {{hash=PM}{%
-         family={Poddar},
-         familyi={P\bibinitperiod},
-         given={Madhav},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=KGM}{%
-         family={K},
-         familyi={K},
-         given={Giridhar\bibnamedelima M},
-         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=PAS}{%
-         family={Prabhu},
-         familyi={P\bibinitperiod},
-         given={Amit\bibnamedelima Suresh},
-         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=VU}{%
-         family={V},
-         familyi={V},
-         given={Umadevi},
-         giveni={U\bibinitperiod},
-      }}%
-    }
-    \keyw{Surveillance;Cameras;Traffic control;Computer
-  vision;Lighting;Estimation;multiple reference lines;vehicle count;pixel
-  values variation;traffic analysis;speed estimation;speed violation
-  identification}
-    \strng{namehash}{K+1}
-    \strng{fullhash}{KPMKGMPASVU1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{booktitle}{2016 International Conference on ICT in Business Industry
-  and Government (ICTBIG)}
-    \verb{doi}
-    \verb 10.1109/ICTBIG.2016.7892717
-    \endverb
-    \field{pages}{1\bibrangedash 5}
-    \field{title}{Automated traffic monitoring system using computer vision}
-    \field{year}{2016}
-  \endentry
-
-  \entry{PANERU2021103940}{article}{}
-    \name{author}{2}{}{%
-      {{hash=PS}{%
-         family={Paneru},
-         familyi={P\bibinitperiod},
-         given={Suman},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=JI}{%
-         family={Jeelani},
-         familyi={J\bibinitperiod},
-         given={Idris},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \keyw{Computer vision, Technology in construction, Visual data analytics,
-  Monitoring}
-    \strng{namehash}{PSJI1}
-    \strng{fullhash}{PSJI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{abstract}{%
-    Thousands of images and videos are collected from construction projects
-  during construction. These contain valuable data that, if harnessed
-  efficiently, can help automate or at least reduce human effort in diverse
-  construction management activities such as progress monitoring, safety
-  management, quality control and productivity tracking. Extracting meaningful
-  information from images requires the development of technology and algorithms
-  that enable computers to understand digital images or videos, replicating the
-  functionality of human visual systems. This is the goal of computer vision.
-  This review aims at providing an updated and categorized overview of computer
-  vision applications in construction by examining the recent developments in
-  the field and identifying the opportunities and challenges that future
-  research needs to address to fully leverage the potential benefits of
-  Computer Vision. We restrict the focus to four areas that can benefit the
-  most from computer vision - Safety Management, Progress Monitoring,
-  Productivity Tracking and Quality Control.%
-    }
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.autcon.2021.103940
-    \endverb
-    \field{issn}{0926-5805}
-    \field{pages}{103940}
-    \field{title}{Computer vision applications in construction: Current state,
-  opportunities and challenges}
-    \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0926580521003915
-    \endverb
-    \field{volume}{132}
-    \field{journaltitle}{Automation in Construction}
-    \field{year}{2021}
   \endentry
 
   \entry{russmann2015industry}{article}{}
@@ -693,15 +137,665 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RM+1}
+    \strng{namehash}{RMLMGPWMJJEPHM1}
     \strng{fullhash}{RMLMGPWMJJEPHM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
     \field{title}{Industry 4.0: The future of productivity and growth in
   manufacturing industries}
     \field{year}{2015}
+  \endentry
+
+  \entry{8361333}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=YS}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Sida},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=XW}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Wenjun},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zhihao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Zude},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=PDT}{%
+         family={Pham},
+         familyi={P\bibinitperiod},
+         given={Duc\bibnamedelima Truong},
+         giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \keyw{Collaboration;Three-dimensional displays;Robot sensing
+  systems;Cameras;Service robots;Manufacturing;human-robot
+  collaboration;manufacturing;multi-source vision perception;data fusion}
+    \strng{namehash}{YSXWLZZZPDT1}
+    \strng{fullhash}{YSXWLZZZPDT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2018 IEEE 15th International Conference on Networking,
+  Sensing and Control (ICNSC)}
+    \verb{doi}
+    \verb 10.1109/ICNSC.2018.8361333
+    \endverb
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Multi-source vision perception for human-robot collaboration
+  in manufacturing}
+    \field{year}{2018}
+  \endentry
+
+  \entry{kassowrobotsblog}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SA}{%
+         family={Steger},
+         familyi={S\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SA1}
+    \strng{fullhash}{SA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2024-08-07}
+    \field{title}{What is Robotic Process Automation(RPA)? The Complete 2024
+  Guide}
+    \verb{url}
+    \verb https://www.kassowrobots.com/blog/what-is-robotic-process-automation-
+    \verb rpa
+    \endverb
+    \field{year}{2024}
+    \field{urlday}{07}
+    \field{urlmonth}{08}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{CHEN2001199}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CIM}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={I-Ming},
+         giveni={I\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{Modular robot, Component technology, Agile manufacturing,
+  Reconfigurable automation}
+    \strng{namehash}{CIM1}
+    \strng{fullhash}{CIM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This article describes the development of a component-based technology
+  robot workcell that can be rapidly configured to perform a specific
+  manufacturing task. The workcell is conceived with standard and
+  inter-operable components including actuator modules, rigid link connectors
+  and tools that can be assembled into robots with arbitrary geometry and
+  degrees of freedom. The reconfigurable “plug-and-play” robot kinematic
+  and dynamic modeling algorithms are developed. These algorithms are the basis
+  for the control and simulation of reconfigurable robots. The concept of robot
+  configuration optimization is introduced for the effective use of the rapidly
+  reconfigurable robots. Control and communications of the workcell components
+  are facilitated by a workcell-wide TCP/IP network and device-level CAN-bus
+  networks. An object-oriented simulation and visualization software for the
+  reconfigurable robot is developed based on Windows NT. Prototypes of the
+  robot workcells configured to perform the light-machining task and the
+  positioning task are constructed and demonstrated.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0736-5845(00)00028-4
+    \endverb
+    \field{issn}{0736-5845}
+    \field{number}{3}
+    \field{pages}{199\bibrangedash 213}
+    \field{title}{Rapid response manufacturing through a rapidly reconfigurable
+  robotic workcell}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0736584500000284
+    \endverb
+    \field{volume}{17}
+    \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+    \field{year}{2001}
+  \endentry
+
+  \entry{jordan2016robots}{book}{}
+    \name{author}{1}{}{%
+      {{hash=JJM}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={John\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Mit Press}%
+    }
+    \strng{namehash}{JJM1}
+    \strng{fullhash}{JJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Robots}
+    \field{year}{2016}
+  \endentry
+
+  \entry{9761203}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZL}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Longfei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Konz},
+         familyi={K\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{Image edge detection;Image segmentation;Task analysis;Robot sensing
+  systems;Sensors;Feature detection;Three-dimensional
+  displays;Assembly;computer vision (CV);deep learning;inspection;machine
+  intelligence;machine learning;manufacturing;production;robotics;survey}
+    \strng{namehash}{ZLZLKN1}
+    \strng{fullhash}{ZLZLKN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TSMC.2022.3166397
+    \endverb
+    \field{number}{1}
+    \field{pages}{105\bibrangedash 117}
+    \field{title}{Computer Vision Techniques in Manufacturing}
+    \field{volume}{53}
+    \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics:
+  Systems}
+    \field{year}{2023}
+  \endentry
+
+  \entry{BARNES2010339}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BM}{%
+         family={Barnes},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Duckett},
+         familyi={D\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Cielniak},
+         familyi={C\bibinitperiod},
+         given={Grzegorz},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Stroud},
+         familyi={S\bibinitperiod},
+         given={Graeme},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Harper},
+         familyi={H\bibinitperiod},
+         given={Glyn},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{AdaBoost, Machine learning, Potatoes, Visual inspection of produce,
+  Blemish detection}
+    \strng{namehash}{BMDTCGSGHG1}
+    \strng{fullhash}{BMDTCGSGHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper introduces novel methods for detecting blemishes in potatoes
+  using machine vision. After segmentation of the potato from the background, a
+  pixel-wise classifier is trained to detect blemishes using features extracted
+  from the image. A very large set of candidate features, based on statistical
+  information relating to the colour and texture of the region surrounding a
+  given pixel, is first extracted. Then an adaptive boosting algorithm
+  (AdaBoost) is used to automatically select the best features for
+  discriminating between blemishes and non-blemishes. With this approach,
+  different features can be selected for different potato varieties, while also
+  handling the natural variation in fresh produce due to different seasons,
+  lighting conditions, etc. The results show that the method is able to build
+  “minimalist” classifiers that optimise detection performance at low
+  computational cost. In experiments, blemish detectors were trained for both
+  white and red potato varieties, achieving 89.6% and 89.5% accuracy,
+  respectively.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.jfoodeng.2010.01.010
+    \endverb
+    \field{issn}{0260-8774}
+    \field{number}{3}
+    \field{pages}{339\bibrangedash 346}
+    \field{title}{Visual detection of blemishes in potatoes using minimalist
+  boosted classifiers}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0260877410000142
+    \endverb
+    \field{volume}{98}
+    \field{journaltitle}{Journal of Food Engineering}
+    \field{year}{2010}
+  \endentry
+
+  \entry{THROOP2005281}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TJ}{%
+         family={Throop},
+         familyi={T\bibinitperiod},
+         given={J.A.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Aneshansley},
+         familyi={A\bibinitperiod},
+         given={D.J.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AW}{%
+         family={Anger},
+         familyi={A\bibinitperiod},
+         given={W.C.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Peterson},
+         familyi={P\bibinitperiod},
+         given={D.L.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{Apples, Apple grading, Automated inspection, Apple sorting, Defects,
+  Defect detection}
+    \strng{namehash}{TJADAWPD1}
+    \strng{fullhash}{TJADAWPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The development of an automated inspection station to grade processing
+  apples includes a conveyor for apple orientation, optics and camera to
+  capture identical images at three predetermined wavebands, a lighting system
+  that illuminates the apple's surface diffusely and image processing
+  algorithms to segment surface defects on apples in real time. The conveyor
+  oriented apples so that the stem/calyx ends were not visible during image
+  capture. Multi-spectral optics fabricated using a multi-vision linear filter
+  mounted in front of the camera lens provided three different waveband (740,
+  950nm and visible) images of apples on a single camera array. Interference
+  filters placed in the optical path provided the different wavebands. The
+  diameter and height of each apple was measured to estimate the apple's
+  volume. These dimensions and the position of the apple in the image allowed a
+  portion of each image to be defined, the so-called region of interest (ROI).
+  These sub-images made a composite image of the apple's surface.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.postharvbio.2005.01.004
+    \endverb
+    \field{issn}{0925-5214}
+    \field{number}{3}
+    \field{pages}{281\bibrangedash 290}
+    \field{title}{Quality evaluation of apples based on surface defects:
+  development of an automated inspection system}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0925521405000177
+    \endverb
+    \field{volume}{36}
+    \field{journaltitle}{Postharvest Biology and Technology}
+    \field{year}{2005}
+  \endentry
+
+  \entry{BURGOSARTIZZU2010138}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BAXP}{%
+         family={Burgos-Artizzu},
+         familyi={B\bibinithyphendelim A\bibinitperiod},
+         given={Xavier\bibnamedelima P.},
+         giveni={X\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Ribeiro},
+         familyi={R\bibinitperiod},
+         given={Angela},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tellaeche},
+         familyi={T\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Pajares},
+         familyi={P\bibinitperiod},
+         given={Gonzalo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=FQC}{%
+         family={Fernández-Quintanilla},
+         familyi={F\bibinithyphendelim Q\bibinitperiod},
+         given={Cesar},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer vision, Precision agriculture, Weed detection, Parameter
+  setting, Genetic algorithms}
+    \strng{namehash}{BAXPRATAPGFQC1}
+    \strng{fullhash}{BAXPRATAPGFQC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This work presents several developed computer-vision-based methods for the
+  estimation of percentages of weed, crop and soil present in an image showing
+  a region of interest of the crop field. The visual detection of weed, crop
+  and soil is an arduous task due to physical similarities between weeds and
+  crop and to the natural and therefore complex environments (with
+  non-controlled illumination) encountered. The image processing was divided in
+  three different stages at which each different agricultural element is
+  extracted: (1) segmentation of vegetation against non-vegetation (soil), (2)
+  crop row elimination (crop) and (3) weed extraction (weed). For each stage,
+  different and interchangeable methods are proposed, each one using a series
+  of input parameters which value can be changed for further refining the
+  processing. A genetic algorithm was then used to find the best value of
+  parameters and method combination for different sets of images. The whole
+  system was tested on several images from different years and fields,
+  resulting in an average correlation coefficient with real data (bio-mass) of
+  84%, with up to 96% correlation using the best methods on winter cereal
+  images and of up to 84% on maize images. Moreover, the method’s low
+  computational complexity leads to the possibility, as future work, of
+  adapting them to real-time processing.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.imavis.2009.05.009
+    \endverb
+    \field{issn}{0262-8856}
+    \field{number}{1}
+    \field{pages}{138\bibrangedash 149}
+    \field{title}{Analysis of natural images processing for the extraction of
+  agricultural elements}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0262885609001140
+    \endverb
+    \field{volume}{28}
+    \field{journaltitle}{Image and Vision Computing}
+    \field{year}{2010}
+  \endentry
+
+  \entry{PANERU2021103940}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PS}{%
+         family={Paneru},
+         familyi={P\bibinitperiod},
+         given={Suman},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JI}{%
+         family={Jeelani},
+         familyi={J\bibinitperiod},
+         given={Idris},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer vision, Technology in construction, Visual data analytics,
+  Monitoring}
+    \strng{namehash}{PSJI1}
+    \strng{fullhash}{PSJI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Thousands of images and videos are collected from construction projects
+  during construction. These contain valuable data that, if harnessed
+  efficiently, can help automate or at least reduce human effort in diverse
+  construction management activities such as progress monitoring, safety
+  management, quality control and productivity tracking. Extracting meaningful
+  information from images requires the development of technology and algorithms
+  that enable computers to understand digital images or videos, replicating the
+  functionality of human visual systems. This is the goal of computer vision.
+  This review aims at providing an updated and categorized overview of computer
+  vision applications in construction by examining the recent developments in
+  the field and identifying the opportunities and challenges that future
+  research needs to address to fully leverage the potential benefits of
+  Computer Vision. We restrict the focus to four areas that can benefit the
+  most from computer vision - Safety Management, Progress Monitoring,
+  Productivity Tracking and Quality Control.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.autcon.2021.103940
+    \endverb
+    \field{issn}{0926-5805}
+    \field{pages}{103940}
+    \field{title}{Computer vision applications in construction: Current state,
+  opportunities and challenges}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0926580521003915
+    \endverb
+    \field{volume}{132}
+    \field{journaltitle}{Automation in Construction}
+    \field{year}{2021}
+  \endentry
+
+  \entry{7892717}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=K}{%
+         family={Krishna},
+         familyi={K\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Poddar},
+         familyi={P\bibinitperiod},
+         given={Madhav},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KGM}{%
+         family={K},
+         familyi={K},
+         given={Giridhar\bibnamedelima M},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PAS}{%
+         family={Prabhu},
+         familyi={P\bibinitperiod},
+         given={Amit\bibnamedelima Suresh},
+         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=VU}{%
+         family={V},
+         familyi={V},
+         given={Umadevi},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \keyw{Surveillance;Cameras;Traffic control;Computer
+  vision;Lighting;Estimation;multiple reference lines;vehicle count;pixel
+  values variation;traffic analysis;speed estimation;speed violation
+  identification}
+    \strng{namehash}{KPMKGMPASVU1}
+    \strng{fullhash}{KPMKGMPASVU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2016 International Conference on ICT in Business Industry
+  and Government (ICTBIG)}
+    \verb{doi}
+    \verb 10.1109/ICTBIG.2016.7892717
+    \endverb
+    \field{pages}{1\bibrangedash 5}
+    \field{title}{Automated traffic monitoring system using computer vision}
+    \field{year}{2016}
+  \endentry
+
+  \entry{COIFMAN1998271}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CB}{%
+         family={Coifman},
+         familyi={C\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Beymer},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={McLauchlan},
+         familyi={M\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Malik},
+         familyi={M\bibinitperiod},
+         given={Jitendra},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Traffic surveillance, Wide-area detection, Vehicle tracking, Video
+  image processing, Machine vision}
+    \strng{namehash}{CBBDMPMJ1}
+    \strng{fullhash}{CBBDMPMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Increasing congestion on freeways and problems associated with existing
+  detectors have spawned an interest in new vehicle detection technologies such
+  as video image processing. Existing commercial image processing systems work
+  well in free-flowing traffic, but the systems have difficulties with
+  congestion, shadows and lighting transitions. These problems stem from
+  vehicles partially occluding one another and the fact that vehicles appear
+  differently under various lighting conditions. We are developing a
+  feature-based tracking system for detecting vehicles under these challenging
+  conditions. Instead of tracking entire vehicles, vehicle features are tracked
+  to make the system robust to partial occlusion. The system is fully
+  functional under changing lighting conditions because the most salient
+  features at the given moment are tracked. After the features exit the
+  tracking region, they are grouped into discrete vehicles using a common
+  motion constraint. The groups represent individual vehicle trajectories which
+  can be used to measure traditional traffic parameters as well as new metrics
+  suitable for improved automated surveillance. This paper describes the issues
+  associated with feature based tracking, presents the real-time implementation
+  of a prototype system, and the performance of the system on a large data set.
+  ©%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0968-090X(98)00019-9
+    \endverb
+    \field{issn}{0968-090X}
+    \field{number}{4}
+    \field{pages}{271\bibrangedash 288}
+    \field{title}{A real-time computer vision system for vehicle tracking and
+  traffic surveillance}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0968090X98000199
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Transportation Research Part C: Emerging Technologies}
+    \field{year}{1998}
+  \endentry
+
+  \entry{BREZANI2022298}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BS}{%
+         family={Brezani},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Hrasko},
+         familyi={H\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VP}{%
+         family={Vojtas},
+         familyi={V\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Unsupervised learning, performance improvement of industrial
+  processes, object recognition, pseudo-ground truth, AI, machine learning in
+  Industry}
+    \strng{namehash}{BSHRVP1}
+    \strng{fullhash}{BSHRVP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Data mining from unstructured data can be skillfully employed to improve
+  the performance of manufacturing or industrial processes. The main goal of
+  this paper is to create a fast emergency aid system for object detection in
+  SME industrial premises. The basic assumption is that SMEs do not have any
+  IT-trained personnel, and the solution has to be unsupervised edge computing.
+  We use several off-the-shelf models of deep neural networks pre-trained for
+  smart city applications, ready for online object recognition and edge
+  computing. Our system works without any retraining, additional annotation, or
+  human intervention. Specifically, we present heuristics for the automated
+  creation of PGT (Pseudo-Ground Truth). Based on PGT, we can automatically
+  decide which model is the best in the specific environment. We present an
+  application of fully automated enhancing image capture camera outputs to
+  smarter ones. We evaluate our system in a controlled experiment.
+  Low-resolution cameras and large areas cause problems for our method. We
+  present a proof-of-concept for improving our system even in these challenging
+  situations. The benefit is a knowledge extraction in a simple and inexpensive
+  way to expand the organizations’ databases with information from
+  unstructured data from CCTV/IP cameras.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.procs.2022.01.228
+    \endverb
+    \field{issn}{1877-0509}
+    \field{note}{3rd International Conference on Industry 4.0 and Smart
+  Manufacturing}
+    \field{pages}{298\bibrangedash 307}
+    \field{title}{Smart extensions to regular cameras in the industrial
+  environment}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S187705092200237X
+    \endverb
+    \field{volume}{200}
+    \field{journaltitle}{Procedia Computer Science}
+    \field{year}{2022}
+  \endentry
+
+  \entry{visor_user_manual}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={SENSOPART},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{VISOR\textsuperscript{\textregistered} User Manual Software
+  Version 2.8}
+    \field{year}{2024}
   \endentry
 
   \entry{SEMERARO2021103469}{article}{}
@@ -733,12 +827,10 @@
     }
     \keyw{Digital twin, Industry 4.0, Cyber-physical systems, Predictive
   manufacturing}
-    \strng{namehash}{SC+1}
+    \strng{namehash}{SCLMPHDM1}
     \strng{fullhash}{SCLMPHDM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
     \field{abstract}{%
     Manufacturing enterprises are facing the need to align themselves to the
   new information technologies (IT) and respond to the new challenges of
@@ -773,117 +865,32 @@
     \field{year}{2021}
   \endentry
 
-  \entry{visor_user_manual}{manual}{}
-    \name{author}{1}{}{%
-      {{hash=S}{%
-         family={SENSOPART},
-         familyi={S\bibinitperiod},
+  \entry{digitaltwinblog}{online}{}
+    \name{author}{2}{}{%
+      {{hash=I}{%
+         family={Industry},
+         familyi={I\bibinitperiod},
       }}%
-    }
-    \strng{namehash}{S1}
-    \strng{fullhash}{S1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{VISOR\textsuperscript{\textregistered} User Manual Software
-  Version 2.8}
-    \field{year}{2024}
-  \endentry
-
-  \entry{kassowrobotsblog}{online}{}
-    \name{author}{1}{}{%
-      {{hash=SA}{%
-         family={Steger},
-         familyi={S\bibinitperiod},
-         given={Adam},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SA1}
-    \strng{fullhash}{SA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{note}{Accessed: 2024-08-07}
-    \field{title}{What is Robotic Process Automation(RPA)? The Complete 2024
-  Guide}
-    \verb{url}
-    \verb https://www.kassowrobots.com/blog/what-is-robotic-process-automation-
-    \verb rpa
-    \endverb
-    \field{year}{2024}
-    \field{urlday}{07}
-    \field{urlmonth}{08}
-    \field{urlyear}{2024}
-  \endentry
-
-  \entry{THROOP2005281}{article}{}
-    \name{author}{4}{}{%
-      {{hash=TJ}{%
-         family={Throop},
+      {{hash=T}{%
+         family={Trends},
          familyi={T\bibinitperiod},
-         given={J.A.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=AD}{%
-         family={Aneshansley},
-         familyi={A\bibinitperiod},
-         given={D.J.},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=AW}{%
-         family={Anger},
-         familyi={A\bibinitperiod},
-         given={W.C.},
-         giveni={W\bibinitperiod},
-      }}%
-      {{hash=PD}{%
-         family={Peterson},
-         familyi={P\bibinitperiod},
-         given={D.L.},
-         giveni={D\bibinitperiod},
       }}%
     }
-    \keyw{Apples, Apple grading, Automated inspection, Apple sorting, Defects,
-  Defect detection}
-    \strng{namehash}{TJ+1}
-    \strng{fullhash}{TJADAWPD1}
+    \strng{namehash}{IT1}
+    \strng{fullhash}{IT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{abstract}{%
-    The development of an automated inspection station to grade processing
-  apples includes a conveyor for apple orientation, optics and camera to
-  capture identical images at three predetermined wavebands, a lighting system
-  that illuminates the apple's surface diffusely and image processing
-  algorithms to segment surface defects on apples in real time. The conveyor
-  oriented apples so that the stem/calyx ends were not visible during image
-  capture. Multi-spectral optics fabricated using a multi-vision linear filter
-  mounted in front of the camera lens provided three different waveband (740,
-  950nm and visible) images of apples on a single camera array. Interference
-  filters placed in the optical path provided the different wavebands. The
-  diameter and height of each apple was measured to estimate the apple's
-  volume. These dimensions and the position of the apple in the image allowed a
-  portion of each image to be defined, the so-called region of interest (ROI).
-  These sub-images made a composite image of the apple's surface.%
-    }
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.postharvbio.2005.01.004
-    \endverb
-    \field{issn}{0925-5214}
-    \field{number}{3}
-    \field{pages}{281\bibrangedash 290}
-    \field{title}{Quality evaluation of apples based on surface defects:
-  development of an automated inspection system}
+    \field{note}{Accessed: 2024-07-12}
+    \field{title}{Digital Twins and Virtual Commissioning in the Manufacturing
+  Industry (Updated for 2023)}
     \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0925521405000177
+    \verb https://www.visualcomponents.com/blog/digital-twins-and-virtual-commi
+    \verb ssioning-in-industry-4-0/
     \endverb
-    \field{volume}{36}
-    \field{journaltitle}{Postharvest Biology and Technology}
-    \field{year}{2005}
+    \field{year}{2022}
+    \field{urlday}{12}
+    \field{urlmonth}{07}
+    \field{urlyear}{2024}
   \endentry
 
   \entry{WAGNER201988}{article}{}
@@ -926,12 +933,10 @@
       }}%
     }
     \keyw{Product development, Production planning, Information}
-    \strng{namehash}{WR+1}
+    \strng{namehash}{WRSBHBKAWSLG1}
     \strng{fullhash}{WRSBHBKAWSLG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
     \field{abstract}{%
     Digital twins offer great opportunities in various domains of the product
   engineering process. However, current approaches to the use of digital twins
@@ -1042,12 +1047,10 @@
          giveni={H\bibinitperiod},
       }}%
     }
-    \strng{namehash}{WA+1}
+    \strng{namehash}{WAGMHPKDWDTNSAHZAJPRYH1}
     \strng{fullhash}{WAGMHPKDWDTNSAHZAJPRYH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
     \verb{doi}
     \verb doi:10.1515/pjbr-2021-0023
     \endverb
@@ -1085,8 +1088,6 @@
     \strng{fullhash}{XZXY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{X}
-    \field{sortinithash}{X}
     \field{abstract}{%
     A web-based robot control system interface is designed. This interface can
   be used by users to control the motion of target robot, observe 3D model, and
@@ -1119,99 +1120,56 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{8361333}{inproceedings}{}
+  \entry{10070046}{inproceedings}{}
     \name{author}{5}{}{%
-      {{hash=YS}{%
-         family={Yang},
-         familyi={Y\bibinitperiod},
-         given={Sida},
+      {{hash=IMT}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={Md.\bibnamedelima Touhidul},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=HIR}{%
+         family={Hameem},
+         familyi={H\bibinitperiod},
+         given={Imtiaz\bibnamedelima Reza},
+         giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Saha},
+         familyi={S\bibinitperiod},
+         given={Shuvra},
          giveni={S\bibinitperiod},
       }}%
-      {{hash=XW}{%
-         family={Xu},
-         familyi={X\bibinitperiod},
-         given={Wenjun},
-         giveni={W\bibinitperiod},
+      {{hash=CMJR}{%
+         family={Chowdhury},
+         familyi={C\bibinitperiod},
+         given={Mohammad Jamilur\bibnamedelima Reza},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
       }}%
-      {{hash=LZ}{%
-         family={Liu},
-         familyi={L\bibinitperiod},
-         given={Zhihao},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=ZZ}{%
-         family={Zhou},
-         familyi={Z\bibinitperiod},
-         given={Zude},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=PDT}{%
-         family={Pham},
-         familyi={P\bibinitperiod},
-         given={Duc\bibnamedelima Truong},
-         giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+      {{hash=DME}{%
+         family={Deowan},
+         familyi={D\bibinitperiod},
+         given={Md.\bibnamedelima Ether},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \keyw{Collaboration;Three-dimensional displays;Robot sensing
-  systems;Cameras;Service robots;Manufacturing;human-robot
-  collaboration;manufacturing;multi-source vision perception;data fusion}
-    \strng{namehash}{YS+1}
-    \strng{fullhash}{YSXWLZZZPDT1}
+    \keyw{Performance
+  evaluation;Costs;Navigation;Wheelchairs;Simulation;Operating systems;Signal
+  processing;Robot Operating System;Gazebo;Autonomous Navigation;Cloud
+  Control;rosbridge}
+    \strng{namehash}{IMTHIRSSCMJRDME1}
+    \strng{fullhash}{IMTHIRSSCMJRDME1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{Y}
-    \field{sortinithash}{Y}
-    \field{booktitle}{2018 IEEE 15th International Conference on Networking,
-  Sensing and Control (ICNSC)}
+    \field{booktitle}{2023 3rd International Conference on Robotics, Electrical
+  and Signal Processing Techniques (ICREST)}
     \verb{doi}
-    \verb 10.1109/ICNSC.2018.8361333
+    \verb 10.1109/ICREST57604.2023.10070046
     \endverb
-    \field{pages}{1\bibrangedash 6}
-    \field{title}{Multi-source vision perception for human-robot collaboration
-  in manufacturing}
-    \field{year}{2018}
-  \endentry
-
-  \entry{9761203}{article}{}
-    \name{author}{3}{}{%
-      {{hash=ZL}{%
-         family={Zhou},
-         familyi={Z\bibinitperiod},
-         given={Longfei},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=ZL}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Lin},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=KN}{%
-         family={Konz},
-         familyi={K\bibinitperiod},
-         given={Nicholas},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \keyw{Image edge detection;Image segmentation;Task analysis;Robot sensing
-  systems;Sensors;Feature detection;Three-dimensional
-  displays;Assembly;computer vision (CV);deep learning;inspection;machine
-  intelligence;machine learning;manufacturing;production;robotics;survey}
-    \strng{namehash}{ZLZLKN1}
-    \strng{fullhash}{ZLZLKN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \verb{doi}
-    \verb 10.1109/TSMC.2022.3166397
-    \endverb
-    \field{number}{1}
-    \field{pages}{105\bibrangedash 117}
-    \field{title}{Computer Vision Techniques in Manufacturing}
-    \field{volume}{53}
-    \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics:
-  Systems}
+    \field{pages}{175\bibrangedash 180}
+    \field{title}{A Simulation of a Robot Operating System Based Autonomous
+  Wheelchair with Web Based HMI Using Rosbridge}
     \field{year}{2023}
   \endentry
 \enddatalist
