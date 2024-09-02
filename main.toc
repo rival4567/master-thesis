@@ -7,19 +7,20 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Robotic Automation in Manufacturing}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Automated Bending Processes}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Robotic System}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Robotic System}{5}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Computer Vision in Industrial Automation}{5}{section.2.4}%
 \contentsline {section}{\numberline {2.5}User Interfaces for Industrial Systems}{6}{section.2.5}%
 \contentsline {chapter}{\numberline {3}System Design}{8}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Hardware Selection}{8}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Kassow Robot KR1410}{8}{subsection.3.2.1}%
-\contentsline {subsubsection}{Increased Safety}{8}{subsection.3.2.1}%
-\contentsline {subsubsection}{More Flexibility}{9}{subsection.3.2.1}%
-\contentsline {subsubsection}{Cost-effective}{9}{subsection.3.2.1}%
-\contentsline {subsubsection}{Great Scalability}{9}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}VISOR\textsuperscript {\textregistered } Vision Sensor}{9}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Software Architecture}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.2}System Requirements}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hardware Selection}{8}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Kassow Robot KR1410}{8}{subsection.3.3.1}%
+\contentsline {subsubsection}{Increased Safety}{8}{subsection.3.3.1}%
+\contentsline {subsubsection}{More Flexibility}{9}{subsection.3.3.1}%
+\contentsline {subsubsection}{Cost-effective}{9}{subsection.3.3.1}%
+\contentsline {subsubsection}{Great Scalability}{9}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}VISOR\textsuperscript {\textregistered } Vision Sensor}{10}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Software Architecture}{10}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Hardware Integration}{11}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Installation and Configuration}{11}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Robot Unit}{11}{subsection.4.1.1}%

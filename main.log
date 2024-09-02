@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  1 SEP 2024 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  2 SEP 2024 01:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -897,7 +897,7 @@ File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
 \@quotelevel=\count480
 \@quotereset=\count481
- (./main.aux (./Pre-introduction/symbols.aux) (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendix.aux))
+ (./main.aux (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendix.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
@@ -1078,7 +1078,7 @@ l.27 \end{abstract}
                     [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./main.tocpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 ...7.3}Results and Analysis}{21}{section.7.3}
+l.37 ...1}Robot Calibration}{17}{subsection.6.2.1}
                                                   % [1
 
 ])
@@ -1102,12 +1102,6 @@ l.115 \listoffigures
  [4
 
 ]
-\openout2 = `Pre-introduction/symbols.aux'.
-
- (./Pre-introduction/symbols.tex) [5
-
-
-]
 \openout2 = `Pre-introduction/acronyms.aux'.
 
  (./Pre-introduction/acronyms.tex
@@ -1115,18 +1109,16 @@ l.115 \listoffigures
 \dtlkeys@acronym=\toks72
 \dtlrows@acronym=\count489
 \dtlcols@acronym=\count490
- [6
+ [5
 
 
-
-
-]) [7]
+]) [6]
 \openout2 = `"1. Introduction/main.aux"'.
 
  (./1. Introduction/main.tex
 Chapter 1.
 (./1. Introduction/1.1 Background/background.tex
-<1. Introduction/1.1 Background/exhibit2.png, id=282, 840.13875pt x 527.9725pt>
+<1. Introduction/1.1 Background/exhibit2.png, id=302, 840.13875pt x 527.9725pt>
 File: 1. Introduction/1.1 Background/exhibit2.png Graphic file (type png)
 <use 1. Introduction/1.1 Background/exhibit2.png>
 Package pdftex.def Info: 1. Introduction/1.1 Background/exhibit2.png  used on input line 17.
@@ -1152,33 +1144,50 @@ Chapter 2.
  (./3. System Design/main.tex
 Chapter 3.
 (./3. System Design/3.1 Overview of the Robotic Workcell/overview.tex
-<3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg, id=434, 1337.99875pt x 752.8125pt>
+<3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg, id=458, 1337.99875pt x 752.8125pt>
 File: 3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg Graphic file (type jpg)
 <use 3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg>
 Package pdftex.def Info: 3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg  used on input line 4.
 (pdftex.def)             Requested size: 455.24411pt x 256.13664pt.
-) (./3. System Design/3.2 Hardware Selection/hardware.tex [8
+ (./3. System Design/3.1 Overview of the Robotic Workcell/machine.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)) (./3. System Design/3.2 System Requirements/requirements.tex) (./3. System Design/3.3 Hardware Selection/hardware.tex [8
 
 
 
 
- <./3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg>] [9]) (./3. System Design/3.3 Software Architecture/software.tex)) [10]
+ <./3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg>] [9]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 31.
+
+) (./3. System Design/3.4 Software Architecture/software.tex)) [10]
 \openout2 = `"4. Hardware Integration/main.aux"'.
 
  (./4. Hardware Integration/main.tex
 Chapter 4.
 (./4. Hardware Integration/4.1 Installation and Configuration/configuration.tex
-<3. System Design/3.2 Hardware Selection/kr1410.png, id=458, 680.5425pt x 440.64626pt>
-File: 3. System Design/3.2 Hardware Selection/kr1410.png Graphic file (type png)
-<use 3. System Design/3.2 Hardware Selection/kr1410.png>
-Package pdftex.def Info: 3. System Design/3.2 Hardware Selection/kr1410.png  used on input line 8.
+<4. Hardware Integration/4.1 Installation and Configuration/kr1410.png, id=484, 680.5425pt x 440.64626pt>
+File: 4. Hardware Integration/4.1 Installation and Configuration/kr1410.png Graphic file (type png)
+<use 4. Hardware Integration/4.1 Installation and Configuration/kr1410.png>
+Package pdftex.def Info: 4. Hardware Integration/4.1 Installation and Configuration/kr1410.png  used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 294.76752pt.
  [11
 
 
 
 
- <./3. System Design/3.2 Hardware Selection/kr1410.png>]) (./4. Hardware Integration/4.2 Communication Protocols/protocols.tex) (./4. Hardware Integration/4.3 Safety Considerations/safety.tex)) [12]
+ <./4. Hardware Integration/4.1 Installation and Configuration/kr1410.png>]) (./4. Hardware Integration/4.2 Communication Protocols/protocols.tex) (./4. Hardware Integration/4.3 Safety Considerations/safety.tex)) [12]
 \openout2 = `"5. Software Development/main.aux"'.
 
  (./5. Software Development/main.tex
@@ -1198,7 +1207,7 @@ LaTeX Warning: Reference `sub:overview' on page 13 undefined on input line 6.
  (./6. System Integration and Testing/main.tex
 Chapter 6.
 (./6. System Integration and Testing/6.1 Integration Tests/tests.tex) (./6. System Integration and Testing/6.2 Calibration Procedures/calibration.tex
-<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=486, 1866.975pt x 1058.95625pt>
+<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=511, 1866.975pt x 1058.95625pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG>
 Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG  used on input line 9.
@@ -1209,13 +1218,13 @@ Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Proce
 
 
  <./6. System Integration and Testing/6.2 Calibration Procedures/tcp.png>]
-<6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG, id=494, 1156.32pt x 622.12425pt>
+<6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG, id=518, 1156.32pt x 622.12425pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>
 Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG  used on input line 38.
 (pdftex.def)             Requested size: 409.71692pt x 220.43321pt.
  [18 <./6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>]
-<6. System Integration and Testing/6.2 Calibration Procedures/graph.png, id=502, 922.44624pt x 806.01125pt>
+<6. System Integration and Testing/6.2 Calibration Procedures/graph.png, id=524, 922.44624pt x 806.01125pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/graph.png Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/graph.png>
 Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/graph.png  used on input line 63.
@@ -1287,27 +1296,30 @@ Appendix A.
 (./A. Appendices/apXA1.tex [4
 
 
-])) [5] (./main.aux (./Pre-introduction/symbols.aux) (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendix.aux))
+])) [5] (./main.aux (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendix.aux))
 
 LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36016 strings out of 478287
- 698595 string characters out of 5849289
- 1417263 words of memory out of 5000000
- 53278 multiletter control sequences out of 15000+600000
+ 36023 strings out of 478287
+ 698649 string characters out of 5849289
+ 1414864 words of memory out of 5000000
+ 53281 multiletter control sequences out of 15000+600000
  479376 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,17n,91p,1911b,1393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 91i,17n,91p,1911b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb>
-Output written on main.pdf (38 pages, 1565761 bytes).
+Output written on main.pdf (37 pages, 1570555 bytes).
 PDF statistics:
- 845 PDF objects out of 1000 (max. 8388607)
- 724 compressed objects within 8 object streams
- 168 named destinations out of 1000 (max. 500000)
- 409 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 897 PDF objects out of 1000 (max. 8388607)
+ 777 compressed objects within 8 object streams
+ 172 named destinations out of 1000 (max. 500000)
+ 489 words of extra memory for PDF output out of 10000 (max. 10000000)
 

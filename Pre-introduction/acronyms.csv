@@ -29,3 +29,5 @@ Ros3Djs, 3D Visualization Library for use with the ROS JavaScript Libraries buil
 Rosbridge, Rosbridge provides a JSON API to ROS functionality for non-ROS programs. There are a variety of front ends that interface with rosbridge including a WebSocket server for web browsers to interact with
 JSON, Javascript Object Notation
 DOF, Degree of Freedom
+CNC, Computer numerical control
+TFT, Thin Film Transistor

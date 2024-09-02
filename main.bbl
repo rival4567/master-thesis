@@ -17,6 +17,58 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{alvaautomated}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AU}{%
+         family={Alva},
+         familyi={A\bibinitperiod},
+         given={Ujval},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=GSK}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Satyandra\bibnamedelima K},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{AUGSK1}
+    \strng{fullhash}{AUGSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{AUTOMATED DESIGN OF SHEET METAL BENDING TOOLS}
+  \endentry
+
+  \entry{bmspecifications}{online}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={AMADA},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{note}{Accessed: 2024-08-21}
+    \field{title}{Bending Technology>>HFP>>Specifications}
+    \verb{url}
+    \verb https://www.kassowrobots.com/blog/what-is-robotic-process-automation-
+    \verb rpa
+    \endverb
+    \field{year}{2024}
+    \field{urlday}{21}
+    \field{urlmonth}{08}
+    \field{urlyear}{2024}
+  \endentry
+
   \entry{BAI2020107776}{article}{}
     \name{author}{4}{}{%
       {{hash=BC}{%
