@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  2 SEP 2024 01:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  2 SEP 2024 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -885,7 +885,33 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 )) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2021/11/01 v4.49 (NLCT)
 \glstreeindent=\skip101
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen291
+\captionmargin@=\dimen292
+\captionwidth=\dimen293
+\caption@tempdima=\dimen294
+\caption@indent=\dimen295
+\caption@parindent=\dimen296
+\caption@hangindent=\dimen297
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count480
+\c@continuedfloat=\count481
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+)
+\c@subfigure=\count482
+\c@subtable=\count483
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -893,43 +919,43 @@ File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen291
+\arrowsize=\dimen298
 ))
-\@quotelevel=\count480
-\@quotereset=\count481
+\@quotelevel=\count484
+\@quotereset=\count485
  (./main.aux (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count482
-\scratchdimen=\dimen292
+\scratchcounter=\count486
+\scratchdimen=\dimen299
 \scratchbox=\box73
-\nofMPsegments=\count483
-\nofMParguments=\count484
+\nofMPsegments=\count487
+\nofMParguments=\count488
 \everyMPshowfont=\toks69
-\MPscratchCnt=\count485
-\MPscratchDim=\dimen293
-\MPnumerator=\count486
-\makeMPintoPDFobject=\count487
+\MPscratchCnt=\count489
+\MPscratchDim=\dimen300
+\MPnumerator=\count490
+\makeMPintoPDFobject=\count491
 \everyMPtoPDFconversion=\toks70
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -943,7 +969,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring OFF on input line 99.
+Package hyperref Info: Link coloring OFF on input line 100.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -951,11 +977,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count488
+\c@section@level=\count492
 )
-LaTeX Info: Redefining \ref on input line 99.
-LaTeX Info: Redefining \pageref on input line 99.
-LaTeX Info: Redefining \nameref on input line 99.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
+LaTeX Info: Redefining \nameref on input line 100.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1018,42 +1044,44 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 99.
-Package biblatex Info: Reference segment=0 on input line 99.
+Package biblatex Info: Reference section=0 on input line 100.
+Package biblatex Info: Reference segment=0 on input line 100.
  (./main.glsdefs)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 <Pre-introduction/abschlussarbeit_titel-1.pdf, id=7, 597.50786pt x 845.04686pt>
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 103.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 103.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf  used on input line 103.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 <Pre-introduction/abschlussarbeit_titel-1.pdf, id=11, page=1, 597.50786pt x 845.04686pt>
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 1>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
  [1
 
@@ -1061,15 +1089,15 @@ Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page1 us
 <Pre-introduction/abschlussarbeit_titel-1.pdf, id=58, page=2, 597.50786pt x 845.04686pt>
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 2>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 103.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 2>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 103.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: Pre-introduction/abschlussarbeit_titel-1.pdf Graphic file (type pdf)
 <use Pre-introduction/abschlussarbeit_titel-1.pdf, page 2>
-Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 102.
+Package pdftex.def Info: Pre-introduction/abschlussarbeit_titel-1.pdf , page2 used on input line 103.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
  [2 <./Pre-introduction/abschlussarbeit_titel-1.pdf>] (./Pre-introduction/abstract.texpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
@@ -1078,7 +1106,7 @@ l.27 \end{abstract}
                     [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./main.tocpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 ...1}Robot Calibration}{17}{subsection.6.2.1}
+l.37 ...berline {6.2}Calibration}{18}{section.6.2}
                                                   % [1
 
 ])
@@ -1088,7 +1116,7 @@ l.37 ...1}Robot Calibration}{17}{subsection.6.2.1}
 pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.115 \listoffigures
+l.116 \listoffigures
                      [2] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
@@ -1107,8 +1135,8 @@ l.115 \listoffigures
  (./Pre-introduction/acronyms.tex
 \dtldb@acronym=\toks71
 \dtlkeys@acronym=\toks72
-\dtlrows@acronym=\count489
-\dtlcols@acronym=\count490
+\dtlrows@acronym=\count493
+\dtlcols@acronym=\count494
  [5
 
 
@@ -1118,7 +1146,7 @@ l.115 \listoffigures
  (./1. Introduction/main.tex
 Chapter 1.
 (./1. Introduction/1.1 Background/background.tex
-<1. Introduction/1.1 Background/exhibit2.png, id=302, 840.13875pt x 527.9725pt>
+<1. Introduction/1.1 Background/exhibit2.png, id=309, 840.13875pt x 527.9725pt>
 File: 1. Introduction/1.1 Background/exhibit2.png Graphic file (type png)
 <use 1. Introduction/1.1 Background/exhibit2.png>
 Package pdftex.def Info: 1. Introduction/1.1 Background/exhibit2.png  used on input line 17.
@@ -1144,12 +1172,26 @@ Chapter 2.
  (./3. System Design/main.tex
 Chapter 3.
 (./3. System Design/3.1 Overview of the Robotic Workcell/overview.tex
-<3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg, id=458, 1337.99875pt x 752.8125pt>
+<3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg, id=465, 1337.99875pt x 752.8125pt>
 File: 3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg Graphic file (type jpg)
 <use 3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg>
 Package pdftex.def Info: 3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg  used on input line 4.
 (pdftex.def)             Requested size: 455.24411pt x 256.13664pt.
  (./3. System Design/3.1 Overview of the Robotic Workcell/machine.tex
+<figures/bending_machine2.png, id=466, 1517.67pt x 1138.2525pt>
+File: figures/bending_machine2.png Graphic file (type png)
+<use figures/bending_machine2.png>
+Package pdftex.def Info: figures/bending_machine2.png  used on input line 5.
+(pdftex.def)             Requested size: 286.806pt x 215.08917pt.
+<figures/bending_machine1.png, id=467, 1138.2525pt x 1517.67pt>
+File: figures/bending_machine1.png Graphic file (type png)
+<use figures/bending_machine1.png>
+Package pdftex.def Info: figures/bending_machine1.png  used on input line 10.
+(pdftex.def)             Requested size: 161.60971pt x 215.4597pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1158,7 +1200,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
- <./3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg>] [9]
+ <./3. System Design/3.1 Overview of the Robotic Workcell/robot_workcell_overview.jpg>] [9 <./figures/bending_machine2.png (PNG copy)> <./figures/bending_machine1.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\mathsurround' on input line 31.
@@ -1171,60 +1213,60 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `superscript' on input line 31.
 
-) (./3. System Design/3.4 Software Architecture/software.tex)) [10]
+[10]) (./3. System Design/3.4 Software Architecture/software.tex)) [11]
 \openout2 = `"4. Hardware Integration/main.aux"'.
 
  (./4. Hardware Integration/main.tex
 Chapter 4.
 (./4. Hardware Integration/4.1 Installation and Configuration/configuration.tex
-<4. Hardware Integration/4.1 Installation and Configuration/kr1410.png, id=484, 680.5425pt x 440.64626pt>
+<4. Hardware Integration/4.1 Installation and Configuration/kr1410.png, id=505, 680.5425pt x 440.64626pt>
 File: 4. Hardware Integration/4.1 Installation and Configuration/kr1410.png Graphic file (type png)
 <use 4. Hardware Integration/4.1 Installation and Configuration/kr1410.png>
 Package pdftex.def Info: 4. Hardware Integration/4.1 Installation and Configuration/kr1410.png  used on input line 8.
 (pdftex.def)             Requested size: 455.24411pt x 294.76752pt.
- [11
+ [12
 
 
 
 
- <./4. Hardware Integration/4.1 Installation and Configuration/kr1410.png>]) (./4. Hardware Integration/4.2 Communication Protocols/protocols.tex) (./4. Hardware Integration/4.3 Safety Considerations/safety.tex)) [12]
+ <./4. Hardware Integration/4.1 Installation and Configuration/kr1410.png>]) (./4. Hardware Integration/4.2 Communication Protocols/protocols.tex) (./4. Hardware Integration/4.3 Safety Considerations/safety.tex)) [13]
 \openout2 = `"5. Software Development/main.aux"'.
 
  (./5. Software Development/main.tex
 Chapter 5.
 (./5. Software Development/5.1 Control Software/control.tex
 
-LaTeX Warning: Reference `sub:overview' on page 13 undefined on input line 6.
+LaTeX Warning: Reference `sub:overview' on page 14 undefined on input line 6.
 
-[13
-
-
+[14
 
 
-] [14] [15]) (./5. Software Development/5.2 Camera: Feature Detection/feature.tex) (./5. Software Development/5.3 Camera: Inspection and Quality Control/inspection.tex) (./5. Software Development/5.4 Web Interface Design/interface.tex)) [16]
+
+
+] [15] [16]) (./5. Software Development/5.2 Camera: Feature Detection/feature.tex) (./5. Software Development/5.3 Camera: Inspection and Quality Control/inspection.tex) (./5. Software Development/5.4 Web Interface Design/interface.tex)) [17]
 \openout2 = `"6. System Integration and Testing/main.aux"'.
 
  (./6. System Integration and Testing/main.tex
 Chapter 6.
 (./6. System Integration and Testing/6.1 Integration Tests/tests.tex) (./6. System Integration and Testing/6.2 Calibration Procedures/calibration.tex
-<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=511, 1866.975pt x 1058.95625pt>
+<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=532, 1866.975pt x 1058.95625pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG>
 Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG  used on input line 9.
 (pdftex.def)             Requested size: 455.24411pt x 258.21043pt.
- [17
+ [18
 
 
 
 
  <./6. System Integration and Testing/6.2 Calibration Procedures/tcp.png>]
-<6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG, id=518, 1156.32pt x 622.12425pt>
+<6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG, id=539, 1156.32pt x 622.12425pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>
 Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG  used on input line 38.
 (pdftex.def)             Requested size: 409.71692pt x 220.43321pt.
- [18 <./6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>]
-<6. System Integration and Testing/6.2 Calibration Procedures/graph.png, id=524, 922.44624pt x 806.01125pt>
+ [19 <./6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>]
+<6. System Integration and Testing/6.2 Calibration Procedures/graph.png, id=545, 922.44624pt x 806.01125pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/graph.png Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/graph.png>
 Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/graph.png  used on input line 63.
@@ -1234,12 +1276,12 @@ Overfull \hbox (2.6152pt too wide) in paragraph at lines 71--72
 []\OT1/cmr/bx/n/12 Setup Cal-i-bra-tion Tar-gets\OT1/cmr/m/n/12 : Place cal-i-bra-tion tar-gets within the robot's workspace
  []
 
-[19 <./6. System Integration and Testing/6.2 Calibration Procedures/graph.png>]) (./6. System Integration and Testing/6.3 Performance Evaluation/performance.tex)) [20]
+[20 <./6. System Integration and Testing/6.2 Calibration Procedures/graph.png>]) (./6. System Integration and Testing/6.3 Performance Evaluation/performance.tex)) [21]
 \openout2 = `"7. Experimental Results/main.aux"'.
 
  (./7. Experimental Results/main.tex
 Chapter 7.
-(./7. Experimental Results/7.1 Setup and Methodology/methodology.tex) (./7. Experimental Results/7.2 Data Collection/data.tex) (./7. Experimental Results/7.3 Results and Analysis/results.tex)) [21
+(./7. Experimental Results/7.1 Setup and Methodology/methodology.tex) (./7. Experimental Results/7.2 Data Collection/data.tex) (./7. Experimental Results/7.3 Results and Analysis/results.tex)) [22
 
 
 
@@ -1249,7 +1291,7 @@ Chapter 7.
 
  (./8. Discussion/main.tex
 Chapter 8.
-) [22
+) [23
 
 
 
@@ -1259,23 +1301,23 @@ Chapter 8.
 
  (./9. Conclusion and Future Works/main.tex
 Chapter 9.
-(./9. Conclusion and Future Works/9.1 Summary/summary.tex) (./9. Conclusion and Future Works/9.2 Recommendations for Future Research/recommendations.tex)) [23
+(./9. Conclusion and Future Works/9.1 Summary/summary.tex) (./9. Conclusion and Future Works/9.2 Recommendations for Future Research/recommendations.tex)) [24
 
 
 
 
 ]
-Overfull \hbox (8.18805pt too wide) in paragraph at lines 151--151
+Overfull \hbox (8.18805pt too wide) in paragraph at lines 152--152
 []\OT1/cmr/m/n/12 I-Ming Chen. ``Rapid re-sponse man-u-fac-tur-ing through a rapidly re-con-fig-urable robotic
  []
 
 
-Overfull \hbox (3.01163pt too wide) in paragraph at lines 151--151
+Overfull \hbox (3.01163pt too wide) in paragraph at lines 152--152
 \OT1/cmr/m/n/12 work-cell''. In: \OT1/cmr/m/it/12 Robotics and Computer-Integrated Man-u-fac-tur-ing \OT1/cmr/m/n/12 17.3 (2001), pp. 199{
  []
 
 
-Overfull \hbox (18.40044pt too wide) in paragraph at lines 151--151
+Overfull \hbox (18.40044pt too wide) in paragraph at lines 152--152
 \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : []$\OT1/cmtt/m/n/12 https : / / www . sciencedirect . com / science / article / pii / S0736584500000284$[]\OT1/cmr/m/n/12 . 
  []
 
@@ -1284,7 +1326,7 @@ Overfull \hbox (18.40044pt too wide) in paragraph at lines 151--151
 
 
 ]
-Overfull \hbox (10.44063pt too wide) in paragraph at lines 151--151
+Overfull \hbox (10.44063pt too wide) in paragraph at lines 152--152
 []\OT1/cmr/m/n/12 A. Sathish Ku-mar et al. ``An in-tel-li-gent fuzzy-particle swarm op-ti-miza-tion supervisory-
  []
 
@@ -1301,25 +1343,31 @@ Appendix A.
 LaTeX Warning: There were undefined references.
 
 
-Package biblatex Warning: Please rerun LaTeX.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36023 strings out of 478287
- 698649 string characters out of 5849289
- 1414864 words of memory out of 5000000
- 53281 multiletter control sequences out of 15000+600000
+ 37415 strings out of 478287
+ 726570 string characters out of 5849289
+ 1440162 words of memory out of 5000000
+ 54652 multiletter control sequences out of 15000+600000
  479376 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,17n,91p,1911b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 91i,17n,131p,1911b,1566s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section.3.5} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.4.2} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.4.1} has been referenced but does not exist, replaced by a fixed one
+
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb>
-Output written on main.pdf (37 pages, 1570555 bytes).
+Output written on main.pdf (38 pages, 11448868 bytes).
 PDF statistics:
- 897 PDF objects out of 1000 (max. 8388607)
- 777 compressed objects within 8 object streams
- 172 named destinations out of 1000 (max. 500000)
- 489 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 922 PDF objects out of 1000 (max. 8388607)
+ 796 compressed objects within 8 object streams
+ 178 named destinations out of 1000 (max. 500000)
+ 507 words of extra memory for PDF output out of 10000 (max. 10000000)
 

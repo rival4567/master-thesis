@@ -12,43 +12,44 @@
 \contentsline {section}{\numberline {2.5}User Interfaces for Industrial Systems}{6}{section.2.5}%
 \contentsline {chapter}{\numberline {3}System Design}{8}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{8}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Bending machine}{8}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}System Requirements}{8}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Hardware Selection}{8}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Kassow Robot KR1410}{8}{subsection.3.3.1}%
 \contentsline {subsubsection}{Increased Safety}{8}{subsection.3.3.1}%
-\contentsline {subsubsection}{More Flexibility}{9}{subsection.3.3.1}%
-\contentsline {subsubsection}{Cost-effective}{9}{subsection.3.3.1}%
-\contentsline {subsubsection}{Great Scalability}{9}{subsection.3.3.1}%
+\contentsline {subsubsection}{More Flexibility}{10}{subsection.3.3.1}%
+\contentsline {subsubsection}{Cost-effective}{10}{subsection.3.3.1}%
+\contentsline {subsubsection}{Great Scalability}{10}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}VISOR\textsuperscript {\textregistered } Vision Sensor}{10}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Software Architecture}{10}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Hardware Integration}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Installation and Configuration}{11}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Robot Unit}{11}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Communication Protocols}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Safety Considerations}{12}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Software Development}{13}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Control Software}{13}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{16}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{16}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Web Interface Design}{16}{section.5.4}%
-\contentsline {chapter}{\numberline {6}System Integration and Testing}{17}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Integration Tests}{17}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Calibration}{17}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{17}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{18}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{19}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{19}{subsection.6.2.4}%
-\contentsline {section}{\numberline {6.3}Performance Evaluation}{20}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{20}{subsection.6.3.1}%
-\contentsline {chapter}{\numberline {7}Experimental Results}{21}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Setup and Methodology}{21}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Data Collection}{21}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Results and Analysis}{21}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Discussion}{22}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{23}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Summary}{23}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{23}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Control Software Update}{23}{subsection.9.2.1}%
+\contentsline {section}{\numberline {3.4}Software Architecture}{11}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Hardware Integration}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Installation and Configuration}{12}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Robot Unit}{12}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Communication Protocols}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Safety Considerations}{13}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Software Development}{14}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Control Software}{14}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Web Interface Design}{17}{section.5.4}%
+\contentsline {chapter}{\numberline {6}System Integration and Testing}{18}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Integration Tests}{18}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Calibration}{18}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{18}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{19}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{20}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{20}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Performance Evaluation}{21}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{21}{subsection.6.3.1}%
+\contentsline {chapter}{\numberline {7}Experimental Results}{22}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Setup and Methodology}{22}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Data Collection}{22}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Results and Analysis}{22}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Discussion}{23}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{24}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Summary}{24}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{24}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Control Software Update}{24}{subsection.9.2.1}%
 \contentsline {chapter}{Bibliography}{i}{subsection.9.2.1}%
 \contentsline {chapter}{\numberline {A}Appendix}{iv}{appendix.A}%
 \contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{iv}{section.A.1}%
