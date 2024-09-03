@@ -7,51 +7,52 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Robotic Automation in Manufacturing}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Automated Bending Processes}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}ASTRO bending cell}{4}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Robotic System}{5}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Computer Vision in Industrial Automation}{5}{section.2.4}%
-\contentsline {section}{\numberline {2.5}User Interfaces for Industrial Systems}{6}{section.2.5}%
-\contentsline {chapter}{\numberline {3}System Design}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{8}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Bending machine}{8}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}System Requirements}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Hardware Selection}{8}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Kassow Robot KR1410}{8}{subsection.3.3.1}%
-\contentsline {subsubsection}{Increased Safety}{8}{subsection.3.3.1}%
-\contentsline {subsubsection}{More Flexibility}{10}{subsection.3.3.1}%
-\contentsline {subsubsection}{Cost-effective}{10}{subsection.3.3.1}%
-\contentsline {subsubsection}{Great Scalability}{10}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}VISOR\textsuperscript {\textregistered } Vision Sensor}{10}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Software Architecture}{11}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Hardware Integration}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Installation and Configuration}{12}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Robot Unit}{12}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Communication Protocols}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Safety Considerations}{13}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Software Development}{14}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Control Software}{14}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{17}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{17}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Web Interface Design}{17}{section.5.4}%
-\contentsline {chapter}{\numberline {6}System Integration and Testing}{18}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Integration Tests}{18}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Calibration}{18}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{18}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{19}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{20}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{20}{subsection.6.2.4}%
-\contentsline {section}{\numberline {6.3}Performance Evaluation}{21}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{21}{subsection.6.3.1}%
-\contentsline {chapter}{\numberline {7}Experimental Results}{22}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Setup and Methodology}{22}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Data Collection}{22}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Results and Analysis}{22}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Discussion}{23}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{24}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Summary}{24}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{24}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Control Software Update}{24}{subsection.9.2.1}%
+\contentsline {section}{\numberline {2.4}Computer Vision in Industrial Automation}{6}{section.2.4}%
+\contentsline {section}{\numberline {2.5}User Interfaces for Industrial Systems}{7}{section.2.5}%
+\contentsline {chapter}{\numberline {3}System Design}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Bending machine}{9}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}System Requirements}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hardware Selection}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Kassow Robot KR1410}{9}{subsection.3.3.1}%
+\contentsline {subsubsection}{Increased Safety}{9}{subsection.3.3.1}%
+\contentsline {subsubsection}{More Flexibility}{11}{subsection.3.3.1}%
+\contentsline {subsubsection}{Cost-effective}{11}{subsection.3.3.1}%
+\contentsline {subsubsection}{Great Scalability}{11}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}VISOR\textsuperscript {\textregistered } Vision Sensor}{11}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Software Architecture}{12}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Hardware Integration}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Installation and Configuration}{13}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Robot Unit}{13}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Communication Protocols}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Safety Considerations}{14}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Software Development}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Control Software}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{18}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{18}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Web Interface Design}{18}{section.5.4}%
+\contentsline {chapter}{\numberline {6}System Integration and Testing}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Integration Tests}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Calibration}{19}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Robot Calibration}{19}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Camera Calibration}{20}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Sensor Calibration}{21}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Calibration Procedures}{21}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Performance Evaluation}{22}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Importance of Calibration}{22}{subsection.6.3.1}%
+\contentsline {chapter}{\numberline {7}Experimental Results}{23}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Setup and Methodology}{23}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Data Collection}{23}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Results and Analysis}{23}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Discussion}{24}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{25}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Summary}{25}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{25}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Control Software Update}{25}{subsection.9.2.1}%
 \contentsline {chapter}{Bibliography}{i}{subsection.9.2.1}%
-\contentsline {chapter}{\numberline {A}Appendix}{iv}{appendix.A}%
-\contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{iv}{section.A.1}%
-\contentsline {section}{\numberline {A2}Reduction in Manual Labor}{v}{section.A.2}%
-\contentsline {section}{\numberline {A3}Cost reduction}{v}{section.A.3}%
+\contentsline {chapter}{\numberline {A}Appendix}{v}{appendix.A}%
+\contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{v}{section.A.1}%
+\contentsline {section}{\numberline {A2}Reduction in Manual Labor}{vi}{section.A.2}%
+\contentsline {section}{\numberline {A3}Cost reduction}{vi}{section.A.3}%
