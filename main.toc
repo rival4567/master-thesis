@@ -7,21 +7,21 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Robotic Automation in Manufacturing}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Automated Bending Processes}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}ASTRO bending cell}{4}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Robotic System}{5}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Computer Vision in Industrial Automation}{6}{section.2.4}%
+\contentsline {subsection}{\numberline {2.2.1}ASTRO bending cell}{5}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Robotic System}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Computer Vision in Industrial Automation}{7}{section.2.4}%
 \contentsline {section}{\numberline {2.5}User Interfaces for Industrial Systems}{7}{section.2.5}%
 \contentsline {chapter}{\numberline {3}System Design}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Overview of the Robotic Workcell}{9}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Bending machine}{9}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}System Requirements}{9}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Hardware Selection}{9}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Kassow Robot KR1410}{9}{subsection.3.3.1}%
-\contentsline {subsubsection}{Increased Safety}{9}{subsection.3.3.1}%
-\contentsline {subsubsection}{More Flexibility}{11}{subsection.3.3.1}%
-\contentsline {subsubsection}{Cost-effective}{11}{subsection.3.3.1}%
-\contentsline {subsubsection}{Great Scalability}{11}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}VISOR\textsuperscript {\textregistered } Vision Sensor}{11}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.1}Bending machine}{9}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Kassow Robot KR1410}{9}{subsection.3.3.2}%
+\contentsline {subsubsection}{Increased Safety}{9}{subsection.3.3.2}%
+\contentsline {subsubsection}{More Flexibility}{11}{subsection.3.3.2}%
+\contentsline {subsubsection}{Cost-effective}{11}{subsection.3.3.2}%
+\contentsline {subsubsection}{Great Scalability}{11}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}VISOR\textsuperscript {\textregistered } Vision Sensor}{11}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Software Architecture}{12}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Hardware Integration}{13}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Installation and Configuration}{13}{section.4.1}%
@@ -52,7 +52,7 @@
 \contentsline {section}{\numberline {9.2}Recommendations for Future Research}{25}{section.9.2}%
 \contentsline {subsection}{\numberline {9.2.1}Control Software Update}{25}{subsection.9.2.1}%
 \contentsline {chapter}{Bibliography}{i}{subsection.9.2.1}%
-\contentsline {chapter}{\numberline {A}Appendix}{v}{appendix.A}%
-\contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{v}{section.A.1}%
-\contentsline {section}{\numberline {A2}Reduction in Manual Labor}{vi}{section.A.2}%
-\contentsline {section}{\numberline {A3}Cost reduction}{vi}{section.A.3}%
+\contentsline {chapter}{\numberline {A}Appendix}{vi}{appendix.A}%
+\contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{vi}{section.A.1}%
+\contentsline {section}{\numberline {A2}Reduction in Manual Labor}{vii}{section.A.2}%
+\contentsline {section}{\numberline {A3}Cost reduction}{vii}{section.A.3}%

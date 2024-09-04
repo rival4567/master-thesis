@@ -64,9 +64,6 @@
     \verb rpa
     \endverb
     \field{year}{2024}
-    \field{urlday}{21}
-    \field{urlmonth}{08}
-    \field{urlyear}{2024}
   \endentry
 
   \entry{astro100}{online}{}
@@ -89,9 +86,6 @@
     \verb https://m.amada.de/de/abkanten/astro-100-ii/biegeroboter.html
     \endverb
     \field{year}{2024}
-    \field{urlday}{21}
-    \field{urlmonth}{08}
-    \field{urlyear}{2024}
   \endentry
 
   \entry{BAI2020107776}{article}{}
@@ -243,6 +237,31 @@
     \field{volume}{98}
     \field{journaltitle}{Journal of Food Engineering}
     \field{year}{2010}
+  \endentry
+
+  \entry{firstrobot}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BI}{%
+         family={BPM},
+         familyi={B\bibinitperiod},
+         given={Infosys},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BI1}
+    \strng{fullhash}{BI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{Accessed: 2024-07-25}
+    \field{title}{Rise of the machines: Robotics’ impact on the evolution of
+  manufacturing}
+    \verb{url}
+    \verb https://www.infosysbpm.com/blogs/manufacturing/robotics-in-manufactur
+    \verb ing.html
+    \endverb
+    \field{year}{2024}
   \endentry
 
   \entry{BREZANI2022298}{article}{}
@@ -512,6 +531,237 @@
     \field{year}{1998}
   \endentry
 
+  \entry{jrautomation}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CJAAHG}{%
+         family={Company},
+         familyi={C\bibinitperiod},
+         given={JR\bibnamedelima Automation A Hitachi\bibnamedelima Group},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJAAHG1}
+    \strng{fullhash}{CJAAHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{Accessed: 2024-07-25}
+    \field{title}{How the Manufacturing Industry uses Robotics \& Automation}
+    \verb{url}
+    \verb https://www.jrautomation.com/resources/manufacturing-robotics-automat
+    \verb ion
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{jrautomation2}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CJAAHG}{%
+         family={Company},
+         familyi={C\bibinitperiod},
+         given={JR\bibnamedelima Automation A Hitachi\bibnamedelima Group},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJAAHG1}
+    \strng{fullhash}{CJAAHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{Accessed: 2024-07-25}
+    \field{title}{The Future of Manufacturing Automation}
+    \verb{url}
+    \verb https://www.jrautomation.com/resources/the-future-of-manufacturing-au
+    \verb tomation
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{cobotfabricator}{online}{}
+    \name{author}{1}{}{%
+      {{hash=DD}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DD1}
+    \strng{fullhash}{DD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{note}{Accessed: 2024-07-25}
+    \field{title}{Metal fabricator finds flexibility in its bending department
+  with cobots}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=EhQ7DvXjDCA
+    \endverb
+    \field{year}{2023}
+  \endentry
+
+  \entry{gambao2012new}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=GE}{%
+         family={Gambao},
+         familyi={G\bibinitperiod},
+         given={Ernesto},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hernando},
+         familyi={H\bibinitperiod},
+         given={Miguel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Surdilovic},
+         familyi={S\bibinitperiod},
+         given={Dragoljub},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IAARC Publications}%
+    }
+    \strng{namehash}{GEHMSD1}
+    \strng{fullhash}{GEHMSD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{ISARC. Proceedings of the International Symposium on
+  Automation and Robotics in Construction}
+    \field{pages}{1}
+    \field{title}{A new generation of collaborative robots for material
+  handling}
+    \field{volume}{29}
+    \field{year}{2012}
+  \endentry
+
+  \entry{guimaraes2009bending}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=GRJ}{%
+         family={Guimar{\~a}es},
+         familyi={G\bibinitperiod},
+         given={Rui\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PJA}{%
+         family={Pacheco},
+         familyi={P\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MJF}{%
+         family={Meireles},
+         familyi={M\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima F},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=FJF}{%
+         family={Fonseca},
+         familyi={F\bibinitperiod},
+         given={Jaime\bibnamedelima F},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GRJ+1}
+    \strng{fullhash}{GRJPJAMJFFJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{7th euromech solid mechanics conference}
+    \field{title}{A bending cell for small batches}
+    \field{year}{2009}
+  \endentry
+
+  \entry{10381692}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GHJF}{%
+         family={Gómez-Hernández},
+         familyi={G\bibinithyphendelim H\bibinitperiod},
+         given={José-Francisco},
+         giveni={J\bibinithyphendelim F\bibinitperiod},
+      }}%
+      {{hash=GHJM}{%
+         family={Gutiérrez-Hernández},
+         familyi={G\bibinithyphendelim H\bibinitperiod},
+         given={José-María},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=JMA}{%
+         family={Jimeno-Morenilla},
+         familyi={J\bibinithyphendelim M\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SRJL}{%
+         family={Sánchez-Romero},
+         familyi={S\bibinithyphendelim R\bibinitperiod},
+         given={José-Luis},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=FPMD}{%
+         family={Fabregat-Periago},
+         familyi={F\bibinithyphendelim P\bibinitperiod},
+         given={María-Dolores},
+         giveni={M\bibinithyphendelim D\bibinitperiod},
+      }}%
+    }
+    \keyw{Robots;Europe;Service robots;Planning;Manufacturing;Collision
+  avoidance;Bonding;Fourth Industrial Revolution;Robotics and automation;Smart
+  manufacturing;Bonding;footwear;fourth industrial revolution;robotics and
+  automation;smart manufacturing;manufacturing automation}
+    \strng{namehash}{GHJF+1}
+    \strng{fullhash}{GHJFGHJMJMASRJLFPMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Traditional manufacturing industries are currently immersed in an
+  automation process, integrating new techniques and tools, driven by the
+  demands from producers to improve the manufacturing process as well as the
+  working conditions of employees. For the footwear industry, bonding is a key
+  operation in the manufacturing process where the outsole is assembled onto
+  the lasted shoe. However, in this operation, workers are often subjected to
+  hazardous substances (i.e., organic solvents) and perform repetitive tasks
+  with limited added value. Against this background, this paper describes the
+  results of a research project, whose aim was to obtain the maximum benefit
+  from different technologies analyzed, such as collaborative robotics,
+  artificial vision and multirobot control, for the manipulation of
+  flexible/deformable objects. The main result of this project is a robotic
+  workcell for shoe bonding that has been introduced in the production line to
+  fully automate the operation. This workcell integrates three collaborative
+  robots, one for (hot melt) adhesive application and another two, with
+  two-finger electric grippers, to carry out the bonding synchronously.
+  Different vision systems have also been embedded to conduct the various
+  processes involved. The entire operation is controlled and coordinated
+  through ROS (Robot Operating System). The key findings of this research
+  showcase the automation of a process traditionally undertaken by humans. In
+  this novel approach, two robots collaborate to manipulate flexible objects,
+  liberating the operator from engaging in repetitive, non-value-added tasks
+  and the handling of hazardous substances.%
+    }
+    \verb{doi}
+    \verb 10.1109/ACCESS.2024.3350441
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{5066\bibrangedash 5080}
+    \field{title}{Development of an Integrated Robotic Workcell for Automated
+  Bonding in Footwear Manufacturing}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2024}
+  \endentry
+
   \entry{HAVLIK2011327}{incollection}{}
     \name{author}{1}{}{%
       {{hash=H�}{%
@@ -597,9 +847,6 @@
     \verb ssioning-in-industry-4-0/
     \endverb
     \field{year}{2022}
-    \field{urlday}{12}
-    \field{urlmonth}{07}
-    \field{urlyear}{2024}
   \endentry
 
   \entry{10070046}{inproceedings}{}
@@ -655,6 +902,75 @@
     \field{title}{A Simulation of a Robot Operating System Based Autonomous
   Wheelchair with Web Based HMI Using Rosbridge}
     \field{year}{2023}
+  \endentry
+
+  \entry{ji2021learning}{article}{}
+    \name{author}{8}{}{%
+      {{hash=JS}{%
+         family={Ji},
+         familyi={J\bibinitperiod},
+         given={Sanghoon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Sukhan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yoo},
+         familyi={Y\bibinitperiod},
+         given={Sujeong},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Suh},
+         familyi={S\bibinitperiod},
+         given={Ilhong},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=KI}{%
+         family={Kwon},
+         familyi={K\bibinitperiod},
+         given={Inso},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PFC}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Frank\bibnamedelima C},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Sanghyoung},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Hongseok},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{JS+1}
+    \strng{fullhash}{JSLSYSSIKIPFCLSKH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{4}
+    \field{pages}{423\bibrangedash 440}
+    \field{title}{Learning-based automation of robotic assembly for smart
+  manufacturing}
+    \field{volume}{109}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{2021}
   \endentry
 
   \entry{jordan2016robots}{book}{}
@@ -730,6 +1046,94 @@
     \field{year}{2016}
   \endentry
 
+  \entry{lee2021intelligent}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LJD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Jeng-Dao},
+         giveni={J\bibinithyphendelim D\bibinitperiod},
+      }}%
+      {{hash=CCH}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Chen-Huan},
+         giveni={C\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=CES}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={En-Shuo},
+         giveni={E\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=KCC}{%
+         family={Kuo},
+         familyi={K\bibinitperiod},
+         given={Chia-Chen},
+         giveni={C\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=HCY}{%
+         family={Hsieh},
+         familyi={H\bibinitperiod},
+         given={Chia-Ying},
+         giveni={C\bibinithyphendelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI}%
+    }
+    \strng{namehash}{LJD+1}
+    \strng{fullhash}{LJDCCHCESKCCHCY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{24}
+    \field{pages}{12159}
+    \field{title}{Intelligent robotic palletizer system}
+    \field{volume}{11}
+    \field{journaltitle}{Applied Sciences}
+    \field{year}{2021}
+  \endentry
+
+  \entry{li2020robotics}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LM}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Milojevi{\'c}},
+         familyi={M\bibinitperiod},
+         given={Andrija},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HH}{%
+         family={Handroos},
+         familyi={H\bibinitperiod},
+         given={Heikki},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{LMMAHH1}
+    \strng{fullhash}{LMMAHH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{pages}{85\bibrangedash 95}
+    \field{title}{Robotics in manufacturing—The past and the present}
+    \field{journaltitle}{Technical, Economic and Societal Effects of
+  Manufacturing 4.0: Automation, Adaption and Manufacturing in Finland and
+  Beyond}
+    \field{year}{2020}
+  \endentry
+
   \entry{liu2022metalwiremanipulationplanning}{misc}{}
     \name{author}{4}{}{%
       {{hash=LR}{%
@@ -797,9 +1201,6 @@
     \verb https://www.youtube.com/watch?v=EhQ7DvXjDCA
     \endverb
     \field{year}{2024}
-    \field{urlday}{30}
-    \field{urlmonth}{07}
-    \field{urlyear}{2024}
   \endentry
 
   \entry{PANERU2021103940}{article}{}
@@ -1140,6 +1541,56 @@
     \field{year}{2024}
   \endentry
 
+  \entry{shah2021design}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=SV}{%
+         family={Shah},
+         familyi={S\bibinitperiod},
+         given={Vijesh},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Gilke},
+         familyi={G\bibinitperiod},
+         given={Nandkumar},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=DV}{%
+         family={Dhore},
+         familyi={D\bibinitperiod},
+         given={Vilas},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Phutane},
+         familyi={P\bibinitperiod},
+         given={Chandrashekhar},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kondhol},
+         familyi={K\bibinitperiod},
+         given={Bhavisha},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SV+1}
+    \strng{fullhash}{SVGNDVPCKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Advances in Manufacturing Systems: Select Proceedings of
+  RAM 2020}
+    \field{pages}{95\bibrangedash 107}
+    \field{title}{Design of gripper and selection of robotic arm for automation
+  of a pick and place process}
+    \field{year}{2021}
+  \endentry
+
   \entry{shenchong}{online}{}
     \name{author}{1}{}{%
       {{hash=S}{%
@@ -1159,9 +1610,66 @@
     \verb https://www.shenchong.com/robotic-press-brake.html
     \endverb
     \field{year}{2024}
-    \field{urlday}{30}
-    \field{urlmonth}{07}
-    \field{urlyear}{2024}
+  \endentry
+
+  \entry{SKIBNIEWSKI1992251}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMJ}{%
+         family={Skibniewski},
+         familyi={S\bibinitperiod},
+         given={Mirosław\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WSC}{%
+         family={Wooldridge},
+         familyi={W\bibinitperiod},
+         given={Stephen\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{Automated building construction systems, automated material handling
+  systems, robotic material handling, bar code technology}
+    \strng{namehash}{SMJWSC1}
+    \strng{fullhash}{SMJWSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Several leading Japanese construction firms are developing fully automated,
+  self-rising platforms for the construction of high-rise buildings. These
+  automated building construction systems provide an integrated building
+  construction environment for robotized cranes, finishing robots, computer
+  work stations, and other automated construction equipment. A number of
+  benefits are anticipated from these systems, including improved construction
+  productivity, less dependence on labor, and improved safety and quality. The
+  impact of this integrated automation approach is expected to be significant
+  due to its high level of coordination between resources and processes, and
+  well defined environment for information transfer. As a follow-up to this
+  effort, several research issues need to be considered, including the design
+  of materials handling systems which will maintain the efficiency of the
+  automated building construction approach. This paper describes an automated
+  materials handling system concept for managing and handling construction
+  materials within automated building construction systems. The materials
+  handling system is based on proven automation technologies and a distributed
+  computer network. A prototype robotic materials handling workcell based on a
+  micro-robot and bar code technology, and developed for integration within the
+  automated materials handling system is also described.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/0926-5805(92)90017-E
+    \endverb
+    \field{issn}{0926-5805}
+    \field{number}{3}
+    \field{pages}{251\bibrangedash 266}
+    \field{title}{Robotic materials handling for automated building
+  construction technology}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/092658059290017E
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{Automation in Construction}
+    \field{year}{1992}
   \endentry
 
   \entry{kassowrobotsblog}{online}{}
@@ -1187,9 +1695,64 @@
     \verb rpa
     \endverb
     \field{year}{2024}
-    \field{urlday}{07}
-    \field{urlmonth}{08}
-    \field{urlyear}{2024}
+  \endentry
+
+  \entry{tarn2011robotic}{book}{}
+    \name{author}{3}{}{%
+      {{hash=TTJ}{%
+         family={Tarn},
+         familyi={T\bibinitperiod},
+         given={Tzyh-Jong},
+         giveni={T\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=CSB}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Shan-Ben},
+         giveni={S\bibinithyphendelim B\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Fang},
+         familyi={F\bibinitperiod},
+         given={Gu},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{TTJCSBFG1}
+    \strng{fullhash}{TTJCSBFG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Robotic welding, intelligence and automation: RWIA’2010}
+    \field{volume}{88}
+    \field{year}{2011}
+  \endentry
+
+  \entry{shopmetal}{online}{}
+    \name{author}{1}{}{%
+      {{hash=TSM}{%
+         family={Techology},
+         familyi={T\bibinitperiod},
+         given={Shop\bibnamedelima Metalworking},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TSM1}
+    \strng{fullhash}{TSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{note}{Accessed: 2024-08-04}
+    \field{title}{Robotic bending cell}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=EhQ7DvXjDCA
+    \endverb
+    \field{year}{2023}
   \endentry
 
   \entry{THROOP2005281}{article}{}
@@ -1257,6 +1820,71 @@
     \field{volume}{36}
     \field{journaltitle}{Postharvest Biology and Technology}
     \field{year}{2005}
+  \endentry
+
+  \entry{Uhrhan1995}{inbook}{}
+    \name{author}{3}{}{%
+      {{hash=UC}{%
+         family={Uhrhan},
+         familyi={U\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Roshardt},
+         familyi={R\bibinitperiod},
+         given={Ren{\'e}},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Schweitzer},
+         familyi={S\bibinitperiod},
+         given={Gerhard},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=LJ}{%
+         family={L{\"u}ckel},
+         familyi={L\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Vieweg+Teubner Verlag}%
+    }
+    \strng{namehash}{UCRRSG1}
+    \strng{fullhash}{UCRRSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{abstract}{%
+    The automation concept is based on the integration of the three factors
+  ``man, technique, organisation --- MTO'', developed at the Centre for
+  Integrated Production at the ETH. As a benchmark, a manufacturing cell for
+  flexible bending of metal sheets is under construction. It consists of a
+  laser cutting machine, press brake, conveyor belts, and a robot. These
+  devices will be networked to enable the fully automated programming cycle.
+  The project is jointly pursued by the Institute of Work Psychology, the
+  Institute of Forming Technology, and the Robotics Lab.%
+    }
+    \field{booktitle}{Proceedings of the Third Conference on Mechatronics and
+  Robotics: ``From design methods to industrial applications''}
+    \verb{doi}
+    \verb 10.1007/978-3-322-91170-4_15
+    \endverb
+    \field{isbn}{978-3-322-91170-4}
+    \field{pages}{202\bibrangedash 211}
+    \field{title}{User Oriented Automation of Flexible Sheet Bending}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-322-91170-4_15
+    \endverb
+    \list{location}{1}{%
+      {Wiesbaden}%
+    }
+    \field{year}{1995}
   \endentry
 
   \entry{WAGNER201988}{article}{}
