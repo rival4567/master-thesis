@@ -1,0 +1,37 @@
+\begin{enumerate}
+    \item A key requirement for the mobile robot unit is to be able to cope with the limited space available in the
+    project partner's production hall. Specifically, this means that only an area of approximately $2 m \times 4.5 m$ is
+    available in front of the sheet metal bending machine.
+
+    \item Another point is the operating time of the overall system. The unit should be able to autonomously
+    manage a day shift of eight hours and a night shift of six hours without any major personnel
+    intervention.
+
+    \item Robot should also be able to handle various sheet metal part variants, i.e. different component sizes and
+    geometries. In addition to the flexible handling of different sheet metal parts, the focus is also on the
+    simple integration of new variants into the existing system. Some of the sheet metal parts in production are
+    of small size. These sheets will have little gripping surface after few bendings. Special considerations needs to be given to the
+    gripper design so that robot can handle sheet metal parts of small and medium sizes. (from $60 mm \times 110 mm$ to upto $115 mm \times 220 mm$)
+  
+    \item 
+    The mobile robot unit is to be used as a supplement to manual production. It is therefore necessary
+    that it can be set up and dismantled quickly and easily in front of the bending machine.
+
+    \item The hand-eye calibration using a vision sensor could degrade over time due to environmental factors such as temperature changes or vibrations.
+    This will decrease the accuracy of robot \hyperref[acro:TCP]{TCP} in positioning and grasping leading to incorrect bending.
+    The robot should be able to automatically recalibrate without any long delays when there is a request by the operator.
+    
+    \item The angle measurement on the bent sheet should be carried out using a camera system
+    after each bending process. Based on the measured angle, bending machine should be re-adjusted for the next iteration. The
+    necessary values should also be entered at the operator terminal by the terminal operating robot. In addition, a
+    continuous real-time status query of the bending machine is required via the operating terminal. For
+    the implementation of this subtask, the company is working with \textbf{VisCheck GmbH}, which specializes in
+    reading screens using a camera and making entries via a robot.
+    
+\end{enumerate}
+
+
+
+
+
+

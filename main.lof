@@ -4,14 +4,15 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces ASTRO-II 100NT HDS 1030 bending cell. Source: \blx@tocontentsinit {0}\cite {astro100}\relax }}{5}{figure.caption.6}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Energy, data and material flow in the robotic workcell\relax }}{9}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces \hyperref [acro:AMADA]{AMADA} Bending Machine 1) Marker 2) Bending station 3) Laser height 4) Laser monitoring 5) \hyperref [acro:TFT]{TFT} Touch screen\relax }}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Robotic workcell layout. 1) Bending machine 2) Storage station 3) Unloading station 4) Handling robot 5) Bending machine terminal operating robot 6) Safety fence\relax }}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \hyperref [acro:AMADA]{AMADA} Bending Machine 1) Marker 2) Bending station 3) Laser height 4) Laser monitoring 5) \hyperref [acro:TFT]{TFT} Touch screen\relax }}{11}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Components of the robot unit: 1) robot base; 2) robot from kassow robots; 3) manual quick-change system; 4) pneumatic parellel gripper; 5) camera system\relax }}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Components of the robot unit: 1) robot base; 2) robot from kassow robots; 3) manual quick-change system; 4) pneumatic parellel gripper; 5) camera system\relax }}{14}{figure.caption.11}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces TCP is set at the end of gripper at a distance of 216mm from robot TOOL-IO\relax }}{19}{figure.caption.11}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces A working distance of 300mm is set for the robotic camera\relax }}{20}{figure.caption.12}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Calibration procedure using telegram\relax }}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces TCP is set at the end of gripper at a distance of 216mm from robot TOOL-IO\relax }}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces A working distance of 300mm is set for the robotic camera\relax }}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Calibration procedure using telegram\relax }}{22}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

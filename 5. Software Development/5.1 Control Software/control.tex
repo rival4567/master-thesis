@@ -38,14 +38,14 @@ company but still need to be adapted.
 \begin{longtable}{c}
     \begin{tikzpicture}[node distance=3.5cm]
         \node (start) [startstop] {Start};
-        \node (proc0) [process, below of=start, yshift=1cm] {Initialisation of camera, PLC and configuration of shelf storage parameters};
+        \node (proc0) [process, below of=start, yshift=1cm] {Initialisation of camera, PLC and configuration of storage system parameters};
         \node (loop)  [processorange, below of=proc0, yshift=1.5cm] {Loop};
         \node (nodeint) [nodepage, left of=loop] {3};
         \node (dec0) [decision, below of=loop] {Is calibration requested from operator?};
         \node (intersection0) [coordinate, below of=dec0] {};
         \node (proc1) [process, right of=dec0, xshift=3cm] {Perform hand-eye calibration};
-        \node (dec1) [decision, below of=intersection0, yshift=0.5cm] {Is drawer from shelf storage open?};
-        \node (proc2) [process, right of=dec1, xshift=3cm] {Open empty drawer from shelf storage};
+        \node (dec1) [decision, below of=intersection0, yshift=0.5cm] {Is drawer of shelf open?};
+        \node (proc2) [process, right of=dec1, xshift=3cm] {Open empty drawer of shelf};
         \node (intersection1) [nodepage, below of=dec1] {1};
 
         \draw [arrow] (start) -- (proc0);
@@ -80,7 +80,7 @@ company but still need to be adapted.
         \node (intersection3) [nodepage, below of=dec3, yshift=0.5cm] {2};
         \node (point3) [coordinate, left of=dec3, xshift=0cm] {};
         \node (point4) [coordinate, below of=point3, yshift=3cm] {};
-        \node (dec4) [decision, left of=point4, xshift=0.5cm] {Is regrasping required?};
+        \node (dec4) [decision, left of=point4, xshift=0.5cm] {Is regrasping of part required?};
         \node (point6) [coordinate, left of=dec4] {};
         \node (point8) [process, below of=dec4, yshift=0cm] {Place sheet metal part in pickup station gripper};
         \node (point9) [coordinate, left of=point8, xshift=-0.5cm] {};
@@ -117,10 +117,10 @@ company but still need to be adapted.
 
     \begin{tikzpicture}[node distance=2cm]
         \node (intersection3) [nodepage] {2};
-        \node (proc10) [process, below of=intersection3] {Place the sheet in the drawer of shelf storage};
-        \node (dec5) [decision, below of=proc10, yshift=-1.5cm] {Is drawer of shelf storage filled?};
-        \node (proc11) [process, right of=dec5, xshift=4.5cm] {Close the drawer of shelf storage};
-        \node (dec6) [decision, below of=proc11, yshift=-2cm] {Is Shelf storage full?};
+        \node (proc10) [process, below of=intersection3] {Place the sheet in the drawer of shelf};
+        \node (dec5) [decision, below of=proc10, yshift=-1.5cm] {Is current drawer of shelf filled?};
+        \node (proc11) [process, right of=dec5, xshift=4.5cm] {Close the drawer of shelf};
+        \node (dec6) [decision, below of=proc11, yshift=-2cm] {Is storage station full?};
         \node (intersection4) [nodepage, below of=dec5, yshift=-2cm] {3};
         \node (stop) [startstop, below of=dec6, yshift=-1.75cm] {Stop};
 
