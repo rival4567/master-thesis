@@ -88,6 +88,73 @@
     \field{year}{2024}
   \endentry
 
+  \entry{Bahadir2024}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BO}{%
+         family={Bahadir},
+         familyi={B\bibinitperiod},
+         given={Ozan},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SJP}{%
+         family={Siebert},
+         familyi={S\bibinitperiod},
+         given={Jan\bibnamedelima Paul},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=ACG}{%
+         family={Aragon-Camarasa},
+         familyi={A\bibinithyphendelim C\bibinitperiod},
+         given={Gerardo},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BOSJPACG1}
+    \strng{fullhash}{BOSJPACG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    This study addresses the problem of hand--eye calibration in robotic
+  systems by developing Continual Learning (CL)-based approaches.
+  Traditionally, robots require explicit models to transfer knowledge from
+  camera observations to their hands or base. However, this poses limitations,
+  as the hand--eye calibration parameters are typically valid only for the
+  current camera configuration. We, therefore, propose a flexible and
+  autonomous hand--eye calibration system that can adapt to changes in camera
+  pose over time. Three CL-based approaches are introduced: the naive CL
+  approach, the reservoir rehearsal approach, and the hybrid approach combining
+  reservoir sampling with new data evaluation. The naive CL approach suffers
+  from catastrophic forgetting, while the reservoir rehearsal approach
+  mitigates this issue by sampling uniformly from past data. The hybrid
+  approach further enhances performance by incorporating reservoir sampling and
+  assessing new data for novelty. Experiments conducted in simulated and
+  real-world environments demonstrate that the CL-based approaches, except for
+  the naive approach, achieve competitive performance compared to traditional
+  batch learning-based methods. This suggests that treating hand--eye
+  calibration as a time sequence problem enables the extension of the learned
+  space without complete retraining. The adaptability of the CL-based
+  approaches facilitates accommodating changes in camera pose, leading to an
+  improved hand--eye calibration system.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00138-024-01572-w
+    \endverb
+    \field{issn}{1432-1769}
+    \field{number}{4}
+    \field{pages}{97}
+    \field{title}{Continual learning approaches to hand--eye calibration in
+  robots}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00138-024-01572-w
+    \endverb
+    \field{volume}{35}
+    \field{journaltitle}{Machine Vision and Applications}
+    \field{year}{2024}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{BAI2020107776}{article}{}
     \name{author}{4}{}{%
       {{hash=BC}{%

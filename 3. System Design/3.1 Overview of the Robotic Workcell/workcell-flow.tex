@@ -1,0 +1,71 @@
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        every node/.style={draw, ellipse, align=center, inner sep=5pt, line width=0.4mm},
+        rect/.style={draw=purple, rectangle, rounded corners=8pt, align=center, inner sep=12pt},
+        energy/.style={->, >=stealth, thick, line width=0.5mm},
+        data/.style={->, >=stealth, dashed, line width=0.5mm},
+        material/.style={->, >=stealth, dotted, line width=0.5mm},
+        node distance=1cm
+    ]
+      
+        % Nodes
+        \node (bending) [red] {Bending\\ Machine};
+        \node (terminal) [red, left=of bending] {Terminal};
+        \node (camera1) [orange, below left=1cm and 0cm of bending] {Camera};
+        \node (footpedal) [red, below right=1cm and 0cm of bending] {Foot\\ pedal};
+        \node (plc) [gray, below=4.5cm of bending, inner sep=10pt] {PLC};
+        \node (pandarobot) [cyan, above left=0.5cm and 1.5cm of plc] {Panda\\ Robot};
+        \node (handlingrobot) [green, above right=0.5cm and 3cm of plc] {Handling\\ Robot};
+        \node (camera3) [green, above right=of handlingrobot] {Camera};
+        \node (storage) [rect, below=3cm of camera3, text=purple] {Storage\\ Station};
+        \node (camera2) [cyan, above left=of pandarobot] {Camera};
+        \node (unloading) [rect, below=of plc, draw=gray, text=gray] {Unloading\\ Station};
+        \node (energy) [rectangle, draw=none, fill=white, text width=2.5cm, align=left, above left=0.3cm and 0cm of unloading, font=\footnotesize] {Energy Flow};
+        \node (data) [rectangle, draw=none, fill=white, text width=2.5cm, align=left, below=0cm of energy, font=\footnotesize] {Data Flow};
+        \node (material) [rectangle, draw=none, fill=white, text width=2.5cm, align=left, below=0cm of data, font=\footnotesize] {Material Flow};
+        \node (energy_left) [circle, draw=none, left=0cm of energy] {};
+        \node (energy_right) [circle, draw=none, left=1cm of energy_left] {};
+        \node (data_left) [circle, draw=none, left=0cm of data] {};
+        \node (data_right) [circle, draw=none, left=1cm of data_left] {};
+        \node (material_left) [circle, draw=none, left=0cm of material] {};
+        \node (material_right) [circle, draw=none, left=1cm of material_left] {};
+        
+        % Energy flow
+        \draw[energy] (bending) -- (terminal);
+        \draw[energy] (bending) -- (footpedal);
+        \draw[energy, transform canvas={xshift=-4pt}] (plc) -- (camera1);
+        \draw[energy] (plc) .. controls ++(-1, 0) and ++(1,-1) .. (pandarobot);
+        \draw[energy] (pandarobot) .. controls ++(-1, 0.5) and ++(0.5,-1) .. (camera2);
+        \draw[energy] (plc) .. controls ++(1, 0) and ++(-1,-1) .. (handlingrobot);
+        \draw[energy] (handlingrobot) .. controls ++(2,1.2) and ++(-2,-1.3) .. (camera3);
+        \draw[energy, transform canvas={xshift=-4pt}] (unloading) -- (plc);
+        
+        % Data flow
+        \draw[data] (terminal) .. controls ++(-2,-1) and ++(0,1) .. (camera2);
+        \draw[data] (camera2) .. controls ++(1, -0.5) and ++(-1,1) .. (pandarobot);
+        \draw[data] (camera3) .. controls ++(-0.5,-1) and ++(2,0.5) .. (handlingrobot);
+        \draw[data] (bending) -- (camera1);
+        \draw[data] (plc) -- (footpedal);
+        \draw[data] (storage) -- (camera3);
+        \draw[data] (bending) .. controls ++(5,1) and ++(0,2) .. (camera3);
+        \draw[data, transform canvas={xshift=4pt}] (camera1) -- (plc);
+        \draw[data, <->, transform canvas={xshift=4pt}] (unloading) -- (plc);
+        \draw[data, <->] (plc) .. controls ++(-1, 0.5) and ++(2,-1) .. (pandarobot);
+        \draw[data, <->] (plc) .. controls ++(1, 0.4) and ++(-2,-1) .. (handlingrobot);
+        \draw[data] (unloading) .. controls ++(8,0) and ++(4,-7) .. (camera3);
+
+        % Material flow
+        \draw[material] (unloading) .. controls ++(2,1) and ++(1,-3) .. (handlingrobot);
+        \draw[material] (handlingrobot) .. controls ++(1.5,-0.5) and ++(-1,1) .. (storage);
+        \draw[material, <->] (bending) .. controls ++(4,-1) and ++(0,3) .. (handlingrobot);
+
+        % Create legend for the figure
+        \draw[energy,-] (energy_left) -- (energy_right);
+        \draw[data,-] (data_left) -- (data_right);
+        \draw[material,-] (material_left) -- (material_right);
+
+    \end{tikzpicture}
+    \caption{Energy, data and material flow in the robotic workcell}
+    \label{fig:flow-workcell}
+\end{figure}
