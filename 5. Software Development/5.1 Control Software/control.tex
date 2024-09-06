@@ -38,7 +38,7 @@ company but still need to be adapted.
 \begin{longtable}{c}
     \begin{tikzpicture}[node distance=3.5cm]
         \node (start) [startstop] {Start};
-        \node (proc0) [process, below of=start, yshift=1cm] {Initialisation of camera, PLC and configuration of storage system parameters};
+        \node (proc0) [process, below of=start, yshift=1cm] {Initialisation of camera, \hyperref[acro:PLC]{PLC} and configuration of storage system parameters};
         \node (loop)  [processorange, below of=proc0, yshift=1.5cm] {Loop};
         \node (nodeint) [nodepage, left of=loop] {3};
         \node (dec0) [decision, below of=loop] {Is calibration requested from operator?};

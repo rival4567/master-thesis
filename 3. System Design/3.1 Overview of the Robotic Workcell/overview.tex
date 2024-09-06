@@ -1,12 +1,14 @@
 
-Robotic workcell has been designed keeping in mind the workspace of handling robot. Handling robot has to able to reach every station in the workspace without any collision. The drawers of storage system is especially close to the production floor and the robot requires
-some space to move around without getting stuck. Figure \ref{fig:robotic-workcell} shows the layout of the workcell. The robotic workcell consists of various subsystems which include bending machine, storage station, unloading station, handling robot, bending machine terminal operating robot, safety fence.
+Robotic workcell has to be designed keeping in mind the workspace of handling robot. Handling robot has to able to reach every station in the workspace without any collision. The drawers of storage system is especially close
+to the production floor and the robot requires some space to move around without getting stuck. 
 
-% Create a figure of robotic workcell flow of things
-\input{3. System Design/3.1 Overview of the Robotic Workcell/workcell-flow.tex}
-
-The preliminary designs for the mobile robot unit were further elaborated
-in the form of CAD models and successively converted into final CAD designs. Figure 1 shows the
+The preliminary designs for the robotic workcell were elaborated
+in the form of \hyperref[acro:CAD]{CAD} models and successively converted into final \hyperref[acro:CAD]{CAD} designs. 
+These \hyperref[acro:CAD]{CAD} models were later converted to suitable file format like \textit{.stl} and \textit{.dae} for the simulation software \hyperref[acro:ROS]{ROS}.
+These meshes are then utilized to build up the whole workcell in \hyperref[acro:ROS]{ROS} and gazebo. Similarly, robot is defined in \hyperref[acro:URDF]{URDF} file format that includes
+the physical description of the a robot.
+Figure \ref{fig:robotic-workcell} shows the final layout of the workcell. The robotic workcell consists of various subsystems which include bending machine, storage station, unloading station, handling robot, bending machine terminal operating robot, safety fence.
+Figure 1 shows the
 current status of the mobile robot unit. This consists of several subsystems: the storage box, the robot
 unit, the removal station, the VisCheck operating unit and the safety fence. The latter is still in the
 preliminary design phase. The other subsystems are described in more detail in the following
@@ -17,5 +19,31 @@ subsections.
     \includegraphics[width=\textwidth]{figures/robotic-workcell1.png}
     \caption{Robotic workcell layout. 1) Bending machine 2) Storage station 3) Unloading station 4) Handling robot 5) Bending machine terminal operating robot 6) Safety fence}
     \label{fig:robotic-workcell}
+
 \end{figure}
+
+% Create a figure of robotic workcell flow of things
+\input{3. System Design/3.1 Overview of the Robotic Workcell/workcell-flow.tex}
+
+
+\subsection{Bending machine}
+\label{sub:bending-machine}
+
+\subsection{Storage station}
+\label{sub:storage-station}
+
+\subsection{Unloading station}
+\label{sub:unloading-station}
+
+\subsection{Handling robot}
+\label{sub:handling-robot}
+
+\subsection{Bending machine terminal operating robot}
+\label{sub:panda-robot}
+
+\subsection{Safety fence}
+\label{sub:safety-fence}
+
+
+
 

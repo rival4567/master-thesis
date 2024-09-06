@@ -2,7 +2,7 @@
     \centering
     \begin{tikzpicture}[
         every node/.style={draw, ellipse, align=center, inner sep=5pt, line width=0.4mm},
-        rect/.style={draw=purple, rectangle, rounded corners=8pt, align=center, inner sep=12pt},
+        rect/.style={draw=cyan, rectangle, rounded corners=8pt, align=center, inner sep=12pt},
         energy/.style={->, >=stealth, thick, line width=0.5mm},
         data/.style={->, >=stealth, dashed, line width=0.5mm},
         material/.style={->, >=stealth, dotted, line width=0.5mm},
@@ -14,13 +14,13 @@
         \node (terminal) [red, left=of bending] {Terminal};
         \node (camera1) [orange, below left=1cm and 0cm of bending] {Camera};
         \node (footpedal) [red, below right=1cm and 0cm of bending] {Foot\\ pedal};
-        \node (plc) [gray, below=4.5cm of bending, inner sep=10pt] {PLC};
-        \node (pandarobot) [cyan, above left=0.5cm and 1.5cm of plc] {Panda\\ Robot};
+        \node (plc) [blue, below=4.5cm of bending, inner sep=10pt] {\hyperref[acro:PLC]{PLC}};
+        \node (pandarobot) [gray, above left=0.5cm and 1.5cm of plc] {Panda\\ Robot};
         \node (handlingrobot) [green, above right=0.5cm and 3cm of plc] {Handling\\ Robot};
         \node (camera3) [green, above right=of handlingrobot] {Camera};
-        \node (storage) [rect, below=3cm of camera3, text=purple] {Storage\\ Station};
-        \node (camera2) [cyan, above left=of pandarobot] {Camera};
-        \node (unloading) [rect, below=of plc, draw=gray, text=gray] {Unloading\\ Station};
+        \node (storage) [rect, below=3cm of camera3, text=cyan] {Storage\\ Station};
+        \node (camera2) [gray, above left=of pandarobot] {Camera};
+        \node (unloading) [rect, below=of plc, draw=cyan, text=cyan] {Unloading\\ Station};
         \node (energy) [rectangle, draw=none, fill=white, text width=2.5cm, align=left, above left=0.3cm and 0cm of unloading, font=\footnotesize] {Energy Flow};
         \node (data) [rectangle, draw=none, fill=white, text width=2.5cm, align=left, below=0cm of energy, font=\footnotesize] {Data Flow};
         \node (material) [rectangle, draw=none, fill=white, text width=2.5cm, align=left, below=0cm of data, font=\footnotesize] {Material Flow};
