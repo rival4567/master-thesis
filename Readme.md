@@ -80,13 +80,17 @@ A list of all tables included in the thesis, along with their titles and page nu
 
 ---
 
-## Chapter 3: System Design
-
-### 3.1 Overview of the Robotic Workcell
+## Chapter 3: System Design 🔄
+### 3.1 Overview of the Robotic Workcell 🔄
 
 - Description of the workcell layout and components.
 
-### 3.2 Hardware Selection
+
+### 3.2 Requirements for the overall system ✅
+
+- System requirements
+
+### 3.2 Hardware Selection 🔄
 
 - Kassow robot, bending machine, cameras, and other peripherals.
 

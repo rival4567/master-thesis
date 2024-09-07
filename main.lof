@@ -1,18 +1,23 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Industry 4.0 is changing traditional manufacturing relationships (Source: \blx@tocontentsinit {0}\cite {russmann2015industry})\relax }}{1}{figure.caption.5}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces ASTRO-II 100NT HDS 1030 bending cell. Source: \blx@tocontentsinit {0}\cite {astro100}\relax }}{5}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces ASTRO-II 100NT HDS 1030 bending cell. (Source: \blx@tocontentsinit {0}\cite {astro100})\relax }}{5}{figure.caption.6}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Robotic workcell layout. 1) Bending machine 2) Storage station 3) Unloading station 4) Handling robot 5) Bending machine terminal operating robot 6) Safety fence\relax }}{9}{figure.caption.7}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Energy, data and material flow in the robotic workcell\relax }}{10}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces \hyperref [acro:AMADA]{AMADA} Bending Machine 1) Marker 2) Bending station 3) Laser height 4) Laser monitoring 5) \hyperref [acro:TFT]{TFT} Touch screen\relax }}{12}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Bending Machine\relax }}{11}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Storage Station\relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Unloading station in simulation\relax }}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Handling Robot KR1410 in simulation\relax }}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Franka emika panda robot as terminal operating robot in simulation\relax }}{13}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Components of the robot unit: 1) robot base; 2) robot from kassow robots; 3) manual quick-change system; 4) pneumatic parellel gripper; 5) camera system\relax }}{15}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \hyperref [acro:AMADA]{AMADA} Bending Machine 1) Marker 2) Bending station 3) Laser height 4) Laser monitoring 5) \hyperref [acro:TFT]{TFT} Touch screen\relax }}{18}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Components of the robot unit: 1) robot base; 2) robot from kassow robots; 3) manual quick-change system; 4) pneumatic parellel gripper; 5) camera system\relax }}{19}{figure.caption.17}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces TCP is set at the end of gripper at a distance of 216mm from robot TOOL-IO\relax }}{21}{figure.caption.12}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces A working distance of 300mm is set for the robotic camera\relax }}{22}{figure.caption.13}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Calibration procedure using telegram\relax }}{23}{figure.caption.14}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces TCP is set at the end of gripper at a distance of 216mm from robot TOOL-IO\relax }}{25}{figure.caption.18}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces A working distance of 300mm is set for the robotic camera\relax }}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Calibration procedure using telegram\relax }}{27}{figure.caption.20}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
