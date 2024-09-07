@@ -36,3 +36,4 @@ CPS, Cyper-Physical Systems
 CAD, Computer-aided design
 TFC, Tool flange centre
 IO, Input Output
+Gazebo, 3D Simulation software usually used in combination with ROS to simulate robots in complex indoor and outdoor environments.
