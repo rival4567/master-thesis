@@ -1464,7 +1464,31 @@
     \verb{url}
     \verb https://www.kassowrobots.com/downloads/product-manuals
     \endverb
-    \field{volume}{2}
+    \field{volume}{Generation 2, 4.0}
+    \field{year}{2024}
+  \endentry
+
+  \entry{kassow-software-manual}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=RK}{%
+         family={Robots},
+         familyi={R\bibinitperiod},
+         given={Kassow},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RK1}
+    \strng{fullhash}{RK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Software Manual PDF}
+    \verb{url}
+    \verb https://docs.kassowrobots.com/kr-assets/manuals/software-manual-kasso
+    \verb wrobots_v1.3.0p.pdf
+    \endverb
+    \field{volume}{1.3.0}
     \field{year}{2024}
   \endentry
 

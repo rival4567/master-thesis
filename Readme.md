@@ -1,3 +1,6 @@
+# Thesis
+To load thesis open -> main.pdf
+
 # Task List
 
 - Task 1: ✅ Completed
@@ -81,7 +84,7 @@ A list of all tables included in the thesis, along with their titles and page nu
 ---
 
 ## Chapter 3: System Design 🔄
-### 3.1 Overview of the Robotic Workcell 🔄
+### 3.1 Overview of the Robotic Workcell ✅
 
 - Description of the workcell layout and components.
 
@@ -90,11 +93,11 @@ A list of all tables included in the thesis, along with their titles and page nu
 
 - System requirements
 
-### 3.2 Hardware Selection 🔄
+### 3.2 Hardware Selection ⏳
 
 - Kassow robot, bending machine, cameras, and other peripherals.
 
-### 3.3 Software Architecture
+### 3.3 Software Architecture ⏳
 
 - Control software, computer vision algorithms, and web interface.
 
@@ -102,7 +105,7 @@ A list of all tables included in the thesis, along with their titles and page nu
 
 ## Chapter 4: Hardware Integration
 
-### 4.1 Installation and Configuration
+### 4.1 Installation and Configuration ⏳
 
 - Steps for setting up the robot, cameras, and bending machine.
 
@@ -110,7 +113,7 @@ A list of all tables included in the thesis, along with their titles and page nu
 
 - Interfaces and protocols for system integration.
 
-### 4.3 Safety Considerations
+### 4.3 Safety Considerations 🔄
 
 - Measures to ensure safe operation of the workcell.
 

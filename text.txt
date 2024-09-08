@@ -1,0 +1,1883 @@
+                     Master's Thesis
+
+        Deggendorf Institute of Technology       ampus       ham
+
+
+ Faculty of Applied Natural Sciences and Industrial Engineering
+
+
+
+       Master Mechatronic and Cyber-Physical Systems
+
+
+
+
+Roboter-Arbeitszelle für automatisierten Biegeprozess
+                 German title
+
+(translation in consulation
+  Robotic Workcell          with first
+                   for Automated       examiner)
+                                  Bending  Process
+
+                       English title
+
+
+
+
+        master's thesis to obtain the academic degree:
+
+
+
+                Master of Engineering (M.Eng.)
+
+
+
+          submitted by:       first name,
+                           Shivam,   Shivamname, place,
+                           12201775
+                              matriculation number
+
+         first examiner:       title, name
+                           Firsching,  Prof. Dr.-Ing Peter
+
+
+
+                           place, date
+                           Cham, 31 July, 2024
+                                                 ara on or
+
+
+
+Name of student: Shivam, Shivam
+
+
+Name of first examiner:      Firsching, Prof. Dr.-Ing Peter
+
+
+ itle of the master's thesis: Robotic Workcell for Automated Bending Process
+
+
+
+
+     1. I hereby declare that I have written this master's thesis independently and have not submitted this
+     thesis for any other e amination purposes. have not used any referenes or materials other than
+     mentioned in the biblio raphy and have marked all literal and analo ous citations.
+
+
+
+
+   Cham, (date) 31.07.2024                              signature of student:
+
+
+
+
+    2. I agree that my master's thesis may be made available to a broader public by the DIT library.
+       Therefore, I will hand in a further hard bound copy of my master's thesis.
+
+
+               yes                       no
+
+
+    Cham, (date)      31.07.2024                        signature of student:
+
+
+
+    I declare and take the responsibility that I am the exclusive owner of all rights concerning the
+    master's thesis, including the right of disposal concerning drafts and attached illustrations, plans
+    or similar and that no third party rights or claims or legal requirements will be made upon
+    making this master's thesis publicly available.
+
+
+
+
+    To be filled in by the first examiner if the author agrees with public accessibility of the master's thesis:
+
+    Adding a copy of the master's thesis into the stock of the library and the loan of this copy is:
+
+                  approved                         not approved
+
+
+
+   Cham, (date)                                 signature of first examiner:
+                                       Abstract
+
+    This thesis demonstrates the use of a robotic workcell for the automation of a bending
+machine. The main objectives are to automate the bending process of a AMADA bending
+machine and enhance accuracy of bent sheets. The robotic workcell consists of a 7-axis
+collaborative robot, two VISOR® vision sensors, and a web-based UI. The robotic arm is
+used for the automatic loading and unloading of metal sheets in the bending machine. To
+achieve this, a VISOR® camera is mounted on the robot for sheet detection and robotic
+perception. The second VISOR® is used for the angle measurement of bent part and
+quality control. A web-based UI monitors the robot movement in the workcell which
+acts as a digital twin. The benefits include reduction in manual labor and increased
+throughput, with improved precision and efficiency. This work provides valuable insights
+for the rapid development and deployment in the industry automation.
+
+Keywords: Robotic Workcell, Automation, Metal Sheet Bending, 7-axis robotic arm,
+VISOR® Computer Vision, ROS, Web UI, Digital Twin
+Contents
+1 Introduction                                             1
+  1.1 Background                                           1
+  1.2 Problem Statement                                    2
+  1.3 Objectives                                           2
+  1.4 Scope                                                3
+  1.5 Outline of the Thesis                                3
+
+2 Literature Review                                        4
+  2.1 Robotic Automation in Manufacturing                  4
+  2.2 Automated Bending Processes                          4
+       2.2.1 ASTRO bending cell                            5
+  2.3 Robotic System                                       6
+       2.3.1 Robot Operating System                        7
+  2.4 Computer Vision in Industrial Automation             7
+  2.5 User Interfaces for Industrial Systems               8
+
+3 System Design                                            9
+  3.1 Overview of the Robotic Workcell                     9
+      3.1.1 Bending machine                               10
+      3.1.2 Storage station                               11
+      3.1.3 Unloading station                             12
+      3.1.4 Handling robot                                12
+      3.1.5 Bending machine terminal operating robot      13
+      3.1.6 Safety fence                                  14
+  3.2 Requirements for the overall system                 14
+  3.3 Hardware Selection                                  15
+      3.3.1 AMADA bending machine                         15
+      3.3.2 Kassow Robots: KR1410                         16
+      3.3.3 VISOR® Vision Sensor                          18
+      3.3.4 Robotic Camera                                18
+      3.3.5 Inspection Camera                             18
+  3.4 Software Architecture                               18
+
+4 Hardware Integration                                    19
+  4.1 Installation and Configuration                      19
+      4.1.1 Bending machine                               19
+
+                                                       Page I
+                                                   CONTENTS
+
+
+         4.1.2 Robot Unit                                 19
+         4.1.3 Unloading station                          21
+   4.2   Communication Protocols                          22
+   4.3   Safety Considerations                            22
+         4.3.1 Payload                                    22
+         4.3.2 Stopping Distance                          22
+         4.3.3 Safety zones                               23
+
+5 Software Development                                    24
+  5.1 Control Software                                    24
+  5.2 Camera 1: Feature Detection                         27
+  5.3 Camera 2: Inspection and Quality Control            27
+  5.4 Web Interface Design                                27
+
+6 System Integration and Testing                          28
+  6.1 Integration Tests                                   28
+  6.2 Calibration                                         28
+      6.2.1 Robot Calibration                             28
+      6.2.2 Camera Calibration                            29
+      6.2.3 Sensor Calibration                            30
+      6.2.4 Calibration Procedures                        30
+  6.3 Performance Evaluation                              31
+      6.3.1 Importance of Calibration                     31
+
+7 Experimental Results                                    32
+  7.1 Setup and Methodology                               32
+  7.2 Data Collection                                     32
+  7.3 Results and Analysis                                32
+
+8 Discussion                                              33
+
+9 Conclusion and Future Works                             34
+  9.1 Summary                                             34
+  9.2 Recommendations for Future Research                 34
+      9.2.1 Control Software Update                       34
+
+Bibliography                                                i
+
+A Appendix                                                vi
+  A1 Software & Development Environment Versions           vi
+  A2 Reduction in Manual Labor                            vii
+
+
+                                                      Page II
+                      CONTENTS
+
+
+A3   Cost reduction          vii
+
+
+
+
+                        Page III
+List of Figures
+ 1.1   Industry 4.0 is changing traditional manufacturing relationships (Source:
+       [34])                                                                        1
+
+ 2.1   ASTRO-II 100NT HDS 1030 bending cell. (Source: [3])                          5
+
+ 3.1   Robotic workcell layout. 1) Bending machine 2) Storage station 3) Un-
+       loading station 4) Handling robot 5) Bending machine terminal operating
+       robot 6) Safety fence                                                        9
+ 3.2   Energy, data and material flow in the robotic workcell                      10
+ 3.3   Bending Machine                                                             11
+ 3.4   Storage Station                                                             11
+ 3.5   Unloading station in simulation                                             12
+ 3.6   Handling Robot KR1410 in simulation                                         13
+ 3.7   Franka emika panda robot as terminal operating robot in simulation          13
+
+ 4.1   AMADA Bending Machine 1) Marker 2) Bending station 3) Laser height
+       4) Laser monitoring 5) TFT Touch screen                                     19
+ 4.2   Components of the robot unit: 1) robot base; 2) robot from kassow robots;
+       3) manual quick-change system; 4) pneumatic parellel gripper; 5) camera
+       system                                                                      20
+ 4.3   Payload diagram for KR1410 manipulator                                      22
+
+ 6.1   TCP is set at the end of gripper at a distance of 216mm from robot TOOL-IO 28
+ 6.2   A working distance of 300mm is set for the robotic camera                  29
+ 6.3   Calibration procedure using telegram                                       30
+
+
+
+
+                                                                             Page IV
+List of Tables
+ 3.1   Bending Machine Technical Specifications (Source: [2])        15
+ 3.2   KR1410 Technical Specifications (Source: [33, page 31])       16
+
+ 4.1   Braking accelerations abrake [deg/s2 ] for KR1410             23
+
+ 5.1   Control program flowchart of robot unit                       27
+
+
+
+
+                                                                 Page V
+Technical Terms and Abbreviations
+2D       two-dimensional
+3D       three-dimensional
+AMADA    Japanese manufacturer of metal processing equipment and ma-
+         chinery
+API      Application Programming Interface
+CAD      Computer-aided design
+CBun     Capability Bundle represents a modular framework within KR
+         system encapsulating functionalities and providing the access
+         to its predefined API
+CNC      Computer numerical control
+CPS      Cyper-Physical Systems
+CSS      Cascade Style Sheets
+CV       Computer Vision
+DOF      Degree of Freedom
+DT       Digital twin
+GUI      Graphics User Interface
+Gazebo   3D Simulation software usually used in combination with ROS
+         to simulate robots in complex indoor and outdoor environ-
+         ments.
+HRCS     Human-robot collaborative systems
+HTML5    Hypertext Markup Language 5
+IDE      Integrated Development Environment
+IO       Input Output
+IT       Information Technology
+IoT      Internet of Things
+JS       Javascript
+JSON     Javascript Object Notation
+
+
+                                                               Page VI
+                                                           LIST OF TABLES
+
+
+
+KR          Kassow Robots
+Move J      KR trajectory command for jointspace move which moves by
+            target joint-configuration.
+Move L      KR trajectory command for Linear Move which uses cartesian-
+            space coordinates for robot motion (XYZ;RPY)
+Move S      KR trajectory command for Spline Move which can keep the
+            orientation exactly within the direction of TCP motion.
+OS          Operating System
+PC          Personal Computer
+PLC         Programmable Logic Controller
+ROS         Robot Operating System
+RPA         Robotic Process Automation
+Ros3Djs     3D Visualization Library for use with the ROS JavaScript Li-
+            braries built using three.js. It is developed as part of the Robot
+            Web Tools effort
+Rosbridge   Rosbridge provides a JSON API to ROS functionality for non-
+            ROS programs. There are a variety of front ends that interface
+            with rosbridge including a WebSocket server for web browsers
+            to interact with
+SensoPart   Industrial Sensors manufacturer
+TCP         Tool Center Point
+TFC         Tool flange centre
+TFT         Thin Film Transistor
+UI          User Interface
+UR          Universal Robots
+URDF        Unified Robot Description Format
+VISOR       high-performance smart camera in a compact and light sensor
+            housing from SensoPart
+
+
+
+
+                                                                      Page VII
+Symbols and Formulas
+
+   Symbol   Unit     Description
+   abrake   deg/s2   Braking accelerations on the robot
+                     when emergency stop or protective stop
+                     is triggered
+   vmax     mm/s2    linear TCP speed set in the teach pen-
+                     dant of the robot
+   tbrake     s      the braking time of the robot when
+                     emergency stop or protective stop is
+                     triggered
+   sbrake    mm      the braking distance of the robot when
+                     emergency stop or protective stop is
+                     triggered
+   ω        deg/s    Joint speed
+   r         mm      distance between the shoulder joints of
+                     the robot i.e. joint axis 1 or 2 and ei-
+                     ther centre of gravity of load or TFC
+
+
+
+
+                                                                Page VIII
+1       Introduction
+1.1     Background
+The manufacturing sector is driven by the need of increased productivity. The need for
+efficiency, precision, safety and cost reduction has led to significant push towards automa-
+tion. The industrial growth is currently pushed by the Industrial 4.0: a fourth wave of
+technological advancements that is connecting sensors, machines, and other IT systems.
+These connected systems, also known as cyberphysical systems, may communicate with
+one another via common Internet-based protocols and use data analysis to self-configure,
+anticipate failure, and react to changes. Industry 4.0 is making it possible to have flexi-
+bility in production by enabling faster and efficient processes. [5, 34]
+    There are nine pillars of technological advancements, namely big data and analytics,
+autonomous robots, simulation, horizontal and vertical system integration, the industrial
+internet of things, cybersecurity, the cloud, additive manufacturing, augmented reality.
+[34]
+
+
+
+
+Figure 1.1: Industry 4.0 is changing traditional manufacturing relationships (Source: [34])
+
+   Metal bending processes through an AMADA bending machine, used to rely heavily
+upon the manual labor traditionally. Industry 4.0 is representing a transformation from
+
+
+                                                                                     Page 1
+                                                         CHAPTER 1: INTRODUCTION
+
+
+low skill manual labor to a sophisticated system that requires IT-related skills and innova-
+tion abilities in the workforce. Robotic Automation would have less variability in product
+quality and will not expose operators to physical strain and repetitive motion injuries.
+Collaborative robots with vision sensors [53] allows to have flexibility in manufacturing of
+metal sheets. It means robot can be programmed to perform bending of different metal
+sheets when required. [42]
+
+
+1.2     Problem Statement
+Manual bending of metal sheets is labor-intensive and can lead to human errors, resulting
+in inconsistent quality and inefficiency. The automation of this process with a collabora-
+tive robot poses several challenges, which includes the precise detection and processing of
+sheet metal parts, the accurate execution of the bend operation and the coordination of
+the robotic system with other systems in the workcell.
+    This robotic workcell will have automatic loading and unloading of metal sheets in
+the AMADA bending machine and will use computer vision to detect and measure the
+bend angle of metal sheets. In addition, a user-friendly interface will be developed for
+monitoring the robotic workcell.
+
+
+1.3     Objectives
+The objectives of this research are as follows:
+
+  1. Designing and developing a robotic workcell capable of bending metal sheets au-
+     tonomously. The workcell includes AMADA HFP80-25 NT as the bending machine
+     to be automated, KR1410 as the robot, SensoPart vision sensors as cameras, an
+     unloading station to get sheets from the operator and a shelf for placing the sheets.
+
+  2. Integration of computer vision technology to detect metal sheets accurately for pick-
+     up and measure bending angle. One VISOR® vision sensor mounted on the KR1410
+     will be used for sheet detection and second VISOR® placed in robot workspace for
+     measuring bending angle. Communication between the vision sensor and KR needs
+     to be setup using Telegram.
+
+  3. Building a web interface for the visualization and monitoring of robotic workcell in
+     real-time. The web application interfaces with the KR through ROS Bridge library.
+     The interface uses web development technologies like ReactJS, NodeJS, Javascript,
+     HTML and CSS.
+
+  4. Evaluating the efficiency and accuracy of the robotic workcell in industrial environ-
+     ments and compare it with already existing solution.
+
+                                                                                     Page 2
+                                                         CHAPTER 1: INTRODUCTION
+
+
+
+1.4      Scope
+The development of robotic workcell that can be rapidly configured has a major influence
+on the manufacturing industry. It allows for more flexibilty and mass customization in
+production of parts. [10] Automating the bending process allows manufacturers to increase
+productivity, safety, flexibility, and overall process efficiency while having the option for
+customization. [34, page 9]
+   This thesis contributes to the broadest field of industrial automation and robotics and
+shows how Industry 4.0 can transform traditional manufacturing processes. The scope
+consists of:
+
+   • Programming control software for the robotic system.
+
+   • Integration of computer vision systems for the detection and inspection of metal
+     sheets.
+
+   • Building a web interface for monitoring and visualization.
+
+   • Experimental evaluation of system performance in the industrial environment.
+
+   The thesis does not discuss other aspects of metal manufacturing or the integration of
+other manufacturing processes. The programming of the second robot i.e. Franka Emika
+panda robot and PLC in the robotic workcell is out of scope of this thesis.
+
+
+1.5      Outline of the Thesis
+The thesis is organized into nine chapters: Chapter 1 clearly defines the problem state-
+ment. Chapter 2 reviews state-of-the-art technologies in the industry for automation.
+Chapter 3 and 4 describes the design and development of the robotic workcell, containing
+both hardware and software components. Chapter 5 discusses the programming of the
+control software and web interface. Chapter 6 presents the calibration process and evalua-
+tion of the entire robotic workcell. Chapter 7 provides the results and Chapter 8 analyzes
+the results, discusses their implications, and addresses potential limitations. In the end,
+Chapter 9 summarizes the whole thesis and makes suggestions for future research.
+
+
+
+
+                                                                                     Page 3
+2       Literature Review
+2.1     Robotic Automation in Manufacturing
+Industrial robots were first used for repetitive tasks and material handling. The first
+industrial robot, Unimate was deployed by General Motors in 1961. It weighed two
+tons and worked on assembly lines, autonomously lifting heaving objects and welding
+car parts. Since then robots have evolved to become versatile device that can perform
+complex tasks, learn from experience, communicate through devices, and collaborate with
+human workers. [7]
+    Industrial robots are the right solution for high-volume production process for their
+efficiency, uptime and quality. [13] As the manufacturing industry moves smaller batch
+production, cobots would be much more useful and flexible in a smart workcell. Cobots
+are vastly more advanced and affordable than industrial robots. [14] Common use cases
+of robotic automation in manufacturing include material handling [16, 41], welding [44],
+assembly [22], pick-and-place [39], palletizing [26], and even metal sheet bending [47].
+    Automation is particularly useful in industrial where there is a risk for human opera-
+tors. In [18], robotic automation has been implemented for the manufacturing of footwears
+which is a hazardous environment for human workers. In it a robotic workcell consisting
+of three robots is controlled and coordinated through ROS.
+    With the CPS, the machines in the robotic workcell communicate and share data with
+each other with which production process is improved. Also, whole production process
+can be monitored remotely.[27, page 105] With the AM technologies, design to production
+time is vastly decreased. [27, page 116]. The benefits of automation can often outweigh
+the initial costs. This way Industry 4.0 is transforming manufacturing sector.
+
+
+2.2     Automated Bending Processes
+Sheet metal bending is a process in which bends are formed using a combination of a
+punch and a die. This process is used to create large number of mechanical products
+such as furniture panels, shelves, cabinets, housing for electro-mechanical devices etc. [1]
+The project partner for this thesis i.e. mech-tron GmbH & Co. KG excels in the
+manufacturing of housing systems for electronic and embedded equipment. In this thesis,
+manufacturing of one of these sheet metal housing systems will be automated by means
+of robotic workcell.
+    There are various companies in the market which offers automated bending cells.
+They use industrial robot to feed and bend the parts in the bending machine. [29, 40,
+
+                                                                                     Page 4
+                                                 CHAPTER 2: LITERATURE REVIEW
+
+
+45] or systems to assist the bending which are called bending followers and sheet-feeder.
+[17] However, using a collaborative robot to perform bending tasks is challenging. A
+collaborative robot generally has low payload capacity and requires better robot motion
+planning during bending to avoid exceeding joint torques. In [28], a cobot is used to
+collaborate with a bending machine to perform 3D curving of metal wire and discusses
+the difficulties in holding the part in low payload robot gripper during bending and defines
+the generation of optimum robot motion considering the combined task and motion level
+constraints.
+    In the article [15], two cobots from UR are used for automated bending. The cobot
+can perform challenging bend sequences with the help of a regrip station. In similar way,
+unloading station is used for regrasping purposes to change the way the cobot presents
+the part to the bending machine.
+
+
+2.2.1     ASTRO bending cell
+AMADA already offers an automated solution for the bending process in means of a
+system called ASTRO bending cell. This system consists of a handling robot which can
+perform production of smaller, complex workpieces and have uniformity in production.
+However, press brake and the know-how of handling robot come from AMADA. The
+project partner has one of these systems i.e. ASTRO-100 II NT HDS 1030 in their
+production floor.
+
+
+
+
+          Figure 2.1: ASTRO-II 100NT HDS 1030 bending cell. (Source: [3])
+
+   The ASTRO-100 II NT cell is an “island solution” that is only available in the HDS-
+1030 press configuration, ASTRO HP-20 loading and unloading robot, ASTRO-100 II NT
+
+                                                                                     Page 5
+                                                 CHAPTER 2: LITERATURE REVIEW
+
+
+bending robot and the external software ASTRO CAM. The ASTRO-100 II NT cell. [3]
+The production using these system is continous and very fast.
+    The main drawback of this system is the software ASTRO-CAM, which is owned by
+AMADA, and offers less flexibility and requires support from AMADA for programming.
+Without any vision sensors, the system is not smart. It can perform repetitive tasks
+very fast and with very little interference from operator but without any decision making.
+Also, the ASTRO robot is non-collaborative and humans cannot work alongside it. It
+requires a large area on the production floor which incurs more cost.
+    In this thesis, this system will be compared to our robotic workcell solution which has
+collaborative robot and is more cost-effective.
+
+
+2.3     Robotic System
+The real benefit of robots is taking over the three Ds, the dull, the dirty and dangerous
+jobs. [23] The functionality of a robotic system during any step of control should include
+three principal performance features in the cognitive process: perception, recognition and
+decision making. It is obvious that the autonomy of the whole robotic system directly cor-
+responds to sensory equipment, processing sensory information and decision algorithms.
+[19]
+    Robots systems are used in industrial environments for assembling parts, painting cars
+or welding operations. [36, 49]. Robots could be arranged in assembly lines to carry out
+a particular repetitive task. With the development in robotic perception and algorithms,
+robotic systems could be placed in a workcell to perform multiple tasks sequentially.
+Sensory systems plays an important role to develop intelligent robotic systems. [49]. Using
+smart sensors, a single robotic arm could perform various tasks by making decisions.
+    There are various kind of robotic arms available in the market. These include industrial
+robots as well as cobots. Cobots are generally more sensitive and easier to program. They
+are also more safe to work with humans as compared to industrial robots. Industrial
+robots require an enclosed space for safety reasons. However, they are more durable and
+the speed is high. [35] Robotic arm also comes in different number of DOF. 6-axis robotic
+arms are mostly common, but an additional axis from a 7-axis cobot is advantageous in
+our case for collision free trajectory planning in a large workspace.
+    A good example of cobot is the 7-axis cobot by Kassow Robots. This sophisticated
+robot can mimic human movements and offers an extensive range of motion that allows it
+to handle intricate tasks, navigate tight spaces, and maintain consistent product quality
+in an industrial setting. These cobots not only increase efficiency and productivity but
+also promote safety. They can operate in industrial environments and reduces the risks
+associated with humans as they are collaborative. With the ability to work tirelessly
+nonstop, theese cobots ensure continuous production and uniform quality standards. [42]
+
+                                                                                     Page 6
+                                                 CHAPTER 2: LITERATURE REVIEW
+
+
+2.3.1    Robot Operating System
+The Robot Operating System (ROS) is a set of software libraries and tools which help to
+build robot applications. Because it is open-source, there is flexibility where and how to
+use ROS, as well as the freedom to customize if it requires. [12] ROS is utilized to build,
+control or simulate various kind of robots, from mobile robots to robotic arms. [24] It
+could also be used in partnership with a simulation environment like Gazebo. This will
+fasten the development process and also make decisions before actually buying a robot.
+    In [43], a simulation environment is created for mobile robots using ROS and gazebo
+and later tested with the real robot, showcasing the usability of the ROS for the devel-
+opment process. In [31], a manipulator is simulated for the pick and place operation.
+There are numerous robots build using ROS and is used extensively by both hobbyists
+and robotic developers and is a powerful tool.
+
+
+2.4     Computer Vision in Industrial Automation
+Computer vision (CV) techniques have played an important role in promoting the informa-
+tion, digitization, and intelligence of industrial manufacturing systems. In manufacturing
+industry, CV applications include inspection and quality control, object detection and
+process control. In recent years, advancements in camera technology, image processing
+algorithms, and CV techniques have significantly increased the capabilities of vision sys-
+tems in manufacturing systems. The most common methods of CV are features detection,
+recognition, segmentation, and three-dimensional (3D) modeling. [54]
+     CV technologies are required for the successful automation of the bending process.
+KR1410 robotic arm should be able to correctly detect and pick metal sheets and then
+perform precise bending operations. With CV, images can be analyzed in real-time, al-
+lowing for feedback and adjustment for the automated bending process. This capability is
+necessary to maintain a high production rate while maintaining good precision. There are
+many examples of CV being used in industrial environments, like in the sorting and clas-
+sification of food products [6, 46, 9], monitoring and safety management of construction
+projects [30] or the automated traffic monitoring system. [25, 11]
+     The smart extensions of CV are added to the regular cameras in the industrial environ-
+ments, which improves the performance of manufacturing or other automation processes.
+[8] However, it requires image processing algorithms to run on separate hardware. The
+VISOR® vision sensor has a processor in its housing and does not require a PC or PLC
+to run. A PC or laptop is required only in order to configure the VISOR® vision sensor.
+[38, page 23]
+
+
+
+
+                                                                                    Page 7
+                                                  CHAPTER 2: LITERATURE REVIEW
+
+
+
+2.5      User Interfaces for Industrial Systems
+Product development process can greatly benefit from the integration of the digital twin
+models. According to [37], digital twin (DT) embeds a ”virtual” image of the reality
+constantly synchronized with the real operating scenario to provide sound information
+(knowledge model) to reality interpretation model to draw sound decisions.
+    In manufacturing industry, a digital twin can replicate an individual machine, a cell,
+a complete line. Digital twin and virtual commissioning are two terms that often come
+when talking about Industry 4.0. Both use virtual representations of physical systems to
+save time, enable better training, and identify improvement opportunities, among other
+benefits. However, the digital twin requires a physical equivalent with IoT technology
+for data transfer. Virtual commissioning requires simulation of all the signals with their
+timings and sensors and actuator responses. It can exist without a physical system. [20]
+    Digital twin enables the creation of high-performance products and optimize produc-
+tion systems by allowing early estimations and later re-configurations. The connectivity
+of Industry 4.0 technologies is highlighted as a key strategy for achieving the most efficient
+product specifications in technical and economic terms for the manufacturer. Simulations
+with a digital production twin open up new possibilities in production integration. [48]
+    In this thesis, virtual commissioning is first accomplished in order to speed up the
+development process. The next step is to get the data from the real robotic system and
+use it to test and verify the virtual model. This will be the digital twin model which will
+help in:
+
+  1. Identify collision points in the real world and use it to plan trajectory.
+
+  2. Monitor and optimize the loading and unloading process.
+
+  3. Offer testing opportunities for a new product model.
+
+    A functional UI is required for monitoring and controlling robotic systems. When
+envisioning the design principles for UIs, the UI should be understandable, reliable and
+accessible. [51] The UI should be designed for an untrained user, offer feedback, have
+robust error handling in case of system failure, and usable for users with varying levels
+of experience. Web-based interfaces have gained popularity due to their accessibility and
+ease of deployment. Versatile and accessible UI could be created using web technologies
+and ROS for robot control. In the paper [52], a web-based interface is created that utilizes
+ROS alongside HTML5, JS and C++, allows for remote control, real-time monitoring,
+and 3D visualization of robots. It uses Ros3Djs library to simulate the motion of the robot
+on web interface. ROS-based dashboard is also developed for an autonomous wheelchair
+using Rosbridge in [21], highlighting the potential of open source technologies to build a
+DT.
+
+                                                                                      Page 8
+3       System Design
+3.1      Overview of the Robotic Workcell
+Robotic workcell has to be designed keeping in mind the workspace of handling robot.
+Handling robot has to able to reach every station in the workspace without any collision.
+The workcell is first developed in simulation with the use of ROS and gazebo software.
+This reduced the development time as it allowed for quick changes to the workcell.
+    The preliminary designs for the robotic workcell were elaborated in the form of CAD
+models and successively converted into final CAD designs. These CAD models were later
+converted to suitable file format like .stl and .dae for the simulation software ROS. These
+meshes are then utilized to build up the whole workcell in ROS and gazebo. Robot is
+defined in URDF file format that includes the physical description of the robot. [50]
+This simulated environment in gazebo is used to update and fix the final layout of the
+robotic workcell. Trajectories are planned to various subsystems in workcell using ROS
+to determine to final position of robot in workcell. Figure 3.1 shows the final layout of
+the workcell in gazebo software. It consists of various subsystems which include bending
+machine, storage station, unloading station, handling robot, bending machine terminal
+operating robot and safety fence.
+
+
+
+
+Figure 3.1: Robotic workcell layout. 1) Bending machine 2) Storage station 3) Unloading
+station 4) Handling robot 5) Bending machine terminal operating robot 6) Safety fence
+
+    The subsystems are described in more detail in the following subsections.
+
+
+                                                                                    Page 9
+                                                       CHAPTER 3: SYSTEM DESIGN
+
+
+    Sheets are loaded by workcell operator in the unloading station. Sheet metal parts are
+picked up by the handling robot and taken to bending machine to perform bending. After
+all the bending operations are complete, sheet metal parts are stored in storage station.
+The relation between each subsystem and the flow of energy, data, and material is shown
+in Figure 3.2.
+
+
+                                  Bending
+            Terminal
+                                  Machine
+
+
+                     Inspection               Foot
+                      Camera                  pedal
+   Camera                                                                  Camera
+
+
+                 Panda                                     Handling
+                 Robot                                      Robot
+
+
+                                    PLC
+
+               Energy Flow
+                                                                           Storage
+                                                                           Station
+               Data Flow
+               Material Flow      Unloading
+                                   Station
+
+
+            Figure 3.2: Energy, data and material flow in the robotic workcell
+
+
+
+3.1.1    Bending machine
+Bending machine as a unit comes with a terminal and a foot pedal. Terminal is used to
+operate the bending machine for starting, stopping and configuring the bending machine
+and also loading the bending program. Foot pedal comes with two pedals, one for closing
+the bending machine and other for opening of the bending machine. Opening and closing
+of bending machine is controlled by a foot pedal for the manual bending operations.
+    To automated the bending machine, PLC is used to send signals to foot pedal which
+in turn, controls the opening and closing of bending machine.
+    An inspection camera is also added to measure the bending angle after each bending
+operation. This inspection camera is operated by the PLC and the bending angles are
+saved in .csv file format and displayed on a HMI.
+
+
+
+
+                                                                                  Page 10
+                                                      CHAPTER 3: SYSTEM DESIGN
+
+
+
+
+                             Figure 3.3: Bending Machine
+
+
+3.1.2    Storage station
+The storage station is a shelf with 10 drawers. The drawers of the shelf can be automat-
+ically opened and closed by the handling robot. It is a mechanical system which is used
+to store final bended sheet metal parts.
+
+
+
+
+                              Figure 3.4: Storage Station
+
+   When the storage station is full, human operators are to replace a filled shelf with a
+new empty shelf with a forklift. Thus, this is the only station which is not fixed in the
+robotic workcell. The robotic camera mounted on the handling robot needs to determine
+the correct position of the storage station after each restart.
+
+
+
+
+                                                                                 Page 11
+                                                        CHAPTER 3: SYSTEM DESIGN
+
+
+3.1.3     Unloading station
+The task of the removal station is to take a single sheet metal part from a stack of
+raw sheets and make it available to the robot unit. This is a mechatronic system with
+several different components, which all have to function individually, but also together in
+combination. The mechatronic system is controlled by the PLC.
+
+
+
+
+                (a) front-view                                  (b) back-view
+
+                       Figure 3.5: Unloading station in simulation
+
+   This unloading station is on top of a cabinet which houses the PLC and controller of
+the handling robot.
+
+
+3.1.4     Handling robot
+Handling robot is the primary robot which handles the sheet metal parts to different
+subsystems i.e. unloading station, bending machine and storage station. It coordinates
+with the PLC to make decisions during the execution of the program. Reachability is very
+important in this case, as it should be able to handle sheet metal parts in any orientation.
+A two finger gripper is used for grasping the sheet metal parts.
+    To get accuracy with the bending process, detection of features on the sheet metal
+parts is required. A robotic camera is mounted of the robot for this purpose. In this way,
+handling robot can be trained to operate with different variants of sheet metal parts.
+    ROS simulations of the handling robot is done to determine the performance of robot
+in the workcell. The drawers of storage system is especially close to the production floor
+and the robot requires some space to move around without getting stuck. Reachability is
+
+
+                                                                                   Page 12
+                                                        CHAPTER 3: SYSTEM DESIGN
+
+
+
+
+                   Figure 3.6: Handling Robot KR1410 in simulation
+
+tested with the simulation of trajectories before the final integration of the real robot in
+the workcell.
+
+
+3.1.5     Bending machine terminal operating robot
+Together with the company VisCheck GmbH, an operating unit is developed for en-
+tering parameters on the operating terminal and reading relevant values on the operating
+terminal of the bending machine. The unit consists of a franka emika robot, a camera for
+reading terminal values and a computer for controlling the robot. A touch screen pointer
+is attached to the gripper of the robot for operating the touch screen of terminal.
+
+
+
+
+    Figure 3.7: Franka emika panda robot as terminal operating robot in simulation
+
+    As it is programmed by another company, it is not simulated in the software and not
+coordinated for any trajectory planning. Sufficient floor space is left near the terminal of
+bending machine in the robotic workcell for the installation of this robot. The trajectories
+of handling robot are not planned anywhere near this robot. To setup this, safety zone is
+created during the programming of the handling robot.
+
+                                                                                   Page 13
+                                                         CHAPTER 3: SYSTEM DESIGN
+
+
+3.1.6     Safety fence
+Safety fence marks the boundary of the robotic workcell. Even though the robot final-
+ized is a collaborative robot, bending machine poses a safety concern as it is operated
+automatically by the PLC. The sheet metal parts are sharp around the corners and when
+handled by the robot is deemed as not safe.
+    Two doors are installed for an entry in the robotic workcell. One is close to the storage
+system and is used to move shelf in-and-out of the workcell by a forklift. The doors are
+installed with a safety mechanism by which if the door is open, the whole robot unit and
+bending machine cannot operate. This safety mechanism is again controlled by the PLC.
+Safety fence is only installed at the end of the project by the company. A simulation of
+the fence with ROS and gazebo is not necessary in this case and is not included as assets
+in gazebo.
+
+
+3.2      Requirements for the overall system
+  1. A key requirement for the mobile robot unit is to be able to cope with the limited
+     space available in the project partner’s production hall. Specifically, this means that
+     only an area of approximately 2m × 4.5m is available in front of the sheet metal
+     bending machine.
+
+  2. Another point is the operating time of the overall system. The unit should be able
+     to autonomously manage a day shift of eight hours and a night shift of six hours
+     without any major personnel intervention.
+
+  3. Robot should also be able to handle various sheet metal part variants, i.e. different
+     component sizes and geometries. In addition to the flexible handling of different
+     sheet metal parts, the focus is also on the simple integration of new variants into the
+     existing system. Some of the sheet metal parts in production are of small size. These
+     sheets will have little gripping surface after few bendings. Special considerations
+     needs to be given to the gripper design so that robot can handle sheet metal parts
+     of small and medium sizes. (from 60mm × 110mm to upto 115mm × 220mm) The
+     sheets should not move in the gripper during the movement of the robotic arm.
+
+  4. The mobile robot unit is to be used as a supplement to manual production. It is
+     therefore necessary that it can be set up and dismantled quickly and easily in front
+     of the bending machine.
+
+  5. The hand-eye calibration using a vision sensor could degrade over time due to envi-
+     ronmental factors such as temperature changes or vibrations. [4] This will decrease
+     the accuracy of robot TCP in positioning and grasping leading to incorrect bending.
+
+
+                                                                                    Page 14
+                                                      CHAPTER 3: SYSTEM DESIGN
+
+
+      The robot should be able to automatically recalibrate without any long delays when
+      there is a request by the operator.
+
+  6. The angle measurement on the bent sheet should be carried out using a camera
+     system after each bending process. Based on the measured angle, bending machine
+     should be re-adjusted for the next iteration. The necessary values should also be
+     entered at the operator terminal by the terminal operating robot. In addition,
+     a continuous real-time status query of the bending machine is required via the
+     operating terminal. For the implementation of this subtask, the company is working
+     with VisCheck GmbH, which specializes in reading screens using a camera and
+     making entries via a robot.
+
+
+3.3     Hardware Selection
+
+3.3.1    AMADA bending machine
+
+              Description                  Value
+              Model                        HFP 50-20
+              Manufacturer                 AMADA (France)
+              Year of manufacture          2005
+              Drive                        Hydraulic press brake
+              Pressing capacity            500 kN
+              Working length               2090 mm
+              Distance between frames      1665 mm
+              CNC control                  AMADA AMNC 3D-graphic
+                                           with TFT color screen
+              controlled axes              Y1/Y2; X1/X2; R1/R2; Z1/Z2
+              Open height                  470 mm
+              Stroke                       200 mm
+              Bending Speed                10 mm/s
+              Approach Speed               100 mm/s
+              Return Speed                 100 mm/s
+              Laser monitoring             FIESSLER
+              Length x width x height      3458 mm x 2450 mm x 2450 mm
+              Weight                       4850 kg
+
+           Table 3.1: Bending Machine Technical Specifications (Source: [2])
+
+
+
+
+                                                                                Page 15
+                                                       CHAPTER 3: SYSTEM DESIGN
+
+
+3.3.2    Kassow Robots: KR1410
+KR1410 is a 7-axis collaborative robotic arm from Kassow Robots. It has a reachability
+of 1400 mm which fits satisfactory in the workcell. A seventh axis is particulary useful as
+it allows more freedom during trajectory planning especially in close spaces.
+    The robotic arm comes with a robot controller and a teach pendant. A robot con-
+troller is the main controlling unit for each KR manipulator. Teach Pendant is used for
+programming the manipulator and also provides UI and safety controls. KR1410 could
+be interfaced with ROS. KR provides packages to install through which KR messages
+transmission is set up.
+
+Function Description
+
+Function Description
+
+  1.
+
+The industrial robot arm is a robot system used for manufacturing. It is automated,
+programmable and capable of moving within up to seven axes. The robot is typically
+used for welding, painting, assembly, pick and place, packaging and labelling.
+
+         Description                          Value
+         Type                                 Collaborative
+         Reach                                1400 mm in all directions
+         Number of axis                       7-axis
+         Operating temperature range          0-45°C
+         Weight                               38.0 kg
+         AC Power connector                   1 Phase CEE
+         Typical Power consumption            400-1200W
+         Supply voltage                       100-120 and 200-240 VAC (50/60hz)
+         Supply current                       16A
+         IO power supply                      24 VDC
+         Max. joint speed                     163/225 °/s
+         Max. static force on TFC (payload)   10 kg
+         Max. static torque on TFC            25 Nm
+         Sound level                          Below 70dB (A)
+         Ingress protection                   IP54
+         Joint ranges                         Joint 1,3,5,6,7 +/- 360°
+                                              Joint 2,4 -70/+180°
+         Footprint                            160 × 160 mm
+         ROS Support                          Available
+
+           Table 3.2: KR1410 Technical Specifications (Source: [33, page 31])
+
+
+
+                                                                                  Page 16
+                                                       CHAPTER 3: SYSTEM DESIGN
+
+
+Increased Safety
+
+Industrial Robotic Automation significantly enhances workplace safety. Robots, especially
+cobots like Kassow Robot’s 7-axis version, are equipped with advanced safety features
+and mechanisms. They can detect and avoid collisions with people or objects, reducing
+the risks associated with manual labour in potentially hazardous environments. This
+commitment to safety exemplifies the primary objective of robotic automation: to protect
+workers and streamline processes.
+
+More Flexibility
+
+Cobots, with their adaptable designs, represent the epitome of flexibility in industrial
+automation. Unlike traditional fixed robots, the 7-axis from Kassow Robots can be quickly
+reprogrammed and adapted for different tasks. This agility makes them an invaluable asset
+for industries undergoing frequent changes or those with diverse product lines.
+
+Cost-effective
+
+Introducing Industrial Robotic Automation is a wise financial decision for businesses.
+Cobots, which offer a competitive price point compared to traditional industrial robots,
+provide significant returns on investment by improving efficiency, reducing waste, and min-
+imizing production downtime. The long-term savings, in terms of both time and money,
+underscore the economic benefits of integrating robotic automation into the production
+process.
+
+Great Scalability
+
+Industrial robots, especially cobots, are inherently scalable. Whether it’s adjusting to a
+new product line or ramping up production volumes, Kassow Robot’s 7-axis cobot can
+be swiftly recalibrated to meet evolving demands. This ensures that industries can easily
+scale their operations without undergoing extensive overhauls or incurring excessive costs.
+
+Improved Quality
+
+Quality assurance is a prominent benefit of Industrial Robotic Automation. Robots, with
+their precision and consistency, dramatically reduce the margin for errors in production.
+Kassow Robot’s 7-axis model ensures that each task—from welding to assembly—is exe-
+cuted with remarkable accuracy, leading to products of superior quality and consistency.
+
+Higher Productivity
+
+Robotic automation directly translates to increased productivity. By automating repeti-
+tive and time-consuming tasks, cobots free human workers to concentrate on value-added
+
+                                                                                  Page 17
+                                                        CHAPTER 3: SYSTEM DESIGN
+
+
+activities. In scenarios where cobots collaborate with human workers, the synergy often
+leads to faster production cycles, efficient workflows, and overall heightened productivity.
+
+
+3.3.3     VISOR® Vision Sensor
+According to VISOR® [38, page 22] user manual, the VISOR® vision sensor is an optical
+sensor and is used for the non-contact acquisition or identification of objects. The vision
+sensor features a number of different evaluation methods (detectors), with the specific
+methods depending on the specific model sensor. The product is designed for industrial
+use only. The VISOR® vision sensor is a cost-effective alternative to conventional image
+processing systems.
+   VISOR® vision sensor is a suitable choice for the identification and classification of
+metal sheets for the automated bending process. These sensors enable precise detection
+and processing of features on sheets, which leads to the efficiency and accuracy of au-
+tomated bending process. Special considerations need to be taken in complex industrial
+environments, where light reflections or changing extraneous light can distort evaluation
+results. For this reason, an external light source is used to protect against ambient light.
+
+
+3.3.4     Robotic Camera
+
+3.3.5     Inspection Camera
+
+3.4     Software Architecture
+
+
+
+
+                                                                                   Page 18
+4       Hardware Integration
+4.1     Installation and Configuration
+
+4.1.1    Bending machine
+
+
+
+
+Figure 4.1: AMADA Bending Machine 1) Marker 2) Bending station 3) Laser height 4)
+Laser monitoring 5) TFT Touch screen
+
+
+
+4.1.2    Robot Unit
+The robot unit consists of three assemblies: a base, a robot and a gripper (Figure 4.2).
+   The base is a simple welded construction made of steel. The choice of steel material
+ensures that the base has sufficient dead weight so that it can be transported together
+with the robot and gripper using a pallet truck without the risk of tipping over. During
+operation, the robot unit is fixed to the floor with four M12 screws. The robot used is
+a 7-axis robot from Kassow Robots. This fulfills the requirements defined in the first
+work packages. The gripper is a pneumatic parallel gripper with a manual quick-change
+system. The gripper was selected according to payload, gripping force and opening width.
+
+
+                                                                                Page 19
+                                            CHAPTER 4: HARDWARE INTEGRATION
+
+
+
+
+Figure 4.2: Components of the robot unit: 1) robot base; 2) robot from kassow robots;
+3) manual quick-change system; 4) pneumatic parellel gripper; 5) camera system
+
+
+The opening width is the dominant selection criterion here, as the gripper must be able
+to grip both the thin sheets with thicknesses of around 1 to 3 mm and the handle on the
+drawers with a width of 15 mm. An electric gripper was also considered, as the power
+supply could have been provided via the cable already integrated in the robot. Due to
+the higher costs, the double height and the weight, a pneumatic gripper was chosen.
+    The manual quick-change system makes it possible to exchange different gripper de-
+signs in a short time and without increased effort if required for a sheet metal part type.
+Sheet metal part is folded into something like a box. For this, it is technically sensible or
+necessary to use a vacuum gripper. This means that collision-free gripping is not possible
+with a parallel gripper after the last bend. The quick-change system also has an electric
+and pneumatic power feed-through, which ensures simple, user-friendly changeover.
+    Furthermore, a camera system is installed on the robot itself. This is used to determine
+the relative position between the robot unit and the sheet pickup station, bending machine
+and storage shelf using the markers and between the robot unit and the sheet metal part
+(when it is first made available at the sheet pickup station or is gripped) using features
+on the sheet metal part.
+    The robotic system consists of a manipulator from kassow robots with pneumatic
+parallel grippers as the end-effector. Pneumatic gripper is controlled by PLC. VISOR®
+camera is also mounted on the tool-IO which is used for robotic perception.
+
+
+                                                                                    Page 20
+                                             CHAPTER 4: HARDWARE INTEGRATION
+
+
+4.1.3     Unloading station
+Figure 7 shows the elementary components of this station. A room gantry with a working
+area of 400 x 1000 x 250 mm is to be used for destacking. All electronic components such
+as fuses, power supply units, etc. of the entire mobile robot unit, i.e. not just those of the
+unloading station, are installed in several control cabinets below the room gantry. This
+allows the removal station to be used more flexibly later on different sheet metal bending
+machines. The same is planned for the pneumatic components such as switching valves,
+pressure regulators, pressure gauges, etc. Due to the flexibility and the space still available,
+the robot’s control cabinet will also be equipped by Kassow Robots with integrated. As
+with the robot unit, different grippers (vacuum grippers, magnetic grippers, etc.) can be
+installed very quickly using a manual quick-change system, depending on the type of sheet
+metal part. After the gripper has unstacked a raw sheet, it is transferred to a pneumatic
+180° swivel unit, which in turn is equipped with one or more pneumatic parallel grippers
+(depending on the sheet size). From there, the raw sheet is finally picked up by the robot
+unit described in the previous subsection after the exact position has been determined
+with the camera on the robot. In order to achieve reliable and precise positioning, an
+LED panel is installed as background lighting below the swivel unit. An HMI control unit
+is installed for the operation (start, pause, stop, etc.) of the entire mobile robot unit and
+as a source of information about relevant process values, such as the remaining time until
+the deposit box is completely filled or the removal station is empty. The protective fence
+in Figure 1 is flush with the removal station, but contains a recess so that the HMI can
+be used at all times.
+     Similar to the storage box, the raw sheets are stored on a pull-out drawer (Figure
+8). This also consists of a universal basic construction and an individual perforated grid
+plate. Depending on the type of sheet metal part, the blanks can be stacked on this
+perforated grid plate. The sheet metal parts can be held in place by means of sheet metal
+brackets that are screwed to the plate. Telescopic rails are also used here. Because the
+drawer does not have to be opened by a robot, but only by a person, rails with integrated
+locking mechanisms can be used. Pulling out the drawer ensures ergonomically simple
+filling. The drawer position is monitored using a position switch.
+
+
+
+
+                                                                                       Page 21
+                                                     CHAPTER 4: HARDWARE INTEGRATION
+
+
+
+4.2      Communication Protocols
+
+4.3      Safety Considerations
+
+4.3.1      Payload
+The pneumatic parellel gripper, manual quick-change system and robotic camera consti-
+tutes a weight of 2.0 kg. This is the fixed load on the tool flange center (TFC). The sheet
+metal parts counts as the payload. It is a variable load of only 0.1 kg and is thus ignored
+for the calculations in 4.3.2.
+
+                     14                                                          KR1410
+
+                     12
+
+                     10
+         Load [kg]
+
+
+
+
+                      8
+
+                      6
+
+                      4
+
+                      2
+
+                      0
+                          0      100   200   300   400   500   600   700   800     900 1,000
+                               Maximum horizontal distance from payload Cen-
+                               tre of Gravity to Joint axis 5, 6 and 7 [mm]
+
+                              Figure 4.3: Payload diagram for KR1410 manipulator
+
+
+    The permissible payload is constrained due to the static torque limit of the wrist joints.
+The payload is reduced according to the proximity of the payload’s centre of gravity in
+relation to joint axis 5, 6 and 7. [32, page 35] Only about 1100 mm out of 1400 mm
+of workspace is utilized by the KR in the workcell. Figure 4.3 illustrates the allowable
+payload as a function of distance. It’s evident from this it is safe to operate with a load
+a 2.0 kg.
+
+
+4.3.2      Stopping Distance
+The stopping time tbrake and distance sbrake should be kept as low as possible. sbrake is set
+at 60 mm and tbrake at 0.2 s for safety reason. According to [32, page 35], the time and
+distance it takes to stop the robot, for instance with an emergency stop or protective stop,
+depends on the load, speed and configuration of the robot. Conservative estimations of
+
+
+                                                                                               Page 22
+                                                 CHAPTER 4: HARDWARE INTEGRATION
+
+
+tbrake and sbrake are made by firstly identifying how fast the slowest joints can decelerate.
+This depends on the payload, the direction in which the payload is heading relative to
+gravity, and the distance between the load or TFC and joint axis 1 or 2, depending on
+whatever distance is the longest. The values can be seen in the Table 4.1.
+
+      Load Direction          Distance from Joint axis 1 or 2 to Load center
+      [kg]   [deg]                of gravity or TFC, whichever is larger
+                          800-950 700-800 600-700 500-600 400-500 300-400 0-300
+                0-40       895         1026         1304        1663      2131   2724   3437
+                40-80      1433        1578         1745        2132      2522   3131   3724
+        0-4
+               80-120      1378        1549         1720        2115      2643   3165   4045
+               120-160     1861        2040         2371        2773      3259   3824   4342
+
+               Table 4.1: Braking accelerations abrake [deg/s2 ] for KR1410
+
+   The stopping time tbrake and stopping distance sbrake can now be conservatively esti-
+mated based on the knowledge of the set speed in the robot program and equations 4.1
+and 4.2. Joint speed ω is used for Move J and linear speed vmax for Move L and Move S
+commands. By default in normal run mode of program, Move J command runs a maxi-
+mum joint speed of 90 deg/s and Move L command runs a maximum linear speed of 1000
+mm/s. This linear speed can be converted to joint speed using the equation ??.
+
+                                           180 vmax
+                                   ω=                    [deg s−1 ]                            (4.1)
+                                             rπ
+
+                                                ω
+                                  tbrake =             + 0.020 [s]                             (4.2)
+                                              abrake
+                                                          
+                                           tbrake + 0.02
+                            sbrake =                           πrw     [mm]                    (4.3)
+                                                360
+    From these equations, it is evident that tbrake and sbrake are directly proportional to ω.
+To avoid triggering joint torque value exceeded error and for safe operation of robot, the
+joint speed ω is reduced for specifically difficult trajectory execution or when the distance
+between joint axis 1 or joint axis 2 and TFC is large. For example, to keep the same tbrake
+for a distance of 900 mm between Joint axis 1 and payload but two robot configuration of
+0-40 deg and 120-160 deg, joint speed ω must be halved for 0-40 deg robot configuration.
+
+
+4.3.3     Safety zones
+
+
+
+
+                                                                                          Page 23
+5        Software Development
+5.1      Control Software
+By analyzing the current manual process on the bending machine, a flowchart for the
+mobile robot unit is developed for the automated bending process. This diagram, which
+is still partly abstract, enables the individual activities of the unit to be identified and their
+interactions to be described right at the start of the research project. The requirements
+for the overall system are also defined, which are explained in more detail in subchapter
+??. The description of the process and the definition of the overall requirements represent
+an interacting process that inevitably had to be iterated through. This means that the
+results of both work packages were revised several times. The final result of these iterations
+regarding the activities to be performed by the mobile robot unit can be seen in Figure 1
+and Figure 2. Five essential components of the unit emerge from the process. These are
+as follows: Feeding, alignment, bending, checking and depositing.
+     In the first step, the feed, the sheet metal is to be separated from a stack of sheets. The
+advantage of arranging the raw sheets in stacks is that as many parts as possible can be
+stored in as little space as possible. Conversely, this means that more space is available for
+the bent sheet metal parts, which is of great importance due to the limited space available
+on site at the company. The sheet thickness is also checked in advance during feeding
+and parts outside the tolerance are sorted out. Furthermore, this information should be
+taken into account in the further course of the process when adjusting the parameters of
+the bending machine.
+     For space reasons, a device should be integrated into the feeder that allows the robot
+to grip the sheet metal at a new position if necessary, as otherwise collisions between the
+robot and the bending machine may occur during the subsequent bending process if the
+robot is not realigned. During the bending process, there should be two different design
+variants depending on the sheet variant. With small sheets, the robot lets go of the sheet,
+which has an advantageous effect on the robot programming. In order to prevent twisting
+in the case of larger parts, it is essential to hold them throughout the entire bending
+process. The challenge here lies in programming a robot movement whose path and path
+speed matches the movement of the sheet metal, which in turn depends on the lowering
+speed of the bending punch.
+     A camera system is used to record both the angle and length of the sheet metal after
+each individual bending process. The angle is used to readjust the bending machines.
+The length measurements serve as a further instrument for monitoring the process. If a
+large number of rejects occur in a very short time, the entire process is to be stopped.
+
+
+                                                                                         Page 24
+                                              CHAPTER 5: SOFTWARE DEVELOPMENT
+
+
+The fully bent sheet metal parts are to be placed in storage boxes that are already in use
+in the company but still need to be adapted.
+
+
+                           Start
+
+
+
+                  Initialisation of camera,
+                 PLC and configuration of
+                 storage system parameters
+
+
+         3                 Loop
+
+
+
+
+                       Is calibration
+                                                Yes
+                      requested from                  Perform hand-eye calibration
+                         operator?
+
+
+
+
+                          No
+
+
+
+
+                        Is drawer of            No
+                                                      Open empty drawer of shelf
+                        shelf open?
+
+
+
+
+                         Yes
+                               1
+
+
+
+
+                                                                                     Page 25
+                                CHAPTER 5: SOFTWARE DEVELOPMENT
+
+
+                   1
+
+          Wait until sheet
+        metal part is avail-
+       able at pickup station
+
+        Detect sheet metal
+        part using camera
+
+       Pick the sheet metal
+       part from the pickup
+          station gripper
+
+        Wait until bending
+        machine is ready
+
+     Perform bending operation
+
+       Inspect bending angle
+        using second camera
+
+
+
+
+         Is bending angle         No
+                                            Discard sheet metal part
+         within tolerance?
+
+                                                          3
+
+                                 Yes
+
+
+
+
+                                       No
+          Is regrasping of                      Is part finished?
+No
+           part required?
+
+                                                    Yes
+             Yes                                          2
+      Place sheet metal part
+     in pickup station gripper
+
+
+                                                                       Page 26
+                                  CHAPTER 5: SOFTWARE DEVELOPMENT
+
+
+                     2
+
+
+
+          Place the sheet in
+          the drawer of shelf
+
+
+
+
+           Is current drawer    Yes
+                                         Close the drawer of shelf
+             of shelf filled?
+
+
+
+
+                No
+
+                                No               Is storage
+                     3
+                                                station full?
+
+
+
+
+                                                  Yes
+
+                                                    Stop
+
+
+
+
+           Table 5.1: Control program flowchart of robot unit
+
+
+5.2   Camera 1: Feature Detection
+
+5.3   Camera 2: Inspection and Quality Control
+
+5.4   Web Interface Design
+
+
+
+
+                                                                     Page 27
+6       System Integration and Testing
+6.1      Integration Tests
+
+6.2      Calibration
+Calibration is a crucial procedure in the development of an automated robotic workcell,
+ensuring that all components operate accurately and in harmony.
+
+
+
+
+Figure 6.1: TCP is set at the end of gripper at a distance of 216mm from robot TOOL-IO
+
+
+
+6.2.1     Robot Calibration
+Robot calibration ensures that the Kassow robot can accurately position its end effector
+for loading, bending, and unloading metal sheets. This involves:
+
+    • Kinematic Calibration: Adjusting the robot’s kinematic model to correct any
+      discrepancies between the theoretical model and the actual hardware. This includes
+      measuring and compensating for joint offsets, link lengths, and joint angles.
+
+    • Tool Center Point (TCP) Calibration: Determining the exact position of the
+      end effector or tool relative to the robot’s last joint. This is crucial for precise
+      manipulation of metal sheets.
+
+                                                                                  Page 28
+                              CHAPTER 6: SYSTEM INTEGRATION AND TESTING
+
+
+   • Workspace Calibration: Defining the robot’s operational workspace and ensuring
+     that all tasks are performed within this defined area, avoiding collisions and ensuring
+     smooth operation.
+
+   The KR1410 is already calibrated from the factory and does not need to be setup.
+Though in simulation, robot kinematic model is generated from the URDF and needs to
+be updated to match the real hardware.
+
+
+6.2.2    Camera Calibration
+The ”Hand-Eye calibration (Robotics)” calibration method is used to determine the refer-
+ence between ”Hand” (TCP) and ”Eye” Camera coordinate system (position and orienta-
+tion) when the VISOR® is attached to the gripper. This allows different image acquisition
+positions and still to output the object positions in robot coordinates directly from the
+camera. [38, page 102]
+
+
+
+
+         Figure 6.2: A working distance of 300mm is set for the robotic camera
+
+   Camera calibration is essential for the accurate detection of metal sheets and mea-
+surement of bending angles. The process involves:
+
+   • Intrinsic Calibration: Determining the camera’s internal parameters, such as
+     focal length, optical center, and lens distortion. This is typically achieved using a
+     calibration target (e.g., a checkerboard pattern) and specialized software tools.
+
+   • Extrinsic Calibration: Establishing the camera’s position and orientation relative
+     to the robot or the workcell. This involves aligning the camera’s coordinate system
+     with the robot’s coordinate system to ensure accurate detection and measurement.
+
+
+                                                                                   Page 29
+                              CHAPTER 6: SYSTEM INTEGRATION AND TESTING
+
+
+6.2.3    Sensor Calibration
+Laser sensor is added to the bending machine to measure the distance between the tool
+and die with the reproducibility in the range of 10µm. This sensor help in coordinating the
+bending timings between the bending machine and the robot. This sensor also requires a
+baseline or zero point to eliminate any offsets or biases in their readings.
+
+
+6.2.4    Calibration Procedures
+The calibration process is automated within the robot program such that operator could
+request to re-calibrate the camera w.r.t robot TCP from the touch panel. This allows to
+update the image quality as it degrades over time. The robot finishes the current bending
+operation and then in next cycle, start with the auto-calibration.
+
+
+
+
+                    Figure 6.3: Calibration procedure using telegram
+
+   The calibration process involves several systematic steps:
+
+
+
+                                                                                  Page 30
+                             CHAPTER 6: SYSTEM INTEGRATION AND TESTING
+
+
+  1. Setup Calibration Targets: Place calibration targets within the robot’s workspace
+     and at specific positions that the cameras will observe.
+
+  2. Data Collection: Use the robot and cameras to collect data from the calibration
+     targets. This includes moving the robot through its range of motion and capturing
+     images from different angles.
+
+  3. Parameter Estimation: Use calibration software to estimate the parameters of
+     the robot’s kinematic model, the intrinsic and extrinsic parameters of the cameras,
+     and the characteristics of any other sensors.
+
+  4. Validation: Verify the calibration by performing tasks that require high precision
+     and checking the accuracy of the results. Adjust calibration parameters as needed
+     based on validation results.
+
+  5. Documentation: Record the calibration parameters and procedures for future
+     reference and troubleshooting.
+
+
+6.3     Performance Evaluation
+
+6.3.1    Importance of Calibration
+Calibration is fundamental to ensuring the accuracy and reliability of an automated
+robotic workcell. Proper calibration:
+
+   • Enhances Precision: Ensures that the robot and sensors operate with high accu-
+     racy, essential for tasks like metal sheet bending where precise angles and positions
+     are critical.
+
+   • Improves Consistency: Reduces variability in operations, leading to consistent
+     product quality and reducing the likelihood of errors.
+
+   • Facilitates Integration: Ensures that all components of the workcell operate
+     cohesively, enabling smooth integration and coordination.
+
+   • Supports Troubleshooting: Provides a baseline for identifying and resolving
+     issues that may arise during operation.
+
+   By establishing rigorous calibration procedures, the automated robotic workcell can
+achieve optimal performance, ensuring that the bending process is executed with high
+precision and reliability.
+
+
+
+
+                                                                                 Page 31
+7     Experimental Results
+7.1   Setup and Methodology
+
+7.2   Data Collection
+
+7.3   Results and Analysis
+
+
+
+
+                              Page 32
+8   Discussion
+
+
+
+
+                 Page 33
+9       Conclusion and Future Works
+9.1      Summary
+
+9.2      Recommendations for Future Research
+
+9.2.1     Control Software Update
+For a single sheet metal part, teach pendant from the kassow robot is enough for the
+control program. However, to allow flexibility in production with different sheet metal
+part, a separate hardware is required to run ROS controller manager. At the moment,
+ROS is only used for visualizing the robot motion in the web app. In order to be able
+to quickly create a new robot program for new sheet metal part variants, simulation
+software is to be developed with the help of ROS. With the help of this software, path
+trajectories between the individual subsystems (sheet pickup station, bending machine,
+shelf storage) can be generated in advance without having to remove the real robot unit
+from any ongoing production, which can then be easily integrated into the new robot
+program on the real robot.
+
+    • Adding camera data to the digital twin.
+
+    • Storage for web applications.
+
+    • Creating App for phones.
+
+
+
+
+                                                                               Page 34
+Bibliography
+[1] Ujval Alva and Satyandra K Gupta. “AUTOMATED DESIGN OF SHEET METAL
+    BENDING TOOLS”. In: ().
+[2] AMADA. Bending Technology HFP Specifications. Accessed: 2024-08-21. 2024. url:
+    https://m.amada.de/en/bending/hfp/specifications.html.
+[3] AMADA. In zweiter Generation – die Roboter-Biegezellen der Serie ASTRO-100 II
+    NT. Accessed: 2024-08-21. 2024. url: https://m.amada.de/de/abkanten/astro-
+    100-ii/biegeroboter.html.
+[4] Ozan Bahadir, Jan Paul Siebert, and Gerardo Aragon-Camarasa. “Continual learn-
+    ing approaches to hand–eye calibration in robots”. In: Machine Vision and Appli-
+    cations 35.4 (2024), p. 97. issn: 1432-1769. doi: 10.1007/s00138-024-01572-w.
+    url: https://doi.org/10.1007/s00138-024-01572-w.
+[5] Chunguang Bai et al. “Industry 4.0 technologies assessment: A sustainability per-
+    spective”. In: International Journal of Production Economics 229 (2020), p. 107776.
+    issn: 0925-5273. doi: https://doi.org/10.1016/j.ijpe.2020.107776. url:
+    https://www.sciencedirect.com/science/article/pii/S0925527320301559.
+[6] Michael Barnes et al. “Visual detection of blemishes in potatoes using minimalist
+    boosted classifiers”. In: Journal of Food Engineering 98.3 (2010), pp. 339–346. issn:
+    0260-8774. doi: https://doi.org/10.1016/j.jfoodeng.2010.01.010. url:
+    https://www.sciencedirect.com/science/article/pii/S0260877410000142.
+[7] Infosys BPM. Rise of the machines: Robotics’ impact on the evolution of manufac-
+    turing. Accessed: 2024-07-25. 2024. url: https://www.infosysbpm.com/blogs/
+    manufacturing/robotics-in-manufacturing.html.
+[8] S. Brezani, R. Hrasko, and P. Vojtas. “Smart extensions to regular cameras in the
+    industrial environment”. In: Procedia Computer Science 200 (2022). 3rd Interna-
+    tional Conference on Industry 4.0 and Smart Manufacturing, pp. 298–307. issn:
+    1877-0509. doi: https : / / doi . org / 10 . 1016 / j . procs . 2022 . 01 . 228. url:
+    https://www.sciencedirect.com/science/article/pii/S187705092200237X.
+[9] Xavier P. Burgos-Artizzu et al. “Analysis of natural images processing for the ex-
+    traction of agricultural elements”. In: Image and Vision Computing 28.1 (2010),
+    pp. 138–149. issn: 0262-8856. doi: https : / / doi . org / 10 . 1016 / j . imavis .
+    2009.05.009. url: https://www.sciencedirect.com/science/article/pii/
+    S0262885609001140.
+
+
+
+                                                                                  Page i
+                                                                        BIBLIOGRAPHY
+
+
+[10] I-Ming Chen. “Rapid response manufacturing through a rapidly reconfigurable robotic
+     workcell”. In: Robotics and Computer-Integrated Manufacturing 17.3 (2001), pp. 199–
+     213. issn: 0736-5845. doi: https://doi.org/10.1016/S0736-5845(00)00028-4.
+     url: https://www.sciencedirect.com/science/article/pii/S0736584500000284.
+[11] Benjamin Coifman et al. “A real-time computer vision system for vehicle tracking
+     and traffic surveillance”. In: Transportation Research Part C: Emerging Technologies
+     6.4 (1998), pp. 271–288. issn: 0968-090X. doi: https://doi.org/10.1016/S0968-
+     090X(98)00019-9. url: https://www.sciencedirect.com/science/article/
+     pii/S0968090X98000199.
+[12] ROS community. Why ROS? It’s the fastest way to build a robot! Accessed: 2024-
+     07-12. 2024. url: https://www.ros.org/blog/why-ros/.
+[13] JR Automation A Hitachi Group Company. How the Manufacturing Industry uses
+     Robotics & Automation. Accessed: 2024-07-25. 2024. url: https://www.jrautomation.
+     com/resources/manufacturing-robotics-automation.
+[14] JR Automation A Hitachi Group Company. The Future of Manufacturing Au-
+     tomation. Accessed: 2024-07-25. 2024. url: https : / / www . jrautomation . com /
+     resources/the-future-of-manufacturing-automation.
+[15] Dan Davis. Metal fabricator finds flexibility in its bending department with cobots.
+     Accessed: 2024-07-25. 2023. url: https://www.youtube.com/watch?v=EhQ7DvXjDCA.
+[16] Ernesto Gambao, Miguel Hernando, and Dragoljub Surdilovic. “A new generation
+     of collaborative robots for material handling”. In: ISARC. Proceedings of the Inter-
+     national Symposium on Automation and Robotics in Construction. Vol. 29. IAARC
+     Publications. 2012, p. 1.
+[17] Rui J Guimarães et al. “A bending cell for small batches”. In: 7th euromech solid
+     mechanics conference. 2009.
+[18] José-Francisco Gómez-Hernández et al. “Development of an Integrated Robotic
+     Workcell for Automated Bonding in Footwear Manufacturing”. In: IEEE Access
+     12 (2024), pp. 5066–5080. issn: 2169-3536. doi: 10.1109/ACCESS.2024.3350441.
+[19] Š. Havlı́k. “14 - Robotic tools for de-mining and risky operations”. In: Using Robots
+     in Hazardous Environments. Ed. by Y. Baudoin and Maki K. Habib. Woodhead
+     Publishing, 2011, pp. 327–352. isbn: 978-1-84569-786-0. doi: https://doi.org/10.
+     1533/9780857090201.3.327. url: https://www.sciencedirect.com/science/
+     article/pii/B9781845697860500149.
+[20] Industry and Trends. Digital Twins and Virtual Commissioning in the Manufactur-
+     ing Industry (Updated for 2023). Accessed: 2024-07-12. 2022. url: https://www.
+     visualcomponents.com/blog/digital- twins- and- virtual- commissioning-
+     in-industry-4-0/.
+
+                                                                                   Page ii
+                                                                     BIBLIOGRAPHY
+
+
+[21] Md. Touhidul Islam et al. “A Simulation of a Robot Operating System Based Au-
+     tonomous Wheelchair with Web Based HMI Using Rosbridge”. In: 2023 3rd In-
+     ternational Conference on Robotics, Electrical and Signal Processing Techniques
+     (ICREST). 2023, pp. 175–180. doi: 10.1109/ICREST57604.2023.10070046.
+[22] Sanghoon Ji et al. “Learning-based automation of robotic assembly for smart man-
+     ufacturing”. In: Proceedings of the IEEE 109.4 (2021), pp. 423–440.
+[23] John M Jordan. Robots. Mit Press, 2016.
+[24] Anis Koubaa et al. Robot Operating System (ROS). Vol. 1. Springer, 2017.
+[25] Krishna et al. “Automated traffic monitoring system using computer vision”. In:
+     2016 International Conference on ICT in Business Industry and Government (ICT-
+     BIG). 2016, pp. 1–5. doi: 10.1109/ICTBIG.2016.7892717.
+[26] Jeng-Dao Lee et al. “Intelligent robotic palletizer system”. In: Applied Sciences
+     11.24 (2021), p. 12159.
+[27] Ming Li, Andrija Milojević, and Heikki Handroos. “Robotics in manufacturing—The
+     past and the present”. In: Technical, Economic and Societal Effects of Manufactur-
+     ing 4.0: Automation, Adaption and Manufacturing in Finland and Beyond (2020),
+     pp. 85–95.
+[28] Ruishuang Liu et al. Metal Wire Manipulation Planning for 3D Curving – How a
+     Low Payload Robot Can Use a Bending Machine to Bend Stiff Metal Wire. 2022.
+     arXiv: 2203.04024 [cs.RO]. url: https://arxiv.org/abs/2203.04024.
+[29] Mekoprint Mechanics. Robotic bending solution - Mekoprint Mechanics. Accessed:
+     2024-07-30. 2024. url: https://www.youtube.com/watch?v=EhQ7DvXjDCA.
+[30] Suman Paneru and Idris Jeelani. “Computer vision applications in construction:
+     Current state, opportunities and challenges”. In: Automation in Construction 132
+     (2021), p. 103940. issn: 0926-5805. doi: https://doi.org/10.1016/j.autcon.
+     2021.103940. url: https://www.sciencedirect.com/science/article/pii/
+     S0926580521003915.
+[31] Wei Qian et al. “Manipulation task simulation using ROS and Gazebo”. In: 2014
+     IEEE International Conference on Robotics and Biomimetics (ROBIO 2014). IEEE.
+     2014, pp. 2594–2598.
+[32] Kassow Robots. Product Manual. 2024. url: https://www.kassowrobots.com/
+     downloads/product-manuals.
+[33] Kassow Robots. Technical Specifications. Accessed: 2024-08-05. 2024. url: https:
+     //www.kassowrobots.com/products/7-axis-collaborative-robot-arm-kr-
+     series.
+
+
+
+                                                                                Page iii
+                                                                        BIBLIOGRAPHY
+
+
+[34] Michael Rüßmann et al. “Industry 4.0: The future of productivity and growth in
+     manufacturing industries”. In: (2015).
+[35] A.S. Mohamed Sahan et al. “Role of Cobots over Industrial Robots in Industry 5.0:
+     A Review”. In: 2023 2nd International Conference on Advancements in Electrical,
+     Electronics, Communication, Computing and Automation (ICAECA). 2023, pp. 1–
+     5. doi: 10.1109/ICAECA56562.2023.10201199.
+[36] A. Sathish Kumar et al. “An intelligent fuzzy-particle swarm optimization supervisory-
+     based control of robot manipulator for industrial welding applications”. In: Scientific
+     Reports 13.1 (2023), p. 8253. issn: 2045-2322. doi: 10.1038/s41598-023-35189-2.
+     url: https://doi.org/10.1038/s41598-023-35189-2.
+[37] Concetta Semeraro et al. “Digital twin paradigm: A systematic literature review”.
+     In: Computers in Industry 130 (2021), p. 103469. issn: 0166-3615. doi: https://
+     doi.org/10.1016/j.compind.2021.103469. url: https://www.sciencedirect.
+     com/science/article/pii/S0166361521000762.
+[38] SENSOPART. VISOR® User Manual Software Version 2.8. 2024.
+[39] Vijesh Shah et al. “Design of gripper and selection of robotic arm for automation of a
+     pick and place process”. In: Advances in Manufacturing Systems: Select Proceedings
+     of RAM 2020. Springer. 2021, pp. 95–107.
+[40] Shenchong. Automated Bending Cell- Robot Press Brake. Accessed: 2024-07-30.
+     2024. url: https://www.shenchong.com/robotic-press-brake.html.
+[41] Miroslaw J. Skibniewski and Stephen C. Wooldridge. “Robotic materials handling
+     for automated building construction technology”. In: Automation in Construction
+     1.3 (1992), pp. 251–266. issn: 0926-5805. doi: https://doi.org/10.1016/0926-
+     5805(92)90017-E. url: https://www.sciencedirect.com/science/article/
+     pii/092658059290017E.
+[42] Adam Steger. What is Robotic Process Automation(RPA)? The Complete 2024
+     Guide. Accessed: 2024-08-07. 2024. url: https://www.kassowrobots.com/blog/
+     what-is-robotic-process-automation-rpa.
+[43] Kenta Takaya et al. “Simulation environment for mobile robots testing using ROS
+     and Gazebo”. In: 2016 20th International Conference on System Theory, Control
+     and Computing (ICSTCC). IEEE. 2016, pp. 96–101.
+[44] Tzyh-Jong Tarn, Shan-Ben Chen, and Gu Fang. Robotic welding, intelligence and
+     automation: RWIA’2010. Vol. 88. Springer Science & Business Media, 2011.
+[45] Shop Metalworking Techology. Robotic bending cell. Accessed: 2024-08-04. 2023.
+     url: https://www.youtube.com/watch?v=EhQ7DvXjDCA.
+
+
+
+                                                                                   Page iv
+                                                                      BIBLIOGRAPHY
+
+
+[46] J.A. Throop et al. “Quality evaluation of apples based on surface defects: develop-
+     ment of an automated inspection system”. In: Postharvest Biology and Technology
+     36.3 (2005), pp. 281–290. issn: 0925-5214. doi: https://doi.org/10.1016/j.
+     postharvbio.2005.01.004. url: https://www.sciencedirect.com/science/
+     article/pii/S0925521405000177.
+[47] Christoph Uhrhan, René Roshardt, and Gerhard Schweitzer. “User Oriented Au-
+     tomation of Flexible Sheet Bending”. In: Proceedings of the Third Conference on
+     Mechatronics and Robotics: “From design methods to industrial applications”. Ed.
+     by Joachim Lückel. Wiesbaden: Vieweg+Teubner Verlag, 1995, pp. 202–211. isbn:
+     978-3-322-91170-4. doi: 10.1007/978-3-322-91170-4_15. url: https://doi.
+     org/10.1007/978-3-322-91170-4_15.
+[48] Raphael Wagner et al. “Challenges and Potentials of Digital Twins and Industry 4.0
+     in Product Design and Production for High Performance Products”. In: Procedia
+     CIRP 84 (2019). 29th CIRP Design Conference 2019, 08-10 May 2019, Póvoa de
+     Varzim, Portgal, pp. 88–93. issn: 2212-8271. doi: https://doi.org/10.1016/
+     j . procir . 2019 . 04 . 219. url: https : / / www . sciencedirect . com / science /
+     article/pii/S2212827119308637.
+[49] Hitoshi Wakizako. “Industrial Robots and Machine Vision”. In: The 3rd Interna-
+     tional Conference on Industrial Application Engineering 2015 (ICIAE2015) (2015).
+     doi: 10.12792/iciae2015.003.
+[50] ROS Wiki. urdf. Accessed: 2024-07-29. 2024. url: http://wiki.ros.org/urdf.
+[51] Alexander Wilkinson et al. “Design guidelines for human–robot interaction with
+     assistive robot manipulation systems”. In: Paladyn 12.1 (2021), pp. 392–401. doi:
+     doi:10.1515/pjbr-2021-0023. url: https://doi.org/10.1515/pjbr-2021-
+     0023.
+[52] Zixuan Xiao and Yulin Xu. “Web-Based Robot Control Interface”. In: IOP Con-
+     ference Series: Earth and Environmental Science 252.4 (2019), p. 042112. doi:
+     10.1088/1755-1315/252/4/042112. url: https://dx.doi.org/10.1088/1755-
+     1315/252/4/042112.
+[53] Sida Yang et al. “Multi-source vision perception for human-robot collaboration in
+     manufacturing”. In: 2018 IEEE 15th International Conference on Networking, Sens-
+     ing and Control (ICNSC). 2018, pp. 1–6. doi: 10.1109/ICNSC.2018.8361333.
+[54] Longfei Zhou, Lin Zhang, and Nicholas Konz. “Computer Vision Techniques in
+     Manufacturing”. In: IEEE Transactions on Systems, Man, and Cybernetics: Systems
+     53.1 (2023), pp. 105–117. doi: 10.1109/TSMC.2022.3166397.
+
+
+
+
+                                                                                  Page v
+A        Appendix
+A1      Software & Development Environment Versions
+The following list summarizes the versions of all software used by and required for the
+evaluation framework developed in this thesis. Accordingly, the evaluation framework
+was only tested to run on these versions.
+
+   • ROS: ROS1 Noetic Ninjemys
+
+   • KR Software Release: Fire Fly 3
+
+   • Python: 3.8.10
+
+   • C++: C++11
+
+   • VISOR® PC Software: 2.8.2.1
+
+   • ROS Packages: ROS packages version is summarized in package.xml of the project
+
+   • NodeJS: v18.14.0
+
+   The following list summarizes all development environments used to implement all
+code during the course of this thesis:
+
+   • Development OS: Ubuntu 20.04.6 LTS (Focal Fossa) for ROS Simulations and
+     Windows 10 for SensoPart Software
+
+   • ROS IDE: Visual Studio Code (version 1.91)
+
+   • CBun IDE: Visual Studio Code (version 1.85) Required by KR for CBun Devel-
+     opment
+
+
+
+
+                                                                               Page vi
+                                 CHAPTER A: APPENDIX
+
+
+
+A2   Reduction in Manual Labor
+
+A3   Cost reduction
+
+
+
+
+                                              Page vii
+

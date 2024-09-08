@@ -1,15 +1,19 @@
 \chapter*{Symbols and Formulas}
 
 \begin{table}[h]
-\centering
-\begin{tabular}{c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{0.5cm}}|@{\hspace{0.5cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{0.5cm}}}
-Symbol & Unit & Description & Symbol & Unit & Description \\
-\hline
-\hline
-mm &  & Data 3 \\
-Data 4 & Data 5 & Data 6 \\
-Data 7 & Data 8 & Data 9 \\
-\hline
-\end{tabular}
+    \centering
+    \renewcommand{\arraystretch}{1.5} % Adjusts row height
+    \setlength{\tabcolsep}{20pt} % Adjusts column spacing
+    \begin{tabular}{l@{\hspace{1cm}}c@{\hspace{1.5cm}}p{7cm}}
+        Symbol & Unit & Description\\
+        \hline
+        $a_{\text{brake}}$ & \textit{$\text{deg/s}^2$} & Braking accelerations on the robot when emergency stop or protective stop is triggered \label{sym:a-brake}\\
+        $v_{\text{max}}$ & \textit{$\text{mm/s}^2$} & linear \hyperref[acro:TCP]{TCP} speed set in the teach pendant of the robot \label{sym:v-max}\\
+        $t_{\text{brake}}$ & \textit{s} & the braking time of the robot when emergency stop or protective stop is triggered \label{sym:t-brake}\\
+        $s_{\text{brake}}$ & \textit{mm} & the braking distance of the robot when emergency stop or protective stop is triggered \label{sym:s-brake}\\
+        $\omega$ & \textit{$\text{deg/s}$} & Joint speed \label{sym:omega}\\
+        \textit{r} & \textit{mm} & distance between the shoulder joints of the robot \textit{i.e.} joint axis 1 or 2 and either centre of gravity of load or \hyperref[acro:TFC]{TFC}\label{sym:r}\\
+        \hline
+    \end{tabular}
 \label{tab:symbols}
 \end{table}

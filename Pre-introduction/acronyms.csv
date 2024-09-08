@@ -37,3 +37,6 @@ CAD, Computer-aided design
 TFC, Tool flange centre
 IO, Input Output
 Gazebo, 3D Simulation software usually used in combination with ROS to simulate robots in complex indoor and outdoor environments.
+Move J, KR trajectory command for jointspace move which moves by target joint-configuration.
+Move L, KR trajectory command for Linear Move which uses cartesian-space coordinates for robot motion (XYZ;RPY)
+Move S, KR trajectory command for Spline Move which can keep the orientation exactly within the direction of TCP motion.

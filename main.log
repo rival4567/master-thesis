@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  7 SEP 2024 13:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  8 SEP 2024 05:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -981,7 +981,7 @@ File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 \@quotelevel=\count492
 \@quotereset=\count493
- (./main.aux (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendix.aux))
+ (./main.aux (./Pre-introduction/acronyms.aux) (./Pre-introduction/symbols.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux) (./A. Appendices/appendix.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
@@ -1175,25 +1175,25 @@ l.27 \end{abstract}
 l.40 ...3}Unloading station}{21}{subsection.4.1.3}
                                                   % [1
 
-])
+]pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 ...line {A3}Cost reduction}{vii}{section.A.3}
+                                                  % [2])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.121 \listoffigures
-                     [2] (./main.lof)
+ [3] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [3
+ [4
 
 ] (./main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [4
+ [5
 
 ]
 \openout2 = `Pre-introduction/acronyms.aux'.
@@ -1203,16 +1203,29 @@ l.121 \listoffigures
 \dtlkeys@acronym=\toks77
 \dtlrows@acronym=\count501
 \dtlcols@acronym=\count502
- [5
+ [6
 
 
-]) [6]
+]) [7]
+\openout2 = `Pre-introduction/symbols.aux'.
+
+ (./Pre-introduction/symbols.tex
+Underfull \hbox (badness 1939) in paragraph at lines 10--11
+[]|\OT1/cmr/m/n/12 Braking ac-cel-er-a-tions on the robot
+ []
+
+) [8
+
+
+
+
+]
 \openout2 = `"1. Introduction/main.aux"'.
 
  (./1. Introduction/main.tex
 Chapter 1.
 (./1. Introduction/1.1 Background/background.tex
-<1. Introduction/1.1 Background/exhibit2.png, id=370, 840.13875pt x 527.9725pt>
+<1. Introduction/1.1 Background/exhibit2.png, id=399, 840.13875pt x 527.9725pt>
 File: 1. Introduction/1.1 Background/exhibit2.png Graphic file (type png)
 <use 1. Introduction/1.1 Background/exhibit2.png>
 Package pdftex.def Info: 1. Introduction/1.1 Background/exhibit2.png  used on input line 17.
@@ -1233,7 +1246,7 @@ Chapter 2.
 
 
 ]
-<figures/ASTRO-100.jpg, id=472, 1987.425pt x 1118.1775pt>
+<figures/ASTRO-100.jpg, id=501, 1987.425pt x 1118.1775pt>
 File: figures/ASTRO-100.jpg Graphic file (type jpg)
 <use figures/ASTRO-100.jpg>
 Package pdftex.def Info: figures/ASTRO-100.jpg  used on input line 19.
@@ -1244,7 +1257,7 @@ Package pdftex.def Info: figures/ASTRO-100.jpg  used on input line 19.
  (./3. System Design/main.tex
 Chapter 3.
 (./3. System Design/3.1 Overview of the Robotic Workcell/overview.tex
-<figures/robotic-workcell1.png, id=593, 1208.26407pt x 633.86812pt>
+<figures/robotic-workcell1.png, id=623, 1208.26407pt x 633.86812pt>
 File: figures/robotic-workcell1.png Graphic file (type png)
 <use figures/robotic-workcell1.png>
 Package pdftex.def Info: figures/robotic-workcell1.png  used on input line 16.
@@ -1260,7 +1273,7 @@ Overfull \hbox (59.35281pt too wide) in paragraph at lines 69--70
  []
 
 )
-<figures/bending-machine-blender.png, id=601, 724.7075pt x 481.8pt>
+<figures/bending-machine-blender.png, id=631, 724.7075pt x 481.8pt>
 File: figures/bending-machine-blender.png Graphic file (type png)
 <use figures/bending-machine-blender.png>
 Package pdftex.def Info: figures/bending-machine-blender.png  used on input line 42.
@@ -1270,23 +1283,23 @@ Package pdftex.def Info: figures/bending-machine-blender.png  used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10]
-<figures/storage-station-blender.png, id=609, 469.755pt x 579.16376pt>
+<figures/storage-station-blender.png, id=637, 469.755pt x 579.16376pt>
 File: figures/storage-station-blender.png Graphic file (type png)
 <use figures/storage-station-blender.png>
 Package pdftex.def Info: figures/storage-station-blender.png  used on input line 58.
 (pdftex.def)             Requested size: 136.57462pt x 168.37738pt.
  [11 <./figures/bending-machine-blender.png> <./figures/storage-station-blender.png>]
-<figures/unloading-station-front-blender.png, id=616, 465.74pt x 486.81876pt>
+<figures/unloading-station-front-blender.png, id=644, 465.74pt x 486.81876pt>
 File: figures/unloading-station-front-blender.png Graphic file (type png)
 <use figures/unloading-station-front-blender.png>
 Package pdftex.def Info: figures/unloading-station-front-blender.png  used on input line 78.
 (pdftex.def)             Requested size: 229.9005pt x 240.30377pt.
-<figures/unloading-station-back-blender.png, id=617, 416.55624pt x 486.81876pt>
+<figures/unloading-station-back-blender.png, id=645, 416.55624pt x 486.81876pt>
 File: figures/unloading-station-back-blender.png Graphic file (type png)
 <use figures/unloading-station-back-blender.png>
 Package pdftex.def Info: figures/unloading-station-back-blender.png  used on input line 84.
 (pdftex.def)             Requested size: 204.85846pt x 239.41238pt.
-<figures/handling-robot-simulation.png, id=618, 470.75874pt x 598.235pt>
+<figures/handling-robot-simulation.png, id=646, 470.75874pt x 598.235pt>
 File: figures/handling-robot-simulation.png Graphic file (type png)
 <use figures/handling-robot-simulation.png>
 Package pdftex.def Info: figures/handling-robot-simulation.png  used on input line 98.
@@ -1296,250 +1309,46 @@ Package pdftex.def Info: figures/handling-robot-simulation.png  used on input li
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12 <./figures/unloading-station-front-blender.png> <./figures/unloading-station-back-blender.png>]
-<figures/panda-robot-simulation.png, id=625, 650.43pt x 868.24374pt>
+<figures/panda-robot-simulation.png, id=653, 650.43pt x 868.24374pt>
 File: figures/panda-robot-simulation.png Graphic file (type png)
 <use figures/panda-robot-simulation.png>
 Package pdftex.def Info: figures/panda-robot-simulation.png  used on input line 129.
 (pdftex.def)             Requested size: 136.57462pt x 182.31006pt.
- [13 <./figures/handling-robot-simulation.png> <./figures/panda-robot-simulation.png>]) (./3. System Design/3.2 System Requirements/requirements.tex [14]) (./3. System Design/3.3 Hardware Selection/hardware.tex (./3. System Design/3.3 Hardware Selection/machine.tex) [15] [16]
+ [13 <./figures/handling-robot-simulation.png> <./figures/panda-robot-simulation.png>]) (./3. System Design/3.2 System Requirements/requirements.tex [14]) (./3. System Design/3.3 Hardware Selection/hardware.tex (./3. System Design/3.3 Hardware Selection/machine.tex) [15]
+<figures/kassow-robot-parts.png, id=689, 746.79pt x 544.0325pt>
+File: figures/kassow-robot-parts.png Graphic file (type png)
+<use figures/kassow-robot-parts.png>
+Package pdftex.def Info: figures/kassow-robot-parts.png  used on input line 17.
+(pdftex.def)             Requested size: 227.62206pt x 165.8176pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16 <./figures/kassow-robot-parts.png>] [17]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 77.
+(hyperref)                removing `\mathsurround' on input line 86.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 77.
+(hyperref)                removing `\z@' on input line 86.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 77.
+(hyperref)                removing `superscript' on input line 86.
 
-[17]) (./3. System Design/3.4 Software Architecture/software.tex)) [18]
+) (./3. System Design/3.4 Software Architecture/software.tex)) [18]
 \openout2 = `"4. Hardware Integration/main.aux"'.
 
  (./4. Hardware Integration/main.tex
 Chapter 4.
 (./4. Hardware Integration/4.1 Installation and Configuration/configuration.tex
-<figures/bending-machine.png, id=684, 2023.56pt x 1336.995pt>
+<figures/bending-machine.png, id=718, 2023.56pt x 1336.995pt>
 File: figures/bending-machine.png Graphic file (type png)
 <use figures/bending-machine.png>
 Package pdftex.def Info: figures/bending-machine.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 300.7701pt.
-<4. Hardware Integration/4.1 Installation and Configuration/kr1410.png, id=690, 680.5425pt x 440.64626pt>
+<4. Hardware Integration/4.1 Installation and Configuration/kr1410.png, id=724, 680.5425pt x 440.64626pt>
 File: 4. Hardware Integration/4.1 Installation and Configuration/kr1410.png Graphic file (type png)
 <use 4. Hardware Integration/4.1 Installation and Configuration/kr1410.png>
-Package pdftex.def Info: 4. Hardware Integration/4.1 Installation and Configuration/kr1410.png  used on input line 16.
-(pdftex.def)             Requested size: 455.24411pt x 294.76752pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19
-
-
-
-
- <./figures/bending-machine.png>] [20 <./4. Hardware Integration/4.1 Installation and Configuration/kr1410.png>]) (./4. Hardware Integration/4.2 Communication Protocols/protocols.tex) (./4. Hardware Integration/4.3 Safety Considerations/safety.tex [21]
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:62: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.62 ...ty or TFC} \newline, whichever is larger}}
-                                                   \\
-I'm guessing that you meant to end an alignment here.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.63         \cline
-                   {3-10}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-\@cline #1-#2\@nil ->\omit 
-                           \@multicnt #1\advance \@multispan \m@ne \ifnum \@...
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced alignment tab character &.
-<argument> &
-            \omit 
-l.63         \cline{3-10}
-                         
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-<argument> &\omit 
-                  
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.63         \cline{3-10}
-                         
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./4. Hardware Integration/4.3 Safety Considerations/safety.tex:63: Leaders not followed by proper glue.
-<to be read again> 
-                   \hfill 
-l.63         \cline{3-10}
-                
+Package pdftex.
