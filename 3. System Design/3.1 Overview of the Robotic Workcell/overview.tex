@@ -32,124 +32,24 @@ The relation between each subsystem and the flow of energy, data, and material i
 
 \subsection{Bending machine}
 \label{sub:bending-machine}
-Bending machine as a unit comes with a terminal and a foot pedal. Terminal is used to operate
-the bending machine for starting, stopping and configuring the bending machine and also loading the bending program.
-Foot pedal comes with two pedals, one for closing the bending machine and other for opening of the bending machine.
-Opening and closing of bending machine is controlled by a foot pedal for the manual bending operations.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.75\textwidth]{figures/bending-machine-blender.png}
-    \caption{Bending Machine}
-    \label{fig:bending-machine-blender}
-\end{figure}
-To automated the bending machine, PLC is used to send signals to foot pedal which in turn, controls the opening and closing of bending machine.
-
-An inspection camera is also added to measure the bending angle after each bending operation. This inspection camera is operated by the PLC
-and the bending angles are saved in \textit{.csv} file format and displayed on a HMI.
+\input{3. System Design/3.1 Overview of the Robotic Workcell/bending-machine.tex}
 
 \subsection{Storage station}
 \label{sub:storage-station}
-The storage station is a shelf with 10 drawers. The drawers of the shelf can be automatically opened and closed by the
-handling robot. It is a mechanical system which is used to store final bended sheet metal parts.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.3\textwidth]{figures/storage-station-blender.png}
-    \caption{Storage Station}
-    \label{fig:storage-station}
-\end{figure}
-
-When the storage station is full, human operators are to replace a filled shelf with a new empty shelf with a forklift. Thus, this is the only station
-which is not fixed in the robotic workcell. The robotic camera mounted on the handling robot needs to determine the correct position of the storage station
-after each restart.
+\input{3. System Design/3.1 Overview of the Robotic Workcell/storage-station.tex}
 
 \subsection{Unloading station}
 \label{sub:unloading-station}
-    The task of the removal station is to take a single sheet metal part from a stack of raw sheets and make it
-    available to the robot unit. This is a mechatronic system with several different components, which all
-    have to function individually, but also together in combination. The mechatronic system is controlled by the PLC.
-
-
-    \begin{figure}[h]
-        \centering
-        \begin{subfigure}{0.505\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{figures/unloading-station-front-blender.png} % Replace with your image file
-            \caption{front-view}
-            \label{fig:unloading-station-front}
-        \end{subfigure}\hfill
-        \begin{subfigure}{0.45\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{figures/unloading-station-back-blender.png} % Replace with your image file
-            \caption{back-view}
-            \label{fig:unloading-station-back}
-        \end{subfigure}
-        \caption{Unloading station in simulation}
-        \label{fig:unloading-station}
-    \end{figure}
-
-    This unloading station is on top of a cabinet which houses the PLC and controller of the handling robot.
+\input{3. System Design/3.1 Overview of the Robotic Workcell/unloading-station.tex}
 
 \subsection{Handling robot}
 \label{sub:handling-robot}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.3\textwidth]{figures/handling-robot-simulation.png}
-        \caption{Handling Robot KR1410 in simulation}
-        \label{fig:handling-robot-simulation}
-    \end{figure}
-    Handling robot is the primary robot which handles the sheet metal parts to different subsystems \textit{i.e.}
-    unloading station, bending machine and storage station.
-    It coordinates with the PLC to make decisions during the execution of the program. Reachability
-    is very important in this case, as it should be able to handle sheet metal parts in any orientation.
-    A two finger gripper is used for grasping the sheet metal parts.
-    
-    To get accuracy with the bending process, detection of features on the sheet metal parts is required.
-    A robotic camera is mounted of the robot for this purpose. In this way, handling robot can be trained 
-    to operate with different variants of sheet metal parts.
-
-    ROS simulations of the handling robot is done to determine the performance of robot in the workcell.
-    The drawers of storage system is especially close
-    to the production floor and the robot requires some space to move around without getting stuck. 
-    Reachability is tested with the simulation of trajectories before the final integration of the real robot
-    in the workcell.
-
+\input{3. System Design/3.1 Overview of the Robotic Workcell/handling-robot.tex}
 
 \subsection{Bending machine terminal operating robot}
 \label{sub:panda-robot}
-    Together with the company \textbf{VisCheck GmbH}, an operating unit is developed
-    for entering parameters on the operating terminal and reading relevant values on the operating
-    terminal of the bending machine. The unit consists of a franka emika robot, a camera for reading terminal values
-    and a computer for controlling the robot. A touch screen pointer is attached to the gripper of the robot
-    for operating the touch screen of terminal.
-
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.3\textwidth]{figures/panda-robot-simulation.png}
-        \caption{Franka emika panda robot as terminal operating robot in simulation}
-        \label{fig:terminal-robot}
-    \end{figure}
-
-    As it is programmed by another company, it is not simulated in the software and not coordinated for any trajectory planning. Sufficient floor space
-    is left near the terminal of bending machine in the robotic workcell for the installation of this robot.
-    The trajectories of handling robot are not planned anywhere near this robot. To setup this, safety zone is created
-    during the programming of the handling robot.
-
+\input{3. System Design/3.1 Overview of the Robotic Workcell/panda-robot.tex}
 
 \subsection{Safety fence}
 \label{sub:safety-fence}
-    Safety fence marks the boundary of the robotic workcell. Even though the robot finalized is a collaborative robot,
-    bending machine poses a safety concern as it is operated automatically by the PLC. The sheet metal parts are sharp
-    around the corners and when handled by the robot is deemed as not safe.
-
-    Two doors are installed for an entry in the robotic workcell. One is close to the storage system and is used
-    to move shelf in-and-out of the workcell by a forklift. The doors are installed with a safety mechanism by which
-    if the door is open, the whole robot unit and bending machine cannot operate. This safety mechanism 
-    is again controlled by the PLC. Safety fence is only installed at the end of the project by the company.
-    A simulation of the fence with ROS and gazebo is not necessary in this case and is not included as assets in gazebo.
-
-
-
-
-
+\input{3. System Design/3.1 Overview of the Robotic Workcell/safety-fence.tex}

@@ -10,17 +10,17 @@
     ]
       
         % Nodes
-        \node (bending) [red] {Bending\\ Machine};
-        \node (terminal) [red, left=of bending] {Terminal};
-        \node (camera1) [orange, below left=1cm and 0cm of bending] {Inspection\\ Camera};
-        \node (footpedal) [red, below right=1cm and 0cm of bending] {Foot\\ pedal};
-        \node (plc) [blue, below=4.5cm of bending, inner sep=10pt] {\hyperref[acro:PLC]{PLC}};
-        \node (pandarobot) [gray, above left=0.5cm and 1.5cm of plc] {Panda\\ Robot};
-        \node (handlingrobot) [green, above right=0.5cm and 3cm of plc] {Handling\\ Robot};
-        \node (camera3) [green, above right=of handlingrobot] {Camera};
-        \node (storage) [rect, below=3cm of camera3, text=cyan] {Storage\\ Station};
-        \node (camera2) [gray, above left=of pandarobot] {Camera};
-        \node (unloading) [rect, below=of plc, draw=cyan, text=cyan] {Unloading\\ Station};
+        \node (bending) [red] {\hyperref[sub:bending-machine]{Bending}\\ \hyperref[sub:bending-machine]{Machine}};
+        \node (terminal) [red, left=of bending] {\hyperref[sub:bending-machine]{Terminal}};
+        \node (camera1) [orange, below left=1cm and 0cm of bending] {\hyperref[sub:bending-machine]{Inspection}\\ \hyperref[sub:bending-machine]{Camera}};
+        \node (footpedal) [red, below right=1cm and 0cm of bending] {\hyperref[sub:bending-machine]{Foot}\\ \hyperref[sub:bending-machine]{pedal}};
+        \node (plc) [blue, below=4.5cm of bending, inner sep=10pt] {\hyperref[subsec:plc]{PLC}};
+        \node (pandarobot) [gray, above left=0.5cm and 1.5cm of plc] {\hyperref[sub:panda-robot]{Panda}\\ \hyperref[sub:panda-robot]{Robot}};
+        \node (handlingrobot) [green, above right=0.5cm and 3cm of plc] {\hyperref[sub:handling-robot]{Handling}\\ \hyperref[sub:panda-robot]{Robot}};
+        \node (camera3) [green, above right=of handlingrobot] {\hyperref[sub:handling-robot]{Camera}};
+        \node (storage) [rect, below=3cm of camera3, text=cyan] {\hyperref[sub:storage-station]{Storage}\\ \hyperref[sub:storage-station]{Station}};
+        \node (camera2) [gray, above left=of pandarobot] {\hyperref[sub:panda-robot]{Camera}};
+        \node (unloading) [rect, below=of plc, draw=cyan, text=cyan] {\hyperref[sub:unloading-station]{Unloading}\\ \hyperref[sub:unloading-station]{Station}};
         \node (energy) [rectangle, draw=none, fill=white, text width=2.5cm, align=left, above left=0.3cm and 0cm of unloading, font=\footnotesize] {Energy Flow};
         \node (data) [rectangle, draw=none, fill=white, text width=2.5cm, align=left, below=0cm of energy, font=\footnotesize] {Data Flow};
         \node (material) [rectangle, draw=none, fill=white, text width=2.5cm, align=left, below=0cm of data, font=\footnotesize] {Material Flow};

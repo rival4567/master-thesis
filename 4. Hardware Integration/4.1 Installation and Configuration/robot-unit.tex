@@ -1,0 +1,50 @@
+The robot unit consists of three assemblies: a base, a robot and an end-effector. (Figure \ref{fig:robot-installation}).
+The robot is a manipulator from kassow robots with pneumatic parallel grippers as the end-effector.
+Pneumatic gripper is controlled by PLC. \hyperref[acro:VISOR]{VISOR\textsuperscript{\textregistered}} camera is also mounted on the tool-IO which is used for robotic perception.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/handling-robot.png}
+    \caption{Three bending stations for the bending operation}
+    \caption{Components of the robot unit: 1) robot base 2) KR1410 manipulator 3) manual quick-change system 4) robotic gripper 5) robotic camera}
+    \label{fig:robot-installation}
+\end{figure}
+
+
+
+\subsubsection{Robot base}
+The base is a simple welded construction made of steel. The choice of steel material ensures that the base has
+sufficient dead weight so that it can be transported together with the robot and gripper using a pallet
+truck without the risk of tipping over. During operation, the robot unit is fixed to the floor with four M12
+screws. 
+
+\subsubsection{KR1410 manipulator}
+The robot used is a 7-axis robot from \textbf{Kassow Robots} with model KR1410. This robot model fulfills the requirements defined in 
+the section \ref{sec:requirements}. Simulations have shown that this robot is above to reach even the lowest drawers of the shelf of the
+storage station. Two full rotations (720\textdegree) of five out of seven joints allows complex motions in limited space.
+A flexible conduit containing pneumatic hose for the pneumatic parallel gripper and communication cabel for the camera goes around the manipulator to reach the end-effector.
+
+
+
+\subsubsection{Manual quick-change system}
+The gripper is attached to a manual quick-change
+system. The manual quick-change system makes it possible to exchange different gripper
+designs in a short time and without increased effort if required for a sheet metal part type. Sheet metal
+part is folded into something like a box. The quick-change system also has an electric and pneumatic power feed-through, which ensures simple,
+user-friendly changeover.
+
+\subsubsection{Robotic Gripper}
+The gripper is a Schunk pneumatic parallel gripper. It is powered and controlled by the Tool-IO board on the KR1410.
+The robotic gripper grips an object with an applied pressure of five bar. This is enough to hold the sheet metal part
+in place during motion of the arm. 
+The fingers are made from aluminium material and finger tips are 3D printed using a \hyperref[acro:FDM]{FDM} printer. The tips are worn out
+after some period of time, but are easily replacable by 3D printing.
+In the program tree, TCP is set at the center of the finger tips of the robotic gripper.
+
+
+\subsubsection{Robotic Camera}
+A camera system is installed on the robot itself. This is used to determine the relative
+position between the robot unit and the unloading station, bending machine and storage station using the markers
+and between the robot unit and the sheet metal part (when it is first made available at the
+sheet pickup station or is gripped) using features on the sheet metal part.

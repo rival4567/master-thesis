@@ -20,6 +20,7 @@
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{multirow}
+\usepackage{comment}  % Load the comment package
 
 \pgfplotsset{compat=1.17}
 
@@ -95,44 +96,49 @@
   \fi}
 \makeatother
 
+% Redefine subsubsection numbering
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+
 % Get numbered subsection
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{3}
 
 % Set the depth of the table of contents
 \setcounter{tocdepth}{2}
 
+% \excludecomment{figure}  % Exclude all figure environments
+% \let\endfigure\relax
+
 % Start thesis
 \begin{document}
 
-% Title according to guidelines
-\includepdf[pages={1,2}]{Pre-introduction/abschlussarbeit_titel-1.pdf}
+% % Title according to guidelines
+% \includepdf[pages={1,2}]{Pre-introduction/abschlussarbeit_titel-1.pdf}
 
-\title{Robotic Workcell for Automated Bending Process}
+% \title{Robotic Workcell for Automated Bending Process}
 
-\author{Shivam Shivam}
+% \author{Shivam Shivam}
 
-\date{July 2024}
+% \date{July 2024}
 
-%Abstract
-\input{Pre-introduction/abstract.tex}
+% %Abstract
+% \input{Pre-introduction/abstract.tex}
 
 %Table of contents and other information
-\tableofcontents
-\listoffigures
-\listoftables
+% \tableofcontents
+% \listoffigures
+% \listoftables
 % \include{Pre-introduction/symbols}
 \include{Pre-introduction/acronyms}
 
 \include{Pre-introduction/symbols}
-% \chapter[syms]{Symbols and Formulas}
 % reset page number
 \newpage
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
-\include{1. Introduction/main}
+% \include{1. Introduction/main}
 
-\include{2. Literature Review/main}
+% \include{2. Literature Review/main}
 
 \include{3. System Design/main}
 
@@ -148,12 +154,12 @@
 
 \include{9. Conclusion and Future Works/main}
 
-% Add all the references here
-\addcontentsline{toc}{chapter}{Bibliography}
-\setcounter{page}{0}
-\pagenumbering{roman}
+% % Add all the references here
+% \addcontentsline{toc}{chapter}{Bibliography}
+% \setcounter{page}{0}
+% \pagenumbering{roman}
 
 \printbibliography
-\include{A. Appendices/appendix}
+% \include{A. Appendices/appendix}
 
 \end{document}
