@@ -1,0 +1,40 @@
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[
+        device/.style={draw, rectangle, minimum width=2.5cm, minimum height=1cm, align=center},
+        connection/.style={thick}, % bidirectional arrows
+        protocol/.style={above, sloped, font=\small\ttfamily},
+        ip/.style={font=\small} % IP address style
+      ]
+      
+      % Devices without IP inside node
+      \node[device] (PLC) {PLC};
+      \node[device, below=2cm of PLC] (KR1410) {KR1410 Robot};
+      \node[device, right=3cm of PLC] (InspectionCamera) {Inspection Camera};
+      \node[device, below=2cm of KR1410] (RoboticCamera) {Robotic Camera};
+      \node[device, below=2cm of InspectionCamera] (PC) {ROS PC};
+      
+      % Web UI node
+      \node[device, below=2cm of PC] (WebUI) {Web UI};
+      
+      % IP addresses outside nodes
+      \node[ip, above=0.0cm of PLC] {192.168.0.102};
+      \node[ip, above left=-0.55cm and 0cm of KR1410] {192.168.0.120};
+      \node[ip, below left=-0.55cm and 0.0cm of KR1410] {192.168.1.37};
+      \node[ip, above=0.0cm of InspectionCamera] {192.168.0.101};
+      \node[ip, below=0.0cm of RoboticCamera] {192.168.0.100};
+      \node[ip, right=0.0cm of PC] {192.168.1.38};
+      \node[ip, below=0.0cm of WebUI] {http://localhost:3000};
+
+      % Connections
+      \draw[connection] (PLC) -- (KR1410) node[protocol, midway] {Profinet};
+      \draw[connection] (KR1410) -- (RoboticCamera) node[protocol, midway] {Ethernet};
+      \draw[connection] (KR1410) -- (PC) node[protocol, midway] {Ethernet};
+      \draw[connection] (PLC) -- (InspectionCamera) node[protocol, midway] {Ethernet};
+      \draw[connection] (PC) -- (WebUI) node[protocol, midway] {Websocket};
+      
+      \end{tikzpicture}
+    \caption{System Networking and IP Addressing}
+    \label{fig:communication-protocols}
+\end{figure}
+

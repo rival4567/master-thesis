@@ -1,10 +1,6 @@
 KR1410 is a 7-axis collaborative robotic arm from Kassow Robots. It has a reachability of 1400 mm which fits
 satisfactory in the workcell. A seventh axis is particulary useful as it allows more freedom during trajectory planning
-especially in close spaces.
-
-The robotic arm comes with a robot controller and a teach pendant as shown in Figure \ref{fig:kassow-robot-parts} A robot controller is the main controlling unit for each \hyperref[acro:KR]{KR} manipulator.
-Teach Pendant is used for programming the manipulator and also provides \hyperref[acro:UI]{UI} and safety controls.
-KR1410 could be interfaced with ROS. KR provides packages to install through which KR messages transmission is set up.
+especially in close spaces. Five out of seven joints could do two full rotations.
 
 \begin{figure}[h]
     \centering
@@ -13,12 +9,13 @@ KR1410 could be interfaced with ROS. KR provides packages to install through whi
     \label{fig:kassow-robot-parts}
 \end{figure}
 
-\subsubsection{Function Description}
-Function Description
+The robotic arm comes with a robot controller and a teach pendant as shown in Figure \ref{fig:kassow-robot-parts} A robot controller is the main controlling unit for each \hyperref[acro:KR]{KR} manipulator.
+Teach Pendant is used for programming the manipulator and also provides \hyperref[acro:UI]{UI} and safety controls. 
+The robot can be operated manually and automatically. It is automated, programmable and capable of
+moving in up to seven axes. The robot is typically used for welding, painting, assembly, pick and place,
+packaging and labelling. These are all carried out while ensuring high endurance, speed, and precision. \cite[page 23]{kassow-manual}
 
-The industrial robot arm is a robot system used for manufacturing. It is automated, programmable and
-capable of moving within up to seven axes.
-The robot is typically used for welding, painting, assembly, pick and place, packaging and labelling.
+
 \begin{table}[h!]
     \centering
     \small
@@ -48,29 +45,12 @@ The robot is typically used for welding, painting, assembly, pick and place, pac
     \caption{KR1410 Technical Specifications (Source: \cite[page 31]{kassow-specification})}
 \end{table}
 
-\subsubsection{Increased Safety}
 
-Industrial Robotic Automation significantly enhances workplace safety. Robots, especially cobots like Kassow Robot's 7-axis version, are equipped with advanced safety features and mechanisms. 
-They can detect and avoid collisions with people or objects, reducing the risks associated with manual labour in potentially hazardous environments. This commitment to safety exemplifies the primary objective of robotic automation: to protect workers and streamline processes.
+Kassow Robots can be integrated with other devices via Profinet. Each robot that is equipped with optional Profinet 
+\hyperref[acro:HW]{HW} interface can act as a Profinet IO-Device.
+This means that such robot can be monitored and controlled by any Profinet IO-Controller (for example PLC). \cite{profinet}
+KR1410 could be also interfaced with ROS. KR provides packages to install through which KR messages communication is set up to a PC.
+These messages are used to get the current joint configuration of the robot and simulate it in ROS or web UI.
 
-\subsubsection{More Flexibility}
-Cobots, with their adaptable designs, represent the epitome of flexibility in industrial automation. 
-Unlike traditional fixed robots, the 7-axis from Kassow Robots can be quickly reprogrammed and adapted for different tasks. This agility makes them an invaluable asset for industries undergoing frequent changes or those with diverse product lines.
-
-\subsubsection{Cost-effective}
-Introducing Industrial Robotic Automation is a wise financial decision for businesses. Cobots, which offer a competitive price point compared to traditional industrial robots, provide significant returns on investment by improving efficiency, reducing waste, and minimizing production downtime. 
-The long-term savings, in terms of both time and money, underscore the economic benefits of integrating robotic automation into the production process.
-
-\subsubsection{Great Scalability}
-Industrial robots, especially cobots, are inherently scalable. Whether it's adjusting to a new product line or ramping up production volumes, Kassow Robot's 7-axis cobot can be swiftly recalibrated to meet evolving demands. 
-This ensures that industries can easily scale their operations without undergoing extensive overhauls or incurring excessive costs.
-
-\subsubsection{Improved Quality}
-Quality assurance is a prominent benefit of Industrial Robotic Automation. Robots, with their precision and consistency, dramatically reduce the margin for errors in production. 
-Kassow Robot's 7-axis model ensures that each task—from welding to assembly—is executed with remarkable accuracy, leading to products of superior quality and consistency.
-
-\subsubsection{Higher Productivity}
-
-Robotic automation directly translates to increased productivity. By automating repetitive and time-consuming tasks, cobots free human workers to concentrate on value-added activities. 
-In scenarios where cobots collaborate with human workers, the synergy often leads to faster production cycles, efficient workflows, and overall heightened productivity.
-
+KR also provides developmental environment to add new robotic peripherals, like grippers or sensors. This development environment is \hyperref[acro:CBun]{CBun},
+which allows writing KR software in C++ for a specific peripheral. It is used in order to setup communication between VISOR camera functions and the robot. \cite{Cbun}

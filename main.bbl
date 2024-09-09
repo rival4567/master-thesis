@@ -17,6 +17,60 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{visor-robotic}{online}{}
+  \endentry
+
+  \entry{visor-object}{online}{}
+  \endentry
+
+  \entry{ALPHONSUS20161185}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AER}{%
+         family={Alphonsus},
+         familyi={A\bibinitperiod},
+         given={Ephrem\bibnamedelima Ryan},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=AMO}{%
+         family={Abdullah},
+         familyi={A\bibinitperiod},
+         given={Mohammad\bibnamedelima Omar},
+         giveni={M\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+    }
+    \keyw{PLC, Energy systems, Industrial control, Monitoring}
+    \strng{namehash}{AERAMO1}
+    \strng{fullhash}{AERAMO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    As the need of automation increases significantly, a control system needs
+  to be easily programmable, flexible, reliable, robust and cost effective. In
+  this paper a review on the application of programmable logic controller (PLC)
+  in our current market is discussed. Investigations on the applications of
+  PLCs in energy research, engineering studies, industrial control applications
+  and monitoring of plants are reviewed in this paper. PLCs do have its own
+  limitations, but findings indicate that PLCs have more advantages than
+  limitations. This paper concludes that PLCs can be used for any applications
+  whether it is of simple or complicated control system.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.rser.2016.01.025
+    \endverb
+    \field{issn}{1364-0321}
+    \field{pages}{1185\bibrangedash 1205}
+    \field{title}{A review on the applications of programmable logic
+  controllers (PLCs)}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1364032116000551
+    \endverb
+    \field{volume}{60}
+    \field{journaltitle}{Renewable and Sustainable Energy Reviews}
+    \field{year}{2016}
+  \endentry
+
   \entry{bmspecifications}{online}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -126,6 +180,67 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{bolton2015programmable}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BW}{%
+         family={Bolton},
+         familyi={B\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Newnes}%
+    }
+    \strng{namehash}{BW1}
+    \strng{fullhash}{BW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Programmable logic controllers}
+    \field{year}{2015}
+  \endentry
+
+  \entry{ISO13849}{misc}{}
+    \list{organization}{1}{%
+      {International Organization for Standardization}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{note}{Standard No. ISO 13849-1:2015}
+    \field{title}{{EN ISO 13849-1:2015 Safety of Machinery - Safety-related
+  Parts of Control Systems}}
+    \verb{url}
+    \verb https://www.iso.org/standard/69883.html
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{Cbun}{online}{}
+    \name{author}{1}{}{%
+      {{hash=RK}{%
+         family={Robots},
+         familyi={R\bibinitperiod},
+         given={Kassow},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RK1}
+    \strng{fullhash}{RK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-06}
+    \field{title}{CBuns Development}
+    \verb{url}
+    \verb https://docs.kassowrobots.com/en/cbuns/development
+    \endverb
+    \field{year}{2024}
+  \endentry
+
   \entry{kassow-manual}{manual}{}
     \name{author}{1}{}{%
       {{hash=RK}{%
@@ -146,6 +261,29 @@
     \verb https://www.kassowrobots.com/downloads/product-manuals
     \endverb
     \field{volume}{Generation 2, 4.0}
+    \field{year}{2024}
+  \endentry
+
+  \entry{profinet}{online}{}
+    \name{author}{1}{}{%
+      {{hash=RK}{%
+         family={Robots},
+         familyi={R\bibinitperiod},
+         given={Kassow},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RK1}
+    \strng{fullhash}{RK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-06}
+    \field{title}{Profinet Support}
+    \verb{url}
+    \verb https://docs.kassowrobots.com/en/resources/Profinet
+    \endverb
     \field{year}{2024}
   \endentry
 
@@ -197,10 +335,10 @@
     \field{year}{2024}
   \endentry
 
-  \entry{visor_user_manual}{manual}{}
+  \entry{schunk-gripper}{online}{}
     \name{author}{1}{}{%
       {{hash=S}{%
-         family={SENSOPART},
+         family={Schunk},
          familyi={S\bibinitperiod},
       }}%
     }
@@ -210,8 +348,94 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
     \field{sortinithash}{S}
+    \field{note}{Accessed: 2024-08-10}
+    \field{title}{PGN-plus-P, Universal gripper}
+    \verb{url}
+    \verb https://schunk.com/de/en/gripping-systems/parallel-gripper/pgn-plus-p
+    \verb /c/PGR_3228
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{sensopart-visor}{online}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={SENSOPART},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{Accessed: 2024-08-09}
+    \field{title}{Hardware + Software = VISOR®}
+    \verb{url}
+    \verb https://www.sensopart.com/en/products/vision-sensors/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{visor_user_manual}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={SENSOPART},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
     \field{title}{VISOR\textsuperscript{\textregistered} User Manual Software
   Version 2.8}
+    \field{year}{2024}
+  \endentry
+
+  \entry{sensopart-software}{online}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={SENSOPART},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{Accessed: 2024-08-09}
+    \field{title}{VISOR® PC software}
+    \verb{url}
+    \verb https://www.sensopart.com/en/service/downloads/90-visor-pc-software/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{siemens}{online}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={SIEMENS},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S3}
+    \strng{fullhash}{S3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{Accessed: 2024-08-10}
+    \field{title}{SIMATIC controllers – passion for automation}
+    \verb{url}
+    \verb https://www.siemens.com/global/en/products/automation/systems/industr
+    \verb ial/plc.html
+    \endverb
     \field{year}{2024}
   \endentry
 

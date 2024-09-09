@@ -42,3 +42,4 @@ Move L, KR trajectory command for Linear Move which uses cartesian-space coordin
 Move S, KR trajectory command for Spline Move which can keep the orientation exactly within the direction of TCP motion.
 AM, Additive Manufacturing
 FDM, Fused Deposition Modeling
+HW, Hardware
