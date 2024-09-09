@@ -202,20 +202,25 @@
     \field{year}{2015}
   \endentry
 
-  \entry{ISO13849}{misc}{}
-    \list{organization}{1}{%
-      {International Organization for Standardization}%
+  \entry{gazebo-classic}{online}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={Gazebo},
+         familyi={G\bibinitperiod},
+      }}%
     }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{E}
-    \field{sortinithash}{E}
-    \field{note}{Standard No. ISO 13849-1:2015}
-    \field{title}{{EN ISO 13849-1:2015 Safety of Machinery - Safety-related
-  Parts of Control Systems}}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{note}{Accessed: 2024-08-11}
+    \field{title}{Beginner: Overview. What is Gazebo?}
     \verb{url}
-    \verb https://www.iso.org/standard/69883.html
+    \verb https://classic.gazebosim.org/tutorials?cat=guided_b&tut=guided_b1
     \endverb
-    \field{year}{2015}
+    \field{year}{2014}
   \endentry
 
   \entry{Cbun}{online}{}
@@ -287,7 +292,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{kassow-software-manual}{manual}{}
+  \entry{kassow-ros}{online}{}
     \name{author}{1}{}{%
       {{hash=RK}{%
          family={Robots},
@@ -302,12 +307,12 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \field{title}{Software Manual PDF}
+    \field{note}{Accessed: 2024-08-06}
+    \field{title}{ROS Interface}
     \verb{url}
-    \verb https://docs.kassowrobots.com/kr-assets/manuals/software-manual-kasso
-    \verb wrobots_v1.3.0p.pdf
+    \verb https://www.kassowrobots.com/ecosystem/kr-pulse/manufacturers/kassow-
+    \verb robots
     \endverb
-    \field{volume}{1.3.0}
     \field{year}{2024}
   \endentry
 
@@ -333,6 +338,154 @@
     \verb kr-series
     \endverb
     \field{year}{2024}
+  \endentry
+
+  \entry{rospackage}{online}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={ROS.org},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-11}
+    \field{title}{Creating a ROS Package}
+    \verb{url}
+    \verb http://wiki.ros.org/ROS/Tutorials/CreatingPackage
+    \endverb
+    \field{year}{2022}
+  \endentry
+
+  \entry{parameterserver}{online}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={ROS.org},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-11}
+    \field{title}{Parameter Server}
+    \verb{url}
+    \verb http://wiki.ros.org/Parameter%20Server
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{roslaunch}{online}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={ROS.org},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-11}
+    \field{title}{roslaunch}
+    \verb{url}
+    \verb http://wiki.ros.org/roslaunch
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{rosservice}{online}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={ROS.org},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-11}
+    \field{title}{rosservice}
+    \verb{url}
+    \verb http://wiki.ros.org/rosservice
+    \endverb
+    \field{year}{2011}
+  \endentry
+
+  \entry{rosnode}{online}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={ROS.org},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-11}
+    \field{title}{Understanding ROS Nodes}
+    \verb{url}
+    \verb http://wiki.ros.org/ROS/Tutorials/UnderstandingNodes
+    \endverb
+    \field{year}{2022}
+  \endentry
+
+  \entry{rostopic}{online}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={ROS.org},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-11}
+    \field{title}{Understanding ROS Topics}
+    \verb{url}
+    \verb http://wiki.ros.org/ROS/Tutorials/UnderstandingTopics
+    \endverb
+    \field{year}{2022}
+  \endentry
+
+  \entry{actionserver}{online}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={ROS.org},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-11}
+    \field{title}{Writing a Simple Action Server using the Execute Callback}
+    \verb{url}
+    \verb http://wiki.ros.org/actionlib_tutorials/Tutorials/SimpleActionServer%
+    \verb 28ExecuteCallbackMethod%29
+    \endverb
+    \field{year}{2018}
   \endentry
 
   \entry{schunk-gripper}{online}{}

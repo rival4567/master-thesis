@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+White space in argument---line 24 of file main.aux
+ : \@input{3.
+ :            System Design/main.aux}
+I'm skipping whatever remains of this command
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: references.bib
+I was expecting a `,' or a `}'---line 720 of file references.bib
+ :   
+ :   author = {SENSOPART},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 728 of file references.bib
+ :   
+ :   author = {SENSOPART},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Biblatex version: 3.17
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 27 entries,
+            6399 wiz_defined-function locations,
+            1318 strings with 13989 characters,
+and the built_in function-call counts, 104580 in all, are:
+= -- 6149
+> -- 2210
+< -- 628
++ -- 1982
+- -- 749
+* -- 6820
+:= -- 9479
+add.period$ -- 0
+call.type$ -- 27
+change.case$ -- 228
+chr.to.int$ -- 43
+cite$ -- 52
+duplicate$ -- 11694
+empty$ -- 10615
+format.name$ -- 1264
+if$ -- 22476
+int.to.chr$ -- 0
+int.to.str$ -- 81
+missing$ -- 0
+newline$ -- 587
+num.names$ -- 1083
+pop$ -- 8675
+preamble$ -- 1
+purify$ -- 283
+quote$ -- 0
+skip$ -- 4199
+stack$ -- 0
+substring$ -- 8983
+swap$ -- 2924
+text.length$ -- 641
+text.prefix$ -- 26
+top$ -- 1
+type$ -- 906
+warning$ -- 0
+while$ -- 1213
+width$ -- 0
+write$ -- 561
+(There were 3 error messages)

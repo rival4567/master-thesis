@@ -1,0 +1,80 @@
+\contentsline {chapter}{\numberline {1}System Design}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Overview of the Robotic Workcell}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Bending machine}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Storage station}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Unloading station}{4}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Handling robot}{4}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Bending machine terminal operating robot}{5}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Safety fence}{6}{subsection.1.1.6}%
+\contentsline {section}{\numberline {1.2}Requirements for the overall system}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Hardware Selection}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}AMADA bending machine}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Kassow Robots: KR1410}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Camera System: VISOR\textsuperscript {\textregistered } Vision Sensor}{9}{subsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.}Robotic Camera}{10}{subsubsection.1.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.}Inspection Camera}{10}{subsubsection.1.3.3.2}%
+\contentsline {subsection}{\numberline {1.3.4}PLC}{11}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Gripper}{11}{subsection.1.3.5}%
+\contentsline {subsubsection}{\numberline {1.}Robotic Gripper}{11}{subsubsection.1.3.5.1}%
+\contentsline {subsubsection}{\numberline {2.}Unloading Station Gripper}{11}{subsubsection.1.3.5.2}%
+\contentsline {section}{\numberline {1.4}Software Architecture}{12}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Simulation Software}{12}{subsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.}ROS}{12}{subsubsection.1.4.1.1}%
+\contentsline {subsubsection}{\numberline {2.}Gazebo}{12}{subsubsection.1.4.1.2}%
+\contentsline {subsubsection}{\numberline {3.}RViz}{12}{subsubsection.1.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.}MoveIt}{12}{subsubsection.1.4.1.4}%
+\contentsline {subsection}{\numberline {1.4.2}Program Tree}{12}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Computer Vision}{12}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Web UI}{12}{subsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.}ReactJS}{12}{subsubsection.1.4.4.1}%
+\contentsline {subsubsection}{\numberline {2.}ROS3Djs}{12}{subsubsection.1.4.4.2}%
+\contentsline {subsubsection}{\numberline {3.}ROSBridge}{12}{subsubsection.1.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.}ROSLib}{12}{subsubsection.1.4.4.4}%
+\contentsline {subsubsection}{\numberline {5.}Frontend technologies}{12}{subsubsection.1.4.4.5}%
+\contentsline {chapter}{\numberline {2}Hardware Integration}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Installation and Configuration}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Detection marker}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Bending machine unit}{13}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {1.}Marker}{14}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.}Bending machine open height measurement sensor}{14}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.}Bending station}{14}{subsubsection.2.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.}Terminal Fixture}{15}{subsubsection.2.1.2.4}%
+\contentsline {subsection}{\numberline {2.1.3}Robot unit}{15}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {1.}Robot base}{15}{subsubsection.2.1.3.1}%
+\contentsline {subsubsection}{\numberline {2.}KR1410 manipulator}{16}{subsubsection.2.1.3.2}%
+\contentsline {subsubsection}{\numberline {3.}Manual quick-change system}{16}{subsubsection.2.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.}Robotic Gripper}{17}{subsubsection.2.1.3.4}%
+\contentsline {subsubsection}{\numberline {5.}Robotic Camera}{17}{subsubsection.2.1.3.5}%
+\contentsline {subsection}{\numberline {2.1.4}Storage station}{17}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Unloading station}{18}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}System Networking}{20}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Safety Considerations}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Payload}{20}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Stopping Distance}{21}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Safety zones}{23}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Safety functions}{23}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {1.}Emergency STOP}{23}{subsubsection.2.3.4.1}%
+\contentsline {subsubsection}{\numberline {2.}Protective STOP}{24}{subsubsection.2.3.4.2}%
+\contentsline {chapter}{\numberline {3}Software Development}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Control Software}{25}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Camera 1: Feature Detection}{28}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Camera 2: Inspection and Quality Control}{28}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Web Interface Design}{28}{section.3.4}%
+\contentsline {chapter}{\numberline {4}System Integration and Testing}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Integration Tests}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Calibration}{29}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Robot Calibration}{29}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Camera Calibration}{30}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Sensor Calibration}{31}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Calibration Procedures}{31}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Performance Evaluation}{32}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Importance of Calibration}{32}{subsection.4.3.1}%
+\contentsline {chapter}{\numberline {5}Experimental Results}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Setup and Methodology}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Data Collection}{33}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Results and Analysis}{33}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Discussion}{34}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion and Future Works}{35}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary}{35}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Recommendations for Future Research}{35}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Control Software Update}{35}{subsection.7.2.1}%

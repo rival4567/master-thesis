@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  9 SEP 2024 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  9 SEP 2024 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -983,7 +983,11 @@ File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 \@quotelevel=\count492
 \@quotereset=\count493
- (./main.aux (./Pre-introduction/acronyms.aux) (./Pre-introduction/symbols.aux) (./3. System Design/main.aux) (./4. Hardware Integration/main.aux) (./5. Software Development/main.aux) (./6. System Integration and Testing/main.aux) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux))
+ (./main.aux (./3. System Design/main.aux
+
+LaTeX Warning: Label `subsubsec:reactjs' multiply defined.
+
+))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
@@ -1107,47 +1111,42 @@ Package caption Info: End \AtBeginDocument code.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.17).
 
-\openout2 = `Pre-introduction/acronyms.aux'.
-
-(./Pre-introduction/acronyms.tex
-\dtldb@acronym=\toks76
-\dtlkeys@acronym=\toks77
-\dtlrows@acronym=\count501
-\dtlcols@acronym=\count502
- [1
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]) [3]
-\openout2 = `Pre-introduction/symbols.aux'.
-
- (./Pre-introduction/symbols.tex
-Underfull \hbox (badness 1939) in paragraph at lines 10--11
-[]|\OT1/cmr/m/n/12 Braking ac-cel-er-a-tions on the robot
- []
-
-) [4
-
-
-
-
-]
 \openout2 = `"3. System Design/main.aux"'.
 
- (./3. System Design/main.tex
+(./3. System Design/main.tex
 Chapter 1.
 (./3. System Design/3.1 Overview of the Robotic Workcell/overview.tex
-<figures/robotic-workcell1.png, id=89, 1208.26407pt x 633.86812pt>
+
+LaTeX Warning: Hyper reference `acro:CAD' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Hyper reference `acro:CAD' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Hyper reference `acro:CAD' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Hyper reference `acro:ROS' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Hyper reference `acro:ROS' on page 1 undefined on input line 8.
+
+
+LaTeX Warning: Hyper reference `acro:URDF' on page 1 undefined on input line 8.
+
+
+LaTeX Warning: Hyper reference `acro:ROS' on page 1 undefined on input line 10.
+
+<figures/robotic-workcell1.png, id=9, 1208.26407pt x 633.86812pt>
 File: figures/robotic-workcell1.png Graphic file (type png)
 <use figures/robotic-workcell1.png>
 Package pdftex.def Info: figures/robotic-workcell1.png  used on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 238.82191pt.
- [1
+[1
 
 
 
-
- <./figures/robotic-workcell1.png (PNG copy)>] (./3. System Design/3.1 Overview of the Robotic Workcell/workcell-flow.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/robotic-workcell1.png (PNG copy)>] (./3. System Design/3.1 Overview of the Robotic Workcell/workcell-flow.tex
 
 LaTeX Warning: Hyper reference `subsec:plc' on page 2 undefined on input line 17.
 
@@ -1157,7 +1156,7 @@ Overfull \hbox (59.35281pt too wide) in paragraph at lines 69--70
  []
 
 ) (./3. System Design/3.1 Overview of the Robotic Workcell/bending-machine.tex
-<figures/bending-machine-blender.png, id=116, 724.7075pt x 481.8pt>
+<figures/bending-machine-blender.png, id=40, 724.7075pt x 481.8pt>
 File: figures/bending-machine-blender.png Graphic file (type png)
 <use figures/bending-machine-blender.png>
 Package pdftex.def Info: figures/bending-machine-blender.png  used on input line 9.
@@ -1167,24 +1166,24 @@ Package pdftex.def Info: figures/bending-machine-blender.png  used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./3. System Design/3.1 Overview of the Robotic Workcell/storage-station.tex [2]
-<figures/storage-station-blender.png, id=130, 469.755pt x 579.16376pt>
+<figures/storage-station-blender.png, id=53, 469.755pt x 579.16376pt>
 File: figures/storage-station-blender.png Graphic file (type png)
 <use figures/storage-station-blender.png>
 Package pdftex.def Info: figures/storage-station-blender.png  used on input line 6.
 (pdftex.def)             Requested size: 136.57462pt x 168.37738pt.
 ) (./3. System Design/3.1 Overview of the Robotic Workcell/unloading-station.tex [3 <./figures/bending-machine-blender.png> <./figures/storage-station-blender.png>]
-<figures/unloading-station-front-blender.png, id=140, 465.74pt x 486.81876pt>
+<figures/unloading-station-front-blender.png, id=62, 465.74pt x 486.81876pt>
 File: figures/unloading-station-front-blender.png Graphic file (type png)
 <use figures/unloading-station-front-blender.png>
 Package pdftex.def Info: figures/unloading-station-front-blender.png  used on input line 10.
 (pdftex.def)             Requested size: 229.9005pt x 240.30377pt.
-<figures/unloading-station-back-blender.png, id=141, 416.55624pt x 486.81876pt>
+<figures/unloading-station-back-blender.png, id=63, 416.55624pt x 486.81876pt>
 File: figures/unloading-station-back-blender.png Graphic file (type png)
 <use figures/unloading-station-back-blender.png>
 Package pdftex.def Info: figures/unloading-station-back-blender.png  used on input line 16.
 (pdftex.def)             Requested size: 204.85846pt x 239.41238pt.
 ) (./3. System Design/3.1 Overview of the Robotic Workcell/handling-robot.tex
-<figures/handling-robot-simulation.png, id=142, 470.75874pt x 598.235pt>
+<figures/handling-robot-simulation.png, id=64, 470.75874pt x 598.235pt>
 File: figures/handling-robot-simulation.png Graphic file (type png)
 <use figures/handling-robot-simulation.png>
 Package pdftex.def Info: figures/handling-robot-simulation.png  used on input line 3.
@@ -1194,22 +1193,65 @@ Package pdftex.def Info: figures/handling-robot-simulation.png  used on input li
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [4 <./figures/unloading-station-front-blender.png> <./figures/unloading-station-back-blender.png>] (./3. System Design/3.1 Overview of the Robotic Workcell/panda-robot.tex
-<figures/panda-robot-simulation.png, id=150, 650.43pt x 868.24374pt>
+<figures/panda-robot-simulation.png, id=72, 650.43pt x 868.24374pt>
 File: figures/panda-robot-simulation.png Graphic file (type png)
 <use figures/panda-robot-simulation.png>
 Package pdftex.def Info: figures/panda-robot-simulation.png  used on input line 9.
 (pdftex.def)             Requested size: 136.57462pt x 182.31006pt.
-) (./3. System Design/3.1 Overview of the Robotic Workcell/safety-fence.tex [5 <./figures/handling-robot-simulation.png> <./figures/panda-robot-simulation.png>])) (./3. System Design/3.2 System Requirements/requirements.tex [6]) (./3. System Design/3.3 Hardware Selection/hardware.tex (./3. System Design/3.3 Hardware Selection/machine.tex [7]) (./3. System Design/3.3 Hardware Selection/kr1410.tex
-<figures/kassow-robot-parts.png, id=193, 746.79pt x 544.0325pt>
+) (./3. System Design/3.1 Overview of the Robotic Workcell/safety-fence.tex [5 <./figures/handling-robot-simulation.png> <./figures/panda-robot-simulation.png>])) (./3. System Design/3.2 System Requirements/requirements.tex
+
+LaTeX Warning: Hyper reference `acro:TCP' on page 6 undefined on input line 22.
+
+[6]) (./3. System Design/3.3 Hardware Selection/hardware.tex (./3. System Design/3.3 Hardware Selection/machine.tex
+
+LaTeX Warning: Hyper reference `acro:AMADA' on page 7 undefined on input line 15.
+
+
+LaTeX Warning: Hyper reference `acro:CNC' on page 7 undefined on input line 21.
+
+
+LaTeX Warning: Hyper reference `acro:3D' on page 7 undefined on input line 21.
+
+
+LaTeX Warning: Hyper reference `acro:TFT' on page 7 undefined on input line 22.
+
+[7]
+
+LaTeX Warning: Reference `fig:bending_machine' on page 8 undefined on input line 46.
+
+) (./3. System Design/3.3 Hardware Selection/kr1410.tex
+<figures/kassow-robot-parts.png, id=111, 746.79pt x 544.0325pt>
 File: figures/kassow-robot-parts.png Graphic file (type png)
 <use figures/kassow-robot-parts.png>
 Package pdftex.def Info: figures/kassow-robot-parts.png  used on input line 7.
 (pdftex.def)             Requested size: 227.62206pt x 165.8176pt.
 
 
+LaTeX Warning: Hyper reference `acro:KR' on page 8 undefined on input line 12.
+
+
+LaTeX Warning: Hyper reference `acro:UI' on page 8 undefined on input line 13.
+
+
+LaTeX Warning: Hyper reference `acro:IO' on page 8 undefined on input line 34.
+
+
+LaTeX Warning: Hyper reference `acro:TFC' on page 8 undefined on input line 36.
+
+
+LaTeX Warning: Hyper reference `acro:TFC' on page 8 undefined on input line 37.
+
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./figures/kassow-robot-parts.png>])
+
+LaTeX Warning: Hyper reference `acro:HW' on page 8 undefined on input line 50.
+
+[8 <./figures/kassow-robot-parts.png>]
+
+LaTeX Warning: Hyper reference `acro:CBun' on page 9 undefined on input line 55.
+
+)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\mathsurround' on input line 10.
@@ -1224,53 +1266,90 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 (./3. System Design/3.3 Hardware Selection/camera-system.tex
 
+LaTeX Warning: Hyper reference `acro:VISOR' on page 9 undefined on input line 1.
+
+
+LaTeX Warning: Hyper reference `acro:VISOR' on page 9 undefined on input line 1.
+
+
+LaTeX Warning: Hyper reference `acro:VISOR' on page 9 undefined on input line 3.
+
+
 LaTeX Warning: Reference `sec:CV_2' on page 9 undefined on input line 4.
 
-<figures/vision-sensor.png, id=224, 2190.1825pt x 1930.21124pt>
+<figures/vision-sensor.png, id=132, 2190.1825pt x 1930.21124pt>
 File: figures/vision-sensor.png Graphic file (type png)
 <use figures/vision-sensor.png>
 Package pdftex.def Info: figures/vision-sensor.png  used on input line 7.
 (pdftex.def)             Requested size: 182.09486pt x 160.45784pt.
-[9]) (./3. System Design/3.3 Hardware Selection/plc.tex [10 <./figures/vision-sensor.png>]) (./3. System Design/3.3 Hardware Selection/gripper.tex)) (./3. System Design/3.4 Software Architecture/software.tex)) [11] [12]
-\openout2 = `"4. Hardware Integration/main.aux"'.
 
- (./4. Hardware Integration/main.tex
-Chapter 2.
-(./4. Hardware Integration/4.1 Installation and Configuration/configuration.tex (./4. Hardware Integration/4.1 Installation and Configuration/marker.tex
-<figures/detection-marker.png, id=287, 2941.99126pt x 1674.255pt>
-File: figures/detection-marker.png Graphic file (type png)
-<use figures/detection-marker.png>
-Package pdftex.def Info: figures/detection-marker.png  used on input line 7.
-(pdftex.def)             Requested size: 227.62206pt x 129.5235pt.
-) (./4. Hardware Integration/4.1 Installation and Configuration/bending-machine.tex [13
+LaTeX Warning: Hyper reference `acro:VISOR' on page 9 undefined on input line 8.
 
 
+LaTeX Warning: Hyper reference `acro:VISOR' on page 9 undefined on input line 8.
+
+[9]
+
+LaTeX Warning: Hyper reference `acro:VISOR' on page 10 undefined on input line 12.
 
 
- <./figures/detection-marker.png>]
-<figures/bending-machine.png, id=301, 2023.56pt x 1049.9225pt>
-File: figures/bending-machine.png Graphic file (type png)
-<use figures/bending-machine.png>
-Package pdftex.def Info: figures/bending-machine.png  used on input line 16.
-(pdftex.def)             Requested size: 455.24411pt x 236.19032pt.
-<figures/bending-station.png, id=304, 1541.76pt x 1117.92656pt>
-File: figures/bending-station.png Graphic file (type png)
-<use figures/bending-station.png>
-Package pdftex.def Info: figures/bending-station.png  used on input line 40.
-(pdftex.def)             Requested size: 318.66948pt x 231.05283pt.
+LaTeX Warning: Hyper reference `acro:VISOR' on page 10 undefined on input line 21.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Hyper reference `acro:VISOR' on page 10 undefined on input line 29.
 
-[14 <./figures/bending-machine.png>]) (./4. Hardware Integration/4.1 Installation and Configuration/robot-unit.tex
-<figures/handling-robot.png, id=314, 2023.56pt x 1274.7625pt>
-File: figures/handling-robot.png Graphic file (type png)
-<use figures/handling-robot.png>
-Package pdftex.def Info: figures/handling-robot.png  used on input line 8.
-(pdftex.def)             Requested size: 455.24411pt x 286.77028pt.
+) (./3. System Design/3.3 Hardware Selection/plc.tex [10 <./figures/vision-sensor.png>]) (./3. System Design/3.3 Hardware Selection/gripper.tex)) (./3. System Design/3.4 Software Architecture/software.tex
+
+LaTeX Warning: Reference `sec:versions' on page 11 undefined on input line 1.
+
+[11] (./3. System Design/3.4 Software Architecture/simulation.tex
+
+LaTeX Warning: Reference `subsec:ROS' on page 12 undefined on input line 5.
+
+<figures/rosgraph.png, id=182, 1927.2pt x 1091.07625pt>
+File: figures/rosgraph.png Graphic file (type png)
+<use figures/rosgraph.png>
+Package pdftex.def Info: figures/rosgraph.png  used on input line 13.
+(pdftex.def)             Requested size: 455.24411pt x 257.73483pt.
+[12 <./figures/rosgraph.png>]
+<figures/gazebo-rviz.png, id=210, 1925.1925pt x 1009.7725pt>
+File: figures/gazebo-rviz.png Graphic file (type png)
+<use figures/gazebo-rviz.png>
+Package pdftex.def Info: figures/gazebo-rviz.png  used on input line 37.
+(pdftex.def)             Requested size: 455.24411pt x 238.77573pt.
+) (./3. System Design/3.4 Software Architecture/programtree.tex) (./3. System Design/3.4 Software Architecture/computervision.tex) (./3. System Design/3.4 Software Architecture/webui.tex))) [13 <./figures/gazebo-rviz.png>] [14] [15
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./figures/bending-station.png (PNG copy)>] [16 <./figures/handling-robot.png>]) (./4. Hardware Integration/4.1 Installation and Configuration/storage-station.tex
-<figures/storage-station-front.png, id=3
+]
+Overfull \hbox (0.25952pt too wide) in paragraph at lines 163--163
+\OT1/cmr/m/n/12 2024-08-11. 2018. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : []$\OT1/cmtt/m/n/12 http : / / wiki . ros . org / actionlib _ tutorials / Tutorials /
+ []
+
+[16] (./main.aux (./3. System Design/main.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 47448 strings out of 478287
+ 1065508 string characters out of 5849289
+ 1867628 words of memory out of 5000000
+ 64750 multiletter control sequences out of 15000+600000
+ 480892 words of font info for 67 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 91i,11n,131p,1911b,1741s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (16 pages, 3591420 bytes).
+PDF statistics:
+ 437 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+

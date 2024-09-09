@@ -9,7 +9,7 @@
       
       % Devices without IP inside node
       \node[device] (PLC) {PLC};
-      \node[device, below=2cm of PLC] (KR1410) {KR1410 Robot};
+      \node[device, below=2cm of PLC] (KR1410) {KR1410};
       \node[device, right=3cm of PLC] (InspectionCamera) {Inspection Camera};
       \node[device, below=2cm of KR1410] (RoboticCamera) {Robotic Camera};
       \node[device, below=2cm of InspectionCamera] (PC) {ROS PC};
@@ -20,10 +20,10 @@
       % IP addresses outside nodes
       \node[ip, above=0.0cm of PLC] {192.168.0.102};
       \node[ip, above left=-0.55cm and 0cm of KR1410] {192.168.0.120};
-      \node[ip, below left=-0.55cm and 0.0cm of KR1410] {192.168.1.37};
+      \node[ip, below left=-0.55cm and 0.0cm of KR1410] {192.168.39.1};
       \node[ip, above=0.0cm of InspectionCamera] {192.168.0.101};
       \node[ip, below=0.0cm of RoboticCamera] {192.168.0.100};
-      \node[ip, right=0.0cm of PC] {192.168.1.38};
+      \node[ip, right=0.0cm of PC] {192.168.39.42};
       \node[ip, below=0.0cm of WebUI] {http://localhost:3000};
 
       % Connections
