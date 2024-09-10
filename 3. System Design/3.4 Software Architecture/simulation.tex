@@ -20,7 +20,6 @@ Figure \ref{fig:rosgraph} visualizes the computation graph of the simulation. It
 and topics \cite{rostopic} in the simulation of robotic workcell.
 
 
-
 \subsubsection{Gazebo Simulator}
 \label{subsubsec:gazebo}
 Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently simulate populations
@@ -44,9 +43,11 @@ The workcell is then ready to be simulated in the gazebo simulator.
 RViz is short for ROS Visualization. It is a 3D visualization software tool for robots, sensors, and algorithms.
 It allows seeing the robot's perception of its world (real or simulated).
 The purpose of rviz is to enable you to visualize the state of a robot. It uses sensor data to try
-to create an accurate depiction of what is going on in the robot's environment.
-
-In
+to create an accurate depiction of what is going on in the robot's environment. \cite{rviz}
 
 \subsubsection{MoveIt}
 \label{subsubsec:moveit}
+MoveIt is a software for ROS used for manipulation, motion planning, 3D perception, kinematics, control and navigation. \cite{moveit}
+MoveIt is used to get the solve the kinematics of the 7-axis kassow robot and do manipulation.
+A collision mesh of the workcell is published in the planning scene as can be seen in RViz in Figure \ref{fig:gazebo-rviz}.
+This makes the KR1410 to plan trajectories without any collision in the workcell. The robotic gripper is also controlled using MoveIt package.
