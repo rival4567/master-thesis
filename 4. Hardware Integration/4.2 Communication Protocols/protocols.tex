@@ -1,3 +1,5 @@
+(such as TCP/IP, UDP or Modbus TCP)
+
 \begin{figure}
     \centering
     \begin{tikzpicture}[
@@ -30,7 +32,7 @@
       \draw[connection] (PLC) -- (KR1410) node[protocol, midway] {Profinet};
       \draw[connection] (KR1410) -- (RoboticCamera) node[protocol, midway] {Ethernet};
       \draw[connection] (KR1410) -- (PC) node[protocol, midway] {Ethernet};
-      \draw[connection] (PLC) -- (InspectionCamera) node[protocol, midway] {Ethernet};
+      \draw[connection] (PLC) -- (InspectionCamera) node[protocol, midway] {Profinet};
       \draw[connection] (PC) -- (WebUI) node[protocol, midway] {Websocket};
       
       \end{tikzpicture}

@@ -135,7 +135,6 @@ The robot will stop immediately if it ever exceeds the safety zone boundary. It 
 then the operator
 has to manually move the robotic arm back inside the safety zone. 
 
-
 \subsection{Safety functions}
 \label{subsec:safety-functions}
 Safety functions evaluate external and internal signals of the whole system which can act immediately to
@@ -143,20 +142,29 @@ halt the robot or cut him loose from power if necessary.
 The safety function of KR complies with EN ISO 13849-1:2015. \cite{ISO13849}
 \cite[page 13]{kassow-software-manual}
 
-    \subsubsection{Emergency STOP}
-    The emergency STOP buttons are present at both Teach pendant and Robot cabinet. These are used to
-    initiate a robot motion or other potentially hazardous situation.
-    The emersgency STOP always provoke immediate halt of the robot, followed by the power cut to all
-    executive parts of the robot.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/safety-buttons.png}
+    \caption{Safety buttons. 1) Emergency STOP 2) Protective STOP 3) Robot State 4) Reset PLC fault}
+    \label{fig:safety-buttons}
+\end{figure}
 
-    \subsubsection{Protective STOP}
-    The Protective STOP can be used interactively by the operator to pause and continue the running program.
-    After the protective STOP is released, the program can continue running its normal operation.
+In the main program of teach pendant, there are two sequences programmed to run in parallel to halt or stop the program if a signal is detected
+from the PLC. The former sequence pauses the robot motion and waits for a new signal from PLC to continue the robot motion from the same configuration while the latter sequence triggers the E-Stop on the robot and stops the robot immediately. 
+
+
+
+\subsubsection{Protective STOP}
+The Protective STOP can be used interactively by the operator to pause and continue the running program.
+After the protective STOP is released, the program can continue running its normal operation.
+
+\subsubsection{Emergency STOP}
+The emergency STOP buttons of robot are present at both teach pendant and robot controller. These buttons are used to engage inbuilt safety measures and halt the robot in order to
+prevent a potentially hazardous situation
+The emergency STOP always provoke immediate halt of the robot, followed by the power cut to all
+executive parts of the robot.
+
+Besides these E-stop buttons, there are three more E-Stop in the workcell. Two are placed on the bending machine and one on the front panel of unloading station as shown in figure \ref{fig:safety-buttons}. The emergency stop buttons not only stops the robot but also the bending machine and unloading station mechatronic system.
+
 
 \vspace{1\baselineskip}
-Emergency and protective STOP buttons of the KR can also be triggered by the PLC. This way
-if an emergency happens, PLC can also trigger STOP commands to the KR. For example, if in
-case the door of safety fence is opened, PLC will trigger protective STOP command to the 
-KR and the bending machine.
-There are also two emergency STOP buttons on the terminal and right-side of bending machine. If triggered,
-they also stops everything in the robotic workcell including triggering KR emergency STOP.

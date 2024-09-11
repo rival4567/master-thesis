@@ -88,6 +88,33 @@
     \field{year}{2016}
   \endentry
 
+  \entry{alvaautomated}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AU}{%
+         family={Alva},
+         familyi={A\bibinitperiod},
+         given={Ujval},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=GSK}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Satyandra\bibnamedelima K},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{AUGSK1}
+    \strng{fullhash}{AUGSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{AUTOMATED DESIGN OF SHEET METAL BENDING TOOLS}
+  \endentry
+
   \entry{bmspecifications}{online}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -128,6 +155,28 @@
     \verb https://www.amada.de/en/bending/hfp/description.html
     \endverb
     \field{year}{2005}
+  \endentry
+
+  \entry{astro100}{online}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={AMADA},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{note}{Accessed: 2024-08-21}
+    \field{title}{In zweiter Generation – die Roboter-Biegezellen der Serie
+  ASTRO-100 II NT}
+    \verb{url}
+    \verb https://m.amada.de/de/abkanten/astro-100-ii/biegeroboter.html
+    \endverb
+    \field{year}{2024}
   \endentry
 
   \entry{Bahadir2024}{article}{}
@@ -197,6 +246,157 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{BAI2020107776}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BC}{%
+         family={Bai},
+         familyi={B\bibinitperiod},
+         given={Chunguang},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Dallasega},
+         familyi={D\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=OG}{%
+         family={Orzes},
+         familyi={O\bibinitperiod},
+         given={Guido},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sarkis},
+         familyi={S\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Industry 4.0, Technology, Sustainability, Hesitant fuzzy set,
+  Cumulative prospect theory, VIKOR}
+    \strng{namehash}{BC+1}
+    \strng{fullhash}{BCDPOGSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The fourth industrial revolution, also labelled Industry 4.0, was beget
+  with emergent and disruptive intelligence and information technologies. These
+  new technologies are enabling ever-higher levels of production efficiencies.
+  They also have the potential to dramatically influence social and
+  environmental sustainable development. Organizations need to consider
+  Industry 4.0 technologies contribution to sustainability. Sufficient
+  guidance, in this respect, is lacking in the scholarly or practitioner
+  literature. In this study, we further examine Industry 4.0 technologies in
+  terms of application and sustainability implications. We introduce a measures
+  framework for sustainability based on the United Nations Sustainable
+  Development Goals; incorporating various economic, environmental and social
+  attributes. We also develop a hybrid multi-situation decision method
+  integrating hesitant fuzzy set, cumulative prospect theory and VIKOR. This
+  method can effectively evaluate Industry 4.0 technologies based on their
+  sustainable performance and application. We apply the method using secondary
+  case information from a report of the World Economic Forum. The results show
+  that mobile technology has the greatest impact on sustainability in all
+  industries, and nanotechnology, mobile technology, simulation and drones have
+  the highest impact on sustainability in the automotive, electronics, food and
+  beverage, and textile, apparel and footwear industries, respectively. Our
+  recommendation is to take advantage of Industry 4.0 technology adoption to
+  improve sustainability impact but each technology needs to be carefully
+  evaluated as specific technology will variably influence industry and
+  sustainability dimensions. Investment in such technologies should consider
+  appropriate priority investment and championing.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.ijpe.2020.107776
+    \endverb
+    \field{issn}{0925-5273}
+    \field{pages}{107776}
+    \field{title}{Industry 4.0 technologies assessment: A sustainability
+  perspective}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0925527320301559
+    \endverb
+    \field{volume}{229}
+    \field{journaltitle}{International Journal of Production Economics}
+    \field{year}{2020}
+  \endentry
+
+  \entry{BARNES2010339}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BM}{%
+         family={Barnes},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Duckett},
+         familyi={D\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Cielniak},
+         familyi={C\bibinitperiod},
+         given={Grzegorz},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Stroud},
+         familyi={S\bibinitperiod},
+         given={Graeme},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Harper},
+         familyi={H\bibinitperiod},
+         given={Glyn},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{AdaBoost, Machine learning, Potatoes, Visual inspection of produce,
+  Blemish detection}
+    \strng{namehash}{BM+1}
+    \strng{fullhash}{BMDTCGSGHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    This paper introduces novel methods for detecting blemishes in potatoes
+  using machine vision. After segmentation of the potato from the background, a
+  pixel-wise classifier is trained to detect blemishes using features extracted
+  from the image. A very large set of candidate features, based on statistical
+  information relating to the colour and texture of the region surrounding a
+  given pixel, is first extracted. Then an adaptive boosting algorithm
+  (AdaBoost) is used to automatically select the best features for
+  discriminating between blemishes and non-blemishes. With this approach,
+  different features can be selected for different potato varieties, while also
+  handling the natural variation in fresh produce due to different seasons,
+  lighting conditions, etc. The results show that the method is able to build
+  “minimalist” classifiers that optimise detection performance at low
+  computational cost. In experiments, blemish detectors were trained for both
+  white and red potato varieties, achieving 89.6% and 89.5% accuracy,
+  respectively.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.jfoodeng.2010.01.010
+    \endverb
+    \field{issn}{0260-8774}
+    \field{number}{3}
+    \field{pages}{339\bibrangedash 346}
+    \field{title}{Visual detection of blemishes in potatoes using minimalist
+  boosted classifiers}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0260877410000142
+    \endverb
+    \field{volume}{98}
+    \field{journaltitle}{Journal of Food Engineering}
+    \field{year}{2010}
+  \endentry
+
   \entry{bolton2015programmable}{book}{}
     \name{author}{1}{}{%
       {{hash=BW}{%
@@ -219,6 +419,473 @@
     \field{year}{2015}
   \endentry
 
+  \entry{firstrobot}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BI}{%
+         family={BPM},
+         familyi={B\bibinitperiod},
+         given={Infosys},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BI1}
+    \strng{fullhash}{BI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{Accessed: 2024-07-25}
+    \field{title}{Rise of the machines: Robotics’ impact on the evolution of
+  manufacturing}
+    \verb{url}
+    \verb https://www.infosysbpm.com/blogs/manufacturing/robotics-in-manufactur
+    \verb ing.html
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{BREZANI2022298}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BS}{%
+         family={Brezani},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Hrasko},
+         familyi={H\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VP}{%
+         family={Vojtas},
+         familyi={V\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Unsupervised learning, performance improvement of industrial
+  processes, object recognition, pseudo-ground truth, AI, machine learning in
+  Industry}
+    \strng{namehash}{BSHRVP1}
+    \strng{fullhash}{BSHRVP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Data mining from unstructured data can be skillfully employed to improve
+  the performance of manufacturing or industrial processes. The main goal of
+  this paper is to create a fast emergency aid system for object detection in
+  SME industrial premises. The basic assumption is that SMEs do not have any
+  IT-trained personnel, and the solution has to be unsupervised edge computing.
+  We use several off-the-shelf models of deep neural networks pre-trained for
+  smart city applications, ready for online object recognition and edge
+  computing. Our system works without any retraining, additional annotation, or
+  human intervention. Specifically, we present heuristics for the automated
+  creation of PGT (Pseudo-Ground Truth). Based on PGT, we can automatically
+  decide which model is the best in the specific environment. We present an
+  application of fully automated enhancing image capture camera outputs to
+  smarter ones. We evaluate our system in a controlled experiment.
+  Low-resolution cameras and large areas cause problems for our method. We
+  present a proof-of-concept for improving our system even in these challenging
+  situations. The benefit is a knowledge extraction in a simple and inexpensive
+  way to expand the organizations’ databases with information from
+  unstructured data from CCTV/IP cameras.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.procs.2022.01.228
+    \endverb
+    \field{issn}{1877-0509}
+    \field{note}{3rd International Conference on Industry 4.0 and Smart
+  Manufacturing}
+    \field{pages}{298\bibrangedash 307}
+    \field{title}{Smart extensions to regular cameras in the industrial
+  environment}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S187705092200237X
+    \endverb
+    \field{volume}{200}
+    \field{journaltitle}{Procedia Computer Science}
+    \field{year}{2022}
+  \endentry
+
+  \entry{gazebo-pkgs}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={Buehler},
+         familyi={B\bibinitperiod},
+         given={Jennifer},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{Accessed: 2024-08-11}
+    \field{title}{gazebo-pkgs}
+    \verb{url}
+    \verb https://github.com/JenniferBuehler/gazebo-pkgs?tab=readme-ov-file
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{BURGOSARTIZZU2010138}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BAXP}{%
+         family={Burgos-Artizzu},
+         familyi={B\bibinithyphendelim A\bibinitperiod},
+         given={Xavier\bibnamedelima P.},
+         giveni={X\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Ribeiro},
+         familyi={R\bibinitperiod},
+         given={Angela},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tellaeche},
+         familyi={T\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Pajares},
+         familyi={P\bibinitperiod},
+         given={Gonzalo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=FQC}{%
+         family={Fernández-Quintanilla},
+         familyi={F\bibinithyphendelim Q\bibinitperiod},
+         given={Cesar},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer vision, Precision agriculture, Weed detection, Parameter
+  setting, Genetic algorithms}
+    \strng{namehash}{BAXP+1}
+    \strng{fullhash}{BAXPRATAPGFQC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    This work presents several developed computer-vision-based methods for the
+  estimation of percentages of weed, crop and soil present in an image showing
+  a region of interest of the crop field. The visual detection of weed, crop
+  and soil is an arduous task due to physical similarities between weeds and
+  crop and to the natural and therefore complex environments (with
+  non-controlled illumination) encountered. The image processing was divided in
+  three different stages at which each different agricultural element is
+  extracted: (1) segmentation of vegetation against non-vegetation (soil), (2)
+  crop row elimination (crop) and (3) weed extraction (weed). For each stage,
+  different and interchangeable methods are proposed, each one using a series
+  of input parameters which value can be changed for further refining the
+  processing. A genetic algorithm was then used to find the best value of
+  parameters and method combination for different sets of images. The whole
+  system was tested on several images from different years and fields,
+  resulting in an average correlation coefficient with real data (bio-mass) of
+  84%, with up to 96% correlation using the best methods on winter cereal
+  images and of up to 84% on maize images. Moreover, the method’s low
+  computational complexity leads to the possibility, as future work, of
+  adapting them to real-time processing.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.imavis.2009.05.009
+    \endverb
+    \field{issn}{0262-8856}
+    \field{number}{1}
+    \field{pages}{138\bibrangedash 149}
+    \field{title}{Analysis of natural images processing for the extraction of
+  agricultural elements}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0262885609001140
+    \endverb
+    \field{volume}{28}
+    \field{journaltitle}{Image and Vision Computing}
+    \field{year}{2010}
+  \endentry
+
+  \entry{CHEN2001199}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CIM}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={I-Ming},
+         giveni={I\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{Modular robot, Component technology, Agile manufacturing,
+  Reconfigurable automation}
+    \strng{namehash}{CIM1}
+    \strng{fullhash}{CIM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    This article describes the development of a component-based technology
+  robot workcell that can be rapidly configured to perform a specific
+  manufacturing task. The workcell is conceived with standard and
+  inter-operable components including actuator modules, rigid link connectors
+  and tools that can be assembled into robots with arbitrary geometry and
+  degrees of freedom. The reconfigurable “plug-and-play” robot kinematic
+  and dynamic modeling algorithms are developed. These algorithms are the basis
+  for the control and simulation of reconfigurable robots. The concept of robot
+  configuration optimization is introduced for the effective use of the rapidly
+  reconfigurable robots. Control and communications of the workcell components
+  are facilitated by a workcell-wide TCP/IP network and device-level CAN-bus
+  networks. An object-oriented simulation and visualization software for the
+  reconfigurable robot is developed based on Windows NT. Prototypes of the
+  robot workcells configured to perform the light-machining task and the
+  positioning task are constructed and demonstrated.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0736-5845(00)00028-4
+    \endverb
+    \field{issn}{0736-5845}
+    \field{number}{3}
+    \field{pages}{199\bibrangedash 213}
+    \field{title}{Rapid response manufacturing through a rapidly reconfigurable
+  robotic workcell}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0736584500000284
+    \endverb
+    \field{volume}{17}
+    \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+    \field{year}{2001}
+  \endentry
+
+  \entry{COIFMAN1998271}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CB}{%
+         family={Coifman},
+         familyi={C\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Beymer},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={McLauchlan},
+         familyi={M\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Malik},
+         familyi={M\bibinitperiod},
+         given={Jitendra},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Traffic surveillance, Wide-area detection, Vehicle tracking, Video
+  image processing, Machine vision}
+    \strng{namehash}{CB+1}
+    \strng{fullhash}{CBBDMPMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Increasing congestion on freeways and problems associated with existing
+  detectors have spawned an interest in new vehicle detection technologies such
+  as video image processing. Existing commercial image processing systems work
+  well in free-flowing traffic, but the systems have difficulties with
+  congestion, shadows and lighting transitions. These problems stem from
+  vehicles partially occluding one another and the fact that vehicles appear
+  differently under various lighting conditions. We are developing a
+  feature-based tracking system for detecting vehicles under these challenging
+  conditions. Instead of tracking entire vehicles, vehicle features are tracked
+  to make the system robust to partial occlusion. The system is fully
+  functional under changing lighting conditions because the most salient
+  features at the given moment are tracked. After the features exit the
+  tracking region, they are grouped into discrete vehicles using a common
+  motion constraint. The groups represent individual vehicle trajectories which
+  can be used to measure traditional traffic parameters as well as new metrics
+  suitable for improved automated surveillance. This paper describes the issues
+  associated with feature based tracking, presents the real-time implementation
+  of a prototype system, and the performance of the system on a large data set.
+  ©%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0968-090X(98)00019-9
+    \endverb
+    \field{issn}{0968-090X}
+    \field{number}{4}
+    \field{pages}{271\bibrangedash 288}
+    \field{title}{A real-time computer vision system for vehicle tracking and
+  traffic surveillance}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0968090X98000199
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Transportation Research Part C: Emerging Technologies}
+    \field{year}{1998}
+  \endentry
+
+  \entry{rosblog}{online}{}
+    \name{author}{1}{}{%
+      {{hash=cR}{%
+         family={community},
+         familyi={c\bibinitperiod},
+         given={ROS},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{cR1}
+    \strng{fullhash}{cR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{Accessed: 2024-07-12}
+    \field{title}{Why ROS? It's the fastest way to build a robot!}
+    \verb{url}
+    \verb https://www.ros.org/blog/why-ros/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{jrautomation}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CJAAHG}{%
+         family={Company},
+         familyi={C\bibinitperiod},
+         given={JR\bibnamedelima Automation A Hitachi\bibnamedelima Group},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJAAHG1}
+    \strng{fullhash}{CJAAHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{Accessed: 2024-07-25}
+    \field{title}{How the Manufacturing Industry uses Robotics \& Automation}
+    \verb{url}
+    \verb https://www.jrautomation.com/resources/manufacturing-robotics-automat
+    \verb ion
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{jrautomation2}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CJAAHG}{%
+         family={Company},
+         familyi={C\bibinitperiod},
+         given={JR\bibnamedelima Automation A Hitachi\bibnamedelima Group},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJAAHG1}
+    \strng{fullhash}{CJAAHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{Accessed: 2024-07-25}
+    \field{title}{The Future of Manufacturing Automation}
+    \verb{url}
+    \verb https://www.jrautomation.com/resources/the-future-of-manufacturing-au
+    \verb tomation
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{cobotfabricator}{online}{}
+    \name{author}{1}{}{%
+      {{hash=DD}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DD1}
+    \strng{fullhash}{DD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{note}{Accessed: 2024-07-25}
+    \field{title}{Metal fabricator finds flexibility in its bending department
+  with cobots}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=EhQ7DvXjDCA
+    \endverb
+    \field{year}{2023}
+  \endentry
+
+  \entry{ISO13849}{misc}{}
+    \list{organization}{1}{%
+      {International Organization for Standardization}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{note}{Standard No. ISO 13849-1:2015}
+    \field{title}{{EN ISO 13849-1:2015 Safety of Machinery - Safety-related
+  Parts of Control Systems}}
+    \verb{url}
+    \verb https://www.iso.org/standard/69883.html
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{gambao2012new}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=GE}{%
+         family={Gambao},
+         familyi={G\bibinitperiod},
+         given={Ernesto},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hernando},
+         familyi={H\bibinitperiod},
+         given={Miguel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Surdilovic},
+         familyi={S\bibinitperiod},
+         given={Dragoljub},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IAARC Publications}%
+    }
+    \strng{namehash}{GEHMSD1}
+    \strng{fullhash}{GEHMSD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{ISARC. Proceedings of the International Symposium on
+  Automation and Robotics in Construction}
+    \field{pages}{1}
+    \field{title}{A new generation of collaborative robots for material
+  handling}
+    \field{volume}{29}
+    \field{year}{2012}
+  \endentry
+
   \entry{gazebo-classic}{online}{}
     \name{author}{1}{}{%
       {{hash=G}{%
@@ -238,6 +905,357 @@
     \verb https://classic.gazebosim.org/tutorials?cat=guided_b&tut=guided_b1
     \endverb
     \field{year}{2014}
+  \endentry
+
+  \entry{guimaraes2009bending}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=GRJ}{%
+         family={Guimar{\~a}es},
+         familyi={G\bibinitperiod},
+         given={Rui\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PJA}{%
+         family={Pacheco},
+         familyi={P\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MJF}{%
+         family={Meireles},
+         familyi={M\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima F},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=FJF}{%
+         family={Fonseca},
+         familyi={F\bibinitperiod},
+         given={Jaime\bibnamedelima F},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GRJ+1}
+    \strng{fullhash}{GRJPJAMJFFJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{7th euromech solid mechanics conference}
+    \field{title}{A bending cell for small batches}
+    \field{year}{2009}
+  \endentry
+
+  \entry{10381692}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GHJF}{%
+         family={Gómez-Hernández},
+         familyi={G\bibinithyphendelim H\bibinitperiod},
+         given={José-Francisco},
+         giveni={J\bibinithyphendelim F\bibinitperiod},
+      }}%
+      {{hash=GHJM}{%
+         family={Gutiérrez-Hernández},
+         familyi={G\bibinithyphendelim H\bibinitperiod},
+         given={José-María},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=JMA}{%
+         family={Jimeno-Morenilla},
+         familyi={J\bibinithyphendelim M\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SRJL}{%
+         family={Sánchez-Romero},
+         familyi={S\bibinithyphendelim R\bibinitperiod},
+         given={José-Luis},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=FPMD}{%
+         family={Fabregat-Periago},
+         familyi={F\bibinithyphendelim P\bibinitperiod},
+         given={María-Dolores},
+         giveni={M\bibinithyphendelim D\bibinitperiod},
+      }}%
+    }
+    \keyw{Robots;Europe;Service robots;Planning;Manufacturing;Collision
+  avoidance;Bonding;Fourth Industrial Revolution;Robotics and automation;Smart
+  manufacturing;Bonding;footwear;fourth industrial revolution;robotics and
+  automation;smart manufacturing;manufacturing automation}
+    \strng{namehash}{GHJF+1}
+    \strng{fullhash}{GHJFGHJMJMASRJLFPMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Traditional manufacturing industries are currently immersed in an
+  automation process, integrating new techniques and tools, driven by the
+  demands from producers to improve the manufacturing process as well as the
+  working conditions of employees. For the footwear industry, bonding is a key
+  operation in the manufacturing process where the outsole is assembled onto
+  the lasted shoe. However, in this operation, workers are often subjected to
+  hazardous substances (i.e., organic solvents) and perform repetitive tasks
+  with limited added value. Against this background, this paper describes the
+  results of a research project, whose aim was to obtain the maximum benefit
+  from different technologies analyzed, such as collaborative robotics,
+  artificial vision and multirobot control, for the manipulation of
+  flexible/deformable objects. The main result of this project is a robotic
+  workcell for shoe bonding that has been introduced in the production line to
+  fully automate the operation. This workcell integrates three collaborative
+  robots, one for (hot melt) adhesive application and another two, with
+  two-finger electric grippers, to carry out the bonding synchronously.
+  Different vision systems have also been embedded to conduct the various
+  processes involved. The entire operation is controlled and coordinated
+  through ROS (Robot Operating System). The key findings of this research
+  showcase the automation of a process traditionally undertaken by humans. In
+  this novel approach, two robots collaborate to manipulate flexible objects,
+  liberating the operator from engaging in repetitive, non-value-added tasks
+  and the handling of hazardous substances.%
+    }
+    \verb{doi}
+    \verb 10.1109/ACCESS.2024.3350441
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{5066\bibrangedash 5080}
+    \field{title}{Development of an Integrated Robotic Workcell for Automated
+  Bonding in Footwear Manufacturing}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2024}
+  \endentry
+
+  \entry{HAVLIK2011327}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=H�}{%
+         family={Havlík},
+         familyi={H\bibinitperiod},
+         given={Š.},
+         giveni={�\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=BY}{%
+         family={Baudoin},
+         familyi={B\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HMK}{%
+         family={Habib},
+         familyi={H\bibinitperiod},
+         given={Maki\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Woodhead Publishing}%
+    }
+    \keyw{de-mining vehicle, robotic approach, modular concept, mine detection,
+  remote control}
+    \strng{namehash}{H�1}
+    \strng{fullhash}{H�1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Abstract: The chapter deals with applications of mobile robotic technology
+  for performing risky tasks, mainly de-mining operations. The robotic approach
+  and problems related to the de-mining process are analyzed in more detail and
+  some specific performance features that an unmanned robotic agent should
+  exhibit are discussed. The modular concept of the remotely controlled robotic
+  vehicle, which consists of the general mobility system and a set of
+  exchangeable task oriented tools, is also discussed. As an illustrative
+  example, the brief history and current state of development of the remotely
+  controlled vehicle ‘Božena’, with flailing activation mechanism and
+  other available tools, are presented.%
+    }
+    \field{booktitle}{Using Robots in Hazardous Environments}
+    \verb{doi}
+    \verb https://doi.org/10.1533/9780857090201.3.327
+    \endverb
+    \field{isbn}{978-1-84569-786-0}
+    \field{pages}{327\bibrangedash 352}
+    \field{title}{14 - Robotic tools for de-mining and risky operations}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/B978184569786050014
+    \verb 9
+    \endverb
+    \field{year}{2011}
+  \endentry
+
+  \entry{digitaltwinblog}{online}{}
+    \name{author}{2}{}{%
+      {{hash=I}{%
+         family={Industry},
+         familyi={I\bibinitperiod},
+      }}%
+      {{hash=T}{%
+         family={Trends},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IT1}
+    \strng{fullhash}{IT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{note}{Accessed: 2024-07-12}
+    \field{title}{Digital Twins and Virtual Commissioning in the Manufacturing
+  Industry (Updated for 2023)}
+    \verb{url}
+    \verb https://www.visualcomponents.com/blog/digital-twins-and-virtual-commi
+    \verb ssioning-in-industry-4-0/
+    \endverb
+    \field{year}{2022}
+  \endentry
+
+  \entry{10070046}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=IMT}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={Md.\bibnamedelima Touhidul},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=HIR}{%
+         family={Hameem},
+         familyi={H\bibinitperiod},
+         given={Imtiaz\bibnamedelima Reza},
+         giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Saha},
+         familyi={S\bibinitperiod},
+         given={Shuvra},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CMJR}{%
+         family={Chowdhury},
+         familyi={C\bibinitperiod},
+         given={Mohammad Jamilur\bibnamedelima Reza},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+      {{hash=DME}{%
+         family={Deowan},
+         familyi={D\bibinitperiod},
+         given={Md.\bibnamedelima Ether},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \keyw{Performance
+  evaluation;Costs;Navigation;Wheelchairs;Simulation;Operating systems;Signal
+  processing;Robot Operating System;Gazebo;Autonomous Navigation;Cloud
+  Control;rosbridge}
+    \strng{namehash}{IMT+1}
+    \strng{fullhash}{IMTHIRSSCMJRDME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{booktitle}{2023 3rd International Conference on Robotics, Electrical
+  and Signal Processing Techniques (ICREST)}
+    \verb{doi}
+    \verb 10.1109/ICREST57604.2023.10070046
+    \endverb
+    \field{pages}{175\bibrangedash 180}
+    \field{title}{A Simulation of a Robot Operating System Based Autonomous
+  Wheelchair with Web Based HMI Using Rosbridge}
+    \field{year}{2023}
+  \endentry
+
+  \entry{ji2021learning}{article}{}
+    \name{author}{8}{}{%
+      {{hash=JS}{%
+         family={Ji},
+         familyi={J\bibinitperiod},
+         given={Sanghoon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Sukhan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yoo},
+         familyi={Y\bibinitperiod},
+         given={Sujeong},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Suh},
+         familyi={S\bibinitperiod},
+         given={Ilhong},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=KI}{%
+         family={Kwon},
+         familyi={K\bibinitperiod},
+         given={Inso},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PFC}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Frank\bibnamedelima C},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Sanghyoung},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Hongseok},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{JS+1}
+    \strng{fullhash}{JSLSYSSIKIPFCLSKH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{4}
+    \field{pages}{423\bibrangedash 440}
+    \field{title}{Learning-based automation of robotic assembly for smart
+  manufacturing}
+    \field{volume}{109}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{2021}
+  \endentry
+
+  \entry{jordan2016robots}{book}{}
+    \name{author}{1}{}{%
+      {{hash=JJM}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={John\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Mit Press}%
+    }
+    \strng{namehash}{JJM1}
+    \strng{fullhash}{JJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Robots}
+    \field{year}{2016}
   \endentry
 
   \entry{backend}{online}{}
@@ -278,6 +1296,239 @@
     \field{title}{What is Frontend Development?}
     \verb{url}
     \verb https://roadmap.sh/frontend
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{koubaa2017robot}{book}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Koubaa},
+         familyi={K\bibinitperiod},
+         given={Anis},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KA+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Robot Operating System (ROS).}
+    \field{volume}{1}
+    \field{year}{2017}
+  \endentry
+
+  \entry{7892717}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=K}{%
+         family={Krishna},
+         familyi={K\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Poddar},
+         familyi={P\bibinitperiod},
+         given={Madhav},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KGM}{%
+         family={K},
+         familyi={K},
+         given={Giridhar\bibnamedelima M},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PAS}{%
+         family={Prabhu},
+         familyi={P\bibinitperiod},
+         given={Amit\bibnamedelima Suresh},
+         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=VU}{%
+         family={V},
+         familyi={V},
+         given={Umadevi},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \keyw{Surveillance;Cameras;Traffic control;Computer
+  vision;Lighting;Estimation;multiple reference lines;vehicle count;pixel
+  values variation;traffic analysis;speed estimation;speed violation
+  identification}
+    \strng{namehash}{K+1}
+    \strng{fullhash}{KPMKGMPASVU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{2016 International Conference on ICT in Business Industry
+  and Government (ICTBIG)}
+    \verb{doi}
+    \verb 10.1109/ICTBIG.2016.7892717
+    \endverb
+    \field{pages}{1\bibrangedash 5}
+    \field{title}{Automated traffic monitoring system using computer vision}
+    \field{year}{2016}
+  \endentry
+
+  \entry{lee2021intelligent}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LJD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Jeng-Dao},
+         giveni={J\bibinithyphendelim D\bibinitperiod},
+      }}%
+      {{hash=CCH}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Chen-Huan},
+         giveni={C\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=CES}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={En-Shuo},
+         giveni={E\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=KCC}{%
+         family={Kuo},
+         familyi={K\bibinitperiod},
+         given={Chia-Chen},
+         giveni={C\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=HCY}{%
+         family={Hsieh},
+         familyi={H\bibinitperiod},
+         given={Chia-Ying},
+         giveni={C\bibinithyphendelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI}%
+    }
+    \strng{namehash}{LJD+1}
+    \strng{fullhash}{LJDCCHCESKCCHCY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{24}
+    \field{pages}{12159}
+    \field{title}{Intelligent robotic palletizer system}
+    \field{volume}{11}
+    \field{journaltitle}{Applied Sciences}
+    \field{year}{2021}
+  \endentry
+
+  \entry{li2020robotics}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LM}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Milojevi{\'c}},
+         familyi={M\bibinitperiod},
+         given={Andrija},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HH}{%
+         family={Handroos},
+         familyi={H\bibinitperiod},
+         given={Heikki},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{LMMAHH1}
+    \strng{fullhash}{LMMAHH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{pages}{85\bibrangedash 95}
+    \field{title}{Robotics in manufacturing—The past and the present}
+    \field{journaltitle}{Technical, Economic and Societal Effects of
+  Manufacturing 4.0: Automation, Adaption and Manufacturing in Finland and
+  Beyond}
+    \field{year}{2020}
+  \endentry
+
+  \entry{liu2022metalwiremanipulationplanning}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=LR}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Ruishuang},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Wan},
+         familyi={W\bibinitperiod},
+         given={Weiwei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=IE}{%
+         family={Isomura},
+         familyi={I\bibinitperiod},
+         given={Emiko},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Harada},
+         familyi={H\bibinitperiod},
+         given={Kensuke},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LR+1}
+    \strng{fullhash}{LRWWIEHK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{eprint}
+    \verb 2203.04024
+    \endverb
+    \field{title}{Metal Wire Manipulation Planning for 3D Curving -- How a Low
+  Payload Robot Can Use a Bending Machine to Bend Stiff Metal Wire}
+    \verb{url}
+    \verb https://arxiv.org/abs/2203.04024
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.RO}
+    \field{year}{2022}
+  \endentry
+
+  \entry{mekoprint}{online}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Mechanics},
+         familyi={M\bibinitperiod},
+         given={Mekoprint},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{Accessed: 2024-07-30}
+    \field{title}{Robotic bending solution - Mekoprint Mechanics}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=EhQ7DvXjDCA
     \endverb
     \field{year}{2024}
   \endentry
@@ -366,6 +1617,134 @@
     \field{year}{2024}
   \endentry
 
+  \entry{PANERU2021103940}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PS}{%
+         family={Paneru},
+         familyi={P\bibinitperiod},
+         given={Suman},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JI}{%
+         family={Jeelani},
+         familyi={J\bibinitperiod},
+         given={Idris},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer vision, Technology in construction, Visual data analytics,
+  Monitoring}
+    \strng{namehash}{PSJI1}
+    \strng{fullhash}{PSJI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Thousands of images and videos are collected from construction projects
+  during construction. These contain valuable data that, if harnessed
+  efficiently, can help automate or at least reduce human effort in diverse
+  construction management activities such as progress monitoring, safety
+  management, quality control and productivity tracking. Extracting meaningful
+  information from images requires the development of technology and algorithms
+  that enable computers to understand digital images or videos, replicating the
+  functionality of human visual systems. This is the goal of computer vision.
+  This review aims at providing an updated and categorized overview of computer
+  vision applications in construction by examining the recent developments in
+  the field and identifying the opportunities and challenges that future
+  research needs to address to fully leverage the potential benefits of
+  Computer Vision. We restrict the focus to four areas that can benefit the
+  most from computer vision - Safety Management, Progress Monitoring,
+  Productivity Tracking and Quality Control.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.autcon.2021.103940
+    \endverb
+    \field{issn}{0926-5805}
+    \field{pages}{103940}
+    \field{title}{Computer vision applications in construction: Current state,
+  opportunities and challenges}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0926580521003915
+    \endverb
+    \field{volume}{132}
+    \field{journaltitle}{Automation in Construction}
+    \field{year}{2021}
+  \endentry
+
+  \entry{qian2014manipulation}{inproceedings}{}
+    \name{author}{9}{}{%
+      {{hash=QW}{%
+         family={Qian},
+         familyi={Q\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=XZ}{%
+         family={Xia},
+         familyi={X\bibinitperiod},
+         given={Zeyang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XJ}{%
+         family={Xiong},
+         familyi={X\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gan},
+         familyi={G\bibinitperiod},
+         given={Yangzhou},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Yangchao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Weng},
+         familyi={W\bibinitperiod},
+         given={Shaokui},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DH}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HY}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Ying},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Jianwei},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{QW+1}
+    \strng{fullhash}{QWXZXJGYGYWSDHHYZJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{booktitle}{2014 IEEE International Conference on Robotics and
+  Biomimetics (ROBIO 2014)}
+    \field{pages}{2594\bibrangedash 2598}
+    \field{title}{Manipulation task simulation using ROS and Gazebo}
+    \field{year}{2014}
+  \endentry
+
   \entry{reactjs}{online}{}
     \name{author}{1}{}{%
       {{hash=R}{%
@@ -383,6 +1762,29 @@
     \field{title}{React: The library for web and native user interfaces}
     \verb{url}
     \verb https://react.dev/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{cbun-device}{online}{}
+    \name{author}{1}{}{%
+      {{hash=RK}{%
+         family={Robots},
+         familyi={R\bibinitperiod},
+         given={Kassow},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RK1}
+    \strng{fullhash}{RK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{Accessed: 2024-08-13}
+    \field{title}{CBun Device}
+    \verb{url}
+    \verb https://docs.kassowrobots.com/cbuns/development/CBun-Device
     \endverb
     \field{year}{2024}
   \endentry
@@ -477,6 +1879,30 @@
     \verb https://www.kassowrobots.com/ecosystem/kr-pulse/manufacturers/kassow-
     \verb robots
     \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{kassow-software-manual}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=RK}{%
+         family={Robots},
+         familyi={R\bibinitperiod},
+         given={Kassow},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RK1}
+    \strng{fullhash}{RK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Software Manual PDF}
+    \verb{url}
+    \verb https://docs.kassowrobots.com/kr-assets/manuals/software-manual-kasso
+    \verb wrobots_v1.3.0p.pdf
+    \endverb
+    \field{volume}{1.3.0}
     \field{year}{2024}
   \endentry
 
@@ -652,6 +2078,202 @@
     \field{year}{2018}
   \endentry
 
+  \entry{russmann2015industry}{article}{}
+    \name{author}{7}{}{%
+      {{hash=RM}{%
+         family={R{\"u}{\ss}mann},
+         familyi={R\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lorenz},
+         familyi={L\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Gerbert},
+         familyi={G\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Waldner},
+         familyi={W\bibinitperiod},
+         given={Manuela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Justus},
+         familyi={J\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EP}{%
+         family={Engel},
+         familyi={E\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Harnisch},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM+1}
+    \strng{fullhash}{RMLMGPWMJJEPHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Industry 4.0: The future of productivity and growth in
+  manufacturing industries}
+    \field{year}{2015}
+  \endentry
+
+  \entry{10201199}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SAM}{%
+         family={Sahan},
+         familyi={S\bibinitperiod},
+         given={A.S.\bibnamedelima Mohamed},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kathiravan},
+         familyi={K\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lokesh},
+         familyi={L\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Raffik},
+         familyi={R\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Industries;Productivity;Automation;Service robots;Industrial
+  robots;Turning;Safety;Industry 4.0;industrial robots;human-machine
+  collaboration;Industry 5.0;collaborative robots}
+    \strng{namehash}{SAM+1}
+    \strng{fullhash}{SAMKSLMRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{2023 2nd International Conference on Advancements in
+  Electrical, Electronics, Communication, Computing and Automation (ICAECA)}
+    \verb{doi}
+    \verb 10.1109/ICAECA56562.2023.10201199
+    \endverb
+    \field{pages}{1\bibrangedash 5}
+    \field{title}{Role of Cobots over Industrial Robots in Industry 5.0: A
+  Review}
+    \field{year}{2023}
+  \endentry
+
+  \entry{SathishKumar2023}{article}{}
+    \name{author}{7}{}{%
+      {{hash=SKA}{%
+         family={Sathish\bibnamedelima Kumar},
+         familyi={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={Naveen},
+         familyi={N\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VR}{%
+         family={Vijayakumar},
+         familyi={V\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Suresh},
+         familyi={S\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=AAR}{%
+         family={Asary},
+         familyi={A\bibinitperiod},
+         given={Abdul\bibnamedelima Rab},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Madhu},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Palani},
+         familyi={P\bibinitperiod},
+         given={Kumaran},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKA+1}
+    \strng{fullhash}{SKANSVRSVAARMSPK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    The propensity of manufacturers to produce goods at affordable cost, with
+  more accuracy, and at a faster rate force them to search for novel solutions,
+  such as deploying robots in place of people in a sector that can accommodate
+  their needs. Welding is one of the most crucial processes in the automotive
+  industry. This process is time-consuming, subject to error, and demands
+  skilled professionals. The robotic application can improve this area of
+  production and quality. Other industries, such as painting and material
+  handling, can also profit from the use of robots. This work describes the
+  fuzzy DC linear servo controller, which functions as a robotic arm actuator.
+  Robots have been widely employed in most productive sectors in recent years,
+  including assembly plates, welding, tasks at higher temperatures, etc.
+  Controlling a robot accurately is a difficult undertaking as a robot is very
+  nonlinear with many joints that are often organized and unstructured. To
+  carry out the effective task, an effective PID control based on fuzzy logic
+  has been employed together with the method of Particle Swarm Optimization
+  (PSO) approach for the estimate of the parameter. This offline technique
+  determines the lowest number of optimal robotic arm control parameters. To
+  verify the controller design with computer simulation, a comparative
+  assessment of controllers is given by means of a fuzzy surveillance
+  controller with PSO which improves the parameter gain to provide a rapid
+  climb, a smaller overflow, no steady condition error signal, and effective
+  torque control of the robot arm.%
+    }
+    \verb{doi}
+    \verb 10.1038/s41598-023-35189-2
+    \endverb
+    \field{issn}{2045-2322}
+    \field{number}{1}
+    \field{pages}{8253}
+    \field{title}{An intelligent fuzzy-particle swarm optimization
+  supervisory-based control of robot manipulator for industrial welding
+  applications}
+    \verb{url}
+    \verb https://doi.org/10.1038/s41598-023-35189-2
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{Scientific Reports}
+    \field{year}{2023}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{schunk-gripper}{online}{}
     \name{author}{1}{}{%
       {{hash=S}{%
@@ -672,6 +2294,75 @@
     \verb /c/PGR_3228
     \endverb
     \field{year}{2024}
+  \endentry
+
+  \entry{SEMERARO2021103469}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SC}{%
+         family={Semeraro},
+         familyi={S\bibinitperiod},
+         given={Concetta},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lezoche},
+         familyi={L\bibinitperiod},
+         given={Mario},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PH}{%
+         family={Panetto},
+         familyi={P\bibinitperiod},
+         given={Hervé},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dassisti},
+         familyi={D\bibinitperiod},
+         given={Michele},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Digital twin, Industry 4.0, Cyber-physical systems, Predictive
+  manufacturing}
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCLMPHDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Manufacturing enterprises are facing the need to align themselves to the
+  new information technologies (IT) and respond to the new challenges of
+  variable market demand. One of the key enablers of this IT revolution toward
+  Smart Manufacturing is the digital twin (DT). It embeds a “virtual” image
+  of the reality constantly synchronized with the real operating scenario to
+  provide sound information (knowledge model) to reality interpretation model
+  to draw sound decisions. The paper aims at providing an up-to date picture of
+  the main DT components, their features and interaction problems. The paper
+  aims at clearly tracing the ongoing research and technical challenges in
+  conceiving and building DTs as well, according to different application
+  domains and related technologies. To this purpose, the main questions
+  answered here are: ‘What is a Digital Twin?’; ‘Where is appropriate to
+  use a Digital Twin?’; ‘When has a Digital Twin to be developed?’;
+  ‘Why should a Digital Twin be used?’; ‘How to design and implement a
+  Digital Twin?’; ‘What are the main challenges of implementing a Digital
+  Twin?’. This study tries to answer to the previous questions funding on a
+  wide systematic literature review of scientific research, tools, and
+  technicalities in different application domains.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.compind.2021.103469
+    \endverb
+    \field{issn}{0166-3615}
+    \field{pages}{103469}
+    \field{title}{Digital twin paradigm: A systematic literature review}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0166361521000762
+    \endverb
+    \field{volume}{130}
+    \field{journaltitle}{Computers in Industry}
+    \field{year}{2021}
   \endentry
 
   \entry{sensopart-visor}{online}{}
@@ -776,6 +2467,77 @@
     \field{year}{2024}
   \endentry
 
+  \entry{shah2021design}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=SV}{%
+         family={Shah},
+         familyi={S\bibinitperiod},
+         given={Vijesh},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Gilke},
+         familyi={G\bibinitperiod},
+         given={Nandkumar},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=DV}{%
+         family={Dhore},
+         familyi={D\bibinitperiod},
+         given={Vilas},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Phutane},
+         familyi={P\bibinitperiod},
+         given={Chandrashekhar},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kondhol},
+         familyi={K\bibinitperiod},
+         given={Bhavisha},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SV+1}
+    \strng{fullhash}{SVGNDVPCKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Advances in Manufacturing Systems: Select Proceedings of
+  RAM 2020}
+    \field{pages}{95\bibrangedash 107}
+    \field{title}{Design of gripper and selection of robotic arm for automation
+  of a pick and place process}
+    \field{year}{2021}
+  \endentry
+
+  \entry{shenchong}{online}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={Shenchong},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S3}
+    \strng{fullhash}{S3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{Accessed: 2024-07-30}
+    \field{title}{Automated Bending Cell- Robot Press Brake}
+    \verb{url}
+    \verb https://www.shenchong.com/robotic-press-brake.html
+    \endverb
+    \field{year}{2024}
+  \endentry
+
   \entry{siemens}{online}{}
     \name{author}{1}{}{%
       {{hash=S}{%
@@ -783,8 +2545,8 @@
          familyi={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{S3}
-    \strng{fullhash}{S3}
+    \strng{namehash}{S4}
+    \strng{fullhash}{S4}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
@@ -796,6 +2558,193 @@
     \verb ial/plc.html
     \endverb
     \field{year}{2024}
+  \endentry
+
+  \entry{SKIBNIEWSKI1992251}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMJ}{%
+         family={Skibniewski},
+         familyi={S\bibinitperiod},
+         given={Mirosław\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WSC}{%
+         family={Wooldridge},
+         familyi={W\bibinitperiod},
+         given={Stephen\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{Automated building construction systems, automated material handling
+  systems, robotic material handling, bar code technology}
+    \strng{namehash}{SMJWSC1}
+    \strng{fullhash}{SMJWSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Several leading Japanese construction firms are developing fully automated,
+  self-rising platforms for the construction of high-rise buildings. These
+  automated building construction systems provide an integrated building
+  construction environment for robotized cranes, finishing robots, computer
+  work stations, and other automated construction equipment. A number of
+  benefits are anticipated from these systems, including improved construction
+  productivity, less dependence on labor, and improved safety and quality. The
+  impact of this integrated automation approach is expected to be significant
+  due to its high level of coordination between resources and processes, and
+  well defined environment for information transfer. As a follow-up to this
+  effort, several research issues need to be considered, including the design
+  of materials handling systems which will maintain the efficiency of the
+  automated building construction approach. This paper describes an automated
+  materials handling system concept for managing and handling construction
+  materials within automated building construction systems. The materials
+  handling system is based on proven automation technologies and a distributed
+  computer network. A prototype robotic materials handling workcell based on a
+  micro-robot and bar code technology, and developed for integration within the
+  automated materials handling system is also described.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/0926-5805(92)90017-E
+    \endverb
+    \field{issn}{0926-5805}
+    \field{number}{3}
+    \field{pages}{251\bibrangedash 266}
+    \field{title}{Robotic materials handling for automated building
+  construction technology}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/092658059290017E
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{Automation in Construction}
+    \field{year}{1992}
+  \endentry
+
+  \entry{kassowrobotsblog}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SA}{%
+         family={Steger},
+         familyi={S\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SA1}
+    \strng{fullhash}{SA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{Accessed: 2024-08-07}
+    \field{title}{What is Robotic Process Automation(RPA)? The Complete 2024
+  Guide}
+    \verb{url}
+    \verb https://www.kassowrobots.com/blog/what-is-robotic-process-automation-
+    \verb rpa
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{takaya2016simulation}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=TK}{%
+         family={Takaya},
+         familyi={T\bibinitperiod},
+         given={Kenta},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=AT}{%
+         family={Asai},
+         familyi={A\bibinitperiod},
+         given={Toshinori},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KV}{%
+         family={Kroumov},
+         familyi={K\bibinitperiod},
+         given={Valeri},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Smarandache},
+         familyi={S\bibinitperiod},
+         given={Florentin},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TK+1}
+    \strng{fullhash}{TKATKVSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{2016 20th International Conference on System Theory,
+  Control and Computing (ICSTCC)}
+    \field{pages}{96\bibrangedash 101}
+    \field{title}{Simulation environment for mobile robots testing using ROS
+  and Gazebo}
+    \field{year}{2016}
+  \endentry
+
+  \entry{tarn2011robotic}{book}{}
+    \name{author}{3}{}{%
+      {{hash=TTJ}{%
+         family={Tarn},
+         familyi={T\bibinitperiod},
+         given={Tzyh-Jong},
+         giveni={T\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=CSB}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Shan-Ben},
+         giveni={S\bibinithyphendelim B\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Fang},
+         familyi={F\bibinitperiod},
+         given={Gu},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{TTJCSBFG1}
+    \strng{fullhash}{TTJCSBFG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Robotic welding, intelligence and automation: RWIA’2010}
+    \field{volume}{88}
+    \field{year}{2011}
+  \endentry
+
+  \entry{shopmetal}{online}{}
+    \name{author}{1}{}{%
+      {{hash=TSM}{%
+         family={Techology},
+         familyi={T\bibinitperiod},
+         given={Shop\bibnamedelima Metalworking},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TSM1}
+    \strng{fullhash}{TSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{note}{Accessed: 2024-08-04}
+    \field{title}{Robotic bending cell}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=EhQ7DvXjDCA
+    \endverb
+    \field{year}{2023}
   \endentry
 
   \entry{threejs}{online}{}
@@ -817,6 +2766,73 @@
     \verb https://threejs.org/manual/#en/fundamentals
     \endverb
     \field{year}{2024}
+  \endentry
+
+  \entry{THROOP2005281}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TJ}{%
+         family={Throop},
+         familyi={T\bibinitperiod},
+         given={J.A.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Aneshansley},
+         familyi={A\bibinitperiod},
+         given={D.J.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AW}{%
+         family={Anger},
+         familyi={A\bibinitperiod},
+         given={W.C.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Peterson},
+         familyi={P\bibinitperiod},
+         given={D.L.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{Apples, Apple grading, Automated inspection, Apple sorting, Defects,
+  Defect detection}
+    \strng{namehash}{TJ+1}
+    \strng{fullhash}{TJADAWPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    The development of an automated inspection station to grade processing
+  apples includes a conveyor for apple orientation, optics and camera to
+  capture identical images at three predetermined wavebands, a lighting system
+  that illuminates the apple's surface diffusely and image processing
+  algorithms to segment surface defects on apples in real time. The conveyor
+  oriented apples so that the stem/calyx ends were not visible during image
+  capture. Multi-spectral optics fabricated using a multi-vision linear filter
+  mounted in front of the camera lens provided three different waveband (740,
+  950nm and visible) images of apples on a single camera array. Interference
+  filters placed in the optical path provided the different wavebands. The
+  diameter and height of each apple was measured to estimate the apple's
+  volume. These dimensions and the position of the apple in the image allowed a
+  portion of each image to be defined, the so-called region of interest (ROI).
+  These sub-images made a composite image of the apple's surface.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.postharvbio.2005.01.004
+    \endverb
+    \field{issn}{0925-5214}
+    \field{number}{3}
+    \field{pages}{281\bibrangedash 290}
+    \field{title}{Quality evaluation of apples based on surface defects:
+  development of an automated inspection system}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0925521405000177
+    \endverb
+    \field{volume}{36}
+    \field{journaltitle}{Postharvest Biology and Technology}
+    \field{year}{2005}
   \endentry
 
   \entry{webtools}{online}{}
@@ -863,6 +2879,202 @@
     \verb https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
     \endverb
     \field{year}{2024}
+  \endentry
+
+  \entry{Uhrhan1995}{inbook}{}
+    \name{author}{3}{}{%
+      {{hash=UC}{%
+         family={Uhrhan},
+         familyi={U\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Roshardt},
+         familyi={R\bibinitperiod},
+         given={Ren{\'e}},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Schweitzer},
+         familyi={S\bibinitperiod},
+         given={Gerhard},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=LJ}{%
+         family={L{\"u}ckel},
+         familyi={L\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Vieweg+Teubner Verlag}%
+    }
+    \strng{namehash}{UCRRSG1}
+    \strng{fullhash}{UCRRSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{abstract}{%
+    The automation concept is based on the integration of the three factors
+  ``man, technique, organisation --- MTO'', developed at the Centre for
+  Integrated Production at the ETH. As a benchmark, a manufacturing cell for
+  flexible bending of metal sheets is under construction. It consists of a
+  laser cutting machine, press brake, conveyor belts, and a robot. These
+  devices will be networked to enable the fully automated programming cycle.
+  The project is jointly pursued by the Institute of Work Psychology, the
+  Institute of Forming Technology, and the Robotics Lab.%
+    }
+    \field{booktitle}{Proceedings of the Third Conference on Mechatronics and
+  Robotics: ``From design methods to industrial applications''}
+    \verb{doi}
+    \verb 10.1007/978-3-322-91170-4_15
+    \endverb
+    \field{isbn}{978-3-322-91170-4}
+    \field{pages}{202\bibrangedash 211}
+    \field{title}{User Oriented Automation of Flexible Sheet Bending}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-322-91170-4_15
+    \endverb
+    \list{location}{1}{%
+      {Wiesbaden}%
+    }
+    \field{year}{1995}
+  \endentry
+
+  \entry{WAGNER201988}{article}{}
+    \name{author}{6}{}{%
+      {{hash=WR}{%
+         family={Wagner},
+         familyi={W\bibinitperiod},
+         given={Raphael},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Schleich},
+         familyi={S\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Haefner},
+         familyi={H\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kuhnle},
+         familyi={K\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wartzack},
+         familyi={W\bibinitperiod},
+         given={Sandro},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Lanza},
+         familyi={L\bibinitperiod},
+         given={Gisela},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{Product development, Production planning, Information}
+    \strng{namehash}{WR+1}
+    \strng{fullhash}{WRSBHBKAWSLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Digital twins offer great opportunities in various domains of the product
+  engineering process. However, current approaches to the use of digital twins
+  only focus on different separated disciplines. In contrast to that, it is
+  expected that the holistic use of digital twin models in product development
+  and production will dominate future product generations, because they allow
+  to create high-performance products competitively. This paper explores
+  important challenges and future potentials of digital twins and Industry 4.0
+  for the seamless integration of product specification and production. In this
+  regard, approaches of linking digital twins to other domains open up new
+  possibilities in tolerance allocation and production integration. Thereby,
+  the most efficient product specifications in technical and economic terms are
+  achieved for the manufacturer. In addition, the connectivity of Industry 4.0
+  broadens the scope and enables the evaluation of alternative approaches in
+  production planning and control. Approaches at the organizational level,
+  product functions with specifications beyond the technological limits and
+  production control strategies (e.g. order dispatching) ensure high
+  performance operations. Simulations with a digital production twin with
+  integrated digital product twin allow early estimations even before the
+  actual ramp-up of the product. The future challenge addressed in this paper
+  is to define a consistent framework for the holistic use of digital twins in
+  the entire product development process, which requires the integration of
+  product designers and production planner concepts.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.procir.2019.04.219
+    \endverb
+    \field{issn}{2212-8271}
+    \field{note}{29th CIRP Design Conference 2019, 08-10 May 2019, Póvoa de
+  Varzim, Portgal}
+    \field{pages}{88\bibrangedash 93}
+    \field{title}{Challenges and Potentials of Digital Twins and Industry 4.0
+  in Product Design and Production for High Performance Products}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S2212827119308637
+    \endverb
+    \field{volume}{84}
+    \field{journaltitle}{Procedia CIRP}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Wakizako}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WH}{%
+         family={Wakizako},
+         familyi={W\bibinitperiod},
+         given={Hitoshi},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WH1}
+    \strng{fullhash}{WH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Industrial robots are used for various applications such as welding,
+  handling, painting, inspection, and assembly in automated production lines,
+  especially in car manufacturing production. The typical operation of
+  industrial robots is called “teaching and playback”. In the teaching
+  operation, an operator moves a robot to the series of points located on
+  desired path of the robot using a teach pendant and stores those positions.
+  In the playback operation, the robot moves to the stored positions
+  sequentially and repeats the sequence. Because the robot follow the same path
+  consist of the programed positions, the target parts of the robot are
+  required to be pre-oriented and aligned using part aligners or fixtures
+  before the robot starts its task. Machine vision systems allow a robot to
+  perform in more flexible manner. The vision systems are used for such
+  applications as detection of part orientation or position, part inspection
+  and measurement. In the vision system, cameras acquire object images, and the
+  images are transferred to computers and analyzed using image processing
+  software. The result of the image processing is transferred to a robot
+  controller and the position data of the robot is modified. In this keynote
+  speech, the roles of industrial robots and machine vision are presented.%
+    }
+    \verb{doi}
+    \verb 10.12792/iciae2015.003
+    \endverb
+    \field{title}{Industrial Robots and Machine Vision}
+    \field{journaltitle}{The 3rd International Conference on Industrial
+  Application Engineering 2015 (ICIAE2015)}
+    \field{year}{2015}
   \endentry
 
   \entry{ros3djs}{online}{}
@@ -956,6 +3168,248 @@
     \verb http://wiki.ros.org/urdf
     \endverb
     \field{year}{2024}
+  \endentry
+
+  \entry{Wilkinson}{article}{}
+    \name{author}{11}{}{%
+      {{hash=WA}{%
+         family={Wilkinson},
+         familyi={W\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gonzales},
+         familyi={G\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Hoey},
+         familyi={H\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kontak},
+         familyi={K\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Dian},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Torname},
+         familyi={T\bibinitperiod},
+         given={Noah},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sinclaire},
+         familyi={S\bibinitperiod},
+         given={Amelia},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HZ}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Zhao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Allspaw},
+         familyi={A\bibinitperiod},
+         given={Jordan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Platt},
+         familyi={P\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yanco},
+         familyi={Y\bibinitperiod},
+         given={Holly},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WA+1}
+    \strng{fullhash}{WAGMHPKDWDTNSAHZAJPRYH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb doi:10.1515/pjbr-2021-0023
+    \endverb
+    \field{number}{1}
+    \field{pages}{392\bibrangedash 401}
+    \field{title}{Design guidelines for human–robot interaction with
+  assistive robot manipulation systems}
+    \verb{url}
+    \verb https://doi.org/10.1515/pjbr-2021-0023
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Paladyn}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Xiao_2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=XZ}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Zixuan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XY}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Yulin},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{XZXY1}
+    \strng{fullhash}{XZXY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{abstract}{%
+    A web-based robot control system interface is designed. This interface can
+  be used by users to control the motion of target robot, observe 3D model, and
+  monitor the real-time value of the robot joints through PC or mobile device.
+  The advantage of this system lies in its versatility and portability,
+  allowing users to open the interface to control target robot in any place.
+  This system mainly uses robot operating system (ROS), Html 5, C++, JavaScript
+  and PHP technology. JavaScript library provided by ROS authority is used to
+  build the front-end interface. PHP is used to create a user registration
+  login system. Ros3djs is used to realize the establishment of dynamic model
+  of robot simulation. The C++ library provided by ROS is used to synchronize
+  the communication between the ROS node and the robot. Finally, the
+  human-computer interaction system of the 16-DOF robotic hand is successfully
+  implemented. According to the results, the system has good interactivity,
+  versatility and portability.%
+    }
+    \verb{doi}
+    \verb 10.1088/1755-1315/252/4/042112
+    \endverb
+    \field{number}{4}
+    \field{pages}{042112}
+    \field{title}{Web-Based Robot Control Interface}
+    \verb{url}
+    \verb https://dx.doi.org/10.1088/1755-1315/252/4/042112
+    \endverb
+    \field{volume}{252}
+    \field{journaltitle}{IOP Conference Series: Earth and Environmental
+  Science}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{8361333}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=YS}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Sida},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=XW}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Wenjun},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zhihao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Zude},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=PDT}{%
+         family={Pham},
+         familyi={P\bibinitperiod},
+         given={Duc\bibnamedelima Truong},
+         giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \keyw{Collaboration;Three-dimensional displays;Robot sensing
+  systems;Cameras;Service robots;Manufacturing;human-robot
+  collaboration;manufacturing;multi-source vision perception;data fusion}
+    \strng{namehash}{YS+1}
+    \strng{fullhash}{YSXWLZZZPDT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{booktitle}{2018 IEEE 15th International Conference on Networking,
+  Sensing and Control (ICNSC)}
+    \verb{doi}
+    \verb 10.1109/ICNSC.2018.8361333
+    \endverb
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Multi-source vision perception for human-robot collaboration
+  in manufacturing}
+    \field{year}{2018}
+  \endentry
+
+  \entry{9761203}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZL}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Longfei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Konz},
+         familyi={K\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{Image edge detection;Image segmentation;Task analysis;Robot sensing
+  systems;Sensors;Feature detection;Three-dimensional
+  displays;Assembly;computer vision (CV);deep learning;inspection;machine
+  intelligence;machine learning;manufacturing;production;robotics;survey}
+    \strng{namehash}{ZLZLKN1}
+    \strng{fullhash}{ZLZLKN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{doi}
+    \verb 10.1109/TSMC.2022.3166397
+    \endverb
+    \field{number}{1}
+    \field{pages}{105\bibrangedash 117}
+    \field{title}{Computer Vision Techniques in Manufacturing}
+    \field{volume}{53}
+    \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics:
+  Systems}
+    \field{year}{2023}
   \endentry
 \enddatalist
 \endinput

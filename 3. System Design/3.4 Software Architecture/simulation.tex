@@ -1,10 +1,11 @@
-Before building the robotic workcell in the real world, the kassow robot is simulated in the ROS and gazebo environment.
+Before building the robotic workcell in the real world, the kassow robot is simulated in the ROS and gazebo software environment.
 
 \subsubsection{ROS}
 \label{subsubsec:ROS}
-For more information on ROS, see section \ref{subsec:ROS}. First, a URDF model of the KR1410 with gripper attached is created
+For more information on ROS, see section \ref{subsec:ROS}. A URDF model of the KR1410 with gripper attached is created
 complete with all positions of links, joints, sensors, models etc. This URDF description of robot is then ready to be tested
-in the workcell.
+in the workcell. Few open-source additional packages were also used for building this simulation. For example, for attaching an
+object to the finger joint which simulates a grasping action in gazebo simulator. \cite{gazebo-pkgs}
 
 The robotic motion of unloading station gripper and the manipulation of KR1410 using the robotic gripper is simulated using ROS. (See Figure \ref{fig:gazebo-rviz})
 
@@ -42,7 +43,7 @@ The workcell is then ready to be simulated in the gazebo simulator.
 \label{subsubsec:RViz}
 RViz is short for ROS Visualization. It is a 3D visualization software tool for robots, sensors, and algorithms.
 It allows seeing the robot's perception of its world (real or simulated).
-The purpose of rviz is to enable you to visualize the state of a robot. It uses sensor data to try
+The purpose of RViz is to visualize the state of a robot. It uses sensor data to try
 to create an accurate depiction of what is going on in the robot's environment. \cite{rviz}
 
 \subsubsection{MoveIt}
