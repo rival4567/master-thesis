@@ -9,6 +9,14 @@ A program tree contains atleast one sequence. A sequence contains a number of co
 For separate sequences, the commands are executed simulataneously and asynchronously. \cite[page 20]{kassow-software-manual}
 
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/programtree.png}
+    \caption{Programming in teach pendant for a sheet metal part variant}
+    \label{fig:programtree}
+\end{figure}
+
+
 The programming of KR1410 is done in the program tree for one sheet metal part variant.
 It is done so as to test the bending process using the KR1410.
 The program tree of the workcell consists of four sequences which runs in parallel.
@@ -17,14 +25,7 @@ Sequence 2 and 3 looks for a signal from PLC for pausing and terminating the cur
 respectively. Sequence 4 controls the robotic and unloading station grippers using a push button
 for manual operation of the gripper in case of emergency.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{figures/programtree.png}
-    \caption{Programming in teach pendant for a sheet metal part variant}
-    \label{fig:programtree}
-\end{figure}
-
-Programming is done using a number of subprograms such that a subprogram
+The robot is programmed using a number of subprograms such that a subprogram
 can be quickly imported in the sequence and is intuitive to understand as shown in figure \ref{fig:programtree}
 Besides normal RCommands like IF, LOOP, FOR, MOVE, WAIT and so on, there are a number of CBun devices
 from Kassow Robots

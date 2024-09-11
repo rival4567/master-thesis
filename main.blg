@@ -16,31 +16,31 @@ White space in argument---line 218 of file main.aux
  : \@input{3.
  :            System Design/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 401 of file main.aux
+White space in argument---line 407 of file main.aux
  : \@input{4.
  :            Hardware Integration/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 441 of file main.aux
+White space in argument---line 447 of file main.aux
  : \@input{5.
  :            Software Development/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 447 of file main.aux
+White space in argument---line 453 of file main.aux
  : \@input{6.
  :            System Integration and Testing/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 465 of file main.aux
+White space in argument---line 471 of file main.aux
  : \@input{7.
  :            Experimental Results/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 470 of file main.aux
+White space in argument---line 476 of file main.aux
  : \@input{8.
  :            Discussion/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 472 of file main.aux
+White space in argument---line 478 of file main.aux
  : \@input{9.
  :            Conclusion and Future Works/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 479 of file main.aux
+White space in argument---line 485 of file main.aux
  : \@input{A.
  :            Appendices/appendix.aux}
 I'm skipping whatever remains of this command
@@ -69,7 +69,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 95 entries,
             6399 wiz_defined-function locations,
-            1763 strings with 51384 characters,
+            1763 strings with 51410 characters,
 and the built_in function-call counts, 652480 in all, are:
 = -- 50645
 > -- 9348
