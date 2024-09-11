@@ -2,6 +2,51 @@ PLC is used to control the subsystems in the robotic workcell. PLC controls the 
 operates the unloading station to get new sheet metal parts to the unloading station gripper using the gantry robot, triggers the inspection camera for testing the bending process and cooperates with the KR1410 to select the correct bending task. To achieve all of this, communication needs to be setup between various subsystems. Figure \ref{fig:communication-protocols} shows the networking diagram between various devices in the workcell. ROS PC has not been commissioned in the robotic workcell, but a setup could easily be done by connecting an ethernet cable between
 robot controller and laptop.
 
+
+
+
+
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[
+      device/.style={draw, rectangle, minimum width=2.5cm, minimum height=1cm, align=center},
+      connection/.style={thick}, % bidirectional arrows
+      protocol/.style={above, sloped, font=\small\ttfamily},
+      ip/.style={font=\small} % IP address style
+    ]
+    
+    % Devices without IP inside node
+    \node[device] (PLC) {PLC};
+    \node[device, below=2cm of PLC] (KR1410) {KR1410};
+    \node[device, right=3cm of PLC] (InspectionCamera) {Inspection Camera};
+    \node[device, below=2cm of KR1410] (RoboticCamera) {Robotic Camera};
+    \node[device, below=2cm of InspectionCamera] (PC) {ROS PC};
+    
+    % Web UI node
+    \node[device, below=2cm of PC] (WebUI) {Web UI};
+    
+    % IP addresses outside nodes
+    \node[ip, above=0.0cm of PLC] {192.168.0.102};
+    \node[ip, above left=-0.55cm and 0cm of KR1410] {192.168.0.120};
+    \node[ip, below left=-0.55cm and 0.0cm of KR1410] {192.168.39.1};
+    \node[ip, above=0.0cm of InspectionCamera] {192.168.0.101};
+    \node[ip, below=0.0cm of RoboticCamera] {192.168.0.100};
+    \node[ip, right=0.0cm of PC] {192.168.39.42};
+    \node[ip, below=0.0cm of WebUI] {http://localhost:3000};
+
+    % Connections
+    \draw[connection] (PLC) -- (KR1410) node[protocol, midway] {Profinet};
+    \draw[connection] (KR1410) -- (RoboticCamera) node[protocol, midway] {Ethernet};
+    \draw[connection] (KR1410) -- (PC) node[protocol, midway] {Ethernet};
+    \draw[connection] (PLC) -- (InspectionCamera) node[protocol, midway] {Profinet};
+    \draw[connection] (PC) -- (WebUI) node[protocol, midway] {Websocket};
+    
+    \end{tikzpicture}
+  \caption{System Networking and IP Addressing}
+  \label{fig:communication-protocols}
+\end{figure}
+
+
 \begin{table}[h]
   \centering
   \small
@@ -42,13 +87,6 @@ robot controller and laptop.
   \label{tab:kr1410-to-plc}
 \end{table}
 
-\subsection{Communication between KR1410 Robot and PLC}
-The communication between the PLC and KR1410 is established over Profinet, a leading industrial ethernet protocol for communication between devices in industrial automation systems. Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net) ensures real-time data transmission and supports various network topologies. \cite{profinet}
-
-A number of robot data can be monitored and controller through PLC over Profinet. These include monitoring of system state, joint configuration,
-TCP kinematics, IO Board, Tool IO state, and controlling of master speed, IO Board, and Tool IO outputs. The profinet also allows the transfer of
-data from Robot to PLC over user defined 64 Bit Input, 24 Int Input, 24 Real Input and from PLC to Robot over 64 Bit Output, 24 Int Output and 24 Real Output. \cite{kr-profinet} Table \ref{tab:kr1410-to-plc} and \ref{tab:plc-to-kr1410} shows the defined variables for cooperation between PLC and KR1410 which are shared over profinet.
-
 \begin{table}[h!]
   \centering
   \small
@@ -83,7 +121,7 @@ data from Robot to PLC over user defined 64 Bit Input, 24 Int Input, 24 Real Inp
       Bit[12] & Pause program\\
       Bit[13] & Calibration requested\\
       Bit[14] & Terminate program\\
-      Bit[15] & Storage station ready\\
+      Bit[15] & Storage station secured\\
       \hline
       \multicolumn{2}{c}{\textbf{Integer}} \\ \hline
       \textbf{Int[0]} & \textbf{Inspection Results}\\
@@ -96,8 +134,20 @@ data from Robot to PLC over user defined 64 Bit Input, 24 Int Input, 24 Real Inp
   \label{tab:plc-to-kr1410}
 \end{table}
 
+\subsection{Communication between KR1410 Robot and PLC}
+The communication between the PLC and KR1410 is established over Profinet, a leading industrial ethernet protocol for communication between devices in industrial automation systems. Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net) ensures real-time data transmission and supports various network topologies. \cite{profinet}
+
+A number of robot data can be monitored and controller through PLC over Profinet. These include monitoring of system state, joint configuration,
+TCP kinematics, IO Board, Tool IO state, and controlling of master speed, IO Board, and Tool IO outputs. The profinet also allows the transfer of
+data from Robot to PLC over user defined 64 Bit Input, 24 Int Input, 24 Real Input and from PLC to Robot over 64 Bit Output, 24 Int Output and 24 Real Output. \cite{kr-profinet} Table \ref{tab:kr1410-to-plc} and \ref{tab:plc-to-kr1410} shows the defined variables for cooperation between PLC and KR1410 which are shared over profinet.
+
+
 \subsection{VISOR Communication Protocols}
-\subsubsection{To KR1410}
+Both VISOR camera has been configured beforehand for camera settings like shutter speed, gain, working distance, resolution, internal illumination and other parameters. VISOR has been connected to a PC running SensoConfig software from SENSOPART for configuring the camera.
+Using this software, separate jobs could also be added for each task. The task could include detecting a particular sheet pattern, target marker detection or bend angle measurement. CBun \textbf{VISOR} device added to KR teach pendant only allows switching of jobs, triggering camera,
+performing calibration and a few other tasks. But training to recognise a pattern needs to be done beforehand using a PC.
+
+\subsubsection{VISOR to KR1410}
 Kassow robot is interfaced to the robotic camera using ethernet.
 CBun Device installed on KR teach pendant allows for communication between
 Kassow robot and the VISOR. It is build and installed using CBun development as mentioned in subsection \ref{subsec:computer-vision}. The following ports are used for communications between the Kassow Robot and the VISOR. 
@@ -109,51 +159,7 @@ Kassow robot and the VISOR. It is build and installed using CBun development as 
 
 Figure \ref{fig:calib-graph} shows the use of this communication setup to perform auto-calibration with the Kassow robots and the mounted camera.
 
-\subsubsection{To PLC}
+\subsubsection{VISOR to PLC}
 PLC is interfaced with the inspection camera using Profinet.
-UDP (User Datagram Protocol) is used over ports 161, 34962, 34963, 34964 to establish communication between the PLC and the VISOR.
-
-
-
-
-
-\begin{figure}[h]
-    \centering
-    \begin{tikzpicture}[
-        device/.style={draw, rectangle, minimum width=2.5cm, minimum height=1cm, align=center},
-        connection/.style={thick}, % bidirectional arrows
-        protocol/.style={above, sloped, font=\small\ttfamily},
-        ip/.style={font=\small} % IP address style
-      ]
-      
-      % Devices without IP inside node
-      \node[device] (PLC) {PLC};
-      \node[device, below=2cm of PLC] (KR1410) {KR1410};
-      \node[device, right=3cm of PLC] (InspectionCamera) {Inspection Camera};
-      \node[device, below=2cm of KR1410] (RoboticCamera) {Robotic Camera};
-      \node[device, below=2cm of InspectionCamera] (PC) {ROS PC};
-      
-      % Web UI node
-      \node[device, below=2cm of PC] (WebUI) {Web UI};
-      
-      % IP addresses outside nodes
-      \node[ip, above=0.0cm of PLC] {192.168.0.102};
-      \node[ip, above left=-0.55cm and 0cm of KR1410] {192.168.0.120};
-      \node[ip, below left=-0.55cm and 0.0cm of KR1410] {192.168.39.1};
-      \node[ip, above=0.0cm of InspectionCamera] {192.168.0.101};
-      \node[ip, below=0.0cm of RoboticCamera] {192.168.0.100};
-      \node[ip, right=0.0cm of PC] {192.168.39.42};
-      \node[ip, below=0.0cm of WebUI] {http://localhost:3000};
-
-      % Connections
-      \draw[connection] (PLC) -- (KR1410) node[protocol, midway] {Profinet};
-      \draw[connection] (KR1410) -- (RoboticCamera) node[protocol, midway] {Ethernet};
-      \draw[connection] (KR1410) -- (PC) node[protocol, midway] {Ethernet};
-      \draw[connection] (PLC) -- (InspectionCamera) node[protocol, midway] {Profinet};
-      \draw[connection] (PC) -- (WebUI) node[protocol, midway] {Websocket};
-      
-      \end{tikzpicture}
-    \caption{System Networking and IP Addressing}
-    \label{fig:communication-protocols}
-\end{figure}
+UDP (User Datagram Protocol) is used over ports 161, 34962, 34963, 34964 to establish communication between the PLC and the VISOR. \cite{visor_communication_manual}
 

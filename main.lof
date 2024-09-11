@@ -1,0 +1,43 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Industry 4.0 is changing traditional manufacturing relationships (Source: \blx@tocontentsinit {0}\cite {russmann2015industry})\relax }}{1}{figure.caption.7}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces ASTRO-II 100NT HDS 1030 bending cell. (Source: \blx@tocontentsinit {0}\cite {astro100})\relax }}{5}{figure.caption.8}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Robotic workcell layout. 1) Bending machine 2) Storage station 3) Unloading station 4) Handling robot 5) Bending machine terminal operating robot 6) Safety fence\relax }}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Energy, data and material flow in the robotic workcell\relax }}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Bending machine asset in simulation\relax }}{11}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Storage Station asset in simulation\relax }}{11}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Unloading station in simulation\relax }}{12}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Handling Robot KR1410 in simulation\relax }}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Franka emika panda robot as terminal operating robot in simulation\relax }}{13}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Functional parts of the KR collaborative robot (Source: \blx@tocontentsinit {0}\cite {kassow-manual})\relax }}{16}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } vision sensor\relax }}{18}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } V20, Field of view Wide, Internal lens (Source: \blx@tocontentsinit {0}\cite [page 357]{visor_user_manual})\relax }}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces ROSGraph\relax }}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Robotic workcell in Gazebo simulator (left) and RViz (right)\relax }}{22}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces CBun Project Setup for SENSOPART Integration in KR\relax }}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Dialog Box showing current VISOR variables\relax }}{24}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Programming in teach pendant for a sheet metal part variant\relax }}{25}{figure.caption.26}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Detection marker\relax }}{27}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \hyperref [acro:AMADA]{AMADA} Bending Machine. 1) Marker 2) Bending machine open height measurement sensor 3) Bending station 4) Terminal fixture 5) Laser monitoring\relax }}{28}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Three bending stations for the bending operation\relax }}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Three bending stations for the bending operation\relax }}{30}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Components of the robot unit: 1) robot base 2) KR1410 manipulator 3) manual quick-change system 4) robotic gripper 5) robotic camera\relax }}{30}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Storage station of 10 drawers\relax }}{32}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \parbox [t]{12cm}{Unloading station configuration. 1) Marker 2) Gantry 3) Magnetic gripper 4) Gripper 5) Inspection Camera 6) Control cabinets 7) KR1410 Teach pendant holder 8) SIMATIC HMI}\relax }}{33}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \parbox [t]{12cm}{Unloading station installations. a) Inspection Camera b) Pneumatic parallel gripper with pneumatic swivel unit}\relax }}{34}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces HMI showing the sheet available in the unloading station\relax }}{34}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces System Networking and IP Addressing\relax }}{35}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Payload diagram for KR1410 manipulator\relax }}{39}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Addition of safety zones to the robotic workcell\relax }}{40}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Safety buttons. 1) Emergency STOP 2) Protective STOP 3) Robot State 4) Reset PLC fault\relax }}{41}{figure.caption.41}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces TCP is set at the end of gripper at a distance of 216mm from robot TOOL-IO\relax }}{47}{figure.caption.42}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces A working distance of 300mm is set for the robotic camera\relax }}{48}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Calibration procedure using telegram\relax }}{49}{figure.caption.44}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
