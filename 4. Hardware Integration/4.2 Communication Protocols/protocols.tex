@@ -1,6 +1,123 @@
-(such as TCP/IP, UDP or Modbus TCP)
+PLC is used to control the subsystems in the robotic workcell. PLC controls the bending process by controlling the bending machine,
+operates the unloading station to get new sheet metal parts to the unloading station gripper using the gantry robot, triggers the inspection camera for testing the bending process and cooperates with the KR1410 to select the correct bending task. To achieve all of this, communication needs to be setup between various subsystems. Figure \ref{fig:communication-protocols} shows the networking diagram between various devices in the workcell. ROS PC has not been commissioned in the robotic workcell, but a setup could easily be done by connecting an ethernet cable between
+robot controller and laptop.
 
-\begin{figure}
+\begin{table}[h]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.2} % Adjusts row height
+  \begin{tabular}{l@{\hskip 2cm}l}
+    \hline
+      \textbf{Input Register} & \textbf{Function} \\ \hline
+      \multicolumn{2}{c}{\textbf{Bit}} \\ \hline
+      Bit[0] & open or close unloading station gripper \\
+      Bit[1] & open or close robotic gripper\\
+      Bit[2] & bending start request/release\\
+      Bit[3] & inspection camera trigger request/release\\
+      Bit[4] & robot active\\
+      Bit[5] & sheet request\\\hline
+      \multicolumn{2}{c}{\textbf{Integer}} \\ \hline
+      \textbf{Int[0]} & \textbf{Current robot state in program}\\
+      Int[0]=0 & Not ready or failure\\
+      Int[0]=1 & getting to ready pose\\
+      Int[0]=2 & waiting for new sheet\\
+      Int[0]=3 & performing bending operation 1\\
+      Int[0]=4 & performing bending operation 2\\
+      Int[0]=5 & performing bending operation 3\\
+      Int[0]=6 & performing bending operation 4\\
+      Int[0]=7 & performing bending operation 5\\
+      Int[0]=8 & performing bending operation 6\\
+      Int[0]=9 & placing sheet metal part in shelf\\
+      Int[0]=10 & performing calibration\\
+      \textbf{Int[1]} & \textbf{Robotic camera trigger state}\\
+      Int[1]=0 & no trigger\\
+      Int[1]=1 & successful, object detected\\
+      Int[1]=2 & failure, object not detected\\
+      \textbf{Int[2]} & \textbf{Robotic camera operation state}\\
+      Int[2]=0 & Working\\
+      Int[2] is not 0 & Not working, camera restart required\\
+      \hline
+  \end{tabular}
+  \caption{Sending data from KR1410 to PLC over Profinet}
+  \label{tab:kr1410-to-plc}
+\end{table}
+
+\subsection{Communication between KR1410 Robot and PLC}
+The communication between the PLC and KR1410 is established over Profinet, a leading industrial ethernet protocol for communication between devices in industrial automation systems. Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net) ensures real-time data transmission and supports various network topologies. \cite{profinet}
+
+A number of robot data can be monitored and controller through PLC over Profinet. These include monitoring of system state, joint configuration,
+TCP kinematics, IO Board, Tool IO state, and controlling of master speed, IO Board, and Tool IO outputs. The profinet also allows the transfer of
+data from Robot to PLC over user defined 64 Bit Input, 24 Int Input, 24 Real Input and from PLC to Robot over 64 Bit Output, 24 Int Output and 24 Real Output. \cite{kr-profinet} Table \ref{tab:kr1410-to-plc} and \ref{tab:plc-to-kr1410} shows the defined variables for cooperation between PLC and KR1410 which are shared over profinet.
+
+\begin{table}[h!]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.2} % Adjusts row height
+  \begin{tabular}{c@{\hskip 2cm}l}
+    \hline
+      \textbf{Output Register} & \textbf{Function} \\ \hline
+      \multicolumn{2}{c}{\textbf{Bit}} \\ \hline
+      % Bit[0]-Bit-[7] & Cutoff for bending machine open height \\
+      % &  value from laser sensor for each \\
+      % & bending operation\\
+      % & 1 - above cutoff, bending station engaged,\\
+      % & regrasp sheet after bending\\
+      % & 0 - below cutoff, hold sheet in backgauge \\
+      \textbf{Bit[0]-Bit-[7]} & \textbf{trigger for bending machine reaching a}\\
+      & \textbf{certain open height value determined}\\
+      & \textbf{using laser sensor} \\
+      Bit[0] & Bending operation 1 started\\
+      Bit[1] & Bending operation 2 started\\
+      Bit[2] & Bending operation 3 started\\
+      Bit[3] & Bending operation 4 started\\
+      Bit[4] & Bending operation 5 started\\
+      Bit[5] & Bending operation 6 started\\
+      Bit[6] & Bending finished, take out sheet\\
+      Bit[7] & Bending machine fully open\\
+      Bit[8] & Start bending sequence program\\
+      Bit[9] & Sheet metal ready in unloading\\
+      & station gripper\\
+      Bit[10] & Correcting bending machine sequence\\
+      & using terminal robot\\
+      Bit[11] & Inspecting requested\\
+      Bit[12] & Pause program\\
+      Bit[13] & Calibration requested\\
+      Bit[14] & Terminate program\\
+      Bit[15] & Storage station ready\\
+      \hline
+      \multicolumn{2}{c}{\textbf{Integer}} \\ \hline
+      \textbf{Int[0]} & \textbf{Inspection Results}\\
+      Int[0]=0 & Waiting for results\\
+      Int[0]=1 & Successful\\
+      Int[0]=2 & Failure\\
+      \hline
+  \end{tabular}
+  \caption{Sending data from PLC to KR1410 over Profinet}
+  \label{tab:plc-to-kr1410}
+\end{table}
+
+\subsection{VISOR Communication Protocols}
+\subsubsection{To KR1410}
+Kassow robot is interfaced to the robotic camera using ethernet.
+CBun Device installed on KR teach pendant allows for communication between
+Kassow robot and the VISOR. It is build and installed using CBun development as mentioned in subsection \ref{subsec:computer-vision}. The following ports are used for communications between the Kassow Robot and the VISOR. 
+
+\begin{itemize}
+  \item \textbf{Port 2005}, Transmission control protocol TCP (Implicit results, \textit{i.e.} user-configured result data)
+  \item \textbf{Port 2006}, Transmission control protocol TCP (Explicit results, \textit{e.g.} trigger or job switch)
+\end{itemize}
+
+Figure \ref{fig:calib-graph} shows the use of this communication setup to perform auto-calibration with the Kassow robots and the mounted camera.
+
+\subsubsection{To PLC}
+PLC is interfaced with the inspection camera using Profinet.
+UDP (User Datagram Protocol) is used over ports 161, 34962, 34963, 34964 to establish communication between the PLC and the VISOR.
+
+
+
+
+
+\begin{figure}[h]
     \centering
     \begin{tikzpicture}[
         device/.style={draw, rectangle, minimum width=2.5cm, minimum height=1cm, align=center},

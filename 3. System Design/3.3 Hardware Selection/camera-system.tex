@@ -9,10 +9,36 @@ section \ref{sec:CV_2} The processing is done inside the camera housing only. It
     \label{fig:vision-sensor}
 \end{figure}
 
-\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} vision sensor is a suitable choice for the identification and classification of metal sheets for the automated bending process.
-These sensors enable precise detection and processing of features on sheet metal parts, which leads to the efficiency and accuracy of automated bending process.
-The camera can be connected to a PLC or PC through ethernet or profinet. The VISOR software is installed on the PC and then the camera can be configured and jobs can be added.
-\cite{sensopart-software}. A total of 255 jobs with 255 detectors each can be configured on the camera.
+\begin{table}[h!]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.2} % Adjusts row height
+    \begin{tabular}{ll}
+        \textbf{Description} & \textbf{Value} \\ \hline
+        Operating Voltage & 24 V DC (18 V - 30 V) \\
+        Startup time & $<$ 14 s\\
+        Current consumption & $\leq$ 300 mA \\
+        Interfaces & 100 Mbit LAN, PROFINET,\\
+        & EtherNet/IP, SensoWeb\\ 
+        Weight & Approx. 200 g \\ 
+        Ambient air temperature operation & 0$^\circ$C - 50$^\circ$C (80 \% humidity,\\
+        & non-condesing) \\ 
+        Protection Class & IP 65/IP 67 EN 60529\\
+        Housing Material & Die-cast aluminium\\
+        Camera type & V20 \\ 
+        Number of pixels (H $\times$ V) &s 1440 $\times$ 1080\\
+        Sensor size & 1/2.9$^{\prime\prime}$ \\ 
+        Pixel size & 3.4 $\mu$m $\times$ 3.45 $\mu$m\\
+        Technology & CMOS Mono / Color\\
+        Light type & LED Red\\ 
+        Target laser & Red, laser class 1\\ 
+        Integrated Lens, focal length & 6.5 (Wide)\\
+        Focus (Working distance) & Motorized \\ \hline
+    \end{tabular}
+    \caption{\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} Technical Data (Robotic and Object Camera)(Source: \cite{visor_user_manual})}
+\end{table}
+
+\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} vision sensor is a suitable choice for the identification and classification of metal sheets for the automated bending process. These sensors enable precise detection and processing of features on sheet metal parts, which leads to the efficiency and accuracy of automated bending process. The camera can be connected to a PLC or PC through ethernet or profinet. The VISOR software is installed on the PC and then the camera can be configured and jobs can be added.\cite{sensopart-software}. A total of 255 jobs with 255 detectors each can be configured on the camera.
 
 Two camera are selected from SENSOPART. One for the robot which is used to detect the sheet metal parts and the target mark; and the other for inspection jobs.
 
