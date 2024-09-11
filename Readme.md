@@ -1,4 +1,5 @@
 # Thesis
+Current word count: About 12600 words
 To load thesis open -> main.pdf
 
 # Task List
