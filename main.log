@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  11 SEP 2024 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  11 SEP 2024 23:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -980,7 +980,7 @@ File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \arrowsize=\dimen315
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
+) Excluding comment 'figure'
 \@quotelevel=\count492
 \@quotereset=\count493
  (./main.aux (./Pre-introduction/symbols.aux) (./Pre-introduction/acronyms.aux) (./1. Introduction/main.aux) (./2. Literature Review/main.aux) (./3. System Design/main.aux
@@ -1182,28 +1182,28 @@ l.27 \end{abstract}
                     [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./main.tocpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 ...ne {4}Hardware Integration}{28}{chapter.4}
+l.53 ...ne {4}Hardware Integration}{22}{chapter.4}
                                                   % [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.102 ...ne {7.2}Data Collection}{53}{section.7.2}
+l.102 ...ne {7.2}Data Collection}{39}{section.7.2}
                                                   % [2])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [3] (./main.lof [4
-
-])
+ [3] (./main.lof)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [5] (./main.lot)
+ [4
+
+] (./main.lot)
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [6
+ [5
 
 ]
 \openout2 = `Pre-introduction/symbols.aux'.
@@ -1213,7 +1213,7 @@ Underfull \hbox (badness 1939) in paragraph at lines 10--11
 []|\OT1/cmr/m/n/12 Braking ac-cel-er-a-tions on the robot
  []
 
-) [7
+) [6
 
 
 ]
@@ -1224,28 +1224,22 @@ Underfull \hbox (badness 1939) in paragraph at lines 10--11
 \dtlkeys@acronym=\toks77
 \dtlrows@acronym=\count501
 \dtlcols@acronym=\count502
- [8
+ [7
 
 
 
 
-] [9]) [10]
+] [8]) [9]
 \openout2 = `"1. Introduction/main.aux"'.
 
  (./1. Introduction/main.tex
 Chapter 1.
-(./1. Introduction/1.1 Background/background.tex
-<1. Introduction/1.1 Background/exhibit2.png, id=483, 840.13875pt x 527.9725pt>
-File: 1. Introduction/1.1 Background/exhibit2.png Graphic file (type png)
-<use 1. Introduction/1.1 Background/exhibit2.png>
-Package pdftex.def Info: 1. Introduction/1.1 Background/exhibit2.png  used on input line 17.
-(pdftex.def)             Requested size: 455.24411pt x 286.09181pt.
-) [1
+(./1. Introduction/1.1 Background/background.tex Excluding 'figure' comment.) (./1. Introduction/1.2 Problem Statement/problem_statement.tex) (./1. Introduction/1.3 Objectives/objectives.tex [1
 
 
 
 
- <./1. Introduction/1.1 Background/exhibit2.png>] (./1. Introduction/1.2 Problem Statement/problem_statement.tex) (./1. Introduction/1.3 Objectives/objectives.tex) (./1. Introduction/1.4 Scope of the Study/scope.tex [2]) (./1. Introduction/1.5 Thesis Structure/structure.tex)) [3]
+]) (./1. Introduction/1.4 Scope of the Study/scope.tex) [2] (./1. Introduction/1.5 Thesis Structure/structure.tex)) [3]
 \openout2 = `"2. Literature Review/main.aux"'.
 
  (./2. Literature Review/main.tex
@@ -1255,91 +1249,39 @@ Chapter 2.
 
 
 
-]
-<figures/ASTRO-100.jpg, id=584, 1987.425pt x 1118.1775pt>
-File: figures/ASTRO-100.jpg Graphic file (type jpg)
-<use figures/ASTRO-100.jpg>
-Package pdftex.def Info: figures/ASTRO-100.jpg  used on input line 19.
-(pdftex.def)             Requested size: 455.24411pt x 256.11757pt.
- [5 <./figures/ASTRO-100.jpg>]) (./2. Literature Review/2.3 Robotic System/robot.tex [6]) (./2. Literature Review/2.4 Computer Vision in Industrial Automation/vision.tex) (./2. Literature Review/2.5 Web Interfaces for Industrial Systems/web.tex [7])) [8]
+] Excluding 'figure' comment.) (./2. Literature Review/2.3 Robotic System/robot.tex [5]) (./2. Literature Review/2.4 Computer Vision in Industrial Automation/vision.tex [6]) (./2. Literature Review/2.5 Web Interfaces for Industrial Systems/web.tex [7])) [8]
 \openout2 = `"3. System Design/main.aux"'.
 
  (./3. System Design/main.tex
 Chapter 3.
 (./3. System Design/3.1 Overview of the Robotic Workcell/overview.tex
-<figures/robotic-workcell1.png, id=705, 1208.26407pt x 633.86812pt>
-File: figures/robotic-workcell1.png Graphic file (type png)
-<use figures/robotic-workcell1.png>
-Package pdftex.def Info: figures/robotic-workcell1.png  used on input line 16.
-(pdftex.def)             Requested size: 455.24411pt x 238.82191pt.
- [9
+
+LaTeX Warning: Reference `fig:robotic-workcell' on page 9 undefined on input line 11.
+
+Excluding 'figure' comment.
+
+LaTeX Warning: Reference `fig:flow-workcell' on page 9 undefined on input line 27.
+
+(./3. System Design/3.1 Overview of the Robotic Workcell/workcell-flow.tex Excluding 'figure' comment.) (./3. System Design/3.1 Overview of the Robotic Workcell/bending-machine.tex Excluding 'figure' comment.) [9
 
 
 
 
- <./figures/robotic-workcell1.png (PNG copy)>] (./3. System Design/3.1 Overview of the Robotic Workcell/workcell-flow.tex
+] (./3. System Design/3.1 Overview of the Robotic Workcell/storage-station.tex Excluding 'figure' comment.) (./3. System Design/3.1 Overview of the Robotic Workcell/unloading-station.tex Excluding 'figure' comment.) (./3. System Design/3.1 Overview of the Robotic Workcell/handling-robot.tex Excluding 'figure' comment.) (./3. System Design/3.1 Overview of the Robotic Workcell/panda-robot.tex [10] Excluding 'figure' comment.) (./3. System Design/3.1 Overview of the Robotic Workcell/safety-fence.tex)) (./3. System Design/3.2 System Requirements/requirements.tex [11]) (./3. System Design/3.3 Hardware Selection/hardware.tex (./3. System Design/3.3 Hardware Selection/machine.tex
 
-LaTeX Warning: Hyper reference `subsec:plc' on page 10 undefined on input line 17.
-
-
-Overfull \hbox (59.35281pt too wide) in paragraph at lines 69--70
- [][] 
- []
-
-) (./3. System Design/3.1 Overview of the Robotic Workcell/bending-machine.tex
-<figures/bending-machine-blender.png, id=729, 724.7075pt x 481.8pt>
-File: figures/bending-machine-blender.png Graphic file (type png)
-<use figures/bending-machine-blender.png>
-Package pdftex.def Info: figures/bending-machine-blender.png  used on input line 9.
-(pdftex.def)             Requested size: 341.43307pt x 226.99005pt.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `fig:bending_machine' on page 12 undefined on input line 46.
 
-) (./3. System Design/3.1 Overview of the Robotic Workcell/storage-station.tex [10]
-<figures/storage-station-blender.png, id=735, 469.755pt x 579.16376pt>
-File: figures/storage-station-blender.png Graphic file (type png)
-<use figures/storage-station-blender.png>
-Package pdftex.def Info: figures/storage-station-blender.png  used on input line 6.
-(pdftex.def)             Requested size: 136.57462pt x 168.37738pt.
-) (./3. System Design/3.1 Overview of the Robotic Workcell/unloading-station.tex [11 <./figures/bending-machine-blender.png> <./figures/storage-station-blender.png>]
-<figures/unloading-station-front-blender.png, id=742, 465.74pt x 486.81876pt>
-File: figures/unloading-station-front-blender.png Graphic file (type png)
-<use figures/unloading-station-front-blender.png>
-Package pdftex.def Info: figures/unloading-station-front-blender.png  used on input line 10.
-(pdftex.def)             Requested size: 229.9005pt x 240.30377pt.
-<figures/unloading-station-back-blender.png, id=743, 416.55624pt x 486.81876pt>
-File: figures/unloading-station-back-blender.png Graphic file (type png)
-<use figures/unloading-station-back-blender.png>
-Package pdftex.def Info: figures/unloading-station-back-blender.png  used on input line 16.
-(pdftex.def)             Requested size: 204.85846pt x 239.41238pt.
-) (./3. System Design/3.1 Overview of the Robotic Workcell/handling-robot.tex
-<figures/handling-robot-simulation.png, id=744, 470.75874pt x 598.235pt>
-File: figures/handling-robot-simulation.png Graphic file (type png)
-<use figures/handling-robot-simulation.png>
-Package pdftex.def Info: figures/handling-robot-simulation.png  used on input line 3.
-(pdftex.def)             Requested size: 136.57462pt x 173.55673pt.
+[12]) (./3. System Design/3.3 Hardware Selection/kr1410.tex Excluding 'figure' comment.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [12 <./figures/unloading-station-front-blender.png> <./figures/unloading-station-back-blender.png>] (./3. System Design/3.1 Overview of the Robotic Workcell/panda-robot.tex
-<figures/panda-robot-simulation.png, id=753, 650.43pt x 868.24374pt>
-File: figures/panda-robot-simulation.png Graphic file (type png)
-<use figures/panda-robot-simulation.png>
-Package pdftex.def Info: figures/panda-robot-simulation.png  used on input line 9.
-(pdftex.def)             Requested size: 136.57462pt x 182.31006pt.
-) (./3. System Design/3.1 Overview of the Robotic Workcell/safety-fence.tex [13 <./figures/handling-robot-simulation.png> <./figures/panda-robot-simulation.png>])) (./3. System Design/3.2 System Requirements/requirements.tex [14]) (./3. System Design/3.3 Hardware Selection/hardware.tex (./3. System Design/3.3 Hardware Selection/machine.tex [15]) (./3. System Design/3.3 Hardware Selection/kr1410.tex
-<figures/kassow-robot-parts.png, id=788, 746.79pt x 544.0325pt>
-File: figures/kassow-robot-parts.png Graphic file (type png)
-<use figures/kassow-robot-parts.png>
-Package pdftex.def Info: figures/kassow-robot-parts.png  used on input line 7.
-(pdftex.def)             Requested size: 227.62206pt x 165.8176pt.
+LaTeX Warning: Reference `fig:kassow-robot-parts' on page 13 undefined on input line 12.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16 <./figures/kassow-robot-parts.png>])
+[13])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\mathsurround' on input line 10.
@@ -1352,235 +1294,122 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `superscript' on input line 10.
 
-(./3. System Design/3.3 Hardware Selection/camera-system.tex
-<figures/vision-sensor.png, id=817, 2190.1825pt x 1930.21124pt>
-File: figures/vision-sensor.png Graphic file (type png)
-<use figures/vision-sensor.png>
-Package pdftex.def Info: figures/vision-sensor.png  used on input line 7.
-(pdftex.def)             Requested size: 227.62206pt x 200.60175pt.
- [17] [18 <./figures/vision-sensor.png>]
-<figures/visor-v20-fov.png, id=843, 656.4525pt x 402.50375pt>
-File: figures/visor-v20-fov.png Graphic file (type png)
-<use figures/visor-v20-fov.png>
-Package pdftex.def Info: figures/visor-v20-fov.png  used on input line 48.
-(pdftex.def)             Requested size: 341.43307pt x 209.35228pt.
-) (./3. System Design/3.3 Hardware Selection/plc.tex [19 <./figures/visor-v20-fov.png>]) (./3. System Design/3.3 Hardware Selection/gripper.tex
-<figures/gripper.jpeg, id=868, 1040.88875pt x 929.4725pt>
-File: figures/gripper.jpeg Graphic file (type jpg)
-<use figures/gripper.jpeg>
-Package pdftex.def Info: figures/gripper.jpeg  used on input line 36.
-(pdftex.def)             Requested size: 227.62206pt x 203.2507pt.
+(./3. System Design/3.3 Hardware Selection/camera-system.tex Excluding 'figure' comment. [14] Excluding 'figure' comment.) [15] (./3. System Design/3.3 Hardware Selection/plc.tex
+
+LaTeX Warning: Reference `fig:unloading-station-front' on page 16 undefined on input line 8.
+
+) (./3. System Design/3.3 Hardware Selection/gripper.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Excluding 'figure' comment.) [16]) (./3. System Design/3.4 Software Architecture/software.tex (./3. System Design/3.4 Software Architecture/simulation.tex
+
+LaTeX Warning: Reference `fig:gazebo-rviz' on page 17 undefined on input line 10.
+
+Excluding 'figure' comment.
+
+LaTeX Warning: Reference `fig:rosgraph' on page 17 undefined on input line 20.
+
+[17] Excluding 'figure' comment.
+
+LaTeX Warning: Reference `fig:gazebo-rviz' on page 18 undefined on input line 53.
+
+) (./3. System Design/3.4 Software Architecture/computervision.tex Excluding 'figure' comment.
+
+LaTeX Warning: Reference `fig:sensopart-development' on page 18 undefined on input line 21.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `fig:cbun-variables' on page 18 undefined on input line 22.
 
-[20])) (./3. System Design/3.4 Software Architecture/software.tex (./3. System Design/3.4 Software Architecture/simulation.tex [21 <./figures/gripper.jpeg>]
-<figures/rosgraph.png, id=889, 1927.2pt x 1091.07625pt>
-File: figures/rosgraph.png Graphic file (type png)
-<use figures/rosgraph.png>
-Package pdftex.def Info: figures/rosgraph.png  used on input line 14.
-(pdftex.def)             Requested size: 455.24411pt x 257.73483pt.
- [22 <./figures/rosgraph.png>]
-<figures/gazebo-rviz.png, id=915, 1925.1925pt x 1009.7725pt>
-File: figures/gazebo-rviz.png Graphic file (type png)
-<use figures/gazebo-rviz.png>
-Package pdftex.def Info: figures/gazebo-rviz.png  used on input line 37.
-(pdftex.def)             Requested size: 455.24411pt x 238.77573pt.
-) (./3. System Design/3.4 Software Architecture/computervision.tex
-<figures/sensopart-development.png, id=920, 459.7175pt x 480.79625pt>
-File: figures/sensopart-development.png Graphic file (type png)
-<use figures/sensopart-development.png>
-Package pdftex.def Info: figures/sensopart-development.png  used on input line 10.
-(pdftex.def)             Requested size: 227.62206pt x 238.06456pt.
- [23 <./figures/gazebo-rviz.png>]
-<figures/visor-cbun-connection.png, id=934, 1606.0pt x 1163.34625pt>
-File: figures/visor-cbun-connection.png Graphic file (type png)
-<use figures/visor-cbun-connection.png>
-Package pdftex.def Info: figures/visor-cbun-connection.png  used on input line 27.
-(pdftex.def)             Requested size: 250.38564pt x 181.36412pt.
- [24 <./figures/sensopart-development.png> <./figures/visor-cbun-connection.png (PNG copy)>]) (./3. System Design/3.4 Software Architecture/programtree.tex
-<figures/programtree.png, id=944, 1606.0pt x 1027.84pt>
-File: figures/programtree.png Graphic file (type png)
-<use figures/programtree.png>
-Package pdftex.def Info: figures/programtree.png  used on input line 14.
-(pdftex.def)             Requested size: 455.24411pt x 291.35341pt.
+[18] Excluding 'figure' comment.) (./3. System Design/3.4 Software Architecture/programtree.tex Excluding 'figure' comment.
 
+LaTeX Warning: Reference `fig:programtree' on page 19 undefined on input line 29.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./3. System Design/3.4 Software Architecture/webui.tex [25] [26 <./figures/programtree.png (PNG copy)>]
+[19]) (./3. System Design/3.4 Software Architecture/webui.tex
 Overfull \hbox (2.75217pt too wide) in paragraph at lines 34--37
 \OT1/cmr/m/n/12 ing the web ap-pli-ca-tion which are part of ROS Web Tools. [[]82[]] Ros-bridge and visualization-
  []
 
-))) [27]
+[20]))) [21]
 \openout2 = `"4. Hardware Integration/main.aux"'.
 
  (./4. Hardware Integration/main.tex
 Chapter 4.
-(./4. Hardware Integration/4.1 Installation and Configuration/configuration.tex (./4. Hardware Integration/4.1 Installation and Configuration/marker.tex
-<figures/detection-marker.png, id=988, 2941.99126pt x 1674.255pt>
-File: figures/detection-marker.png Graphic file (type png)
-<use figures/detection-marker.png>
-Package pdftex.def Info: figures/detection-marker.png  used on input line 7.
-(pdftex.def)             Requested size: 227.62206pt x 129.5235pt.
-) (./4. Hardware Integration/4.1 Installation and Configuration/bending-machine.tex [28
+(./4. Hardware Integration/4.1 Installation and Configuration/configuration.tex (./4. Hardware Integration/4.1 Installation and Configuration/marker.tex Excluding 'figure' comment.) (./4. Hardware Integration/4.1 Installation and Configuration/bending-machine.tex
+
+LaTeX Warning: Reference `fig:bending_machine' on page 22 undefined on input line 5.
+
+Excluding 'figure' comment. [22
 
 
 
 
- <./figures/detection-marker.png>]
-<figures/bending-machine.png, id=997, 602.25pt x 312.41719pt>
-File: figures/bending-machine.png Graphic file (type png)
-<use figures/bending-machine.png>
-Package pdftex.def Info: figures/bending-machine.png  used on input line 16.
-(pdftex.def)             Requested size: 455.24411pt x 236.1667pt.
-<figures/bending-station.png, id=1000, 1541.76pt x 1117.92656pt>
-File: figures/bending-station.png Graphic file (type png)
-<use figures/bending-station.png>
-Package pdftex.def Info: figures/bending-station.png  used on input line 40.
-(pdftex.def)             Requested size: 318.66948pt x 231.05283pt.
+] Excluding 'figure' comment.) (./4. Hardware Integration/4.1 Installation and Configuration/robot-unit.tex
 
+LaTeX Warning: Reference `fig:robot-installation' on page 23 undefined on input line 1.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Excluding 'figure' comment. [23]) (./4. Hardware Integration/4.1 Installation and Configuration/storage-station.tex Excluding 'figure' comment. [24])) (./4. Hardware Integration/4.2 Communication Protocols/protocols.tex
 
-[29 <./figures/bending-machine.png (PNG copy)>]) (./4. Hardware Integration/4.1 Installation and Configuration/robot-unit.tex
-<figures/handling-robot.png, id=1009, 2023.56pt x 1278.7775pt>
-File: figures/handling-robot.png Graphic file (type png)
-<use figures/handling-robot.png>
-Package pdftex.def Info: figures/handling-robot.png  used on input line 8.
-(pdftex.def)             Requested size: 455.24411pt x 287.6735pt.
+LaTeX Warning: Reference `fig:communication-protocols' on page 25 undefined on input line 2.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[30 <./figures/bending-station.png (PNG copy)>] [31 <./figures/handling-robot.png>]) (./4. Hardware Integration/4.1 Installation and Configuration/storage-station.tex
-<figures/storage-station-front.png, id=1028, 1204.5pt x 1606.0pt>
-File: figures/storage-station-front.png Graphic file (type png)
-<use figures/storage-station-front.png>
-Package pdftex.def Info: figures/storage-station-front.png  used on input line 14.
-(pdftex.def)             Requested size: 159.33821pt x 212.43866pt.
-<figures/storage-station-back.png, id=1029, 3035.34pt x 4047.12pt>
-File: figures/storage-station-back.png Graphic file (type png)
-<use figures/storage-station-back.png>
-Package pdftex.def Info: figures/storage-station-back.png  used on input line 20.
-(pdftex.def)             Requested size: 163.88815pt x 218.48564pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [32] (./4. Hardware Integration/4.1 Installation and Configuration/unloading-station.tex
-<figures/unloading-station.png, id=1037, 2055.68pt x 996.72375pt>
-File: figures/unloading-station.png Graphic file (type png)
-<use figures/unloading-station.png>
-Package pdftex.def Info: figures/unloading-station.png  used on input line 10.
-(pdftex.def)             Requested size: 432.48051pt x 209.68317pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[33 <./figures/storage-station-front.png> <./figures/storage-station-back.png>]
-<figures/inspection-camera.jpg, id=1044, 4047.12pt x 3035.34pt>
-File: figures/inspection-camera.jpg Graphic file (type jpg)
-<use figures/inspection-camera.jpg>
-Package pdftex.def Info: figures/inspection-camera.jpg  used on input line 28.
-(pdftex.def)             Requested size: 227.62206pt x 170.6726pt.
-<figures/unloading-station-gripper.jpg, id=1045, 4047.12pt x 3035.34pt>
-File: figures/unloading-station-gripper.jpg Graphic file (type jpg)
-<use figures/unloading-station-gripper.jpg>
-Package pdftex.def Info: figures/unloading-station-gripper.jpg  used on input line 34.
-(pdftex.def)             Requested size: 227.62206pt x 170.6726pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[34 <./figures/unloading-station.png>]
-<figures/simatic-hmi.jpeg, id=1058, 1606.0pt x 1116.17pt>
-File: figures/simatic-hmi.jpeg Graphic file (type jpg)
-<use figures/simatic-hmi.jpeg>
-Package pdftex.def Info: figures/simatic-hmi.jpeg  used on input line 63.
-(pdftex.def)             Requested size: 273.14923pt x 189.83154pt.
-)) (./4. Hardware Integration/4.2 Communication Protocols/protocols.tex [35 <./figures/inspection-camera.jpg> <./figures/unloading-station-gripper.jpg> <./figures/simatic-hmi.jpeg>]
+Excluding 'figure' comment.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36] [37]
+[25] [26] [27]
 Overfull \hbox (2.43365pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/bx/n/12 Port 2005\OT1/cmr/m/n/12 , Trans-mis-sion con-trol pro-to-col TCP (Im-plicit re-sults, \OT1/cmr/m/it/12 i.e. \OT1/cmr/m/n/12 user-configured
  []
 
-[38]) (./4. Hardware Integration/4.3 Safety Considerations/safety.tex
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `fig:calib-graph' on page 28 undefined on input line 160.
 
-[39] [40]
-<figures/safety-zones.png, id=1138, 711.65875pt x 447.6725pt>
-File: figures/safety-zones.png Graphic file (type png)
-<use figures/safety-zones.png>
-Package pdftex.def Info: figures/safety-zones.png  used on input line 131.
-(pdftex.def)             Requested size: 318.66948pt x 200.46027pt.
- [41 <./figures/safety-zones.png>]
-<figures/safety-buttons.png, id=1147, 858.20625pt x 694.595pt>
-File: figures/safety-buttons.png Graphic file (type png)
-<use figures/safety-buttons.png>
-Package pdftex.def Info: figures/safety-buttons.png  used on input line 152.
-(pdftex.def)             Requested size: 318.66948pt x 257.91821pt.
- [42 <./figures/safety-buttons.png>])) [43]
+) (./4. Hardware Integration/4.3 Safety Considerations/safety.tex Excluding 'figure' comment.
+
+LaTeX Warning: Reference `fig:kr1410-payload-diagram' on page 28 undefined on input line 56.
+
+[28] [29] Excluding 'figure' comment. Excluding 'figure' comment.
+
+LaTeX Warning: Reference `fig:safety-buttons' on page 30 undefined on input line 172.
+
+)) [30] [31]
 \openout2 = `"5. Software Development/main.aux"'.
 
  (./5. Software Development/main.tex
 Chapter 5.
 (./5. Software Development/5.1 Control Software/control.tex
 
-LaTeX Warning: Reference `sub:overview' on page 44 undefined on input line 6.
+LaTeX Warning: Reference `sub:overview' on page 32 undefined on input line 6.
 
-[44
-
-
+[32
 
 
-] [45] [46]) (./5. Software Development/5.2 Camera: Feature Detection/feature.tex) (./5. Software Development/5.3 Camera: Inspection and Quality Control/inspection.tex) (./5. Software Development/5.4 Web Interface Design/interface.tex)) [47]
+
+
+] [33] [34]) (./5. Software Development/5.2 Camera: Feature Detection/feature.tex) (./5. Software Development/5.3 Camera: Inspection and Quality Control/inspection.tex) (./5. Software Development/5.4 Web Interface Design/interface.tex)) [35]
 \openout2 = `"6. System Integration and Testing/main.aux"'.
 
  (./6. System Integration and Testing/main.tex
 Chapter 6.
-(./6. System Integration and Testing/6.2 Calibration Procedures/calibration.tex
-<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=1179, 1866.975pt x 1058.95625pt>
-File: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG Graphic file (type png)
-<use 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG>
-Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG  used on input line 9.
-(pdftex.def)             Requested size: 455.24411pt x 258.21043pt.
- [48
+(./6. System Integration and Testing/6.2 Calibration Procedures/calibration.tex Excluding 'figure' comment. Excluding 'figure' comment. [36
 
 
 
 
- <./6. System Integration and Testing/6.2 Calibration Procedures/tcp.png>]
-<6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG, id=1187, 1156.32pt x 622.12425pt>
-File: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG Graphic file (type png)
-<use 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>
-Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG  used on input line 38.
-(pdftex.def)             Requested size: 409.71692pt x 220.43321pt.
- [49 <./6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG>]
-<6. System Integration and Testing/6.2 Calibration Procedures/graph.png, id=1193, 922.44624pt x 806.01125pt>
-File: 6. System Integration and Testing/6.2 Calibration Procedures/graph.png Graphic file (type png)
-<use 6. System Integration and Testing/6.2 Calibration Procedures/graph.png>
-Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/graph.png  used on input line 63.
-(pdftex.def)             Requested size: 455.24411pt x 397.77768pt.
-
+] Excluding 'figure' comment.
 Overfull \hbox (2.6152pt too wide) in paragraph at lines 71--72
 []\OT1/cmr/bx/n/12 Setup Cal-i-bra-tion Tar-gets\OT1/cmr/m/n/12 : Place cal-i-bra-tion tar-gets within the robot's workspace
  []
 
-[50 <./6. System Integration and Testing/6.2 Calibration Procedures/graph.png>]) (./6. System Integration and Testing/6.1 Integration Tests/tests.tex (./6. System Integration and Testing/6.1 Integration Tests/sheet-pickup.tex) (./6. System Integration and Testing/6.1 Integration Tests/bending-operation.tex) (./6. System Integration and Testing/6.1 Integration Tests/shelf-control.tex)) (./6. System Integration and Testing/6.3 Performance Evaluation/performance.tex (./6. System Integration and Testing/6.3 Performance Evaluation/calibration-results.tex [51]) (./6. System Integration and Testing/6.3 Performance Evaluation/inspection.tex) (./6. System Integration and Testing/6.3 Performance Evaluation/bending-review.tex))) [52]
+) (./6. System Integration and Testing/6.1 Integration Tests/tests.tex (./6. System Integration and Testing/6.1 Integration Tests/sheet-pickup.tex) (./6. System Integration and Testing/6.1 Integration Tests/bending-operation.tex) (./6. System Integration and Testing/6.1 Integration Tests/shelf-control.tex)) (./6. System Integration and Testing/6.3 Performance Evaluation/performance.tex (./6. System Integration and Testing/6.3 Performance Evaluation/calibration-results.tex [37]) (./6. System Integration and Testing/6.3 Performance Evaluation/inspection.tex) (./6. System Integration and Testing/6.3 Performance Evaluation/bending-review.tex))) [38]
 \openout2 = `"7. Experimental Results/main.aux"'.
 
  (./7. Experimental Results/main.tex
 Chapter 7.
-(./7. Experimental Results/7.1 Setup and Methodology/methodology.tex) (./7. Experimental Results/7.2 Data Collection/data.tex) (./7. Experimental Results/7.3 Results and Analysis/results.tex)) [53
+(./7. Experimental Results/7.1 Setup and Methodology/methodology.tex) (./7. Experimental Results/7.2 Data Collection/data.tex) (./7. Experimental Results/7.3 Results and Analysis/results.tex)) [39
 
 
 
@@ -1590,7 +1419,7 @@ Chapter 7.
 
  (./8. Discussion/main.tex
 Chapter 8.
-) [54
+) [40
 
 
 
@@ -1600,7 +1429,7 @@ Chapter 8.
 
  (./9. Conclusion and Future Works/main.tex
 Chapter 9.
-(./9. Conclusion and Future Works/9.1 Summary/summary.tex) (./9. Conclusion and Future Works/9.2 Recommendations for Future Research/recommendations.tex)) [55
+(./9. Conclusion and Future Works/9.1 Summary/summary.tex) (./9. Conclusion and Future Works/9.2 Recommendations for Future Research/recommendations.tex)) [41
 
 
 
@@ -1664,18 +1493,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49808 strings out of 478287
- 1138283 string characters out of 5849289
- 2065678 words of memory out of 5000000
- 66564 multiletter control sequences out of 15000+600000
- 482059 words of font info for 71 fonts, out of 8000000 for 9000
+ 48769 strings out of 478287
+ 1110193 string characters out of 5849289
+ 1918182 words of memory out of 5000000
+ 65616 multiletter control sequences out of 15000+600000
+ 481891 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,19n,131p,1911b,2240s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (77 pages, 38171485 bytes).
+ 91i,17n,131p,1911b,1739s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (62 pages, 676094 bytes).
 PDF statistics:
- 1869 PDF objects out of 2073 (max. 8388607)
- 1625 compressed objects within 17 object streams
- 396 named destinations out of 1000 (max. 500000)
- 848 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1594 PDF objects out of 1728 (max. 8388607)
+ 1428 compressed objects within 15 object streams
+ 340 named destinations out of 1000 (max. 500000)
+ 683 words of extra memory for PDF output out of 10000 (max. 10000000)
 
