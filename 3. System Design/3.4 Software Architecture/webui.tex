@@ -1,14 +1,59 @@
-\subsubsection{ReactJS}
-\label{subsubsec:reactjs}
 
-\subsubsection{ROS3Djs}
-\label{subsubsec:ros3djs}
-
-\subsubsection{ROSBridge}
-\label{subsubsec:reactjs}
-
-\subsubsection{ROSLib}
-\label{subsubsec:roslib}
-
-\subsubsection{Frontend technologies}
+\subsubsection{Front-end technologies}
 \label{subsubsec:frontend}
+Front-end development is the development of visual and interactive elements of a website that users interact with directly. It's a combination
+of HTML, CSS and JavaScript, where HTML provides the structure, CSS the styling and layout, and JavaScript the dynamic behaviour and interactivity.
+\cite{frontend}
+
+\paragraph{Reactjs}
+\label{par:reactjs}
+is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile
+apps using React Native. It user interfaces out of individual pieces called components written in JavaScript.
+\cite{reactjs}
+
+\subsubsection{Backend technologies}
+\label{subsubsec:backend}
+
+Backend development refers to the server-side aspect of web development, focusing on creating and managing the server logic, databases,
+and APIs. It involves handling user authentication, authorization, and processing user requests, typically using backend development
+languages such as Python, Java, JavaScript (Node.js), and .NET. \cite{backend}
+
+\paragraph{Node.js}
+\label{par:nodejs}
+is an open-source, cross-platform JavaScript runtime environment that lets developers create servers, web application etc.
+The web application for robotic workcell is built and hosted on a Node.js server. \cite{nodejs}
+
+\paragraph{npm}
+\label{par:npm}
+is a package manager for Node.js. It stands for Node Package Manager. Through this, ROS web tools for server-side runtime are installed like
+roslib, ros3djs. \cite{npm}
+
+\subsubsection{ROS Web Tools}
+\label{subsubsec:rosweb}
+
+Robot Web Tools are open-source libraries and tools for building web-based robot apps with ROS. Rosbridge, roslibjs, ros3Djs, and visualization-rwt packages
+are used for building the web application which are part of ROS Web Tools. \cite{webtools} Rosbridge and visualization-rwt are installed on the ROS workspace
+for robotic workcell. Roslibjs and ros3Djs are libraries for building the web application and are installed on the server built on Node.js.
+
+\paragraph{Rosbridge}
+\label{par:rosbridge}
+The WebSocket makes it possible to open a two-way interactive communication session between the user's browser and a server.
+With this API, messages can be sent to a server and received through event-driven responses without having to poll the server for a reply. \cite{websocket}
+Rosbridge provides a websocket interface to ROS systems. It will provide interface to front-end technologies like ReactJs which builds the UI
+and publishes a web application. Rosbridge suite is a meta-package containing rosbridge, various front end packages for Rosbridge 
+like a WebSocket package, and helper packages. \cite{rosbridge}
+
+\paragraph{roslibjs}
+\label{par:roslibjs}
+provides base dependencies and support libraries for ROS. roslib contains many of the common data structures and tools that are shared across
+ROS client library implementations. \cite{roslib} It will provides support to interact with basic ROS functionalities like topics, services, parameter servers and others.
+
+\paragraph{ros3djs}
+\label{par:ros3djs}
+is the standard JavaScript 3D visualization manager for ROS. It is build ontop of roslibjs and utilizes the power of three.js \cite{threejs}.
+Many standard ROS features like interactive markers, URDFs, and maps are included as part of this library. \cite{ros3djs}
+
+\paragraph{visualization-rwt}
+\label{par:visualization-rwt}
+package is a suite of nodes for web based robot visualization. It provides nodes for controlling the robot using MoveIt through web application.
+\cite{visualization-rwt}
