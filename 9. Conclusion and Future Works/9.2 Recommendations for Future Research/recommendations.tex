@@ -1,17 +1,20 @@
 \subsection{Control Software Update}
-
+\label{subsec:control-software-update}
 For a single sheet metal part, teach pendant from the kassow robot is enough for the control program.
 However, to allow flexibility in production with different sheet metal part, a separate hardware is required
 to run \hyperref[acro:ROS]{ROS} controller manager.
 At the moment, \hyperref[acro:ROS]{ROS} is only used for visualizing the robot motion in the web app.
 In order to be able to quickly create a new robot program for new sheet metal part variants, simulation
 software is to be developed with the help of \hyperref[acro:ROS]{ROS}. With the help of this software, path trajectories between
-the individual subsystems (sheet pickup station, bending machine, shelf storage) can be generated in
+the individual subsystems (unloading station, bending machine, storage station) can be generated in
 advance without having to remove the real robot unit from any ongoing production, which can
 then be easily integrated into the new robot program on the real robot.
 
+\subsection{Web UI update}
+\label{subsec:web-ui-update}
 \begin{itemize}
-    \item Adding camera data to the digital twin.
+    \item Adding camera data to the web ui.
     \item Storage for web applications.
     \item Creating App for phones.
+    \item Provide access to login through nodejs backend.
 \end{itemize}

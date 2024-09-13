@@ -1,47 +1,72 @@
-By analyzing the current manual process on the bending machine, a flowchart for the mobile robot unit
-is developed for the automated bending process. This
-diagram, which is still partly abstract, enables the individual activities of the unit to be identified and
-their interactions to be described right at the start of the research project. The requirements for the
-overall system are also defined, which are explained in more detail
-in subchapter \ref{sub:overview}. The description of the process and the definition of the overall requirements
-represent an interacting process that inevitably had to be iterated through. This means that the results
-of both work packages were revised several times. The final result of these iterations regarding the
-activities to be performed by the mobile robot unit can be seen in Figure 1 and Figure 2. Five essential
-components of the unit emerge from the process. These are as follows: Feeding, alignment, bending,
-checking and depositing.
 
-In the first step, the feed, the sheet metal is to be separated from a stack of sheets. The advantage of
-arranging the raw sheets in stacks is that as many parts as possible can be stored in as little space as
-possible. Conversely, this means that more space is available for the bent sheet metal parts, which is
-of great importance due to the limited space available on site at the company. The sheet thickness is
-also checked in advance during feeding and parts outside the tolerance are sorted out. Furthermore,
-this information should be taken into account in the further course of the process when adjusting the
-parameters of the bending machine.
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[node distance=1.4cm,
+        stage/.style={draw, rectangle, minimum width=2.5cm, minimum height=1cm, align=center},
+        ]
+        % Nodes
+        \node (unloading) [stage] {\hyperref[par:unloading]{Unloading}};
+        \node (alignment) [stage, below of=unloading] {\hyperref[par:alignment]{Alignment}};
+        \node (bending) [stage, below of=alignment] {\hyperref[par:bending]{Bending}};
+        \node (checking) [stage, below of=bending] {\hyperref[par:checking]{Checking}};
+        \node (loading) [stage, below of=checking] {\hyperref[par:loading]{Loading}};
+        % Arrows
+        \draw [arrow] (unloading) -- (alignment);
+        \draw [arrow] (alignment) -- (bending);
+        \draw [arrow] (bending) -- (checking);
+        \draw [arrow] (checking) -- (loading);
+        \draw [arrow] (checking) .. controls ++(-2.25,0) and ++(-2.25,0) .. (alignment);
+    \end{tikzpicture}    
+    \caption{Five stages of bending process}
+    \label{fig:stages-bp}
+\end{figure}
 
-For space reasons, a device should be integrated into the feeder that allows the robot to grip the sheet
-metal at a new position if necessary, as otherwise collisions between the robot and the bending
-machine may occur during the subsequent bending process if the robot is not realigned.
-During the bending process, there should be two different design variants depending on the sheet
-variant. With small sheets, the robot lets go of the sheet, which has an advantageous effect on the
-robot programming. In order to prevent twisting in the case of larger parts, it is essential to hold them
-throughout the entire bending process. The challenge here lies in programming a robot movement
-whose path and path speed matches the movement of the sheet metal, which in turn depends on the
-lowering speed of the bending punch.
+After analyzing the current manual bending process on the bending machine by an operator, five main stages are established for the completion of a single bending operation of a sheet metal part. To make the bending process automated, these five stages of bending operation needs to be replaced by the robotic workcell. Figure \ref{fig:stages-bp} shows these fives stages: unloading, alignment, bending, checking and loading.
 
-A camera system is used to record both the angle and length of the sheet metal after each individual
-bending process. The angle is used to readjust the bending machines. The length measurements
-serve as a further instrument for monitoring the process. If a large number of rejects occur in a very
-short time, the entire process is to be stopped.
-The fully bent sheet metal parts are to be placed in storage boxes that are already in use in the
-company but still need to be adapted.
+\begin{enumerate}
+    \item \par{\textbf{Unloading}}
+    \label{par:unloading}
+    In the first stage, a sheet metal part is to be separated from a stack of metal sheets in unloading station. The advantage of
+    arranging the raw sheets in stacks is that many sheet metal parts can be stored in a little space. The sheet thickness is
+    also checked in advance before loading the sheets in unloading station by operator and parts outside the tolerance are sorted out. A single sheet is to be picked up by a gantry robot using a magnetic gripper and placed in the unloading station gripper. Then the unloading station gripper turns 180\textdegree around using a pneumatic swivel unit. The sheet metal part is now ready to be picked up by the robot.
+    
+    
+    \item \par{\textbf{Alignment}}
+    \label{par:alignment}
+    In the next stage, the sheet metal part is to be placed in the bending machine. The robot scans the sheet metal part grasped by the unloading station gripper in the unloading station. Once the features of the part is detected using the robotic camera, trajectories are planned to pick up the sheet from the unloading station gripper. After picking up the sheet, path is planned to the correct bending station for the bending operation. The bending station is chosen based on the sheet metal part variant and the ease of first bending operation. The bending machine sets the backgauges according to the bending machine program for a specific sheet metal variant. The sheet metal part is then aligned in the 5-axis backgauges of the bending machine. The sheet is now ready to be bent. 
+    
+    \item \par{\textbf{Bending}}
+    \label{par:bending}
+    The bending machine is operated by a saved program for a specific sheet metal type variant. The bending machine is lowered until the bending of the part starts. During the bending process, there should be two different design variants depending on the sheet
+    variant. With small sheets, the robot lets go of the sheet and the bending punch keeps holding the sheet in place. After the bending is complete, the robot regrip the bent sheet. This is easier to achieve with the robot programming. In order to prevent twisting in the case of larger parts, it is essential to hold the parts throughout the entire bending process. The challenge here lies in programming a robot movement
+    whose path and path speed matches the movement of the sheet metal, which in turn depends on the
+    lowering speed of the bending punch.
+    
+    \item \par{\textbf{Checking}}
+    \label{par:checking}
+    A camera system is used to record the bending angle of the sheet metal part after each individual
+    bending process. The angle is used to determine the quality of the bending operation. After the inspection is complete, the process continues  for a good part and the sheet is taken to the bending machine for the next bending process. If the bending angle does not lie within the tolerances, the part is thrown away and the bending machine is resetted for a new sheet metal part using the terminal operating robot. The loop restart again for a new sheet. If a large number of rejects occur in a very short time, the entire automated bending process is to be stopped.
+    If all the bendings on a sheet metal type variants is finished, it is taken to the storage station for loading.
+    
+    \item \par{\textbf{Loading}}
+    \label{par:loading}
+    The fully bent sheet metal parts are to be placed in the storage station which is a shelf of empty drawers. A regrasping of the finished bent part is also done using the unloading station gripper, if it allows for an easier placement of the part in the drawer. After the loading of a part is complete, the bending process is finished for a single sheet metal variant. The cycle continues with a new sheet metal part.
+    
+\end{enumerate}
 
+\vspace{1\baselineskip}
+A flowchart for the robot unit is developed based on the above mentioned stages for the automated bending process of the sheet metal part. This
+flowchart, which is still partly abstract, enables the individual activities of the KR1410 to be identified and
+the interactions between various subsystems to be described. The description of the process and the definition of the overall requirements in section \ref{sec:requirements} represent an interacting process that inevitably had to be iterated through. This means that the results
+of the bending process were revised several times. The final result of these iterations regarding the
+activities to be performed by the KR1410 robot can be seen in flowchart \ref{tab:flowchart}. 
 
 \begin{longtable}{c}
     \small
     \begin{tikzpicture}[node distance=3.5cm]
         \node (start) [startstop] {Start};
         \node (proc0) [process, below of=start, yshift=1cm] {Initialisation of camera, \hyperref[acro:PLC]{PLC} and configuration of storage system parameters};
-        \node (loop)  [processorange, below of=proc0, yshift=1.5cm] {Loop};
+        \node (loop)  [process, below of=proc0, yshift=1.5cm] {Loop};
         \node (nodeint) [nodepage, left of=loop] {3};
         \node (dec0) [decision, below of=loop] {Is calibration requested from operator?};
         \node (intersection0) [coordinate, below of=dec0] {};
@@ -141,7 +166,10 @@ company but still need to be adapted.
     \caption{Control program flowchart of robot unit} \label{tab:flowchart}
 \end{longtable}
 
+The flowchart \ref{tab:flowchart} is used to create the control software for the KR1410 robot in teach pendant. A number of variables are also required to coordinate the bending process with the PLC as seen in the flowchart. The required data is shared between PLC and KR1410 as shown in table \ref{tab:kr1410-to-plc} and \ref{tab:plc-to-kr1410}.
 
-In teach pendant program tree, pose describes a frame transformation in 3D space \textit{i.e.} the three coordinates (x,y,z) and euler angles (R,P,Y) \textit{w.r.t.}
-reference frame.
+The unloading station gripper is also used for the regrasping of the bent part. This allows the robot to grip the sheet metal at a new position, if necessary, for the subsequent bendings as otherwise collisions between the robot and the bending machine may occur. To achieve this, robot brings back the bent metal part to the unloading station gripper at a different configuration, scans the bent sheet, detect the sheet pattern and at last picks up the sheet from a new position.
+
+
+
 

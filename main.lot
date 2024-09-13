@@ -2,15 +2,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Bending Machine Technical Specifications (Source: \blx@tocontentsinit {0}\cite {bmspecifications})\relax }}{15}{table.caption.16}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces KR1410 Technical Specifications (Source: \blx@tocontentsinit {0}\cite [page 31]{kassow-specification})\relax }}{17}{table.caption.18}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } Technical Data (Robotic and Object Camera)(Source: \blx@tocontentsinit {0}\cite {visor_user_manual})\relax }}{18}{table.caption.20}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces KR1410 Technical Specifications\relax }}{17}{table.caption.18}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } Technical Data (Robotic and Object Camera)\relax }}{18}{table.caption.20}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces Schunk gripper technical details (Source: \blx@tocontentsinit {0}\cite {schunk-gripper})\relax }}{20}{table.caption.22}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Sending data from KR1410 to PLC over Profinet\relax }}{37}{table.caption.38}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Sending data from PLC to KR1410 over Profinet\relax }}{38}{table.caption.39}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Braking accelerations \hyperref [sym:a-brake]{$a_{\text {brake}}$} \textit {$[\text {deg/s}^2]$} for KR1410\relax }}{40}{table.caption.41}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Braking accelerations \hyperref [sym:a-brake]{$a_{\text {brake}}$} \textit {$[\text {deg/s}^2]$} for KR1410\relax }}{42}{table.caption.42}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Control program flowchart of robot unit\relax }}{47}{table.5.1}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Control program flowchart of robot unit\relax }}{49}{table.5.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

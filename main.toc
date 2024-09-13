@@ -44,7 +44,7 @@
 \contentsline {paragraph}{Reactjs}{26}{subsubsection.3.4.4.1}%
 \contentsline {subsubsection}{\numberline {2.}Backend technologies}{26}{subsubsection.3.4.4.2}%
 \contentsline {paragraph}{Node.js}{26}{subsubsection.3.4.4.2}%
-\contentsline {paragraph}{npm}{27}{subsubsection.3.4.4.2}%
+\contentsline {paragraph}{npm}{26}{subsubsection.3.4.4.2}%
 \contentsline {subsubsection}{\numberline {3.}ROS Web Tools}{27}{subsubsection.3.4.4.3}%
 \contentsline {paragraph}{Rosbridge}{27}{subsubsection.3.4.4.3}%
 \contentsline {paragraph}{roslibjs}{27}{subsubsection.3.4.4.3}%
@@ -71,41 +71,43 @@
 \contentsline {subsection}{\numberline {4.2.2}VISOR Communication Protocols}{37}{subsection.4.2.2}%
 \contentsline {subsubsection}{\numberline {1.}VISOR to KR1410}{38}{subsubsection.4.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.}VISOR to PLC}{39}{subsubsection.4.2.2.2}%
-\contentsline {section}{\numberline {4.3}Safety Considerations}{39}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Payload}{39}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Stopping Distance}{39}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Safety zones}{41}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Safety functions}{42}{subsection.4.3.4}%
-\contentsline {subsubsection}{\numberline {1.}Protective STOP}{42}{subsubsection.4.3.4.1}%
-\contentsline {subsubsection}{\numberline {2.}Emergency STOP}{42}{subsubsection.4.3.4.2}%
-\contentsline {chapter}{\numberline {5}Software Development}{44}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Control Software}{44}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{47}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{47}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Web Interface Design}{47}{section.5.4}%
-\contentsline {chapter}{\numberline {6}System Integration and Testing}{48}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Calibration}{48}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Robot Calibration}{48}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Camera Calibration}{49}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Sensor Calibration}{50}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Calibration Procedures}{50}{subsection.6.1.4}%
-\contentsline {section}{\numberline {6.2}Integration Tests}{51}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Sheet Pickup}{51}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Bending Operation}{51}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Shelf Control}{51}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Performance Evaluation}{51}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Calibration Results}{51}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Inspection Assessment}{52}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Bending Operation Review}{52}{subsection.6.3.3}%
-\contentsline {chapter}{\numberline {7}Experimental Results}{53}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Setup and Methodology}{53}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Data Collection}{53}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Results and Analysis}{53}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Discussion}{54}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{55}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Summary}{55}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{55}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Control Software Update}{55}{subsection.9.2.1}%
-\contentsline {chapter}{Bibliography}{i}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {4.2.3}Communication between KR1410 Robot, ROS and Web UI}{39}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Safety Considerations}{40}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Payload}{40}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Stopping Distance}{41}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Safety zones}{42}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Safety functions}{43}{subsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {1.}Protective STOP}{44}{subsubsection.4.3.4.1}%
+\contentsline {subsubsection}{\numberline {2.}Emergency STOP}{44}{subsubsection.4.3.4.2}%
+\contentsline {chapter}{\numberline {5}Software Development}{45}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Control Software}{45}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Camera 1: Feature Detection}{50}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Camera 2: Inspection and Quality Control}{50}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Web Interface Design}{50}{section.5.4}%
+\contentsline {chapter}{\numberline {6}System Integration and Testing}{51}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Calibration}{51}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Robot Calibration}{51}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Camera Calibration}{52}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Sensor Calibration}{53}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Calibration Procedures}{53}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}Integration Tests}{54}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Sheet Pickup}{54}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Bending Operation}{54}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Shelf Control}{54}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Performance Evaluation}{54}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Calibration Results}{54}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Inspection Assessment}{55}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Bending Operation Review}{55}{subsection.6.3.3}%
+\contentsline {chapter}{\numberline {7}Experimental Results}{56}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Setup and Methodology}{56}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Data Collection}{56}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Results and Analysis}{56}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Discussion}{57}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and Future Works}{58}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Summary}{58}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Recommendations for Future Research}{58}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Control Software Update}{58}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Web UI update}{58}{subsection.9.2.2}%
+\contentsline {chapter}{Bibliography}{i}{subsection.9.2.2}%
 \contentsline {chapter}{\numberline {10}Appendix}{ix}{chapter.10}%
 \contentsline {section}{\numberline {A1}Software \& Development Environment Versions}{ix}{section.10.1}%

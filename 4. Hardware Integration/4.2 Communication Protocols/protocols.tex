@@ -1,9 +1,6 @@
 PLC is used to control the subsystems in the robotic workcell. PLC controls the bending process by controlling the bending machine,
-operates the unloading station to get new sheet metal parts to the unloading station gripper using the gantry robot, triggers the inspection camera for testing the bending process and cooperates with the KR1410 to select the correct bending task. To achieve all of this, communication needs to be setup between various subsystems. Figure \ref{fig:communication-protocols} shows the networking diagram between various devices in the workcell. ROS PC has not been commissioned in the robotic workcell, but a setup could easily be done by connecting an ethernet cable between
+operates the unloading station to get new sheet metal parts to the unloading station gripper using the gantry robot, triggers the inspection camera for testing the bending process and cooperates with the KR1410 to select the correct bending task. To achieve all of this, communication needs to be setup between various subsystems. Figure \ref{fig:communication-protocols} shows the networking diagram between various devices in the workcell. ROS PC has not been commissioned in the robotic workcell, but a setup could easily be made by connecting an ethernet cable between
 robot controller and laptop.
-
-
-
 
 
 \begin{figure}[h]
@@ -162,4 +159,27 @@ Figure \ref{fig:calib-graph} shows the use of this communication setup to perfor
 \subsubsection{VISOR to PLC}
 PLC is interfaced with the inspection camera using Profinet.
 UDP (User Datagram Protocol) is used over ports 161, 34962, 34963, 34964 to establish communication between the PLC and the VISOR. \cite{visor_communication_manual}
+
+
+\subsection{Communication between KR1410 Robot, ROS and Web UI}
+\label{subsec:KR1410ROS}
+
+The communication between the Web UI and the nodejs server happens via HTTP for standard page loading. The websocket connection through rosbridge provides real-time, bidirectional data exchange between the real or simulated robot and the web interface. This allows visualization, monitoring
+and also control of the robot through web application. Figure \ref{fig:ros-web-graph} shows the communication diagram between ROS, Web application and the KR.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{figures/ros-web-graph.png}
+  \caption{ROS connection to KR1410 and web UI}
+  \label{fig:ros-web-graph}
+\end{figure}
+
+Web UI is build using the frontend development tool ReactJS. It utilizes libraries like \hyperref[par:roslibjs]{\textbf{roslibjs}} and \hyperref[par:ros3djs]{\textbf{ros3djs}} to visualize or publish on ROS topics which monitors or controls the robot respectively. Rosbridge acts as a bridge between the web application and the ROS system. It converts ROS messages into JSON format which can be sent over the websocket.
+
+ROS nodes uses either TCP/IP or UDP communication protocol. 
+The ROS Master acts as the central node manager in the ROS network. It coordinates communication between the robot (KR1410) and other ROS nodes.
+Here the machine running ROS provides the ROS master \cite{rosmaster} and the KR1410 robot is connected to it through ethernet where KR ROS support provides few nodes and rostopics through which real robot can be monitored and controlled. These topics are republished to \textit{joint\_state\_publisher} so that they can be controlled using MoveIt package.
+KR1410 could also be simulated in gazebo software for testing of the web UI. Gazebo also publishes joints on \textit{joint\_states\_publisher} which are used in ROS and MoveIt to control the robot.
+
+A number of ROS nodes runs on the ROS machine which includes MoveIt nodes, unloading station gripper controller nodes, \textit{visualization\_rwt} for MoveIt controls through the Web UI, \textit{joint\_state\_controller}, \textit{robot\_state\_controller}, rosbridge, \textit{tf2\_web\_publisher} etc. Nodes are written in python or C++. \textit{robot\_state\_controller} publishes the state of the robot on \textbf{tf} rostopic using \textit{joint\_states} and parameter \textit{robot\_description}. The \textbf{tf} (transform) rostopic is responsible for managing transforms between different links of the robot. \textit{tf2\_web\_publisher} uses this rostopic to recreate the robot in the web application.
 

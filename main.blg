@@ -16,17 +16,33 @@ White space in argument---line 218 of file main.aux
  : \@input{3.
  :            System Design/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 407 of file main.aux
+White space in argument---line 395 of file main.aux
  : \@input{4.
  :            Hardware Integration/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 447 of file main.aux
+White space in argument---line 439 of file main.aux
  : \@input{5.
  :            Software Development/main.aux}
 I'm skipping whatever remains of this command
-White space in argument---line 453 of file main.aux
+White space in argument---line 445 of file main.aux
  : \@input{6.
  :            System Integration and Testing/main.aux}
+I'm skipping whatever remains of this command
+White space in argument---line 463 of file main.aux
+ : \@input{7.
+ :            Experimental Results/main.aux}
+I'm skipping whatever remains of this command
+White space in argument---line 468 of file main.aux
+ : \@input{8.
+ :            Discussion/main.aux}
+I'm skipping whatever remains of this command
+White space in argument---line 470 of file main.aux
+ : \@input{9.
+ :            Conclusion and Future Works/main.aux}
+I'm skipping whatever remains of this command
+White space in argument---line 478 of file main.aux
+ : \@input{A.
+ :            Appendices/appendix.aux}
 I'm skipping whatever remains of this command
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -48,49 +64,48 @@ Database file #1: main-blx.bib
 Database file #2: references.bib
 Warning--I'm ignoring Wilkinson's extra "title" field
 --line 156 of file references.bib
-Warning--I didn't find a database entry for "biblatex-control"
 Biblatex version: 3.17
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 94 entries,
+You've used 95 entries,
             6399 wiz_defined-function locations,
-            1762 strings with 51358 characters,
-and the built_in function-call counts, 647990 in all, are:
-= -- 50293
-> -- 10527
-< -- 2226
-+ -- 18292
-- -- 4258
-* -- 45780
-:= -- 72605
+            1763 strings with 51352 characters,
+and the built_in function-call counts, 652330 in all, are:
+= -- 50630
+> -- 9348
+< -- 2549
++ -- 17670
+- -- 3428
+* -- 46448
+:= -- 72214
 add.period$ -- 0
-call.type$ -- 94
-change.case$ -- 916
-chr.to.int$ -- 3
+call.type$ -- 95
+change.case$ -- 1129
+chr.to.int$ -- 45
 cite$ -- 188
-duplicate$ -- 68425
-empty$ -- 57234
-format.name$ -- 6528
-if$ -- 131604
+duplicate$ -- 70098
+empty$ -- 58759
+format.name$ -- 6043
+if$ -- 132177
 int.to.chr$ -- 0
 int.to.str$ -- 268
 missing$ -- 0
-newline$ -- 2880
-num.names$ -- 4021
-pop$ -- 34197
+newline$ -- 3067
+num.names$ -- 4300
+pop$ -- 33424
 preamble$ -- 1
-purify$ -- 1552
+purify$ -- 1573
 quote$ -- 0
-skip$ -- 15787
+skip$ -- 16374
 stack$ -- 0
-substring$ -- 91090
-swap$ -- 12375
-text.length$ -- 2194
-text.prefix$ -- 3
+substring$ -- 91310
+swap$ -- 13544
+text.length$ -- 2442
+text.prefix$ -- 97
 top$ -- 1
-type$ -- 3196
+type$ -- 3218
 warning$ -- 0
-while$ -- 8666
+while$ -- 8917
 width$ -- 0
-write$ -- 2786
-(There were 6 error messages)
+write$ -- 2973
+(There were 10 error messages)
