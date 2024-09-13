@@ -90,10 +90,10 @@ activities to be performed by the KR1410 robot can be seen in flowchart \ref{tab
 
     \begin{tikzpicture}[node distance=3.5cm]
         \node (intersection1) [nodepage] {1};
-        \node (proc3) [processorange, below of=intersection1, yshift=1.75cm] {Wait until sheet metal part is available at pickup station};
+        \node (proc3) [processorange, below of=intersection1, yshift=1.75cm] {Wait until sheet metal part is available at unloading station};
         \node (proc4) [process, below of=proc3, yshift=1.5cm] {Detect sheet metal part using camera};
         \node (point7) [coordinate, left of=proc4, xshift=-0.5cm] {};
-        \node (proc5) [process, below of=proc4, yshift=1.5cm] {Pick the sheet metal part from the pickup station gripper};
+        \node (proc5) [process, below of=proc4, yshift=1.5cm] {Pick the sheet metal part from the unloading station gripper};
         \node (proc6) [processorange, below of=proc5, yshift=1.5cm] {Wait until bending machine is ready};
         \node (point5) [coordinate, left of=proc6] {};
         \node (proc7) [process, below of=proc6, yshift=2cm] {Perform bending operation};
@@ -109,7 +109,7 @@ activities to be performed by the KR1410 robot can be seen in flowchart \ref{tab
         \node (point4) [coordinate, below of=point3, yshift=3cm] {};
         \node (dec4) [decision, left of=point4, xshift=0.5cm] {Is regrasping of part required?};
         \node (point6) [coordinate, left of=dec4] {};
-        \node (point8) [process, below of=dec4, yshift=0cm] {Place sheet metal part in pickup station gripper};
+        \node (point8) [process, below of=dec4, yshift=0cm] {Place sheet metal part in unloading station gripper};
         \node (point9) [coordinate, left of=point8, xshift=-0.5cm] {};
 
 
