@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  15 SEP 2024 01:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.17)  15 SEP 2024 15:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -998,10 +998,11 @@ LaTeX Warning: Label `subfig:sheet-taken' multiply defined.
 
 LaTeX Warning: Label `sub@subfig:sheet-taken' multiply defined.
 
+) (./7. Experimental Results/main.aux
 
 LaTeX Warning: Label `subsec:calibration-results' multiply defined.
 
-) (./7. Experimental Results/main.aux) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux))
+) (./8. Discussion/main.aux) (./9. Conclusion and Future Works/main.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
@@ -1113,17 +1114,17 @@ Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Bahadir2024':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'SathishKumar2023':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Xiao_2019':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Bahadir2024':
 (biblatex)                - Invalid format of field 'month'.
 
 )
@@ -1209,125 +1210,123 @@ LaTeX Warning: `h' float specifier changed to `ht'.
  (./6. System Integration and Testing/main.tex
 Chapter 2.
 (./6. System Integration and Testing/6.2 Calibration Procedures/calibration.tex
-<figures/001calibration/calibration-process-left.jpeg, id=111, 1204.5pt x 1606.0pt>
-File: figures/001calibration/calibration-process-left.jpeg Graphic file (type jpg)
-<use figures/001calibration/calibration-process-left.jpeg>
-Package pdftex.def Info: figures/001calibration/calibration-process-left.jpeg  used on input line 11.
-(pdftex.def)             Requested size: 218.51521pt x 291.34654pt.
-<figures/001calibration/calibration-process-right.jpeg, id=112, 1204.5pt x 1606.0pt>
-File: figures/001calibration/calibration-process-right.jpeg Graphic file (type jpg)
-<use figures/001calibration/calibration-process-right.jpeg>
-Package pdftex.def Info: figures/001calibration/calibration-process-right.jpeg  used on input line 16.
-(pdftex.def)             Requested size: 218.51521pt x 291.34654pt.
-<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=113, 1866.975pt x 1058.95625pt>
+<6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG, id=112, 1866.975pt x 1058.95625pt>
 File: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG Graphic file (type png)
 <use 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG>
-Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG  used on input line 25.
-(pdftex.def)             Requested size: 341.43307pt x 193.65782pt.
+Package pdftex.def Info: 6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG  used on input line 13.
+(pdftex.def)             Requested size: 455.24411pt x 258.21043pt.
+ [11
+
+
+
+
+ <./6. System Integration and Testing/6.2 Calibration Procedures/tcp.png>]
+<figures/001calibration/calibration-process-left.jpeg, id=123, 1204.5pt x 1606.0pt>
+File: figures/001calibration/calibration-process-left.jpeg Graphic file (type jpg)
+<use figures/001calibration/calibration-process-left.jpeg>
+Package pdftex.def Info: figures/001calibration/calibration-process-left.jpeg  used on input line 29.
+(pdftex.def)             Requested size: 218.51521pt x 291.34654pt.
+<figures/001calibration/calibration-process-right.jpeg, id=124, 1204.5pt x 1606.0pt>
+File: figures/001calibration/calibration-process-right.jpeg Graphic file (type jpg)
+<use figures/001calibration/calibration-process-right.jpeg>
+Package pdftex.def Info: figures/001calibration/calibration-process-right.jpeg  used on input line 34.
+(pdftex.def)             Requested size: 218.51521pt x 291.34654pt.
+ [12 <./figures/001calibration/calibration-process-left.jpeg> <./figures/001calibration/calibration-process-right.jpeg>]
+<figures/001calibration/calibration.png, id=134, 1084.05pt x 813.0375pt>
+File: figures/001calibration/calibration.png Graphic file (type png)
+<use figures/001calibration/calibration.png>
+Package pdftex.def Info: figures/001calibration/calibration.png  used on input line 71.
+(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
+<figures/001calibration/calibration1.png, id=135, 1084.05pt x 813.0375pt>
+File: figures/001calibration/calibration1.png Graphic file (type png)
+<use figures/001calibration/calibration1.png>
+Package pdftex.def Info: figures/001calibration/calibration1.png  used on input line 75.
+(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
+<figures/001calibration/calibration2.PNG, id=136, 1084.05pt x 813.0375pt>
+File: figures/001calibration/calibration2.PNG Graphic file (type png)
+<use figures/001calibration/calibration2.PNG>
+Package pdftex.def Info: figures/001calibration/calibration2.PNG  used on input line 80.
+(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
+<figures/001calibration/calibration3.png, id=137, 1084.05pt x 813.0375pt>
+File: figures/001calibration/calibration3.png Graphic file (type png)
+<use figures/001calibration/calibration3.png>
+Package pdftex.def Info: figures/001calibration/calibration3.png  used on input line 85.
+(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
+<figures/001calibration/calibration4.png, id=138, 1084.05pt x 813.0375pt>
+File: figures/001calibration/calibration4.png Graphic file (type png)
+<use figures/001calibration/calibration4.png>
+Package pdftex.def Info: figures/001calibration/calibration4.png  used on input line 89.
+(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
+<figures/001calibration/calibration5.PNG, id=139, 1084.05pt x 813.0375pt>
+File: figures/001calibration/calibration5.PNG Graphic file (type png)
+<use figures/001calibration/calibration5.PNG>
+Package pdftex.def Info: figures/001calibration/calibration5.PNG  used on input line 93.
+(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
+<figures/001calibration/calibration6.png, id=140, 1084.05pt x 813.0375pt>
+File: figures/001calibration/calibration6.png Graphic file (type png)
+<use figures/001calibration/calibration6.png>
+Package pdftex.def Info: figures/001calibration/calibration6.png  used on input line 97.
+(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
+<figures/001calibration/calibration7.png, id=141, 1084.05pt x 813.0375pt>
+File: figures/001calibration/calibration7.png Graphic file (type png)
+<use figures/001calibration/calibration7.png>
+Package pdftex.def Info: figures/001calibration/calibration7.png  used on input line 101.
+(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
+<figures/001calibration/calibration8.PNG, id=142, 1084.05pt x 813.0375pt>
+File: figures/001calibration/calibration8.PNG Graphic file (type png)
+<use figures/001calibration/calibration8.PNG>
+Package pdftex.def Info: figures/001calibration/calibration8.PNG  used on input line 105.
+(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11
 
-
-
-
- <./figures/001calibration/calibration-process-left.jpeg> <./figures/001calibration/calibration-process-right.jpeg>] [12 <./6. System Integration and Testing/6.2 Calibration Procedures/tcp.png>]
-<figures/001calibration/calibration.png, id=133, 1084.05pt x 813.0375pt>
-File: figures/001calibration/calibration.png Graphic file (type png)
-<use figures/001calibration/calibration.png>
-Package pdftex.def Info: figures/001calibration/calibration.png  used on input line 75.
-(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
-<figures/001calibration/calibration1.png, id=134, 1084.05pt x 813.0375pt>
-File: figures/001calibration/calibration1.png Graphic file (type png)
-<use figures/001calibration/calibration1.png>
-Package pdftex.def Info: figures/001calibration/calibration1.png  used on input line 79.
-(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
-<figures/001calibration/calibration2.PNG, id=135, 1084.05pt x 813.0375pt>
-File: figures/001calibration/calibration2.PNG Graphic file (type png)
-<use figures/001calibration/calibration2.PNG>
-Package pdftex.def Info: figures/001calibration/calibration2.PNG  used on input line 84.
-(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
-<figures/001calibration/calibration3.png, id=136, 1084.05pt x 813.0375pt>
-File: figures/001calibration/calibration3.png Graphic file (type png)
-<use figures/001calibration/calibration3.png>
-Package pdftex.def Info: figures/001calibration/calibration3.png  used on input line 89.
-(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
-<figures/001calibration/calibration4.png, id=137, 1084.05pt x 813.0375pt>
-File: figures/001calibration/calibration4.png Graphic file (type png)
-<use figures/001calibration/calibration4.png>
-Package pdftex.def Info: figures/001calibration/calibration4.png  used on input line 93.
-(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
-<figures/001calibration/calibration5.PNG, id=138, 1084.05pt x 813.0375pt>
-File: figures/001calibration/calibration5.PNG Graphic file (type png)
-<use figures/001calibration/calibration5.PNG>
-Package pdftex.def Info: figures/001calibration/calibration5.PNG  used on input line 97.
-(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
-<figures/001calibration/calibration6.png, id=139, 1084.05pt x 813.0375pt>
-File: figures/001calibration/calibration6.png Graphic file (type png)
-<use figures/001calibration/calibration6.png>
-Package pdftex.def Info: figures/001calibration/calibration6.png  used on input line 101.
-(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
-<figures/001calibration/calibration7.png, id=140, 1084.05pt x 813.0375pt>
-File: figures/001calibration/calibration7.png Graphic file (type png)
-<use figures/001calibration/calibration7.png>
-Package pdftex.def Info: figures/001calibration/calibration7.png  used on input line 105.
-(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
-<figures/001calibration/calibration8.PNG, id=141, 1084.05pt x 813.0375pt>
-File: figures/001calibration/calibration8.PNG Graphic file (type png)
-<use figures/001calibration/calibration8.PNG>
-Package pdftex.def Info: figures/001calibration/calibration8.PNG  used on input line 109.
-(pdftex.def)             Requested size: 145.68144pt x 109.25908pt.
-
-Overfull \hbox (2.6152pt too wide) in paragraph at lines 160--161
+Overfull \hbox (2.6152pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/bx/n/12 Setup Cal-i-bra-tion Tar-gets\OT1/cmr/m/n/12 : Place cal-i-bra-tion tar-gets within the robot's workspace
  []
 
-[13 <./figures/001calibration/calibration.png> <./figures/001calibration/calibration1.png> <./figures/001calibration/calibration2.png> <./figures/001calibration/calibration3.png> <./figures/001calibration/calibration4.png> <./figures/001calibration/calibration5.png> <./figures/001calibration/calibration6.png> <./figures/001calibration/calibration7.png> <./figures/001calibration/calibration8.png>] [14]) (./6. System Integration and Testing/6.1 Integration Tests/tests.tex (./6. System Integration and Testing/6.1 Integration Tests/sheet-pickup.tex
-<figures/sheet-pickup/scan.png, id=157, 1606.0pt x 1204.5pt>
+) [13] [14 <./figures/001calibration/calibration.png> <./figures/001calibration/calibration1.png> <./figures/001calibration/calibration2.png> <./figures/001calibration/calibration3.png> <./figures/001calibration/calibration4.png> <./figures/001calibration/calibration5.png> <./figures/001calibration/calibration6.png> <./figures/001calibration/calibration7.png> <./figures/001calibration/calibration8.png>] [15] (./6. System Integration and Testing/6.1 Integration Tests/tests.tex (./6. System Integration and Testing/6.1 Integration Tests/sheet-pickup.tex
+<figures/sheet-pickup/scan.png, id=167, 1606.0pt x 1204.5pt>
 File: figures/sheet-pickup/scan.png Graphic file (type png)
 <use figures/sheet-pickup/scan.png>
 Package pdftex.def Info: figures/sheet-pickup/scan.png  used on input line 6.
 (pdftex.def)             Requested size: 218.51521pt x 163.88702pt.
-<figures/sheet-pickup/taken.png, id=158, 1606.0pt x 1204.5pt>
+<figures/sheet-pickup/taken.png, id=168, 1606.0pt x 1204.5pt>
 File: figures/sheet-pickup/taken.png Graphic file (type png)
 <use figures/sheet-pickup/taken.png>
 Package pdftex.def Info: figures/sheet-pickup/taken.png  used on input line 12.
 (pdftex.def)             Requested size: 218.51521pt x 163.88702pt.
-<figures/sheet-pickup/sensoconfig.PNG, id=159, 1155.71774pt x 619.71526pt>
+<figures/sheet-pickup/sensoconfig.PNG, id=169, 1155.71774pt x 619.71526pt>
 File: figures/sheet-pickup/sensoconfig.PNG Graphic file (type png)
 <use figures/sheet-pickup/sensoconfig.PNG>
 Package pdftex.def Info: figures/sheet-pickup/sensoconfig.PNG  used on input line 22.
 (pdftex.def)             Requested size: 455.24411pt x 244.10872pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/sheet-pickup/camera-align.png, id=160, 1084.05pt x 813.0375pt>
+<figures/sheet-pickup/camera-align.png, id=170, 1084.05pt x 813.0375pt>
 File: figures/sheet-pickup/camera-align.png Graphic file (type png)
 <use figures/sheet-pickup/camera-align.png>
 Package pdftex.def Info: figures/sheet-pickup/camera-align.png  used on input line 32.
 (pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
-<figures/sheet-pickup/sheet-pose.png, id=161, 1084.05pt x 813.0375pt>
+<figures/sheet-pickup/sheet-pose.png, id=171, 1084.05pt x 813.0375pt>
 File: figures/sheet-pickup/sheet-pose.png Graphic file (type png)
 <use figures/sheet-pickup/sheet-pose.png>
 Package pdftex.def Info: figures/sheet-pickup/sheet-pose.png  used on input line 38.
 (pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/sheet-pickup/sheet-placement01.png, id=162, 1204.5pt x 1606.0pt>
+<figures/sheet-pickup/sheet-placement01.png, id=172, 1204.5pt x 1606.0pt>
 File: figures/sheet-pickup/sheet-placement01.png Graphic file (type png)
 <use figures/sheet-pickup/sheet-placement01.png>
 Package pdftex.def Info: figures/sheet-pickup/sheet-placement01.png  used on input line 50.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-<figures/sheet-pickup/sheet-placement02.png, id=163, 1204.5pt x 1606.0pt>
+<figures/sheet-pickup/sheet-placement02.png, id=173, 1204.5pt x 1606.0pt>
 File: figures/sheet-pickup/sheet-placement02.png Graphic file (type png)
 <use figures/sheet-pickup/sheet-placement02.png>
 Package pdftex.def Info: figures/sheet-pickup/sheet-placement02.png  used on input line 56.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-<figures/sheet-pickup/sheet-placement03.png, id=164, 1204.5pt x 1606.0pt>
+<figures/sheet-pickup/sheet-placement03.png, id=174, 1204.5pt x 1606.0pt>
 File: figures/sheet-pickup/sheet-placement03.png Graphic file (type png)
 <use figures/sheet-pickup/sheet-placement03.png>
 Package pdftex.def Info: figures/sheet-pickup/sheet-placement03.png  used on input line 63.
@@ -1337,17 +1336,17 @@ Underfull \hbox (badness 1454) in paragraph at lines 64--64
 []\OT1/cmr/m/n/10.95 (c) |Scan sheet pat-tern and
  []
 
-<figures/sheet-pickup/sheet-placement04.png, id=165, 1204.5pt x 1606.0pt>
+<figures/sheet-pickup/sheet-placement04.png, id=175, 1204.5pt x 1606.0pt>
 File: figures/sheet-pickup/sheet-placement04.png Graphic file (type png)
 <use figures/sheet-pickup/sheet-placement04.png>
 Package pdftex.def Info: figures/sheet-pickup/sheet-placement04.png  used on input line 70.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-<figures/sheet-pickup/sheet-placement05.png, id=166, 1204.5pt x 1606.0pt>
+<figures/sheet-pickup/sheet-placement05.png, id=176, 1204.5pt x 1606.0pt>
 File: figures/sheet-pickup/sheet-placement05.png Graphic file (type png)
 <use figures/sheet-pickup/sheet-placement05.png>
 Package pdftex.def Info: figures/sheet-pickup/sheet-placement05.png  used on input line 77.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-<figures/sheet-pickup/sheet-placement06.png, id=167, 1204.5pt x 1606.0pt>
+<figures/sheet-pickup/sheet-placement06.png, id=177, 1204.5pt x 1606.0pt>
 File: figures/sheet-pickup/sheet-placement06.png Graphic file (type png)
 <use figures/sheet-pickup/sheet-placement06.png>
 Package pdftex.def Info: figures/sheet-pickup/sheet-placement06.png  used on input line 83.
@@ -1355,97 +1354,237 @@ Package pdftex.def Info: figures/sheet-pickup/sheet-placement06.png  used on inp
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [15 <./figures/sheet-pickup/scan.png (PNG copy)> <./figures/sheet-pickup/taken.png (PNG copy)>] [16 <./figures/sheet-pickup/sensoconfig.PNG> <./figures/sheet-pickup/camera-align.png (PNG copy)> <./figures/sheet-pickup/sheet-pose.png (PNG copy)>] [17 <./figures/sheet-pickup/sheet-placement01.png (PNG copy)> <./figures/sheet-pickup/sheet-placement02.png (PNG copy)> <./figures/sheet-pickup/sheet-placement03.png (PNG copy)> <./figures/sheet-pickup/sheet-placement04.png (PNG copy)> <./figures/sheet-pickup/sheet-placement05.png (PNG copy)> <./figures/sheet-pickup/sheet-placement06.png (PNG copy)>] (./6. System Integration and Testing/6.1 Integration Tests/bending-operation.tex) (./6. System Integration and Testing/6.1 Integration Tests/shelf-control.tex
-<figures/shelf-control/reach-handle.jpeg, id=190, 1204.5pt x 1606.0pt>
+) [16
+
+ <./figures/sheet-pickup/scan.png (PNG copy)> <./figures/sheet-pickup/taken.png (PNG copy)> <./figures/sheet-pickup/sensoconfig.PNG>] [17 <./figures/sheet-pickup/camera-align.png (PNG copy)> <./figures/sheet-pickup/sheet-pose.png (PNG copy)>] [18 <./figures/sheet-pickup/sheet-placement01.png (PNG copy)> <./figures/sheet-pickup/sheet-placement02.png (PNG copy)> <./figures/sheet-pickup/sheet-placement03.png (PNG copy)> <./figures/sheet-pickup/sheet-placement04.png (PNG copy)> <./figures/sheet-pickup/sheet-placement05.png (PNG copy)> <./figures/sheet-pickup/sheet-placement06.png (PNG copy)>] (./6. System Integration and Testing/6.1 Integration Tests/bending-operation.tex
+<figures/bending/bending1-002.png, id=197, 1606.0pt x 1204.5pt>
+File: figures/bending/bending1-002.png Graphic file (type png)
+<use figures/bending/bending1-002.png>
+Package pdftex.def Info: figures/bending/bending1-002.png  used on input line 7.
+(pdftex.def)             Requested size: 145.68144pt x 109.24576pt.
+<figures/bending/bending1-003.png, id=198, 1606.0pt x 1204.5pt>
+File: figures/bending/bending1-003.png Graphic file (type png)
+<use figures/bending/bending1-003.png>
+Package pdftex.def Info: figures/bending/bending1-003.png  used on input line 13.
+(pdftex.def)             Requested size: 145.68144pt x 109.24576pt.
+<figures/bending/bending1-001.png, id=199, 1606.0pt x 1204.5pt>
+File: figures/bending/bending1-001.png Graphic file (type png)
+<use figures/bending/bending1-001.png>
+Package pdftex.def Info: figures/bending/bending1-001.png  used on input line 19.
+(pdftex.def)             Requested size: 145.68144pt x 109.24576pt.
+<figures/bending/bending2-003.png, id=200, 1606.0pt x 1204.5pt>
+File: figures/bending/bending2-003.png Graphic file (type png)
+<use figures/bending/bending2-003.png>
+Package pdftex.def Info: figures/bending/bending2-003.png  used on input line 31.
+(pdftex.def)             Requested size: 145.68144pt x 109.24576pt.
+<figures/bending/bending2-001.png, id=201, 1606.0pt x 1204.5pt>
+File: figures/bending/bending2-001.png Graphic file (type png)
+<use figures/bending/bending2-001.png>
+Package pdftex.def Info: figures/bending/bending2-001.png  used on input line 37.
+(pdftex.def)             Requested size: 145.68144pt x 109.24576pt.
+<figures/bending/bending2-002.png, id=202, 1606.0pt x 1204.5pt>
+File: figures/bending/bending2-002.png Graphic file (type png)
+<use figures/bending/bending2-002.png>
+Package pdftex.def Info: figures/bending/bending2-002.png  used on input line 43.
+(pdftex.def)             Requested size: 145.68144pt x 109.24576pt.
+<figures/bending/bending3-001.png, id=203, 1204.5pt x 1606.0pt>
+File: figures/bending/bending3-001.png Graphic file (type png)
+<use figures/bending/bending3-001.png>
+Package pdftex.def Info: figures/bending/bending3-001.png  used on input line 56.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+<figures/bending/bending3-002.png, id=204, 1204.5pt x 1606.0pt>
+File: figures/bending/bending3-002.png Graphic file (type png)
+<use figures/bending/bending3-002.png>
+Package pdftex.def Info: figures/bending/bending3-002.png  used on input line 62.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+<figures/bending/bending3-003.png, id=205, 1204.5pt x 1606.0pt>
+File: figures/bending/bending3-003.png Graphic file (type png)
+<use figures/bending/bending3-003.png>
+Package pdftex.def Info: figures/bending/bending3-003.png  used on input line 68.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/bending/bending4-001.png, id=206, 1204.5pt x 1606.0pt>
+File: figures/bending/bending4-001.png Graphic file (type png)
+<use figures/bending/bending4-001.png>
+Package pdftex.def Info: figures/bending/bending4-001.png  used on input line 80.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+<figures/bending/bending4-002.png, id=207, 1204.5pt x 1606.0pt>
+File: figures/bending/bending4-002.png Graphic file (type png)
+<use figures/bending/bending4-002.png>
+Package pdftex.def Info: figures/bending/bending4-002.png  used on input line 86.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+<figures/bending/bending4-003.png, id=208, 1204.5pt x 1606.0pt>
+File: figures/bending/bending4-003.png Graphic file (type png)
+<use figures/bending/bending4-003.png>
+Package pdftex.def Info: figures/bending/bending4-003.png  used on input line 92.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/bending/bending5-001.png, id=209, 1204.5pt x 1606.0pt>
+File: figures/bending/bending5-001.png Graphic file (type png)
+<use figures/bending/bending5-001.png>
+Package pdftex.def Info: figures/bending/bending5-001.png  used on input line 105.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+<figures/bending/bending5-002.png, id=210, 1204.5pt x 1606.0pt>
+File: figures/bending/bending5-002.png Graphic file (type png)
+<use figures/bending/bending5-002.png>
+Package pdftex.def Info: figures/bending/bending5-002.png  used on input line 111.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+<figures/bending/bending5-003.png, id=211, 1204.5pt x 1606.0pt>
+File: figures/bending/bending5-003.png Graphic file (type png)
+<use figures/bending/bending5-003.png>
+Package pdftex.def Info: figures/bending/bending5-003.png  used on input line 117.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/bending/bending6-001.png, id=212, 1204.5pt x 1606.0pt>
+File: figures/bending/bending6-001.png Graphic file (type png)
+<use figures/bending/bending6-001.png>
+Package pdftex.def Info: figures/bending/bending6-001.png  used on input line 130.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+<figures/bending/bending6-003.png, id=213, 1204.5pt x 1606.0pt>
+File: figures/bending/bending6-003.png Graphic file (type png)
+<use figures/bending/bending6-003.png>
+Package pdftex.def Info: figures/bending/bending6-003.png  used on input line 136.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+<figures/bending/bending6-002.png, id=214, 1204.5pt x 1606.0pt>
+File: figures/bending/bending6-002.png Graphic file (type png)
+<use figures/bending/bending6-002.png>
+Package pdftex.def Info: figures/bending/bending6-002.png  used on input line 142.
+(pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [19
+
+ <./figures/bending/bending1-002.png (PNG copy)> <./figures/bending/bending1-003.png (PNG copy)> <./figures/bending/bending1-001.png (PNG copy)> <./figures/bending/bending2-003.png (PNG copy)> <./figures/bending/bending2-001.png (PNG copy)> <./figures/bending/bending2-002.png (PNG copy)>] [20 <./figures/bending/bending3-001.png (PNG copy)> <./figures/bending/bending3-002.png (PNG copy)> <./figures/bending/bending3-003.png (PNG copy)> <./figures/bending/bending4-001.png (PNG copy)> <./figures/bending/bending4-002.png (PNG copy)> <./figures/bending/bending4-003.png (PNG copy)>] [21 <./figures/bending/bending5-001.png (PNG copy)> <./figures/bending/bending5-002.png (PNG copy)> <./figures/bending/bending5-003.png (PNG copy)> <./figures/bending/bending6-001.png (PNG copy)> <./figures/bending/bending6-003.png (PNG copy)> <./figures/bending/bending6-002.png (PNG copy)>] (./6. System Integration and Testing/6.1 Integration Tests/inspection.tex
+<figures/inspection-setup.png, id=235, 1606.0pt x 1553.805pt>
+File: figures/inspection-setup.png Graphic file (type png)
+<use figures/inspection-setup.png>
+Package pdftex.def Info: figures/inspection-setup.png  used on input line 3.
+(pdftex.def)             Requested size: 273.14923pt x 264.2619pt.
+) (./6. System Integration and Testing/6.1 Integration Tests/shelf-control.tex
+<figures/shelf-control/reach-handle.jpeg, id=236, 1204.5pt x 1606.0pt>
 File: figures/shelf-control/reach-handle.jpeg Graphic file (type jpg)
 <use figures/shelf-control/reach-handle.jpeg>
 Package pdftex.def Info: figures/shelf-control/reach-handle.jpeg  used on input line 6.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-<figures/shelf-control/hold-handle.jpeg, id=191, 1204.5pt x 1606.0pt>
+<figures/shelf-control/hold-handle.jpeg, id=237, 1204.5pt x 1606.0pt>
 File: figures/shelf-control/hold-handle.jpeg Graphic file (type jpg)
 <use figures/shelf-control/hold-handle.jpeg>
 Package pdftex.def Info: figures/shelf-control/hold-handle.jpeg  used on input line 12.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-<figures/shelf-control/open-handle.jpeg, id=192, 1204.5pt x 1606.0pt>
+<figures/shelf-control/open-handle.jpeg, id=238, 1204.5pt x 1606.0pt>
 File: figures/shelf-control/open-handle.jpeg Graphic file (type jpg)
 <use figures/shelf-control/open-handle.jpeg>
 Package pdftex.def Info: figures/shelf-control/open-handle.jpeg  used on input line 19.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-<figures/shelf-control/open-drawer.jpeg, id=193, 1204.5pt x 1606.0pt>
+<figures/shelf-control/open-drawer.jpeg, id=239, 1204.5pt x 1606.0pt>
 File: figures/shelf-control/open-drawer.jpeg Graphic file (type jpg)
 <use figures/shelf-control/open-drawer.jpeg>
 Package pdftex.def Info: figures/shelf-control/open-drawer.jpeg  used on input line 26.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-<figures/shelf-control/close-handle.jpeg, id=194, 1204.5pt x 1606.0pt>
+<figures/shelf-control/close-handle.jpeg, id=240, 1204.5pt x 1606.0pt>
 File: figures/shelf-control/close-handle.jpeg Graphic file (type jpg)
 <use figures/shelf-control/close-handle.jpeg>
 Package pdftex.def Info: figures/shelf-control/close-handle.jpeg  used on input line 34.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-<figures/shelf-control/drawer-opened.jpeg, id=195, 1204.5pt x 1606.0pt>
+<figures/shelf-control/drawer-opened.jpeg, id=241, 1204.5pt x 1606.0pt>
 File: figures/shelf-control/drawer-opened.jpeg Graphic file (type jpg)
 <use figures/shelf-control/drawer-opened.jpeg>
 Package pdftex.def Info: figures/shelf-control/drawer-opened.jpeg  used on input line 40.
 (pdftex.def)             Requested size: 145.68144pt x 194.23103pt.
-)) (./6. System Integration and Testing/6.3 Performance Evaluation/performance.tex (./6. System Integration and Testing/6.3 Performance Evaluation/calibration-results.tex [18
 
- <./figures/shelf-control/reach-handle.jpeg> <./figures/shelf-control/hold-handle.jpeg> <./figures/shelf-control/open-handle.jpeg> <./figures/shelf-control/open-drawer.jpeg> <./figures/shelf-control/close-handle.jpeg> <./figures/shelf-control/drawer-opened.jpeg>]
-<figures/001calibration/internal_parameters.PNG, id=205, 487.22025pt x 324.0105pt>
-File: figures/001calibration/internal_parameters.PNG Graphic file (type png)
-<use figures/001calibration/internal_parameters.PNG>
-Package pdftex.def Info: figures/001calibration/internal_parameters.PNG  used on input line 14.
-(pdftex.def)             Requested size: 218.51521pt x 145.31392pt.
-<figures/001calibration/external_poses.PNG, id=206, 487.8225pt x 321.6015pt>
-File: figures/001calibration/external_poses.PNG Graphic file (type png)
-<use figures/001calibration/external_poses.PNG>
-Package pdftex.def Info: figures/001calibration/external_poses.PNG  used on input line 20.
-(pdftex.def)             Requested size: 218.51521pt x 144.05685pt.
-<figures/001calibration/fov.PNG, id=207, 487.22025pt x 320.397pt>
-File: figures/001calibration/fov.PNG Graphic file (type png)
-<use figures/001calibration/fov.PNG>
-Package pdftex.def Info: figures/001calibration/fov.PNG  used on input line 26.
-(pdftex.def)             Requested size: 218.51521pt x 143.69331pt.
-<figures/001calibration/hand-eye_parameters.PNG, id=208, 487.22025pt x 322.806pt>
-File: figures/001calibration/hand-eye_parameters.PNG Graphic file (type png)
-<use figures/001calibration/hand-eye_parameters.PNG>
-Package pdftex.def Info: figures/001calibration/hand-eye_parameters.PNG  used on input line 32.
-(pdftex.def)             Requested size: 218.51521pt x 144.77371pt.
-) [19 <./figures/001calibration/internal_parameters.PNG> <./figures/001calibration/external_poses.PNG> <./figures/001calibration/fov.PNG> <./figures/001calibration/hand-eye_parameters.PNG>] (./6. System Integration and Testing/6.3 Performance Evaluation/inspection.tex
-<figures/008_inspection/inpection_1_overlay2.png, id=220, 1084.05pt x 813.0375pt>
-File: figures/008_inspection/inpection_1_overlay2.png Graphic file (type png)
-<use figures/008_inspection/inpection_1_overlay2.png>
-Package pdftex.def Info: figures/008_inspection/inpection_1_overlay2.png  used on input line 7.
-(pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
-<figures/008_inspection/inspection_2_overlay.png, id=221, 1084.05pt x 813.0375pt>
-File: figures/008_inspection/inspection_2_overlay.png Graphic file (type png)
-<use figures/008_inspection/inspection_2_overlay.png>
-Package pdftex.def Info: figures/008_inspection/inspection_2_overlay.png  used on input line 14.
-(pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
-<figures/008_inspection/inspection_5_overlay_cleanup.png, id=222, 1084.05pt x 813.0375pt>
-File: figures/008_inspection/inspection_5_overlay_cleanup.png Graphic file (type png)
-<use figures/008_inspection/inspection_5_overlay_cleanup.png>
-Package pdftex.def Info: figures/008_inspection/inspection_5_overlay_cleanup.png  used on input line 21.
-(pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
-<figures/008_inspection/inspection_6_overlay_cleanup.png, id=223, 1084.05pt x 813.0375pt>
-File: figures/008_inspection/inspection_6_overlay_cleanup.png Graphic file (type png)
-<use figures/008_inspection/inspection_6_overlay_cleanup.png>
-Package pdftex.def Info: figures/008_inspection/inspection_6_overlay_cleanup.png  used on input line 28.
-(pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
-) (./6. System Integration and Testing/6.3 Performance Evaluation/bending-review.tex))) [20 <./figures/008_inspection/inpection_1_overlay2.png> <./figures/008_inspection/inspection_2_overlay.png> <./figures/008_inspection/inspection_5_overlay_cleanup.png (PNG copy)> <./figures/008_inspection/inspection_6_overlay_cleanup.png (PNG copy)>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/shelf-control/sheet-placement-01.png, id=242, 1606.0pt x 1204.5pt>
+File: figures/shelf-control/sheet-placement-01.png Graphic file (type png)
+<use figures/shelf-control/sheet-placement-01.png>
+Package pdftex.def Info: figures/shelf-control/sheet-placement-01.png  used on input line 54.
+(pdftex.def)             Requested size: 218.51521pt x 163.88702pt.
+<figures/shelf-control/sheet-placement-02.png, id=243, 1606.0pt x 1204.5pt>
+File: figures/shelf-control/sheet-placement-02.png Graphic file (type png)
+<use figures/shelf-control/sheet-placement-02.png>
+Package pdftex.def Info: figures/shelf-control/sheet-placement-02.png  used on input line 60.
+(pdftex.def)             Requested size: 218.51521pt x 163.88702pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [22
+
+ <./figures/inspection-setup.png (PNG copy)>] [23 <./figures/shelf-control/reach-handle.jpeg> <./figures/shelf-control/hold-handle.jpeg> <./figures/shelf-control/open-handle.jpeg> <./figures/shelf-control/open-drawer.jpeg> <./figures/shelf-control/close-handle.jpeg> <./figures/shelf-control/drawer-opened.jpeg>] [24 <./figures/shelf-control/sheet-placement-01.png (PNG copy)> <./figures/shelf-control/sheet-placement-02.png (PNG copy)>]))
 \openout2 = `"7. Experimental Results/main.aux"'.
 
  (./7. Experimental Results/main.tex
 Chapter 3.
-(./7. Experimental Results/7.1 Setup and Methodology/methodology.tex) (./7. Experimental Results/7.2 Data Collection/data.tex) (./7. Experimental Results/7.3 Results and Analysis/results.tex)) [21
+(./6. System Integration and Testing/6.3 Performance Evaluation/performance.tex (./6. System Integration and Testing/6.3 Performance Evaluation/calibration-results.tex
+<figures/001calibration/internal_parameters.PNG, id=262, 487.22025pt x 324.0105pt>
+File: figures/001calibration/internal_parameters.PNG Graphic file (type png)
+<use figures/001calibration/internal_parameters.PNG>
+Package pdftex.def Info: figures/001calibration/internal_parameters.PNG  used on input line 14.
+(pdftex.def)             Requested size: 218.51521pt x 145.31392pt.
+<figures/001calibration/external_poses.PNG, id=263, 487.8225pt x 321.6015pt>
+File: figures/001calibration/external_poses.PNG Graphic file (type png)
+<use figures/001calibration/external_poses.PNG>
+Package pdftex.def Info: figures/001calibration/external_poses.PNG  used on input line 20.
+(pdftex.def)             Requested size: 218.51521pt x 144.05685pt.
+<figures/001calibration/fov.PNG, id=264, 487.22025pt x 320.397pt>
+File: figures/001calibration/fov.PNG Graphic file (type png)
+<use figures/001calibration/fov.PNG>
+Package pdftex.def Info: figures/001calibration/fov.PNG  used on input line 26.
+(pdftex.def)             Requested size: 218.51521pt x 143.69331pt.
+<figures/001calibration/hand-eye_parameters.PNG, id=265, 487.22025pt x 322.806pt>
+File: figures/001calibration/hand-eye_parameters.PNG Graphic file (type png)
+<use figures/001calibration/hand-eye_parameters.PNG>
+Package pdftex.def Info: figures/001calibration/hand-eye_parameters.PNG  used on input line 32.
+(pdftex.def)             Requested size: 218.51521pt x 144.77371pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [25
 
 
 
 
-]
+
+] (./6. System Integration and Testing/6.3 Performance Evaluation/inspection.tex
+<figures/008_inspection/inpection_1_overlay2.png, id=274, 1084.05pt x 813.0375pt>
+File: figures/008_inspection/inpection_1_overlay2.png Graphic file (type png)
+<use figures/008_inspection/inpection_1_overlay2.png>
+Package pdftex.def Info: figures/008_inspection/inpection_1_overlay2.png  used on input line 7.
+(pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
+<figures/008_inspection/inspection_2_overlay.png, id=275, 1084.05pt x 813.0375pt>
+File: figures/008_inspection/inspection_2_overlay.png Graphic file (type png)
+<use figures/008_inspection/inspection_2_overlay.png>
+Package pdftex.def Info: figures/008_inspection/inspection_2_overlay.png  used on input line 14.
+(pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
+<figures/008_inspection/inspection_5_overlay_cleanup.png, id=276, 1084.05pt x 813.0375pt>
+File: figures/008_inspection/inspection_5_overlay_cleanup.png Graphic file (type png)
+<use figures/008_inspection/inspection_5_overlay_cleanup.png>
+Package pdftex.def Info: figures/008_inspection/inspection_5_overlay_cleanup.png  used on input line 21.
+(pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
+<figures/008_inspection/inspection_6_overlay_cleanup.png, id=277, 1084.05pt x 813.0375pt>
+File: figures/008_inspection/inspection_6_overlay_cleanup.png Graphic file (type png)
+<use figures/008_inspection/inspection_6_overlay_cleanup.png>
+Package pdftex.def Info: figures/008_inspection/inspection_6_overlay_cleanup.png  used on input line 28.
+(pdftex.def)             Requested size: 218.51521pt x 163.88243pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [26 <./figures/001calibration/internal_parameters.PNG> <./figures/001calibration/external_poses.PNG> <./figures/001calibration/fov.PNG> <./figures/001calibration/hand-eye_parameters.PNG>] (./6. System Integration and Testing/6.3 Performance Evaluation/bending-review.tex)) (./7. Experimental Results/7.1 Setup and Methodology/methodology.tex) (./7. Experimental Results/7.2 Data Collection/data.tex) (./7. Experimental Results/7.3 Results and Analysis/results.tex)) [27 <./figures/008_inspection/inpection_1_overlay2.png> <./figures/008_inspection/inspection_2_overlay.png> <./figures/008_inspection/inspection_5_overlay_cleanup.png (PNG copy)> <./figures/008_inspection/inspection_6_overlay_cleanup.png (PNG copy)>]
 \openout2 = `"8. Discussion/main.aux"'.
 
  (./8. Discussion/main.tex
 Chapter 4.
-) [22
+) [28
 
 
 
@@ -1457,15 +1596,15 @@ Chapter 4.
 Chapter 5.
 (./9. Conclusion and Future Works/9.1 Summary/summary.tex) (./9. Conclusion and Future Works/9.2 Recommendations for Future Research/recommendations.tex
 
-LaTeX Warning: Hyper reference `acro:ROS' on page 23 undefined on input line 5.
+LaTeX Warning: Hyper reference `acro:ROS' on page 29 undefined on input line 5.
 
 
-LaTeX Warning: Hyper reference `acro:ROS' on page 23 undefined on input line 6.
+LaTeX Warning: Hyper reference `acro:ROS' on page 29 undefined on input line 6.
 
 
-LaTeX Warning: Hyper reference `acro:ROS' on page 23 undefined on input line 8.
+LaTeX Warning: Hyper reference `acro:ROS' on page 29 undefined on input line 8.
 
-)) [23
+)) [29
 
 
 
@@ -1482,20 +1621,20 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48137 strings out of 478287
- 1089846 string characters out of 5849289
- 1892283 words of memory out of 5000000
- 65374 multiletter control sequences out of 15000+600000
+ 48352 strings out of 478287
+ 1096369 string characters out of 5849289
+ 1895534 words of memory out of 5000000
+ 65548 multiletter control sequences out of 15000+600000
  476455 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,11n,131p,1911b,1309s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.0@visor_user_manual} has been referenced but does not exist, replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (23 pages, 22953460 bytes).
+Output written on main.pdf (29 pages, 65637539 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 97 named destinations out of 1000 (max. 500000)
- 508 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 485 PDF objects out of 1000 (max. 8388607)
+ 360 compressed objects within 4 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 637 words of extra memory for PDF output out of 10000 (max. 10000000)
 

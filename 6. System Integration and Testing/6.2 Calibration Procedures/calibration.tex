@@ -1,9 +1,27 @@
 
 Calibration is a crucial procedure in the development of 
 an automated robotic workcell, ensuring that all components
-operate accurately and in harmony.
+operate accurately and in harmony. Robot calibration ensures that the Kassow robot can accurately position its end effector for loading, bending, and unloading metal sheets. This involves:
 
-    
+\subsection{Kinematic Calibration}
+\label{subsec:kinematic-calibration}
+It refers to the KR1410's kinematic model which needs to correct any discrepancies between the theoretical model and the actual hardware. This includes measuring and compensating for joint offsets, link lengths, and joint angles. 
+The KR1410 is already calibrated from the factory and does not need to be setup. Though in simulation, robot kinematic model is generated from the URDF and needs to be updated to match the real hardware. Figure \ref{fig:tcp} shows the kinematic model of KR1410 and also the TCP link which is set at 216 mm from the TFC.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG}
+    \caption{Kinematic model of KR1410 in RViz}
+    \label{fig:tcp}
+\end{figure}
+
+\subsection{Tool Center Point (TCP) Calibration}
+\label{subsubsec:tcp-calibration}
+\begin{itemize}
+    \item \textbf{}: Determining the exact position of the end effector or tool relative to the robot’s last joint. This is crucial for precise manipulation of metal sheets.
+    \item \textbf{Workspace Calibration}: Defining the robot's operational workspace and ensuring that all tasks are performed within this defined area, avoiding collisions and ensuring smooth operation.
+\end{itemize}
+
 \begin{figure}[h]
     \centering
     \begin{subfigure}{0.48\textwidth}
@@ -19,28 +37,6 @@ operate accurately and in harmony.
     \caption{KR1410 subprogram to perform calibration automatically}
     \label{fig:auto-calibration-process}
 \end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.75\textwidth]{6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG}
-    \caption{TCP is set at the end of gripper at a distance of 216 mm from robot TFC}
-    \label{fig:tcp}
-\end{figure}
-
-
-
-
-\subsection{Robot Calibration}
-Robot calibration ensures that the Kassow robot can accurately position its end effector for loading, bending, and unloading metal sheets. This involves:
-
-
-\begin{itemize}
-    \item \textbf{Kinematic Calibration}: Adjusting the robot's kinematic model to correct any discrepancies between the theoretical model and the actual hardware. This includes measuring and compensating for joint offsets, link lengths, and joint angles.
-    \item \textbf{Tool Center Point (TCP) Calibration}: Determining the exact position of the end effector or tool relative to the robot’s last joint. This is crucial for precise manipulation of metal sheets.
-    \item \textbf{Workspace Calibration}: Defining the robot's operational workspace and ensuring that all tasks are performed within this defined area, avoiding collisions and ensuring smooth operation.
-\end{itemize}
-
-The KR1410 is already calibrated from the factory and does not need to be setup. Though in simulation, robot kinematic model is generated from the URDF and needs to be updated to match the real hardware.
 
 \subsection{Camera Calibration}
 The "Hand-Eye calibration (Robotics)" calibration method is used to determine the
@@ -163,6 +159,10 @@ The calibration process involves several systematic steps:
     \item \textbf{Validation}: Verify the calibration by performing tasks that require high precision and checking the accuracy of the results. Adjust calibration parameters as needed based on validation results.
     \item \textbf{Documentation}: Record the calibration parameters and procedures for future reference and troubleshooting.
 \end{enumerate}
+
+
+\subsection{Workspace Calibration}
+\label{subsec:workspace-calibration}
 
 
 

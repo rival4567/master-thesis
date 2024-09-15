@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Shivam Shivam" />
+  <title>Robotic Workcell for Automated Bending Process</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Robotic Workcell for Automated Bending Process</h1>
+<p class="author">Shivam Shivam</p>
+<p class="date">September 2024</p>
+</header>
+<h1 class="unnumbered" id="symbols-and-formulas">Symbols and Formulas</h1>
+<div id="tab:symbols">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: center;">Unit</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline"><em>a</em><sub>brake</sub></span></td>
+<td style="text-align: center;"><em><span class="math inline">deg/s<sup>2</sup></span></em></td>
+<td style="text-align: left;">Braking accelerations on the robot when emergency stop or protective stop is triggered <span id="sym:a-brake" label="sym:a-brake">[sym:a-brake]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline"><em>v</em><sub>max</sub></span></td>
+<td style="text-align: center;"><em><span class="math inline">mm/s<sup>2</sup></span></em></td>
+<td style="text-align: left;">linear speed set in the teach pendant of the robot <span id="sym:v-max" label="sym:v-max">[sym:v-max]</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline"><em>t</em><sub>brake</sub></span></td>
+<td style="text-align: center;"><em>s</em></td>
+<td style="text-align: left;">the braking time of the robot when emergency stop or protective stop is triggered <span id="sym:t-brake" label="sym:t-brake">[sym:t-brake]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline"><em>s</em><sub>brake</sub></span></td>
+<td style="text-align: center;"><em>mm</em></td>
+<td style="text-align: left;">the braking distance of the robot when emergency stop or protective stop is triggered <span id="sym:s-brake" label="sym:s-brake">[sym:s-brake]</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline"><em>ω</em></span></td>
+<td style="text-align: center;"><em><span class="math inline">deg/s</span></em></td>
+<td style="text-align: left;">Joint speed <span id="sym:omega" label="sym:omega">[sym:omega]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>r</em></td>
+<td style="text-align: center;"><em>mm</em></td>
+<td style="text-align: left;">distance between the shoulder joints of the robot <em>i.e.</em> joint axis 1 or 2 and either centre of gravity of load or <span id="sym:r" label="sym:r">[sym:r]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span id="tab:symbols" label="tab:symbols">[tab:symbols]</span></p>
+<h1 class="unnumbered" id="technical-terms-and-abbreviations">Technical Terms and Abbreviations</h1>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="chap:introduction">Introduction</h1>
+<h2 id="sec:background">Background</h2>
+<p>The manufacturing sector is driven by the need of increased productivity. The need for efficiency, precision, safety and cost reduction has led to significant push towards automation. The industrial growth is currently pushed by the Industrial 4.0: a fourth wave of technological advancements that is connecting sensors, machines, and other systems. These connected systems, also known as cyberphysical systems, may communicate with one another via common Internet-based protocols and use data analysis to self-configure, anticipate failure, and react to changes. Industry 4.0 is making it possible to have flexibility in production by enabling faster and efficient processes. <span class="citation" data-cites="BAI2020107776 russmann2015industry">(Bai et al. 2020; Rüßmann et al. 2015)</span></p>
+<p>There are nine pillars of technological advancements, namely big data and analytics, autonomous robots, simulation, horizontal and vertical system integration, the industrial internet of things, cybersecurity, the cloud, additive manufacturing, augmented reality. <span class="citation" data-cites="russmann2015industry">(Rüßmann et al. 2015)</span></p>
+<figure>
+<img src="1. Introduction/1.1 Background/exhibit2.png" id="fig:background-exhibit-2" alt="" /><figcaption>Industry 4.0 is changing traditional manufacturing relationships (Source: <span class="citation" data-cites="russmann2015industry">(Rüßmann et al. 2015)</span>)</figcaption>
+</figure>
+<p>Metal bending processes through an bending machine, used to rely heavily upon the manual labor traditionally. Industry 4.0 is representing a transformation from low skill manual labor to a sophisticated system that requires -related skills and innovation abilities in the workforce. Robotic Automation would have less variability in product quality and will not expose operators to physical strain and repetitive motion injuries. Collaborative robots with vision sensors <span class="citation" data-cites="8361333">(Yang et al. 2018)</span> allows to have flexibility in manufacturing of metal sheets. It means robot can be programmed to perform bending of different metal sheets when required. <span class="citation" data-cites="kassowrobotsblog">(Steger 2024)</span></p>
+<h2 id="sec:problem">Problem Statement</h2>
+<p>Manual bending of metal sheets is labor-intensive and can lead to human errors, resulting in inconsistent quality and inefficiency. The automation of this process with a collaborative robot poses several challenges, which includes the precise detection and processing of sheet metal parts, the accurate execution of the bend operation and the coordination of the robotic system with other systems in the workcell.</p>
+<p>This robotic workcell will have automatic loading and unloading of metal sheets in the bending machine and will use computer vision to detect and measure the bend angle of metal sheets. In addition, a user-friendly interface will be developed for monitoring the robotic workcell.</p>
+<h2 id="sec:objectives">Objectives</h2>
+<p>The objectives of this research are as follows:</p>
+<ol>
+<li><p>Designing and developing a robotic workcell capable of bending metal sheets autonomously. The workcell includes HFP80-25 NT as the bending machine to be automated, as the robot, vision sensors as cameras, an unloading station to get sheets from the operator and a shelf for placing the sheets.</p></li>
+<li><p>Integration of computer vision technology to detect metal sheets accurately for pick-up and measure bending angle. One vision sensor mounted on the will be used for sheet detection and second placed in robot workspace for measuring bending angle. Communication between the vision sensor and needs to be setup using Telegram.</p></li>
+<li><p>Building a web interface for the visualization and monitoring of robotic workcell in real-time. The web application interfaces with the through Bridge library. The interface uses web development technologies like , Javascript, and .</p></li>
+<li><p>Evaluating the efficiency and accuracy of the robotic workcell in industrial environments and compare it with already existing solution.</p></li>
+</ol>
+<h2 id="sec:scope">Scope</h2>
+<p>The development of robotic workcell that can be rapidly configured has a major influence on the manufacturing industry. It allows for more flexibilty and mass customization in production of parts. <span class="citation" data-cites="CHEN2001199">(Chen 2001)</span> Automating the bending process allows manufacturers to increase productivity, safety, flexibility, and overall process efficiency while having the option for customization. <span class="citation" data-cites="russmann2015industry">(Rüßmann et al. 2015, 9)</span></p>
+<p>This thesis contributes to the broadest field of industrial automation and robotics and shows how Industry 4.0 can transform traditional manufacturing processes. The scope consists of:</p>
+<ul>
+<li><p>Programming control software for the robotic system.</p></li>
+<li><p>Integration of computer vision systems for the detection and inspection of metal sheets.</p></li>
+<li><p>Building a web interface for monitoring and visualization.</p></li>
+<li><p>Experimental evaluation of system performance in the industrial environment.</p></li>
+</ul>
+<p>The thesis does not discuss other aspects of metal manufacturing or the integration of other manufacturing processes. The programming of the second robot i.e. Franka Emika panda robot and in the robotic workcell is out of scope of this thesis.</p>
+<h2 id="sec:structure">Outline of the Thesis</h2>
+<p>The thesis is organized into nine chapters: Chapter <a href="#chap:introduction" data-reference-type="ref" data-reference="chap:introduction">1</a> clearly defines the problem statement. Chapter <a href="#chap:review" data-reference-type="ref" data-reference="chap:review">2</a> reviews state-of-the-art technologies in the industry for automation. Chapter <a href="#chap:design" data-reference-type="ref" data-reference="chap:design">3</a> and <a href="#chap:integration" data-reference-type="ref" data-reference="chap:integration">4</a> describes the design and development of the robotic workcell, containing both hardware and software components. Chapter <a href="#chap:development" data-reference-type="ref" data-reference="chap:development">5</a> discusses the programming of the control software and web interface. Chapter <a href="#chap:testing" data-reference-type="ref" data-reference="chap:testing">6</a> presents the calibration process and evaluation of the entire robotic workcell using a specimen sheet metal part. Chapter <a href="#chap:results" data-reference-type="ref" data-reference="chap:results">7</a> provides the results and Chapter <a href="#chap:discussion" data-reference-type="ref" data-reference="chap:discussion">8</a> analyzes the results, discusses their implications, and addresses potential limitations. In the end, Chapter <a href="#chap:conclusion" data-reference-type="ref" data-reference="chap:conclusion">9</a> summarizes the whole thesis and makes suggestions for future research.</p>
+<h1 id="chap:review">Literature Review</h1>
+<h2 id="sec:automation_2">Robotic Automation in Manufacturing</h2>
+<p>Industrial robots were first used for repetitive tasks and material handling. The first industrial robot, Unimate was deployed by General Motors in 1961. It weighed two tons and worked on assembly lines, autonomously lifting heaving objects and welding car parts. Since then robots have evolved to become versatile device that can perform complex tasks, learn from experience, communicate through devices, and collaborate with human workers. <span class="citation" data-cites="firstrobot">(BPM 2024)</span></p>
+<p>Industrial robots are the right solution for high-volume production process for their efficiency, uptime and quality. <span class="citation" data-cites="jrautomation">(A Hitachi Group Company 2024a)</span> As the manufacturing industry moves smaller batch production, cobots would be much more useful and flexible in a smart workcell. Cobots are vastly more advanced and affordable than industrial robots. <span class="citation" data-cites="jrautomation2">(A Hitachi Group Company 2024b)</span> Common use cases of robotic automation in manufacturing include material handling <span class="citation" data-cites="gambao2012new SKIBNIEWSKI1992251">(Gambao, Hernando, and Surdilovic 2012; Skibniewski and Wooldridge 1992)</span>, welding <span class="citation" data-cites="tarn2011robotic">(Tarn, Chen, and Fang 2011)</span>, assembly <span class="citation" data-cites="ji2021learning">(Ji et al. 2021)</span>, pick-and-place <span class="citation" data-cites="shah2021design">(Shah et al. 2021)</span>, palletizing <span class="citation" data-cites="lee2021intelligent">(Lee et al. 2021)</span>, and even metal sheet bending <span class="citation" data-cites="Uhrhan1995">(Uhrhan, Roshardt, and Schweitzer 1995)</span>.</p>
+<p>Automation is particularly useful in industrial where there is a risk for human operators. In <span class="citation" data-cites="10381692">(Gómez-Hernández et al. 2024)</span>, robotic automation has been implemented for the manufacturing of footwears which is a hazardous environment for human workers. In it a robotic workcell consisting of three robots is controlled and coordinated through .</p>
+<p>With the , the machines in the robotic workcell communicate and share data with each other with which production process is improved. Also, whole production process can be monitored remotely.<span class="citation" data-cites="li2020robotics">(Li, Milojević, and Handroos 2020, 105)</span> With the AM technologies, design to production time is vastly decreased. <span class="citation" data-cites="li2020robotics">(Li, Milojević, and Handroos 2020, 116)</span>. The benefits of automation can often outweigh the initial costs. This way Industry 4.0 is transforming manufacturing sector.</p>
+<h2 id="sec:bending_2">Automated Bending Processes</h2>
+<p>Sheet metal bending is a process in which bends are formed using a combination of a punch and a die. This process is used to create large number of mechanical products such as furniture panels, shelves, cabinets, housing for electro-mechanical devices etc. <span class="citation" data-cites="alvaautomated">(Alva and Gupta, n.d.)</span> The project partner for this thesis <em>i.e.</em> <strong>mech-tron GmbH &amp; Co. KG</strong> excels in the manufacturing of housing systems for electronic and embedded equipment. In this thesis, manufacturing of one of these sheet metal housing systems will be automated by means of robotic workcell.</p>
+<p>There are various companies in the market which offers automated bending cells. They use industrial robot to feed and bend the parts in the bending machine. <span class="citation" data-cites="mekoprint shenchong shopmetal">(Mechanics 2024; Shenchong 2024; Techology 2023)</span> or systems to assist the bending which are called <em>bending followers</em> and <em>sheet-feeder</em>. <span class="citation" data-cites="guimaraes2009bending">(Guimarães et al. 2009)</span> However, using a collaborative robot to perform bending tasks is challenging. A collaborative robot generally has low payload capacity and requires better robot motion planning during bending to avoid exceeding joint torques. In <span class="citation" data-cites="liu2022metalwiremanipulationplanning">(Liu et al. 2022)</span>, a cobot is used to collaborate with a bending machine to perform curving of metal wire and discusses the difficulties in holding the part in low payload robot gripper during bending and defines the generation of optimum robot motion considering the combined task and motion level constraints.</p>
+<p>In the article <span class="citation" data-cites="cobotfabricator">(Davis 2023)</span>, two cobots from are used for automated bending. The cobot can perform challenging bend sequences with the help of a regrip station. In similar way, unloading station is used for regrasping purposes to change the way the cobot presents the part to the bending machine.</p>
+<h3 id="subsec:astro">ASTRO bending cell</h3>
+<p>already offers an automated solution for the bending process in means of a system called ASTRO bending cell. This system consists of a handling robot which can perform production of smaller, complex workpieces and have uniformity in production. However, press brake and the know-how of handling robot come from . The project partner has one of these systems <em>i.e.</em> ASTRO-100 II NT HDS 1030 in their production floor.</p>
+<figure>
+<img src="figures/ASTRO-100.jpg" id="fig:astro" alt="" /><figcaption>ASTRO-II 100NT HDS 1030 bending cell. (Source: <span class="citation" data-cites="astro100">(AMADA 2024b)</span>)</figcaption>
+</figure>
+<p>The ASTRO-100 II NT cell is an “island solution” that is only available in the HDS-1030 press configuration, ASTRO HP-20 loading and unloading robot, ASTRO-100 II NT bending robot and the external software ASTRO CAM. The ASTRO-100 II NT cell. <span class="citation" data-cites="astro100">(AMADA 2024b)</span> The production using these system is continous and very fast.</p>
+<p>The main drawback of this system is the software ASTRO-CAM, which is owned by , and offers less flexibility and requires support from for programming. Without any vision sensors, the system is not smart. It can perform repetitive tasks very fast and with very little interference from operator but without any decision making. Also, the ASTRO robot is non-collaborative and humans cannot work alongside it. It requires a large area on the production floor which incurs more cost.</p>
+<p>In this thesis, this system will be compared to our robotic workcell solution which has collaborative robot and is more cost-effective.</p>
+<h2 id="sec:robot_2">Robotic System</h2>
+<p>The real benefit of robots is taking over the three Ds, the dull, the dirty and dangerous jobs. <span class="citation" data-cites="jordan2016robots">(Jordan 2016)</span> The functionality of a robotic system during any step of control should include three principal performance features in the cognitive process: perception, recognition and decision making. It is obvious that the autonomy of the whole robotic system directly corresponds to sensory equipment, processing sensory information and decision algorithms. <span class="citation" data-cites="HAVLIK2011327">(Havlík 2011)</span></p>
+<p>Robots systems are used in industrial environments for assembling parts, painting cars or welding operations. <span class="citation" data-cites="SathishKumar2023 Wakizako">(Sathish Kumar et al. 2023; Wakizako 2015)</span>. Robots could be arranged in assembly lines to carry out a particular repetitive task. With the development in robotic perception and algorithms, robotic systems could be placed in a workcell to perform multiple tasks sequentially. Sensory systems plays an important role to develop intelligent robotic systems. <span class="citation" data-cites="Wakizako">(Wakizako 2015)</span>. Using smart sensors, a single robotic arm could perform various tasks by making decisions.</p>
+<p>There are various kind of robotic arms available in the market. These include industrial robots as well as cobots. Cobots are generally more sensitive and easier to program. They are also more safe to work with humans as compared to industrial robots. Industrial robots require an enclosed space for safety reasons. However, they are more durable and the speed is high. <span class="citation" data-cites="10201199">(Sahan et al. 2023)</span> Robotic arm also comes in different number of . 6-axis robotic arms are mostly common, but an additional axis from a 7-axis cobot is advantageous in our case for collision free trajectory planning in a large workspace.</p>
+<p>A good example of cobot is the 7-axis cobot by Kassow Robots. This sophisticated robot can mimic human movements and offers an extensive range of motion that allows it to handle intricate tasks, navigate tight spaces, and maintain consistent product quality in an industrial setting. These cobots not only increase efficiency and productivity but also promote safety. They can operate in industrial environments and reduces the risks associated with humans as they are collaborative. With the ability to work tirelessly nonstop, theese cobots ensure continuous production and uniform quality standards. <span class="citation" data-cites="kassowrobotsblog">(Steger 2024)</span></p>
+<h3 id="subsec:ROS">Robot Operating System</h3>
+<p>The Robot Operating System (ROS) is a set of software libraries and tools which help to build robot applications. Because it is open-source, there is flexibility where and how to use ROS, as well as the freedom to customize if it requires. <span class="citation" data-cites="rosblog">(community 2024)</span> ROS is utilized to build, control or simulate various kind of robots, from mobile robots to robotic arms. <span class="citation" data-cites="koubaa2017robot">(Koubaa and others 2017)</span> It could also be used in partnership with a simulation environment like Gazebo. This will fasten the development process and also make decisions before actually buying a robot.</p>
+<p>In <span class="citation" data-cites="takaya2016simulation">(Takaya et al. 2016)</span>, a simulation environment is created for mobile robots using ROS and gazebo and later tested with the real robot, showcasing the usability of the ROS for the development process. In <span class="citation" data-cites="qian2014manipulation">(Qian et al. 2014)</span>, a manipulator is simulated for the pick and place operation. There are numerous robots build using ROS and is used extensively by both hobbyists and robotic developers and is a powerful tool.</p>
+<h2 id="sec:CV_2">Computer Vision in Industrial Automation</h2>
+<p>Computer vision () techniques have played an important role in promoting the information, digitization, and intelligence of industrial manufacturing systems. In manufacturing industry, applications include inspection and quality control, object detection and process control. In recent years, advancements in camera technology, image processing algorithms, and techniques have significantly increased the capabilities of vision systems in manufacturing systems. The most common methods of are features detection, recognition, segmentation, and three-dimensional () modeling. <span class="citation" data-cites="9761203">(Zhou, Zhang, and Konz 2023)</span></p>
+<p>technologies are required for the successful automation of the bending process. robotic arm should be able to correctly detect and pick metal sheets and then perform precise bending operations. With , images can be analyzed in real-time, allowing for feedback and adjustment for the automated bending process. This capability is necessary to maintain a high production rate while maintaining good precision. There are many examples of being used in industrial environments, like in the sorting and classification of food products <span class="citation" data-cites="BARNES2010339 THROOP2005281 BURGOSARTIZZU2010138">(Barnes et al. 2010; Throop et al. 2005; Burgos-Artizzu et al. 2010)</span>, monitoring and safety management of construction projects <span class="citation" data-cites="PANERU2021103940">(Paneru and Jeelani 2021)</span> or the automated traffic monitoring system. <span class="citation" data-cites="7892717 COIFMAN1998271">(Krishna et al. 2016; Coifman et al. 1998)</span></p>
+<p>The smart extensions of are added to the regular cameras in the industrial environments, which improves the performance of manufacturing or other automation processes. <span class="citation" data-cites="BREZANI2022298">(Brezani, Hrasko, and Vojtas 2022)</span> However, it requires image processing algorithms to run on separate hardware. The <sup></sup> vision sensor has a processor in its housing and does not require a or to run. A or laptop is required only in order to configure the <sup></sup> vision sensor. <span class="citation" data-cites="visor_user_manual">(SENSOPART 2024f, 23)</span></p>
+<h2 id="sec:interface_2">User Interfaces for Industrial Systems</h2>
+<p>Product development process can greatly benefit from the integration of the digital twin models. According to <span class="citation" data-cites="SEMERARO2021103469">(Semeraro et al. 2021)</span>, digital twin () embeds a "virtual" image of the reality constantly synchronized with the real operating scenario to provide sound information (knowledge model) to reality interpretation model to draw sound decisions.</p>
+<p>In manufacturing industry, a digital twin can replicate an individual machine, a cell, a complete line. Digital twin and virtual commissioning are two terms that often come when talking about Industry 4.0. Both use virtual representations of physical systems to save time, enable better training, and identify improvement opportunities, among other benefits. However, the digital twin requires a physical equivalent with technology for data transfer. Virtual commissioning requires simulation of all the signals with their timings and sensors and actuator responses. It can exist without a physical system. <span class="citation" data-cites="digitaltwinblog">(Industry and Trends 2022)</span></p>
+<p>Digital twin enables the creation of high-performance products and optimize production systems by allowing early estimations and later re-configurations. The connectivity of Industry 4.0 technologies is highlighted as a key strategy for achieving the most efficient product specifications in technical and economic terms for the manufacturer. Simulations with a digital production twin open up new possibilities in production integration. <span class="citation" data-cites="WAGNER201988">(Wagner et al. 2019)</span></p>
+<p>In this thesis, virtual commissioning is first accomplished in order to speed up the development process. The next step is to get the data from the real robotic system and use it to test and verify the virtual model. This will be the digital twin model which will help in:</p>
+<ol>
+<li><p>Identify collision points in the real world and use it to plan trajectory.</p></li>
+<li><p>Monitor and optimize the loading and unloading process.</p></li>
+<li><p>Offer testing opportunities for a new product model.</p></li>
+</ol>
+<p>A functional is required for monitoring and controlling robotic systems. When envisioning the design principles for , the should be understandable, reliable and accessible. <span class="citation" data-cites="Wilkinson">(Wilkinson et al. 2021)</span> The should be designed for an untrained user, offer feedback, have robust error handling in case of system failure, and usable for users with varying levels of experience. Web-based interfaces have gained popularity due to their accessibility and ease of deployment. Versatile and accessible could be created using web technologies and for robot control. In the paper <span class="citation" data-cites="Xiao_2019">(Xiao and Xu 2019)</span>, a web-based interface is created that utilizes alongside , and C++, allows for remote control, real-time monitoring, and visualization of robots. It uses library to simulate the motion of the robot on web interface. -based dashboard is also developed for an autonomous wheelchair using in <span class="citation" data-cites="10070046">(Islam et al. 2023)</span>, highlighting the potential of open source technologies to build a .</p>
+<h1 id="chap:design">System Design</h1>
+<h2 id="sec:overview">Overview of the Robotic Workcell</h2>
+<p>Robotic workcell has to be designed keeping in mind the workspace of handling robot. Handling robot has to able to reach every station in the workspace without any collision. The workcell is first developed in simulation with the use of ROS and gazebo software. This reduced the development time as it allowed for quick changes to the workcell.</p>
+<p>The preliminary designs for the robotic workcell were elaborated in the form of models and successively converted into final designs. These models were later converted to suitable file format like <em>.stl</em> and <em>.dae</em> for the simulation software . These meshes are then utilized to build up the whole workcell in and gazebo. Robot is defined in file format that includes the physical description of the robot. <span class="citation" data-cites="urdf">(Wiki 2024)</span> This simulated environment in gazebo is used to update and fix the final layout of the robotic workcell. Trajectories are planned to various subsystems in workcell using to determine to final position of robot in workcell. Figure <a href="#fig:robotic-workcell" data-reference-type="ref" data-reference="fig:robotic-workcell">3.1</a> shows the final layout of the workcell in gazebo software. It consists of various subsystems which include bending machine, storage station, unloading station, handling robot, bending machine terminal operating robot and safety fence.</p>
+<figure>
+<img src="figures/robotic-workcell1.png" id="fig:robotic-workcell" alt="" /><figcaption>Robotic workcell layout. 1) Bending machine 2) Storage station 3) Unloading station 4) Handling robot 5) Bending machine terminal operating robot 6) Safety fence</figcaption>
+</figure>
+<p>The subsystems are described in more detail in the following subsections.</p>
+<p>Sheets are loaded by workcell operator in the unloading station. Sheet metal parts are picked up by the handling robot and taken to bending machine to perform bending. After all the bending operations are complete, sheet metal parts are stored in storage station. The relation between each subsystem and the flow of energy, data, and material is shown in Figure <a href="#fig:flow-workcell" data-reference-type="ref" data-reference="fig:flow-workcell">[fig:flow-workcell]</a>.</p>
+<h3 id="sub:bending-machine">Bending machine</h3>
+<p>Bending machine as a unit comes with a terminal and a foot pedal. Terminal is used to operate the bending machine for starting, stopping and configuring the bending machine and also loading the bending program. Foot pedal comes with two pedals, one for closing the bending machine and other for opening of the bending machine. Opening and closing of bending machine is controlled by a foot pedal for the manual bending operations.</p>
+<figure>
+<img src="figures/bending-machine-blender.png" id="fig:bending-machine-blender" style="width:75.0%" alt="" /><figcaption>Bending machine asset in simulation</figcaption>
+</figure>
+<p>To automated the bending machine, PLC is used to send signals to foot pedal which in turn, controls the opening and closing of bending machine.</p>
+<p>An inspection camera is also added to measure the bending angle after each bending operation. This inspection camera is operated by the PLC and the bending angles are saved in <em>.csv</em> file format and displayed on a HMI.</p>
+<h3 id="sub:storage-station">Storage station</h3>
+<p>The storage station is a shelf with 10 drawers. The drawers of the shelf can be automatically opened and closed by the handling robot. It is a mechanical system which is used to store final bended sheet metal parts.</p>
+<figure>
+<img src="figures/storage-station-blender.png" id="fig:storage-station" style="width:30.0%" alt="" /><figcaption>Storage Station asset in simulation</figcaption>
+</figure>
+<p>When the storage station is full, human operators are to replace a filled shelf with a new empty shelf with a forklift. Thus, this is the only station which is not fixed in the robotic workcell. The robotic camera mounted on the handling robot needs to determine the correct position of the storage station after each restart.</p>
+<h3 id="sub:unloading-station">Unloading station</h3>
+<p>The task of the removal station is to take a single sheet metal part from a stack of raw sheets and make it available to the robot unit. This is a mechatronic system with several different components, which all have to function individually, but also together in combination. The mechatronic system is controlled by the PLC.</p>
+<figure>
+<img src="figures/unloading-station-front-blender.png" id="fig:unloading-station-front" alt="" /><figcaption>front-view</figcaption>
+</figure>
+<figure>
+<img src="figures/unloading-station-back-blender.png" id="fig:unloading-station-back" alt="" /><figcaption>back-view</figcaption>
+</figure>
+<p>This unloading station is on top of a cabinet which houses the PLC and controller of the handling robot.</p>
+<h3 id="sub:handling-robot">Handling robot</h3>
+<figure>
+<img src="figures/handling-robot-simulation.png" id="fig:handling-robot-simulation" style="width:30.0%" alt="" /><figcaption>Handling Robot KR1410 in simulation</figcaption>
+</figure>
+<p>Handling robot is the primary robot which handles the sheet metal parts to different subsystems <em>i.e.</em> unloading station, bending machine and storage station. It coordinates with the PLC to make decisions during the execution of the program. Reachability is very important in this case, as it should be able to handle sheet metal parts in any orientation. A two finger gripper is used for grasping the sheet metal parts.</p>
+<p>To get accuracy with the bending process, detection of features on the sheet metal parts is required. A robotic camera is mounted of the robot for this purpose. In this way, handling robot can be trained to operate with different variants of sheet metal parts.</p>
+<p>ROS simulations of the handling robot is done to determine the performance of robot in the workcell. The drawers of storage system is especially close to the production floor and the robot requires some space to move around without getting stuck. Reachability is tested with the simulation of trajectories before the final integration of the real robot in the workcell.</p>
+<h3 id="sub:panda-robot">Bending machine terminal operating robot</h3>
+<p>Together with the company <strong>VisCheck GmbH</strong>, an operating unit is developed for entering parameters on the operating terminal and reading relevant values on the operating terminal of the bending machine. The unit consists of a franka emika robot, a camera for reading terminal values and a computer for controlling the robot. A touch screen pointer is attached to the gripper of the robot for operating the touch screen of terminal.</p>
+<figure>
+<img src="figures/panda-robot-simulation.png" id="fig:terminal-robot" style="width:30.0%" alt="" /><figcaption>Franka emika panda robot as terminal operating robot in simulation</figcaption>
+</figure>
+<p>As it is programmed by another company, it is not simulated in the software and not coordinated for any trajectory planning. Sufficient floor space is left near the terminal of bending machine in the robotic workcell for the installation of this robot. The trajectories of handling robot are not planned anywhere near this robot. To setup this, safety zone is created during the programming of the handling robot.</p>
+<h3 id="sub:safety-fence">Safety fence</h3>
+<p>Safety fence marks the boundary of the robotic workcell. Even though the robot finalized is a collaborative robot, bending machine poses a safety concern as it is operated automatically by the PLC. The sheet metal parts are sharp around the corners and when handled by the robot is deemed as not safe.</p>
+<p>Two doors are installed for an entry in the robotic workcell. One is close to the storage system and is used to move shelf in-and-out of the workcell by a forklift. The doors are installed with a safety mechanism by which if the door is open, the whole robot unit and bending machine cannot operate. This safety mechanism is again controlled by the PLC. Safety fence is only installed at the end of the project by the company. A simulation of the fence with ROS and gazebo is not necessary in this case and is not included as assets in gazebo.</p>
+<h2 id="sec:requirements">Requirements for the overall system</h2>
+<ol>
+<li><p>A key requirement for the mobile robot unit is to be able to cope with the limited space available in the project partner’s production hall. Specifically, this means that only an area of approximately <span class="math inline">2<em>m</em> × 4.5<em>m</em></span> is available in front of the sheet metal bending machine.</p></li>
+<li><p>Another point is the operating time of the overall system. The unit should be able to autonomously manage a day shift of eight hours and a night shift of six hours without any major personnel intervention.</p></li>
+<li><p>Robot should also be able to handle various sheet metal part variants, i.e. different component sizes and geometries. In addition to the flexible handling of different sheet metal parts, the focus is also on the simple integration of new variants into the existing system. Some of the sheet metal parts in production are of small size. These sheets will have little gripping surface after few bendings. Special considerations needs to be given to the gripper design so that robot can handle sheet metal parts of small and medium sizes. (from <span class="math inline">60<em>m</em><em>m</em> × 110<em>m</em><em>m</em></span> to upto <span class="math inline">115<em>m</em><em>m</em> × 220<em>m</em><em>m</em></span>) The sheets should not move in the gripper during the movement of the robotic arm.</p></li>
+<li><p>The mobile robot unit is to be used as a supplement to manual production. It is therefore necessary that it can be set up and dismantled quickly and easily in front of the bending machine.</p></li>
+<li><p>The hand-eye calibration using a vision sensor could degrade over time due to environmental factors such as temperature changes or vibrations. <span class="citation" data-cites="Bahadir2024">(Bahadir, Siebert, and Aragon-Camarasa 2024)</span> This will decrease the accuracy of robot in positioning and grasping leading to incorrect bending. The robot should be able to automatically recalibrate without any long delays when there is a request by the operator.</p></li>
+<li><p>The angle measurement on the bent sheet should be carried out using a camera system after each bending process. Based on the measured angle, bending machine should be re-adjusted for the next iteration. The necessary values should also be entered at the operator terminal by the terminal operating robot. In addition, a continuous real-time status query of the bending machine is required via the operating terminal. For the implementation of this subtask, the company is working with <strong>VisCheck GmbH</strong>, which specializes in reading screens using a camera and making entries via a robot.</p></li>
+</ol>
+<h2 id="sec:hardware">Hardware Selection</h2>
+<h3 id="subsec:amada">AMADA bending machine</h3>
+<p>A bending machine that is manufactured in 2005 and no longer in production is chosen for this project. The bending machine from AMADA is a manual hydraulic press brake that is operated by foot pedal. It does not comes with a system that allows for automated bending process. Table <a href="#tab:machine_specifications" data-reference-type="ref" data-reference="tab:machine_specifications">3.1</a> shows the technical specifications of the bending machine.</p>
+<div id="tab:machine_specifications">
+<table>
+<caption>Bending Machine Technical Specifications (Source: <span class="citation" data-cites="bmspecifications">(AMADA 2024a)</span>)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span><strong>Description</strong></span></th>
+<th style="text-align: left;"><span><strong>Value</strong></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Model</strong></td>
+<td style="text-align: left;">HFP 50-20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Manufacturer</strong></td>
+<td style="text-align: left;">(France)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Year of manufacture</strong></td>
+<td style="text-align: left;">2005</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Drive</strong></td>
+<td style="text-align: left;">Hydraulic press brake</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pressing capacity</strong></td>
+<td style="text-align: left;">500 kN</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Working length</strong></td>
+<td style="text-align: left;">2090 mm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Distance between frames</strong></td>
+<td style="text-align: left;">1665 mm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>control</strong></td>
+<td style="text-align: left;">AMADA AMNC -graphic</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">with color screen</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>controlled axes</strong></td>
+<td style="text-align: left;">Y1/Y2; X1/X2; R1/R2; Z1/Z2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Open height</strong></td>
+<td style="text-align: left;">470 mm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Stroke</strong></td>
+<td style="text-align: left;">200 mm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Bending Speed</strong></td>
+<td style="text-align: left;">10 mm/s</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Approach Speed</strong></td>
+<td style="text-align: left;">100 mm/s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Return Speed</strong></td>
+<td style="text-align: left;">100 mm/s</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Laser monitoring</strong></td>
+<td style="text-align: left;">FIESSLER</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Length x width x height</strong></td>
+<td style="text-align: left;">3458 mm x 2450 mm x 2450 mm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Weight</strong></td>
+<td style="text-align: left;">4850 kg</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The AMADA bending machine allows for programming the 5-axis backgauge in the bending machine. It means for a specific bending operation, the tool and die the 5-axis backgauge moves in position accordingly and holds the sheet metal part in place. It is also possible to change bending operation by selecting the bending operation number from the terminal. This is done by the controller <em>i.e.</em> AMNC of the press brake.</p>
+<p>It is also possible to quickly change a tool in the bending machine. It has a punch holder system which allows quick and secure tool changes. The hydraulic system provides the force needed for the bending operations. The hydraulic system does not have any load upto a set point below which it start bending. This allows for an extremely fast approach and return speeds. <span class="citation" data-cites="amada-machine">(AMADA 2005)</span></p>
+<p>The bending machine has a laser monitoring device as shown in <a href="#fig:bending_machine" data-reference-type="ref" data-reference="fig:bending_machine">4.2</a> This device from <strong>Fiessler GmbH</strong> come pre-installed with the bending machine and is a press brake safety measure. It stops the closing of bending machine if a finger or something else is detected inside the bending machine.</p>
+<h3 id="subsec:kr1410">Kassow Robots: KR1410</h3>
+<p>KR1410 is a 7-axis collaborative robotic arm from Kassow Robots. It has a reachability of 1400 mm which fits satisfactory in the workcell. A seventh axis is particulary useful as it allows more freedom during trajectory planning especially in close spaces. Five out of seven joints could do two full rotations.</p>
+<figure>
+<img src="figures/kassow-robot-parts.png" id="fig:kassow-robot-parts" style="width:50.0%" alt="" /><figcaption>Functional parts of the KR collaborative robot (Source: <span class="citation" data-cites="kassow-manual">(Robots 2024c)</span>)</figcaption>
+</figure>
+<p>The robotic arm comes with a robot controller and a teach pendant as shown in Figure <a href="#fig:kassow-robot-parts" data-reference-type="ref" data-reference="fig:kassow-robot-parts">3.8</a> A robot controller is the main controlling unit for each manipulator. Teach Pendant is used for programming the manipulator and also provides and safety controls. The robot can be operated manually and automatically. It is automated, programmable and capable of moving in up to seven axes. The robot is typically used for welding, painting, assembly, pick and place, packaging and labelling. These are all carried out while ensuring high endurance, speed, and precision. <span class="citation" data-cites="kassow-manual">(Robots 2024c, Generation 2, 4.0:23)</span></p>
+<table>
+<caption>KR1410 Technical Specifications</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Description</strong></th>
+<th style="text-align: left;"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">Collaborative</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Repeat accuracy</td>
+<td style="text-align: left;">0.1 mm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Reach</td>
+<td style="text-align: left;">1400 mm in all directions</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Number of axis</td>
+<td style="text-align: left;">7-axis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Operating temperature range</td>
+<td style="text-align: left;">0-45°C</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Weight</td>
+<td style="text-align: left;">38.0 kg</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AC Power connector</td>
+<td style="text-align: left;">1 Phase CEE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Typical Power consumption</td>
+<td style="text-align: left;">400-1200W</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Supply voltage</td>
+<td style="text-align: left;">100-120 and 200-240 VAC (50/60hz)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Supply current</td>
+<td style="text-align: left;">16A</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">power supply</td>
+<td style="text-align: left;">24 VDC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Max. joint speed</td>
+<td style="text-align: left;">163/225 °/s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Max. static force on (payload)</td>
+<td style="text-align: left;">10 kg</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Max. static torque on</td>
+<td style="text-align: left;">25 Nm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sound level</td>
+<td style="text-align: left;">Below 70dB (A)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ingress protection</td>
+<td style="text-align: left;">IP54</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Joint ranges</td>
+<td style="text-align: left;">Joint 1,3,5,6,7 +/- 360°</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Joint 2,4 -70/+180°</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Footprint</td>
+<td style="text-align: left;"><span class="math inline">160 × 160</span> mm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROS Support</td>
+<td style="text-align: left;">Available</td>
+</tr>
+</tbody>
+</table>
+<p>Kassow Robots can be integrated with other devices via Profinet. Each robot that is equipped with optional Profinet interface can act as a Profinet IO-Device. This means that such robot can be monitored and controlled by any Profinet IO-Controller (for example PLC). <span class="citation" data-cites="profinet">(Profinet 2024)</span> KR1410 could be also interfaced with ROS. KR provides packages to install through which KR messages communication is set up to a PC. These messages are used to get the current joint configuration of the robot and simulate it in ROS or web UI. <span class="citation" data-cites="kassow-ros">(Robots 2024e)</span></p>
+<p>KR also provides developmental environment to add new robotic peripherals, like grippers or sensors. This development environment is , which allows writing KR software in C++ for a specific peripheral. It is used in order to setup communication between VISOR camera functions and the robot. <span class="citation" data-cites="Cbun">(Robots 2024b)</span></p>
+<h3 id="sec:visor">Camera System: VISOR<sup></sup> Vision Sensor</h3>
+<p>According to <sup></sup> <span class="citation" data-cites="visor_user_manual">(SENSOPART 2024f, 22)</span> user manual, the <sup></sup> vision sensor is an optical sensor and is used for the non-contact acquisition or identification of objects. The vision sensor features a number of different evaluation methods (detectors), like contour, pattern matching, Target Mark 3D, BLOB and others. The <sup></sup> vision sensor is a cost-effective alternative to conventional image processing systems as discussed in section <a href="#sec:CV_2" data-reference-type="ref" data-reference="sec:CV_2">2.4</a> The processing is done inside the camera housing only. It is a combination of sophisticated hardware and easily configurable sofware. <span class="citation" data-cites="sensopart-visor">(SENSOPART 2024a)</span></p>
+<figure>
+<img src="figures/vision-sensor.png" id="fig:vision-sensor" style="width:50.0%" alt="" /><figcaption><sup></sup> vision sensor</figcaption>
+</figure>
+<div id="visor-technical-data">
+<table>
+<caption><sup></sup> Technical Data (Robotic and Object Camera)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Description</strong></th>
+<th style="text-align: left;"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Operating Voltage</td>
+<td style="text-align: left;">24 V DC (18 V - 30 V)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Startup time</td>
+<td style="text-align: left;"><span class="math inline">&lt;</span> 14 s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Current consumption</td>
+<td style="text-align: left;"><span class="math inline">≤</span> 300 mA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Interfaces</td>
+<td style="text-align: left;">100 Mbit LAN, PROFINET,</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">EtherNet/IP, SensoWeb</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Weight</td>
+<td style="text-align: left;">Approx. 200 g</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ambient air temperature operation</td>
+<td style="text-align: left;">0<span class="math inline"><sup>∘</sup></span>C - 50<span class="math inline"><sup>∘</sup></span>C (80 % humidity,</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">non-condesing)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Protection Class</td>
+<td style="text-align: left;">IP 65/IP 67 EN 60529</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Housing Material</td>
+<td style="text-align: left;">Die-cast aluminium</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Camera type</td>
+<td style="text-align: left;">V20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Number of pixels (H <span class="math inline">×</span> V)</td>
+<td style="text-align: left;">s 1440 <span class="math inline">×</span> 1080</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sensor size</td>
+<td style="text-align: left;">1/2.9<span class="math inline"><sup>′′</sup></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pixel size</td>
+<td style="text-align: left;">3.4 <span class="math inline"><em>μ</em></span>m <span class="math inline">×</span> 3.45 <span class="math inline"><em>μ</em></span>m</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Technology</td>
+<td style="text-align: left;">CMOS Mono / Color</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Light type</td>
+<td style="text-align: left;">LED Red</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Target laser</td>
+<td style="text-align: left;">Red, laser class 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Integrated Lens, focal length</td>
+<td style="text-align: left;">6.5 (Wide)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Focus (Working distance)</td>
+<td style="text-align: left;">Motorized</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><sup></sup> vision sensor is a suitable choice for the identification and classification of metal sheets for the automated bending process. These sensors enable precise detection and processing of features on sheet metal parts, which leads to the efficiency and accuracy of automated bending process. The camera can be connected to a PLC or PC through ethernet or profinet. The VISOR software is installed on the PC and then the camera can be configured and jobs can be added.<span class="citation" data-cites="sensopart-software">(SENSOPART 2024b)</span>. A total of 255 jobs with 255 detectors each can be configured on the camera.</p>
+<p>Two camera are selected from SENSOPART. One for the robot which is used to detect the sheet metal parts and the target mark; and the other for inspection jobs.</p>
+<figure>
+<img src="figures/visor-v20-fov.png" id="fig:visor-v20" style="width:75.0%" alt="" /><figcaption><sup></sup> V20, Field of view Wide, Internal lens (Source: <span class="citation" data-cites="visor_user_manual">(SENSOPART 2024f, 357)</span>)</figcaption>
+</figure>
+<h4 id="subsubsec:robotic-camera">Robotic Camera</h4>
+<p>This camera is a <sup></sup> Robotic V20 vision sensor with <span class="math inline">1440 × 1080</span> resolution, wide lens and a red LED light. <span class="citation" data-cites="visor-robotic">(SENSOPART 2024d)</span> A hand-eye calibration is required in order to transform camera poses to robot frame. This camera does not use internal illumination to detect objects as the working distance is 300.0 mm which is large enough for internal illumination to full brighten the sheet metal part. A tailored interface is developed for KR teach pendant for this camera to make it communicate with the robot using CBuns.</p>
+<h4 id="subsubsec:inspection-camera">Inspection Camera</h4>
+<p>The inspection camera is a <sup></sup> V20 Object vision sensor with <span class="math inline">1440 × 1080</span> resolution and red LED light. <span class="citation" data-cites="visor-object">(SENSOPART 2024c)</span> This camera gets the bending angle of the bent sheet metal part. The robot brings the bent sheet metal parts to the inspection camera. It uses internal illumination of red light to measure the angle as working distance is only around 100 mm.</p>
+<h3 id="subsec:PLC">PLC</h3>
+<p>PLC A programmable logic controller (PLC) is a special form of microprocessor-based controller that uses programmable memory to store instructions and to implement functions such as logic, sequencing, timing, counting, and arithmetic in order to control machines and processes. <span class="citation" data-cites="bolton2015programmable">(Bolton 2015, 5)</span> It is an industrial computer that has been ruggedized and adapted for the control of manufacturing processes, such as system monitoring, motor control, workcells, or any activity that requires high reliablity, ease of programming, and process fault diagnosis. <span class="citation" data-cites="ALPHONSUS20161185">(Alphonsus and Abdullah 2016)</span></p>
+<p>PLC from the manufacturer Siemens are called SIMATIC Controller. <span class="citation" data-cites="siemens">(SIEMENS 2024)</span> A SIMATIC HMI is also added to the top of front panel of the unloading station to provide revelant information to the operator as shown in figure <a href="#fig:unloading-station-front" data-reference-type="ref" data-reference="fig:unloading-station-front">3.4</a> PLC is used to manage everything in robotic workcell, from giving instructions to the KR to controlling the bending machine and unloading station.</p>
+<h3 id="subsec:robotic-gripper">Gripper</h3>
+<p>The gripper is selected according to payload, gripping force and opening width. The opening width is the dominant selection criterion here, as the gripper must be able to grip both the thin sheets with thicknesses of around 1 to 3 mm and the handle on the drawers with a width of 15 mm. An electric gripper was considered, as the power supply could have been provided via the cable already integrated in the robot. Due to the higher costs, the double height and the weight, a pneumatic gripper was chosen.</p>
+<div id="visor-technical-data">
+<table>
+<caption>Schunk gripper technical details (Source: <span class="citation" data-cites="schunk-gripper">(Schunk 2024)</span>)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Description</strong></th>
+<th style="text-align: left;"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Closing Force</td>
+<td style="text-align: left;">550.0 N</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Stroke per jaw</td>
+<td style="text-align: left;">8.0 mm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Min. operating pressure</td>
+<td style="text-align: left;">2.0 bar</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Max. operating pressure</td>
+<td style="text-align: left;">8.0 bar</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Opening force</td>
+<td style="text-align: left;">610.0 N</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Weight</td>
+<td style="text-align: left;">0.51 kg</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Opening time</td>
+<td style="text-align: left;">0.035 s</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Closing time</td>
+<td style="text-align: left;">0.035 s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Repeat accuracy</td>
+<td style="text-align: left;">0.01 mm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Size (<span class="math inline"><em>L</em> × <em>W</em> × <em>H</em></span>)</td>
+<td style="text-align: left;"><span class="math inline">96.0 × 42.0 × 49.0</span> mm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Min. Ambient temperature</td>
+<td style="text-align: left;">5.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Max. Ambient temperature</td>
+<td style="text-align: left;">90.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure>
+<img src="figures/gripper.jpeg" id="fig:schunk-gripper" style="width:50.0%" alt="" /><figcaption>Schunk gripper</figcaption>
+</figure>
+<p>A universal schunk gripper PGN-plus-P 80-1 is chosen which is a 2-finger parallel pneumatic gripper with permanent lubrication, high gripping force, and high maximum moments due to the use of a multi-tooth guidance. <span class="citation" data-cites="schunk-gripper">(Schunk 2024)</span> It is also possible to know if the gripper is open or closed because of a sensor inside the housing of gripper. This value of sensor is sent to the PLC to detect if the gripper is closed.</p>
+<h4 id="subsubsec:robotic-gripper">Robotic Gripper</h4>
+<p>The robotic gripper is mounted on the KR1410. This gripper is used for grasping the sheet metal parts, perfrom bending operation and opening or closing the drawers of shelf.</p>
+<h4 id="subsubsec:unloading-gripper">Unloading Station Gripper</h4>
+<p>The pneumatic parallel gripper is mounted on the pneumatic swivel unit which can turn 180. This allows the transfer the sheet metal part from unloading station to the robotic gripper.</p>
+<h2 id="sec:software">Software Architecture</h2>
+<p>To find out the software version and development environent used in the development of the workcell, check the appendix <a href="#sec:versions" data-reference-type="ref" data-reference="sec:versions">10.1</a>.</p>
+<h3 id="subsec:simulation-software">Simulation Software</h3>
+<p>Before building the robotic workcell in the real world, the kassow robot is simulated in the ROS and gazebo software environment.</p>
+<h4 id="subsubsec:ROS">ROS</h4>
+<p>For more information on ROS, see section <a href="#subsec:ROS" data-reference-type="ref" data-reference="subsec:ROS">2.3.1</a>. A URDF model of the KR1410 with gripper attached is created complete with all positions of links, joints, sensors, models etc. This URDF description of robot is then ready to be tested in the workcell. Few open-source additional packages were also used for building this simulation. For example, for attaching an object to the finger joint which simulates a grasping action in gazebo simulator. <span class="citation" data-cites="gazebo-pkgs">(Buehler 2021)</span></p>
+<p>The robotic motion of unloading station gripper and the manipulation of KR1410 using the robotic gripper is simulated using ROS. (See Figure <a href="#fig:gazebo-rviz" data-reference-type="ref" data-reference="fig:gazebo-rviz">3.13</a>)</p>
+<figure>
+<img src="figures/rosgraph.png" id="fig:rosgraph" alt="" /><figcaption>ROSGraph</figcaption>
+</figure>
+<p>Many custom ROS packages <span class="citation" data-cites="rospackage">(ROS.org 2022a)</span> are created to simulate the workcell. A single ROS launch <span class="citation" data-cites="roslaunch">(ROS.org 2019)</span> file is launched to run every node <span class="citation" data-cites="rosnode">(ROS.org 2022b)</span>, service <span class="citation" data-cites="rosservice">(ROS.org 2011)</span> and parameter <span class="citation" data-cites="parameterserver">(ROS.org 2018a)</span> or action servers <span class="citation" data-cites="actionserver">(ROS.org 2018b)</span> Figure <a href="#fig:rosgraph" data-reference-type="ref" data-reference="fig:rosgraph">3.12</a> visualizes the computation graph of the simulation. It shows the currently active ROS nodes <span class="citation" data-cites="rosnode">(ROS.org 2022b)</span> and topics <span class="citation" data-cites="rostopic">(ROS.org 2022c)</span> in the simulation of robotic workcell.</p>
+<h4 id="subsubsec:gazebo">Gazebo Simulator</h4>
+<p>Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently simulate populations of robots in complex indoor and outdoor environments. While similar to game engines, Gazebo offers physics simulation at a much higher degree of fidelity, a suite of sensors, and interfaces for both users and programs. <span class="citation" data-cites="gazebo-classic">(Gazebo 2014)</span></p>
+<p>A model of the entire workcell is created for the gazebo simulator. The assets are converted from CAD designs to .dae and .stl file format using blender software. These meshes are then included in the SDF model object. The workcell is then ready to be simulated in the gazebo simulator.</p>
+<figure>
+<img src="figures/gazebo-rviz.png" id="fig:gazebo-rviz" alt="" /><figcaption>Robotic workcell in Gazebo simulator (left) and RViz (right)</figcaption>
+</figure>
+<h4 id="subsubsec:RViz">RViz</h4>
+<p>RViz is short for ROS Visualization. It is a 3D visualization software tool for robots, sensors, and algorithms. It allows seeing the robot’s perception of its world (real or simulated). The purpose of RViz is to visualize the state of a robot. It uses sensor data to try to create an accurate depiction of what is going on in the robot’s environment. <span class="citation" data-cites="rviz">(MoveIt 2020)</span></p>
+<h4 id="subsubsec:moveit">MoveIt</h4>
+<p>MoveIt is a software for ROS used for manipulation, motion planning, 3D perception, kinematics, control and navigation. <span class="citation" data-cites="moveit">(MoveIt 2024)</span> MoveIt is used to get the solve the kinematics of the 7-axis kassow robot and do robotic manipulation and perception. A collision mesh of the workcell is published in the planning scene as can be seen in RViz in Figure <a href="#fig:gazebo-rviz" data-reference-type="ref" data-reference="fig:gazebo-rviz">3.13</a>. This makes the KR1410 to plan trajectories without any collision in the workcell. The robotic gripper is also controlled using MoveIt package.</p>
+<h3 id="subsec:computer-vision">VISOR Communication Setup</h3>
+<p>VISOR software is not officially supported by the KR1410 and there is no direct integration of the VISOR camera available. However, Kassow robots provides support to build own software through CBun development. The CBun (Capability Bundle) represents a modular framework within the KR software system, which encapsulates functionalities and provides the access to its predefined .</p>
+<figure>
+<img src="figures/sensopart-development.png" id="fig:sensopart-development" style="width:50.0%" alt="" /><figcaption>CBun Project Setup for SENSOPART Integration in KR</figcaption>
+</figure>
+<p>The CBun SDK is the Software Development Kit that provides all essential tools for CBun development. The project setup is created in a Visual Studio Code container running on Ubuntu 18.04 with a special set of software packages. <span class="citation" data-cites="Cbun">(Robots 2024b)</span> The header files are located in <strong>include</strong> directory and C++ source file <em>i.e.</em> <em>VISOR_Communication.cpp</em> are placed in <strong>src</strong> directory. Upon building the project, a <em>SENSOPART.cbun</em> file is generated as shown in <a href="#fig:sensopart-development" data-reference-type="ref" data-reference="fig:sensopart-development">3.14</a> It is then installed in the teach pendant using a .</p>
+<figure>
+<img src="figures/telegram-output.png" id="fig:visor-communication" style="width:100.0%" alt="" /><figcaption>VISOR Communication to KR1410 using Telegram</figcaption>
+</figure>
+<p>CBun device is one of the CBun elements. CBun Device concept allows to wrap handling code of physical device like VISOR vision sensor into the CBun and hide it from the end user. This allows the user to simply control and monitor devices without the need to implement the communication and logic. <span class="citation" data-cites="cbun-device">(Robots 2024a)</span></p>
+<p>VISOR camera is powered from the TPSU02 on the KR1410 tool-IO. A CBun device named <strong>VISOR</strong> from CBun developement is created which has methods for controlling the functionalities of camera like changing job, getting object pose by triggering camera and performing calibration. Through this device, the KR communicates with the VISOR over telegram. Figure <a href="#fig:visor-communication" data-reference-type="ref" data-reference="fig:visor-communication">3.15</a> shows the setup of telegram with the correct start, trailer and separator characters, and also the transfer of data which only happens in the format of one integer and one pose value. The integer value is used for now to determine if the camera has detected the object while the pose value is used to send the pose of the detected object. Integer value of 1 means the camera has detected the object and 0 means not detected.</p>
+<h3 id="subsec:program-tree">Program Tree</h3>
+<p>Kassow Robots teach pendant is a graphical user interface which allows users to control robot arm and HW equipment, build and run programs and configure robot installation setup. It is intended to be intuitive as it comes with familiar design of a tablet. The main screen interface is based on a double pane layout between which there is a command box. The command box provides access to basic building blocks, loaded CBun devices, and subroutines defined by the operator. These commands can be dragged and dropped into the program tree. <span class="citation" data-cites="kassow-software-manual">(Robots 2024f, 1.3.0:15)</span> There is a control mode in the bottom which can set the master speed or launch the program and control the execution process. (pause, continue, terminate). The program tree view is where the robot program is built in an intuitive graphical way. A program tree contains atleast one sequence. A sequence contains a number of commands that are executed sequentially. For separate sequences, the commands are executed simulataneously and asynchronously. <span class="citation" data-cites="kassow-software-manual">(Robots 2024f, 1.3.0:20)</span></p>
+<figure>
+<img src="figures/programtree.png" id="fig:programtree" alt="" /><figcaption>Programming in teach pendant for a sheet metal part variant</figcaption>
+</figure>
+<p>The programming of KR1410 is done in the program tree for one sheet metal part variant. It is done so as to test the bending process using the KR1410. The program tree of the workcell consists of four sequences which runs in parallel. Sequence 1 is the main program which runs all the pick-place and bending operations. Sequence 2 and 3 looks for a signal from PLC for pausing and terminating the current program respectively. Sequence 4 controls the robotic and unloading station grippers using a push button for manual operation of the gripper in case of emergency.</p>
+<p>The robot is programmed using a number of subprograms such that a subprogram can be quickly imported in the sequence and is intuitive to understand as shown in figure <a href="#fig:programtree" data-reference-type="ref" data-reference="fig:programtree">3.16</a> Besides normal RCommands like IF, LOOP, FOR, MOVE, WAIT and so on, there are a number of CBun devices from Kassow Robots imported like the IK, FK and WATCHER devices. IK is used to get the inverse kinematics from a pose and FK is used to get the forward kinematics from a joint configuration. Custom made Cbuns modules for VISOR are also used for auto-calibration and for getting the pose in the robot frame of a detected object in the workspace using the VISOR vision sensor.</p>
+<h3 id="subsec:web-ui">Web UI</h3>
+<h4 id="subsubsec:frontend">Front-end technologies</h4>
+<p>Front-end development is the development of visual and interactive elements of a website that users interact with directly. It’s a combination of HTML, CSS and JavaScript, where HTML provides the structure, CSS the styling and layout, and JavaScript the dynamic behaviour and interactivity. <span class="citation" data-cites="frontend">(kamrify 2024b)</span></p>
+<h5 id="par:reactjs">Reactjs</h5>
+<p>is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native. It user interfaces out of individual pieces called components written in JavaScript. <span class="citation" data-cites="reactjs">(React 2024)</span></p>
+<h4 id="subsubsec:backend">Backend technologies</h4>
+<p>Backend development refers to the server-side aspect of web development, focusing on creating and managing the server logic, databases, and APIs. It involves handling user authentication, authorization, and processing user requests, typically using backend development languages such as Python, Java, JavaScript (Node.js), and .NET. <span class="citation" data-cites="backend">(kamrify 2024a)</span></p>
+<h5 id="par:nodejs">Node.js</h5>
+<p>is an open-source, cross-platform JavaScript runtime environment that lets developers create servers, web application etc. The web application for robotic workcell is built and hosted on a Node.js server. <span class="citation" data-cites="nodejs">(node.js 2024)</span></p>
+<h5 id="par:npm">npm</h5>
+<p>is a package manager for Node.js. It stands for Node Package Manager. Through this, ROS web tools for server-side runtime are installed like roslib, ros3djs. <span class="citation" data-cites="npm">(npm 2024)</span></p>
+<h4 id="subsubsec:rosweb">ROS Web Tools</h4>
+<p>Robot Web Tools are open-source libraries and tools for building web-based robot apps with ROS. Rosbridge, roslibjs, ros3Djs, and visualization-rwt packages are used for building the web application which are part of ROS Web Tools. <span class="citation" data-cites="webtools">(tools 2024a)</span> Rosbridge and visualization-rwt are installed on the ROS workspace for robotic workcell. Roslibjs and ros3Djs are libraries for building the web application and are installed on the server built on Node.js.</p>
+<h5 id="par:rosbridge">Rosbridge</h5>
+<p>The WebSocket makes it possible to open a two-way interactive communication session between the user’s browser and a server. With this API, messages can be sent to a server and received through event-driven responses without having to poll the server for a reply. <span class="citation" data-cites="websocket">(tools 2024b)</span> Rosbridge provides a websocket interface to ROS systems. It will provide interface to front-end technologies like ReactJs which builds the UI and publishes a web application. Rosbridge suite is a meta-package containing rosbridge, various front end packages for Rosbridge like a WebSocket package, and helper packages. <span class="citation" data-cites="rosbridge">(Wiki 2022)</span></p>
+<h5 id="par:roslibjs">roslibjs</h5>
+<p>provides base dependencies and support libraries for ROS. roslib contains many of the common data structures and tools that are shared across ROS client library implementations. <span class="citation" data-cites="roslib">(Wiki 2013)</span> It will provides support to interact with basic ROS functionalities like topics, services, parameter servers and others.</p>
+<h5 id="par:ros3djs">ros3djs</h5>
+<p>is the standard JavaScript 3D visualization manager for ROS. It is build ontop of roslibjs and utilizes the power of three.js <span class="citation" data-cites="threejs">(three.js 2024)</span>. Many standard ROS features like interactive markers, URDFs, and maps are included as part of this library. <span class="citation" data-cites="ros3djs">(Wiki 2015a)</span></p>
+<h5 id="par:visualization-rwt">visualization-rwt</h5>
+<p>package is a suite of nodes for web based robot visualization. It provides nodes for controlling the robot using MoveIt through web application. <span class="citation" data-cites="visualization-rwt">(tork-a 2024)</span></p>
+<h1 id="chap:integration">Hardware Integration</h1>
+<h2 id="installation-and-configuration">Installation and Configuration</h2>
+<p>After testing and simulating the system design in the simulation software, construction and installation of individual systems begin. This section explains the installation and configuration of each system with their individual components, while also explaining their functionality.</p>
+<h3 id="subsec:marker">Detection marker</h3>
+<p>Detection marker is a <span class="math inline">15 × 13</span> 200 mm pattern that is used to determine the pose of a system placed in the workcell using the <sup></sup> vision sensor mounted on the KR. The pose represents the position and orientation in 3D space. In total, there are ten markers in the robotic workcell. One each for bending machine unit and unloading station; and ten markers for the storage station.</p>
+<figure>
+<img src="figures/detection-marker.png" id="fig:marker" style="width:50.0%" alt="" /><figcaption>Detection marker</figcaption>
+</figure>
+<p>In addition to get the pose, detection marker is used as calibration plate for auto calibration of camera <em>w.r.t.</em> .</p>
+<h3 id="subsec:bending-machine">Bending machine unit</h3>
+<p>Bending machine is set to operate automatically by controlling the foot pedal with . To automate the bending process, several devices and components are installed on the bending machine. Bending machine is operated freely upto a certain point <em>i.e.</em> without any pressure and only starts applying pressure when it is in contact with the sheet metal part. Figure <a href="#fig:bending_machine" data-reference-type="ref" data-reference="fig:bending_machine">4.2</a> shows these components.</p>
+<h4 id="subsubsec:marker">Marker</h4>
+<p>Detection marker mounted on the bending machine. This pose is used as reference frame for all three bending stations. Since the bending machine is fixed, this marker is also used for auto calibration of the robotic camera.</p>
+<figure>
+<img src="figures/bending-machine.png" id="fig:bending_machine" style="width:100.0%" alt="" /><figcaption> Bending Machine. 1) Marker 2) Bending machine open height measurement sensor 3) Bending station 4) Terminal fixture 5) Laser monitoring</figcaption>
+</figure>
+<h4 id="subsubsec:laser-sensor">Bending machine open height measurement sensor</h4>
+<p>It is important to know exactly the current open height of the bending machine. This value tells the KR to open the pneumatic parallel gripper as sheet starts bending at a bending station to avoid any deformation in the sheet. Once the bending is complete, the KR can move out safely without any collision if a set-point on the open height is reached.</p>
+<p>For this, a laser sensor is mounted on the bending machine which measures the open height of the bending machine. The sensor values are sent to the PLC. KR makes decision to do bending operation based on this laser sensor value.</p>
+<h4 id="subsubsec:bending-station">Bending station</h4>
+<p>There are three bending stations in the bending machine. Each bending station has a different set of punch and die. Bending station 1 is used to achieve a bending of 90. Bending station 2 bends the sheet metal part at an angle of 135. And finally, bending station is used to press down the sheet and make it flat.</p>
+<figure>
+<img src="figures/bending-station.png" id="fig:bending-station" style="width:70.0%" alt="" /><figcaption>Three bending stations for the bending operation</figcaption>
+</figure>
+<p>These three stations are enough for the sheet bending operation. KR1410 will take the sheet metal part to one of these bending station to perform a bending of a particular angle. A sheet metal part could require the use of one or more of these bending stations.</p>
+<h4 id="terminal-fixture">Terminal Fixture</h4>
+<p>The bending machine comes with a terminal which is used to operate the bending machine. However, this terminal is free to rotate and move. It is required to fix the movement of terminal, so that terminal operating robot could operate reliably. The fixtures made from aluminium profiles fixes the bending machine terminal.</p>
+<h3 id="subsec:robot-unit">Robot unit</h3>
+<p>The robot unit consists of three assemblies: a base, a robot and an end-effector. (Figure <a href="#fig:robot-installation" data-reference-type="ref" data-reference="fig:robot-installation">4.4</a>). The robot is a manipulator from kassow robots with pneumatic parallel grippers as the end-effector. Pneumatic gripper is controlled by PLC. camera is also mounted on the tool-IO which is used for robotic perception.</p>
+<figure>
+<img src="figures/handling-robot.png" id="fig:robot-installation" style="width:100.0%" alt="" /><figcaption>Components of the robot unit: 1) robot base 2) KR1410 manipulator 3) manual quick-change system 4) robotic gripper 5) robotic camera</figcaption>
+</figure>
+<h4 id="robot-base">Robot base</h4>
+<p>The base is a simple welded construction made of steel. The choice of steel material ensures that the base has sufficient dead weight so that it can be transported together with the robot and gripper using a pallet truck without the risk of tipping over. During operation, the robot unit is fixed to the floor with four M12 screws.</p>
+<h4 id="kr1410-manipulator">KR1410 manipulator</h4>
+<p>The robot used is a 7-axis robot from Kassow Robots with model KR1410. This robot model fulfills the requirements defined in the section <a href="#sec:requirements" data-reference-type="ref" data-reference="sec:requirements">3.2</a>. Simulations have shown that this robot is above to reach even the lowest drawers of the shelf of the storage station. Two full rotations (720) of five out of seven joints allows complex motions in limited space. A flexible conduit containing pneumatic hose for the pneumatic parallel gripper and communication cabel for the camera goes around the manipulator to reach the end-effector.</p>
+<h4 id="manual-quick-change-system">Manual quick-change system</h4>
+<p>The gripper is attached to a manual quick-change system. The manual quick-change system makes it possible to exchange different gripper designs in a short time and without increased effort if required for a sheet metal part type. Sheet metal part is folded into something like a box. The quick-change system also has an electric and pneumatic power feed-through, which ensures simple, user-friendly changeover.</p>
+<h4 id="robotic-gripper">Robotic Gripper</h4>
+<p>The gripper is a Schunk pneumatic parallel gripper. It is powered and controlled by the Tool-IO board on the KR1410. The robotic gripper grips an object with an applied pressure of five bar. This is enough to hold the sheet metal part in place during motion of the arm. The fingers are made from aluminium material and finger tips are 3D printed using a printer. The tips are worn out after some period of time, but are easily replacable by 3D printing. In the program tree, the center of finger tips sets the for the robot and is 216 mm from the .</p>
+<h4 id="robotic-camera">Robotic Camera</h4>
+<p>A camera system is installed on the robot itself. This is used to determine the relative position between the robot unit and the unloading station, bending machine and storage station using the markers and between the robot unit and the sheet metal part (when it is first made available at the unloading station or is gripped) using features on the sheet metal part. As the working distance of this camera is large <em>300mm</em>, using external light source is required to protect against ambient light. This is because light reflections or changing extraneous light can distort evaluation results.</p>
+<h3 id="subsec:storage-station">Storage station</h3>
+<p>The storage station is a shelf of 10 drawers and is constructed entirely from aluminum profiles. At the heart of the storage box are the modular drawers, which consist of a universal basic construction and individual sheet metal part support plates. The basic construction consists of an aluminum profile frame, two telescopic rails and a locking mechanism, which prevents the drawer from moving unintentionally when pulled out or pushed in. Due to the greater need for profiles and connection technology, the costs for this construction method are somewhat higher, but the storage box can be manufactured precisely as a result, which will have a positive effect on process reliability later when the sheet metal parts are stored.</p>
+<p><img src="figures/storage-station-front.png" title="fig:" id="fig:storage-station-main" alt="Storage station of 10 drawers" /> <span id="fig:storage-station-front" label="fig:storage-station-front">[fig:storage-station-front]</span></p>
+<figure>
+<img src="figures/storage-station-back.png" id="fig:storage-station-back" alt="" /><figcaption>back-view</figcaption>
+</figure>
+<p>The individual drawers could be pulled out using telescopic rails automatically by the robot. The individual drawer is a 30 mm thick plate with regularly arranged recesses, which enables the finished sheet metal parts to be placed in a defined position for the robot unit. For weight reasons, plastic was the only material considered and the drawers are printed using . Due to the possibility of customizing the sheet metal part carrier plate, the focus of the design implementation was on designing a carrier plate that can be used for several sheet metal part variants at the same time. On the one hand, this saves material resources, and on the other hand, different sheet metal part carrier plates do not have to be kept in stock or the storage boxes do not always have to be converted when changing products.</p>
+<p>Each drawer has its own locking mechanism. This is operated with a handle on the front by turning it clockwise or anticlockwise. The handle also serves as a gripping object for the robot unit, by means of which the drawer can be pulled out or pushed in. In addition to this locking mechanism, each storage box has a locking bar across all drawers. This is intended to serve as an additional safeguard when the boxes are moved between different factory halls and/or over longer distances using a forklift truck. In addition, each individual drawer is equipped with a detection marker pattern that is used to determine the spatial position using the camera on the robot unit. This is required for the reliable depositing of the sheet metal parts.</p>
+<h3 id="subsec:unloading-station">Unloading station</h3>
+<p>Figure <a href="#fig:unloading-station-main" data-reference-type="ref" data-reference="fig:unloading-station-main">[fig:unloading-station-main]</a> shows the elementary components of this station.</p>
+<h2 id="system-networking">System Networking</h2>
+<p>PLC is used to control the subsystems in the robotic workcell. PLC controls the bending process by controlling the bending machine, operates the unloading station to get new sheet metal parts to the unloading station gripper using the gantry robot, triggers the inspection camera for testing the bending process and cooperates with the KR1410 to select the correct bending task. To achieve all of this, communication needs to be setup between various subsystems. Figure <a href="#fig:communication-protocols" data-reference-type="ref" data-reference="fig:communication-protocols">[fig:communication-protocols]</a> shows the networking diagram between various devices in the workcell. ROS PC has not been commissioned in the robotic workcell, but a setup could easily be made by connecting an ethernet cable between robot controller and laptop.</p>
+<div id="tab:kr1410-to-plc">
+<table>
+<caption>Sending data from KR1410 to PLC over Profinet</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Input Register</strong></th>
+<th style="text-align: left;"><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bit[0]</td>
+<td style="text-align: left;">open or close unloading station gripper</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bit[1]</td>
+<td style="text-align: left;">open or close robotic gripper</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bit[2]</td>
+<td style="text-align: left;">bending start request/release</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bit[3]</td>
+<td style="text-align: left;">inspection camera trigger request/release</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bit[4]</td>
+<td style="text-align: left;">robot active</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bit[5]</td>
+<td style="text-align: left;">sheet request</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Int[0]</strong></td>
+<td style="text-align: left;"><strong>Current robot state in program</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Int[0]=0</td>
+<td style="text-align: left;">Not ready or failure</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Int[0]=1</td>
+<td style="text-align: left;">getting to ready pose</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Int[0]=2</td>
+<td style="text-align: left;">waiting for new sheet</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Int[0]=3</td>
+<td style="text-align: left;">performing bending operation 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Int[0]=4</td>
+<td style="text-align: left;">performing bending operation 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Int[0]=5</td>
+<td style="text-align: left;">performing bending operation 3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Int[0]=6</td>
+<td style="text-align: left;">performing bending operation 4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Int[0]=7</td>
+<td style="text-align: left;">performing bending operation 5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Int[0]=8</td>
+<td style="text-align: left;">performing bending operation 6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Int[0]=9</td>
+<td style="text-align: left;">placing sheet metal part in shelf</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Int[0]=10</td>
+<td style="text-align: left;">performing calibration</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Int[1]</strong></td>
+<td style="text-align: left;"><strong>Robotic camera trigger state</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Int[1]=0</td>
+<td style="text-align: left;">no trigger</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Int[1]=1</td>
+<td style="text-align: left;">successful, object detected</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Int[1]=2</td>
+<td style="text-align: left;">failure, object not detected</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Int[2]</strong></td>
+<td style="text-align: left;"><strong>Robotic camera operation state</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Int[2]=0</td>
+<td style="text-align: left;">Working</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Int[2] is not 0</td>
+<td style="text-align: left;">Not working, camera restart required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tab:plc-to-kr1410">
+<table>
+<caption>Sending data from PLC to KR1410 over Profinet</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Output Register</strong></th>
+<th style="text-align: left;"><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Bit[0]-Bit-[7]</strong></td>
+<td style="text-align: left;"><strong>trigger for bending machine reaching a</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><strong>certain open height value determined</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><strong>using laser sensor</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Bit[0]</td>
+<td style="text-align: left;">Bending operation 1 started</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Bit[1]</td>
+<td style="text-align: left;">Bending operation 2 started</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Bit[2]</td>
+<td style="text-align: left;">Bending operation 3 started</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Bit[3]</td>
+<td style="text-align: left;">Bending operation 4 started</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Bit[4]</td>
+<td style="text-align: left;">Bending operation 5 started</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Bit[5]</td>
+<td style="text-align: left;">Bending operation 6 started</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Bit[6]</td>
+<td style="text-align: left;">Bending finished, take out sheet</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Bit[7]</td>
+<td style="text-align: left;">Bending machine fully open</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Bit[8]</td>
+<td style="text-align: left;">Start bending sequence program</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Bit[9]</td>
+<td style="text-align: left;">Sheet metal ready in unloading</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">station gripper</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Bit[10]</td>
+<td style="text-align: left;">Correcting bending machine sequence</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">using terminal robot</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Bit[11]</td>
+<td style="text-align: left;">Inspecting requested</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Bit[12]</td>
+<td style="text-align: left;">Pause program</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Bit[13]</td>
+<td style="text-align: left;">Calibration requested</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Bit[14]</td>
+<td style="text-align: left;">Terminate program</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Bit[15]</td>
+<td style="text-align: left;">Storage station secured</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Int[0]</strong></td>
+<td style="text-align: left;"><strong>Inspection Results</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Int[0]=0</td>
+<td style="text-align: left;">Waiting for results</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Int[0]=1</td>
+<td style="text-align: left;">Successful</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Int[0]=2</td>
+<td style="text-align: left;">Failure</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="communication-between-kr1410-robot-and-plc">Communication between KR1410 Robot and PLC</h3>
+<p>The communication between the PLC and KR1410 is established over Profinet, a leading industrial ethernet protocol for communication between devices in industrial automation systems. Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net) ensures real-time data transmission and supports various network topologies. <span class="citation" data-cites="profinet">(Profinet 2024)</span></p>
+<p>A number of robot data can be monitored and controller through PLC over Profinet. These include monitoring of system state, joint configuration, TCP kinematics, IO Board, Tool IO state, and controlling of master speed, IO Board, and Tool IO outputs. The profinet also allows the transfer of data from Robot to PLC over user defined 64 Bit Input, 24 Int Input, 24 Real Input and from PLC to Robot over 64 Bit Output, 24 Int Output and 24 Real Output. <span class="citation" data-cites="kr-profinet">(Robots 2024d)</span> Table <a href="#tab:kr1410-to-plc" data-reference-type="ref" data-reference="tab:kr1410-to-plc">4.1</a> and <a href="#tab:plc-to-kr1410" data-reference-type="ref" data-reference="tab:plc-to-kr1410">4.2</a> shows the defined variables for cooperation between PLC and KR1410 which are shared over profinet.</p>
+<h3 id="visor-communication-protocols">VISOR Communication Protocols</h3>
+<p>Both VISOR camera has been configured beforehand for camera settings like shutter speed, gain, working distance, resolution, internal illumination and other parameters. VISOR has been connected to a PC running SensoConfig software from SENSOPART for configuring the camera. Using this software, separate jobs could also be added for each task. The task could include detecting a particular sheet pattern, target marker detection or bend angle measurement. CBun <strong>VISOR</strong> device added to KR teach pendant only allows switching of jobs, triggering camera, performing calibration and a few other tasks. But training to recognise a pattern needs to be done beforehand using a PC.</p>
+<h4 id="visor-to-kr1410">VISOR to KR1410</h4>
+<p>Kassow robot is interfaced to the robotic camera using ethernet. CBun Device installed on KR teach pendant allows for communication between Kassow robot and the VISOR. It is build and installed using CBun development as mentioned in subsection <a href="#subsec:computer-vision" data-reference-type="ref" data-reference="subsec:computer-vision">3.4.2</a>. The following ports are used for communications between the Kassow Robot and the VISOR.</p>
+<ul>
+<li><p><strong>Port 2005</strong>, Transmission control protocol TCP (Implicit results, <em>i.e.</em> user-configured result data)</p></li>
+<li><p><strong>Port 2006</strong>, Transmission control protocol TCP (Explicit results, <em>e.g.</em> trigger or job switch)</p></li>
+</ul>
+<figure>
+<img src="figures/visor-cbun-connection.png" id="fig:cbun-variables" style="width:55.0%" alt="" /><figcaption>Dialog Box in teach pendant GUI showing transmission of data over port 2006</figcaption>
+</figure>
+<p>Figure <a href="#fig:calib-graph" data-reference-type="ref" data-reference="fig:calib-graph">[fig:calib-graph]</a> shows the use of this communication setup to perform auto-calibration with the Kassow robots and the mounted camera.</p>
+<h4 id="visor-to-plc">VISOR to PLC</h4>
+<p>PLC is interfaced with the inspection camera using Profinet. UDP (User Datagram Protocol) is used over ports 161, 34962, 34963, 34964 to establish communication between the PLC and the VISOR. <span class="citation" data-cites="visor_communication_manual">(SENSOPART 2024e)</span></p>
+<h3 id="subsec:KR1410ROS">Communication between KR1410 Robot, ROS and Web UI</h3>
+<p>The communication between the Web UI and the nodejs server happens via HTTP for standard page loading. The websocket connection through rosbridge provides real-time, bidirectional data exchange between the real or simulated robot and the web interface. This allows visualization, monitoring and also control of the robot through web application. Figure <a href="#fig:ros-web-graph" data-reference-type="ref" data-reference="fig:ros-web-graph">4.9</a> shows the communication diagram between ROS, Web application and the KR.</p>
+<figure>
+<img src="figures/ros-web-graph.png" id="fig:ros-web-graph" style="width:100.0%" alt="" /><figcaption>ROS connection to KR1410 and web UI</figcaption>
+</figure>
+<p>Web UI is build using the frontend development tool ReactJS. It utilizes libraries like and to visualize or publish on ROS topics which monitors or controls the robot respectively. Rosbridge acts as a bridge between the web application and the ROS system. It converts ROS messages into JSON format which can be sent over the websocket.</p>
+<p>ROS nodes uses either TCP/IP or UDP communication protocol. The ROS Master acts as the central node manager in the ROS network. It coordinates communication between the robot (KR1410) and other ROS nodes. Here the machine running ROS provides the ROS master <span class="citation" data-cites="rosmaster">(Wiki 2015b)</span> and the KR1410 robot is connected to it through ethernet where KR ROS support provides few nodes and rostopics through which real robot can be monitored and controlled. These topics are republished to <em>joint_state_publisher</em> so that they can be controlled using MoveIt package. KR1410 could also be simulated in gazebo software for testing of the web UI. Gazebo also publishes joints on <em>joint_states_publisher</em> which are used in ROS and MoveIt to control the robot.</p>
+<p>A number of ROS nodes runs on the ROS machine which includes MoveIt nodes, unloading station gripper controller nodes, <em>visualization_rwt</em> for MoveIt controls through the Web UI, <em>joint_state_controller</em>, <em>robot_state_controller</em>, rosbridge, <em>tf2_web_publisher</em> etc. Nodes are written in python or C++. <em>robot_state_controller</em> publishes the state of the robot on <strong>tf</strong> rostopic using <em>joint_states</em> and parameter <em>robot_description</em>. The <strong>tf</strong> (transform) rostopic is responsible for managing transforms between different links of the robot. <em>tf2_web_publisher</em> uses this rostopic to recreate the robot in the web application.</p>
+<h2 id="safety-considerations">Safety Considerations</h2>
+<p>Even though the robot chosen is a collaborative robot, the payload is a metal sheet which poses a safety concern for the human operator. To avoid such scenarios a safety fence is installed at the boundary of robotic workcell as mentioned in section <a href="#sub:safety-fence" data-reference-type="ref" data-reference="sub:safety-fence">3.1.6</a>. Still several considerations are required for the safe operation of robot in the workcell like the speed at which the robot should operate. These factors depends on the payload attached to the robot and the distance between payload and the joint axis 1 or joint axis 2. Following subsections explains the reasoning behind safety parameters that were considered for the safe operation of KR1410.</p>
+<h3 id="subsec:payload">Payload</h3>
+<p>The pneumatic parellel gripper, manual quick-change system and robotic camera constitutes a weight of 2.0 <em>kg</em>. This is the fixed load on the tool flange center (). The sheet metal parts counts as the payload. It is a variable load of only 0.1 <em>kg</em> and is thus ignored for the calculations in <a href="#subsec:stoppage-distance" data-reference-type="ref" data-reference="subsec:stoppage-distance">4.3.2</a>.</p>
+<p>The permissible payload is constrained due to the static torque limit of the wrist joints. The payload is reduced according to the proximity of the payload’s centre of gravity in relation to joint axis 5, 6 and 7. <span class="citation" data-cites="kassow-manual">(Robots 2024c, Generation 2, 4.0:35)</span> Only about 1100 <em>mm</em> out of 1400 <em>mm</em> of workspace is utilized by the KR in the workcell. Figure <a href="#fig:kr1410-payload-diagram" data-reference-type="ref" data-reference="fig:kr1410-payload-diagram">[fig:kr1410-payload-diagram]</a> illustrates the allowable payload as a function of distance. It’s evident from this it is safe to operate with a load a 2.0 <em>kg</em>.</p>
+<h3 id="subsec:stoppage-distance">Stopping Distance</h3>
+<p>The stopping time and distance should be kept as low as possible. is set at 60 <em>mm</em> and at 0.2 <em>s</em> for safety reason. According to <span class="citation" data-cites="kassow-manual">(Robots 2024c, Generation 2, 4.0:35)</span>, the time and distance it takes to stop the robot, for instance with an emergency stop or protective stop, depends on the load, speed and configuration of the robot. Conservative estimations of and are made by firstly identifying how fast the slowest joints can decelerate. This depends on the payload, the direction in which the payload is heading relative to gravity, and the distance between the load or and joint axis 1 or 2, depending on whatever distance is the longest. The values can be seen in the Table <a href="#tab:braking_accelerations" data-reference-type="ref" data-reference="tab:braking_accelerations">4.3</a>.</p>
+<div id="tab:braking_accelerations">
+<table>
+<caption>Braking accelerations <em><span class="math inline">[deg/s<sup>2</sup>]</span></em> for KR1410</caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Load</strong></td>
+<td style="text-align: center;"><strong>Direction</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>[kg]</strong></td>
+<td style="text-align: center;"><strong>[deg]</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">800-950</td>
+<td style="text-align: center;">700-800</td>
+<td style="text-align: center;">600-700</td>
+<td style="text-align: center;">500-600</td>
+<td style="text-align: center;">400-500</td>
+<td style="text-align: center;">300-400</td>
+<td style="text-align: center;">0-300</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0-40</td>
+<td style="text-align: center;">895</td>
+<td style="text-align: center;">1026</td>
+<td style="text-align: center;">1304</td>
+<td style="text-align: center;">1663</td>
+<td style="text-align: center;">2131</td>
+<td style="text-align: center;">2724</td>
+<td style="text-align: center;">3437</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;">40-80</td>
+<td style="text-align: center;">1433</td>
+<td style="text-align: center;">1578</td>
+<td style="text-align: center;">1745</td>
+<td style="text-align: center;">2132</td>
+<td style="text-align: center;">2522</td>
+<td style="text-align: center;">3131</td>
+<td style="text-align: center;">3724</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;">80-120</td>
+<td style="text-align: center;">1378</td>
+<td style="text-align: center;">1549</td>
+<td style="text-align: center;">1720</td>
+<td style="text-align: center;">2115</td>
+<td style="text-align: center;">2643</td>
+<td style="text-align: center;">3165</td>
+<td style="text-align: center;">4045</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;">120-160</td>
+<td style="text-align: center;">1861</td>
+<td style="text-align: center;">2040</td>
+<td style="text-align: center;">2371</td>
+<td style="text-align: center;">2773</td>
+<td style="text-align: center;">3259</td>
+<td style="text-align: center;">3824</td>
+<td style="text-align: center;">4342</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The stopping time and stopping distance can now be conservatively estimated based on the knowledge of the set speed in the robot program and equations <a href="#eq:t-brake" data-reference-type="ref" data-reference="eq:t-brake">[eq:t-brake]</a> and <a href="#eq:s-brake" data-reference-type="ref" data-reference="eq:s-brake">[eq:s-brake]</a>. Joint speed is used for and linear speed for and commands. By default in normal run mode of program, Move J command runs a maximum joint speed of 90 <em>deg/s</em> and Move L command runs a maximum linear speed of 1000 <em>mm/s</em>. This linear speed can be converted to joint speed using the equation <a href="#eq:omega" data-reference-type="ref" data-reference="eq:omega">[eq:omega]</a>.</p>
+<p><br /><span class="math display">$$\omega = \frac{180 \, v_{\text{max}}}{r\pi} \quad [\text{deg} \, s^{-1}]
+        \label{eq:omega}$$</span><br /></p>
+<p><br /><span class="math display">$$t_{\text{brake}} = \frac{\omega}{a_{\text{brake}}} + 0.020 \quad [\text{s}]
+        \label{eq:t-brake}$$</span><br /></p>
+<p><br /><span class="math display">$$s_{\text{brake}} = \left(\frac{t_{\text{brake}} + 0.02}{360}\right) \pi r w \quad [\text{mm}]
+        \label{eq:s-brake}$$</span><br /></p>
+<p>From these equations, it is evident that and are directly proportional to . To avoid triggering joint torque value exceeded error and for safe operation of robot, the joint speed is reduced for specifically difficult trajectory execution or when the distance between joint axis 1 or joint axis 2 and is large. For example, to keep the same for a distance of 900 <em>mm</em> between Joint axis 1 and payload but two robot configuration of 0-40 <em>deg</em> and 120-160 <em>deg</em>, joint speed must be halved for 0-40 <em>deg</em> robot configuration.</p>
+<h3 id="subsec:safety-zones">Safety zones</h3>
+<p>Safety Zones represent virtual boundaries in the robot workspace. The robot will reduce its speed or stop completely if any part of the robot enters the safety zone. This can be used for protection of sensitive equipment or areas with human presence. <span class="citation" data-cites="kassow-software-manual">(Robots 2024f, 1.3.0:96)</span></p>
+<figure>
+<img src="figures/safety-zones.png" id="fig:safety-zones" style="width:70.0%" alt="" /><figcaption>Addition of safety zones to the robotic workcell</figcaption>
+</figure>
+<p>A safety zone for unloading station, storage station, bending machine and terminal operating robot is created. Since the robot can actually touch the floor, an additional safety zone is added for the floor. The robot will stop immediately if it ever exceeds the safety zone boundary. It it exceeds, then the operator has to manually move the robotic arm back inside the safety zone.</p>
+<h3 id="subsec:safety-functions">Safety functions</h3>
+<p>Safety functions evaluate external and internal signals of the whole system which can act immediately to halt the robot or cut him loose from power if necessary. The safety function of KR complies with EN ISO 13849-1:2015. <span class="citation" data-cites="ISO13849">(“EN ISO 13849-1:2015 Safety of Machinery - Safety-related Parts of Control Systems” 2015)</span> <span class="citation" data-cites="kassow-software-manual">(Robots 2024f, 1.3.0:13)</span></p>
+<figure>
+<img src="figures/safety-buttons.png" id="fig:safety-buttons" style="width:70.0%" alt="" /><figcaption>Safety buttons. 1) Emergency STOP 2) Protective STOP 3) Robot State 4) Reset PLC fault</figcaption>
+</figure>
+<p>In the main program of teach pendant, there are two sequences programmed to run in parallel to halt or stop the program if a signal is detected from the PLC. The former sequence pauses the robot motion and waits for a new signal from PLC to continue the robot motion from the same configuration while the latter sequence triggers the E-Stop on the robot and stops the robot immediately.</p>
+<h4 id="protective-stop">Protective STOP</h4>
+<p>The Protective STOP can be used interactively by the operator to pause and continue the running program. After the protective STOP is released, the program can continue running its normal operation.</p>
+<h4 id="emergency-stop">Emergency STOP</h4>
+<p>The emergency STOP buttons of robot are present at both teach pendant and robot controller. These buttons are used to engage inbuilt safety measures and halt the robot in order to prevent a potentially hazardous situation The emergency STOP always provoke immediate halt of the robot, followed by the power cut to all executive parts of the robot.</p>
+<p>Besides these E-stop buttons, there are three more E-Stop in the workcell. Two are placed on the bending machine and one on the front panel of unloading station as shown in figure <a href="#fig:safety-buttons" data-reference-type="ref" data-reference="fig:safety-buttons">4.11</a>. The emergency stop buttons not only stops the robot but also the bending machine and unloading station mechatronic system.</p>
+<h1 id="chap:development">Software Development</h1>
+<h2 id="control-software">Control Software</h2>
+<p>After analyzing the current manual bending process on the bending machine by an operator, five main stages are established for the completion of a single bending operation of a sheet metal part. To make the bending process automated, these five stages of bending operation needs to be replaced by the robotic workcell. Figure <a href="#fig:stages-bp" data-reference-type="ref" data-reference="fig:stages-bp">[fig:stages-bp]</a> shows these fives stages: unloading, alignment, bending, checking and loading.</p>
+<ol>
+<li><p><span><strong>Unloading</strong></span> <span id="par:unloading" label="par:unloading">[par:unloading]</span> In the first stage, a sheet metal part is to be separated from a stack of metal sheets in unloading station. The advantage of arranging the raw sheets in stacks is that many sheet metal parts can be stored in a little space. The sheet thickness is also checked in advance before loading the sheets in unloading station by operator and parts outside the tolerance are sorted out. A single sheet is to be picked up by a gantry robot using a magnetic gripper and placed in the unloading station gripper. Then the unloading station gripper turns 180around using a pneumatic swivel unit. The sheet metal part is now ready to be picked up by the robot.</p></li>
+<li><p><span><strong>Alignment</strong></span> <span id="par:alignment" label="par:alignment">[par:alignment]</span> In the next stage, the sheet metal part is to be placed in the bending machine. The robot scans the sheet metal part grasped by the unloading station gripper in the unloading station. Once the features of the part is detected using the robotic camera, trajectories are planned to pick up the sheet from the unloading station gripper. After picking up the sheet, path is planned to the correct bending station for the bending operation. The bending station is chosen based on the sheet metal part variant and the ease of first bending operation. The bending machine sets the backgauges according to the bending machine program for a specific sheet metal variant. The sheet metal part is then aligned in the 5-axis backgauges of the bending machine. The sheet is now ready to be bent.</p></li>
+<li><p><span><strong>Bending</strong></span> <span id="par:bending" label="par:bending">[par:bending]</span> The bending machine is operated by a saved program for a specific sheet metal type variant. The bending machine is lowered until the bending of the part starts. During the bending process, there should be two different design variants depending on the sheet variant. With small sheets, the robot lets go of the sheet and the bending punch keeps holding the sheet in place. After the bending is complete, the robot regrip the bent sheet. This is easier to achieve with the robot programming. In order to prevent twisting in the case of larger parts, it is essential to hold the parts throughout the entire bending process. The challenge here lies in programming a robot movement whose path and path speed matches the movement of the sheet metal, which in turn depends on the lowering speed of the bending punch.</p></li>
+<li><p><span><strong>Checking</strong></span> <span id="par:checking" label="par:checking">[par:checking]</span> A camera system is used to record the bending angle of the sheet metal part after each individual bending process. The angle is used to determine the quality of the bending operation. After the inspection is complete, the process continues for a good part and the sheet is taken to the bending machine for the next bending process. If the bending angle does not lie within the tolerances, the part is thrown away and the bending machine is resetted for a new sheet metal part using the terminal operating robot. The loop restart again for a new sheet. If a large number of rejects occur in a very short time, the entire automated bending process is to be stopped. If all the bendings on a sheet metal type variants is finished, it is taken to the storage station for loading.</p></li>
+<li><p><span><strong>Loading</strong></span> <span id="par:loading" label="par:loading">[par:loading]</span> The fully bent sheet metal parts are to be placed in the storage station which is a shelf of empty drawers. A regrasping of the finished bent part is also done using the unloading station gripper, if it allows for an easier placement of the part in the drawer. After the loading of a part is complete, the bending process is finished for a single sheet metal variant. The cycle continues with a new sheet metal part.</p></li>
+</ol>
+<p>A flowchart for the robot unit is developed based on the above mentioned stages for the automated bending process of the sheet metal part. This flowchart, which is still partly abstract, enables the individual activities of the KR1410 to be identified and the interactions between various subsystems to be described. The description of the process and the definition of the overall requirements in section <a href="#sec:requirements" data-reference-type="ref" data-reference="sec:requirements">3.2</a> represent an interacting process that inevitably had to be iterated through. This means that the results of the bending process were revised several times. The final result of these iterations regarding the activities to be performed by the KR1410 robot can be seen in flowchart <a href="#tab:flowchart" data-reference-type="ref" data-reference="tab:flowchart">[tab:flowchart]</a>.</p>
+<p><span>c</span></p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p><br />
+<br />
+</p>
+<p>The flowchart <a href="#tab:flowchart" data-reference-type="ref" data-reference="tab:flowchart">[tab:flowchart]</a> is used to create the control software for the KR1410 robot in teach pendant. A number of variables are also required to coordinate the bending process with the PLC as seen in the flowchart. The required data is shared between PLC and KR1410 as shown in table <a href="#tab:kr1410-to-plc" data-reference-type="ref" data-reference="tab:kr1410-to-plc">4.1</a> and <a href="#tab:plc-to-kr1410" data-reference-type="ref" data-reference="tab:plc-to-kr1410">4.2</a>.</p>
+<p>The unloading station gripper is also used for the regrasping of the bent part. This allows the robot to grip the sheet metal at a new position, if necessary, for the subsequent bendings as otherwise collisions between the robot and the bending machine may occur. To achieve this, robot brings back the bent metal part to the unloading station gripper at a different configuration, scans the bent sheet, detect the sheet pattern and at last picks up the sheet from a new position.</p>
+<h2 id="camera-1-feature-detection">Camera 1: Feature Detection</h2>
+<p>Robotic camera has to do three tasks during the whole operation in the robotic workcell. These include:</p>
+<ol>
+<li><p>Auto-calibrate itself when requested by operator to improve the bending quality.</p></li>
+<li><p>Find the pose of subsystems in the robotic workcell <em>i.e.</em> unloading station, drawers of shelf and the bending machine.</p></li>
+<li><p>Detect the sheet metal part in the unloading station proper. Then send the sheet poses to the robot via ethernet. For more information about the communication setup between VISOR and robot, see subsection <a href="#subsec:computer-vision" data-reference-type="ref" data-reference="subsec:computer-vision">3.4.2</a>.</p></li>
+</ol>
+<p>In teach pendant program tree, a pose describes a frame transformation in 3D space <em>i.e.</em> the three coordinates (x,y,z) and euler angles (R,P,Y) <em>w.r.t.</em> reference frame. If no reference frame is defined for the pose in the GUI, then it is automatically set <em>w.r.t.</em> world frame.</p>
+<figure>
+<img src="figures/job-configuration.png" id="fig:job-configuration-robotic" alt="" /><figcaption>Job configuration for the robotic camera</figcaption>
+</figure>
+<p>For a test specimen sheet metal type variant, a number of jobs are created during the camera configuration to fulfill the above mentioned tasks. Figure <a href="#fig:job-configuration-robotic" data-reference-type="ref" data-reference="fig:job-configuration-robotic">5.1</a> shows the job configuration for all the jobs in the robotic camera. After calibration, a working distance of 300.0 mm is set. The is best operational distance for the camera from an object which has to be detected. The shutter speed varies from 15.0 ms, 30.0 ms, 45.0 ms, 60.0 ms, 75.0 ms and 90.0 ms. Thus, the camera takes a total of six captures with different shutter speed setting, if the default 60.0 ms shutter speed is unable to detect the sheet. A lower shutter speed value means less light will pass through the camera lens and the image will be darker in comparison to higher shutter speed settings. This setting is set in the cycle time tab. Internal illumination is not used because of a large working distance. An external light is used to illuminate the sheet surface which is always on.</p>
+<figure>
+<img src="figures/robotic-detection.png" id="fig:robotic-detection" alt="" /><figcaption>Using robotic camera for sheet detection (left) and marker detection (right)</figcaption>
+</figure>
+<p>Mainly two detector methods are used by the robotic camera as shown in figure <a href="#fig:robotic-detection" data-reference-type="ref" data-reference="fig:robotic-detection">5.2</a>. These are detector contour and detector target mark 3D. <strong>Detector Contour</strong> locate and count objects by contours. An interesting region on the sheet metal part is marked for contouring. <strong>Detector Target Mark 3D</strong> locate objects in space using standarized markers (3D). Whenever an object is detected by the camera, pose value of object is generated in world frame and sent over to the robot using telegram.</p>
+<h2 id="camera-2-inspection-and-quality-control">Camera 2: Inspection and Quality Control</h2>
+<p>Inspection camera has to measure the bending angle of the bent sheet metal part. KR1410 brings the bent sheet to the inspection camera. Correct alignment of the bent sheet by the robot is particularly important for inspection. The detection of edges of sheet takes place in the inspection process by the reflection of camera’s internal red light around the sheet edges. Since the edges of the sheet could have different surface structure or have impurities over them, angle tolerance needs to be setup for each inspection. Separate job is to be created for each inspection.</p>
+<figure>
+<img src="figures/job-configuration-object.png" id="fig:job-configuration-object" alt="" /><figcaption>Job configuration for the object camera</figcaption>
+</figure>
+<p>For the inspection of bent sheet, a job is created with the configuration as shown in figure <a href="#fig:job-configuration-object" data-reference-type="ref" data-reference="fig:job-configuration-object">5.3</a>. A working distance is set in the range of 90 mm to 130 mm for each inspection job. The is the optimum distance for the inspection as the object needs to fully illuminated by the red light. The shutter speed is set to 1.0 ms. This means the camera lens will open only for a duration of 1.0 ms. Thus, only the red light is used to capture the bent sheet image and there is no issue of ambient light. Internal illumination is required in this case. Only images processing is required by this camera.</p>
+<figure>
+<img src="figures/measurement-detector.png" id="fig:measurement-detector" style="width:60.0%" alt="" /><figcaption>Detectors in Inspection Camera for angle measurement</figcaption>
+</figure>
+<p>From the figure <a href="#fig:measurement-detector" data-reference-type="ref" data-reference="fig:measurement-detector">5.4</a>, the inspection camera uses an alignment detector, four caliper detectors and one results processing of caliper detectors to calculate the angle. <strong>Alignment</strong> detector uses a reference detection in the image and aligns the other detectors <em>w.r.t.</em> <strong>Alignment</strong> detector. Four <strong>Detector Caliper</strong> are used to measure the distance between the edges when the detector transitions from dark to light and again from light to dark. Thus two probes, antiparallel setup is used. Angle measurement is of interest, so four points are detected on the sheet. Now, the fifth detector, <strong>Result Processing: Math</strong>, is used to first calculate the angle between two points lying on the same edge of sheet <em>v</em>1. Similarly, another pair of points are used to get the angle between them <em>v</em>2. Finally, the angle between these <em>v</em>1 and <em>v</em>2 is calculated to get the final bending angle <em>v</em>3. <em>v</em>4 is calculated by checking if the angle is within the tolerances. <em>v</em>5 is set to <em>v</em>3 if the output of <em>v</em>4 is true, otherwise it is set to 0. The PLC receives the output <em>v</em>4 and <em>v</em>5 of detector number 5, <strong>Result Processing</strong>.</p>
+<h2 id="web-interface-design">Web Interface Design</h2>
+<figure>
+<img src="figures/webui/webui0.png" id="fig:web-ui" style="width:100.0%" alt="" /><figcaption>Web User Interface</figcaption>
+</figure>
+<h3 id="subsec:web-ui-viewer">Viewer</h3>
+<h3 id="subsec:web-ui-auto-connection">Auto connection</h3>
+<h3 id="subsec:web-ui-urdf-visualization">Robot URDF Visualization</h3>
+<h3 id="subsec:web-ui-interactive-marker">Interactive Marker</h3>
+<h3 id="subsec:web-ui-ros-control">ROS Control Panel</h3>
+<p>Simulation Mode, Robot mode</p>
+<figure>
+<img src="figures/webui/web-ui-preview.png" id="fig:web-ui-preview" style="width:100.0%" alt="" /><figcaption>Web User Interface previewing task execution</figcaption>
+</figure>
+<h4 id="subsubsec:web-ui-joint-slider">Joint Slider</h4>
+<h4 id="subsubsec:web-ui-current-pose">Current Pose</h4>
+<h4 id="subsubsec:web-ui-view-manipulation">View and Manipulation</h4>
+<h4 id="subsubsec:web-ui-im-size">IM Size</h4>
+<h4 id="subsubsec:web-ui-buttons">Buttons</h4>
+<h3 id="subsec:web-ui-saving-path">Saving and loading path</h3>
+<h1 id="chap:testing">System Integration and Testing</h1>
+<h2 id="sec:calibration">Calibration</h2>
+<p>Calibration is a crucial procedure in the development of an automated robotic workcell, ensuring that all components operate accurately and in harmony.</p>
+<p><img src="figures/001calibration/calibration-process-left.jpeg" title="fig:" id="fig:auto-calibration-process" alt="KR1410 subprogram to perform calibration automatically" /> <span id="fig:calibration-process-left" label="fig:calibration-process-left">[fig:calibration-process-left]</span></p>
+<p><img src="figures/001calibration/calibration-process-right.jpeg" title="fig:" id="fig:auto-calibration-process" alt="KR1410 subprogram to perform calibration automatically" /> <span id="fig:calibration-process-right" label="fig:calibration-process-right">[fig:calibration-process-right]</span></p>
+<figure>
+<img src="6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG" id="fig:tcp" style="width:75.0%" alt="" /><figcaption>TCP is set at the end of gripper at a distance of 216 mm from robot TFC</figcaption>
+</figure>
+<h3 id="robot-calibration">Robot Calibration</h3>
+<p>Robot calibration ensures that the Kassow robot can accurately position its end effector for loading, bending, and unloading metal sheets. This involves:</p>
+<ul>
+<li><p><strong>Kinematic Calibration</strong>: Adjusting the robot’s kinematic model to correct any discrepancies between the theoretical model and the actual hardware. This includes measuring and compensating for joint offsets, link lengths, and joint angles.</p></li>
+<li><p><strong>Tool Center Point (TCP) Calibration</strong>: Determining the exact position of the end effector or tool relative to the robot’s last joint. This is crucial for precise manipulation of metal sheets.</p></li>
+<li><p><strong>Workspace Calibration</strong>: Defining the robot’s operational workspace and ensuring that all tasks are performed within this defined area, avoiding collisions and ensuring smooth operation.</p></li>
+</ul>
+<p>The KR1410 is already calibrated from the factory and does not need to be setup. Though in simulation, robot kinematic model is generated from the URDF and needs to be updated to match the real hardware.</p>
+<h3 id="camera-calibration">Camera Calibration</h3>
+<p>The "Hand-Eye calibration (Robotics)" calibration method is used to determine the reference between "Hand" (TCP) and "Eye" Camera coordinate system (position and orientation) when the VISOR<sup></sup> is attached to the gripper. This allows different image acquisition positions and still to output the object positions in robot coordinates directly from the camera. <span class="citation" data-cites="visor_user_manual">(SENSOPART 2024f, 102)</span></p>
+<p>Camera calibration is essential for the accurate detection of metal sheets and measurement of bending angles. The process involves:</p>
+<ul>
+<li><p><strong>Intrinsic Calibration</strong>: Determining the camera’s internal parameters, such as focal length, optical center, and lens distortion. This is typically achieved using a calibration target (e.g., a checkerboard pattern) and specialized software tools.</p></li>
+<li><p><strong>Extrinsic Calibration</strong>: Establishing the camera’s position and orientation relative to the robot or the workcell. This involves aligning the camera’s coordinate system with the robot’s coordinate system to ensure accurate detection and measurement.</p></li>
+</ul>
+<h3 id="sensor-calibration">Sensor Calibration</h3>
+<p>Laser sensor is added to the bending machine to measure the distance between the tool and die with the reproducibility in the range of 10m. This sensor help in coordinating the bending timings between the bending machine and the robot. This sensor also requires a baseline or zero point to eliminate any offsets or biases in their readings.</p>
+<h3 id="calibration-procedures">Calibration Procedures</h3>
+<p>The calibration process is automated within the robot program such that operator could request to re-calibrate the camera w.r.t robot TCP from the touch panel. This allows to update the image quality as it degrades over time. The robot finishes the current bending operation and then in next cycle, start with the auto-calibration.</p>
+<figure>
+<img src="figures/001calibration/calibration.png" id="fig:calibration-steps" alt="" /><figcaption>Acquiring images for the calibration process</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/calibration1.png" id="fig:calibration-steps" alt="" /><figcaption>Acquiring images for the calibration process</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/calibration2.PNG" id="fig:calibration-steps" alt="" /><figcaption>Acquiring images for the calibration process</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/calibration3.png" id="fig:calibration-steps" alt="" /><figcaption>Acquiring images for the calibration process</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/calibration4.png" id="fig:calibration-steps" alt="" /><figcaption>Acquiring images for the calibration process</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/calibration5.PNG" id="fig:calibration-steps" alt="" /><figcaption>Acquiring images for the calibration process</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/calibration6.png" id="fig:calibration-steps" alt="" /><figcaption>Acquiring images for the calibration process</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/calibration7.png" id="fig:calibration-steps" alt="" /><figcaption>Acquiring images for the calibration process</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/calibration8.PNG" id="fig:calibration-steps" alt="" /><figcaption>Acquiring images for the calibration process</figcaption>
+</figure>
+<p>The calibration process involves several systematic steps:</p>
+<ol>
+<li><p><strong>Setup Calibration Targets</strong>: Place calibration targets within the robot’s workspace and at specific positions that the cameras will observe.</p></li>
+<li><p><strong>Data Collection</strong>: Use the robot and cameras to collect data from the calibration targets. This includes moving the robot through its range of motion and capturing images from different angles.</p></li>
+<li><p><strong>Parameter Estimation</strong>: Use calibration software to estimate the parameters of the robot’s kinematic model, the intrinsic and extrinsic parameters of the cameras, and the characteristics of any other sensors.</p></li>
+<li><p><strong>Validation</strong>: Verify the calibration by performing tasks that require high precision and checking the accuracy of the results. Adjust calibration parameters as needed based on validation results.</p></li>
+<li><p><strong>Documentation</strong>: Record the calibration parameters and procedures for future reference and troubleshooting.</p></li>
+</ol>
+<h2 id="sec:integration">Integration Tests</h2>
+<h3 id="subsec:sheet-pickup">Sheet Pickup</h3>
+<figure>
+<img src="figures/sheet-pickup/scan.png" id="subfig:sheet-scan" alt="" /><figcaption>Scan sheet pattern using contour detector</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/taken.png" id="subfig:sheet-taken" alt="" /><figcaption>collect the sheet</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/sensoconfig.PNG" id="fig:sensoconfig-pattern" alt="" /><figcaption>detection and transfer of sheet pose using telegram (SensoConfig)</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/camera-align.png" id="subfig:sheet-scan" alt="" /><figcaption>align camera</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/sheet-pose.png" id="subfig:sheet-taken" alt="" /><figcaption>send sheet pose to pickup the sheet</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/sheet-placement01.png" id="subfig:sheet-placement01" alt="" /><figcaption>Go to unloading station gripper</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/sheet-placement02.png" id="subfig:sheet-placement02" alt="" /><figcaption>transfer sheet to unloading station gripper</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/sheet-placement03.png" id="subfig:sheet-placement03" alt="" /><figcaption>Scan sheet pattern and align camera</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/sheet-placement04.png" id="subfig:sheet-placement04" alt="" /><figcaption>Scan again for sheet detection</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/sheet-placement05.png" id="subfig:sheet-placement05" alt="" /><figcaption>Grasp sheet from unloading station gripper</figcaption>
+</figure>
+<figure>
+<img src="figures/sheet-pickup/sheet-placement06.png" id="subfig:sheet-placement06" alt="" /><figcaption>Move out</figcaption>
+</figure>
+<h3 id="subsec:bending-operation">Bending Operation</h3>
+<h3 id="subsec:shelf-control">Shelf Control</h3>
+<figure>
+<img src="figures/shelf-control/reach-handle.jpeg" id="subfig:reach-handle" alt="" /><figcaption>Reach shelf handle</figcaption>
+</figure>
+<figure>
+<img src="figures/shelf-control/hold-handle.jpeg" id="subfig:grasp-handle" alt="" /><figcaption>grasp handle with gripper</figcaption>
+</figure>
+<figure>
+<img src="figures/shelf-control/open-handle.jpeg" id="subfig:turn-open" alt="" /><figcaption>Turn handle 100 to open drawer</figcaption>
+</figure>
+<p><span id="subfig:turn-open" label="subfig:turn-open">[subfig:turn-open]</span></p>
+<figure>
+<img src="figures/shelf-control/open-drawer.jpeg" id="fig:open-drawer" alt="" /><figcaption>open drawer</figcaption>
+</figure>
+<p><span id="fig:open-drawer" label="fig:open-drawer">[fig:open-drawer]</span></p>
+<figure>
+<img src="figures/shelf-control/close-handle.jpeg" id="fig:close-handle" alt="" /><figcaption>Turn handle -100 to fix drawer in open position</figcaption>
+</figure>
+<figure>
+<img src="figures/shelf-control/drawer-opened.jpeg" id="subfig:drawer-opened" alt="" /><figcaption>Robot ready with drawer open</figcaption>
+</figure>
+<h2 id="sec:performance">Performance Evaluation</h2>
+<h3 id="subsec:calibration-results">Calibration Results</h3>
+<p>Calibration is fundamental to ensuring the accuracy and reliability of an automated robotic workcell. Proper calibration:</p>
+<ul>
+<li><p><strong>Enhances Precision</strong>: Ensures that the robot and sensors operate with high accuracy, essential for tasks like metal sheet bending where precise angles and positions are critical.</p></li>
+<li><p><strong>Improves Consistency</strong>: Reduces variability in operations, leading to consistent product quality and reducing the likelihood of errors.</p></li>
+<li><p><strong>Facilitates Integration</strong>: Ensures that all components of the workcell operate cohesively, enabling smooth integration and coordination.</p></li>
+<li><p><strong>Supports Troubleshooting</strong>: Provides a baseline for identifying and resolving issues that may arise during operation.</p></li>
+</ul>
+<figure>
+<img src="figures/001calibration/internal_parameters.PNG" id="subfig:internal-parameters" alt="" /><figcaption>Internal parameters</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/external_poses.PNG" id="subfig:external-poses" alt="" /><figcaption>External poses</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/fov.PNG" id="subfig:fov" alt="" /><figcaption>Field of view</figcaption>
+</figure>
+<figure>
+<img src="figures/001calibration/hand-eye_parameters.PNG" id="subfig:hand-eye-parameters" alt="" /><figcaption>Hand-eye parameters</figcaption>
+</figure>
+<p>By establishing rigorous calibration procedures, the automated robotic workcell can achieve optimal performance, ensuring that the bending process is executed with high precision and reliability.</p>
+<h3 id="subsec:inspection-assessment">Inspection Assessment</h3>
+<figure>
+<img src="figures/008_inspection/inpection_1_overlay2.png" id="subfig:inspection-1" alt="" /><figcaption>bending operation 1</figcaption>
+</figure>
+<figure>
+<img src="figures/008_inspection/inspection_2_overlay.png" id="subfig:inspection-2" alt="" /><figcaption>bending operation 2</figcaption>
+</figure>
+<figure>
+<img src="figures/008_inspection/inspection_5_overlay_cleanup.png" id="subfig:inspection-5" alt="" /><figcaption>bending operation 5</figcaption>
+</figure>
+<figure>
+<img src="figures/008_inspection/inspection_6_overlay_cleanup.png" id="subfig:inspection-6" alt="" /><figcaption>bending operation 6</figcaption>
+</figure>
+<h3 id="subsec:calibration-results">Bending Operation Review</h3>
+<h1 id="chap:results">Experimental Results</h1>
+<h2 id="setup-and-methodology">Setup and Methodology</h2>
+<h2 id="data-collection">Data Collection</h2>
+<h2 id="results-and-analysis">Results and Analysis</h2>
+<h1 id="chap:discussion">Discussion</h1>
+<h1 id="chap:conclusion">Conclusion and Future Works</h1>
+<h2 id="summary">Summary</h2>
+<h2 id="recommendations-for-future-research">Recommendations for Future Research</h2>
+<h3 id="subsec:control-software-update">Control Software Update</h3>
+<p>For a single sheet metal part, teach pendant from the kassow robot is enough for the control program. However, to allow flexibility in production with different sheet metal part, a separate hardware is required to run controller manager. At the moment, is only used for visualizing the robot motion in the web app. In order to be able to quickly create a new robot program for new sheet metal part variants, simulation software is to be developed with the help of . With the help of this software, path trajectories between the individual subsystems (unloading station, bending machine, storage station) can be generated in advance without having to remove the real robot unit from any ongoing production, which can then be easily integrated into the new robot program on the real robot.</p>
+<h3 id="subsec:web-ui-update">Web UI update</h3>
+<ul>
+<li><p>Adding camera data to the web ui.</p></li>
+<li><p>Storage for web applications.</p></li>
+<li><p>Creating App for phones.</p></li>
+<li><p>Provide access to login through nodejs backend.</p></li>
+</ul>
+<h1 id="appendix">Appendix</h1>
+<h2 id="sec:versions">Software &amp; Development Environment Versions</h2>
+<p>The following list summarizes the versions of all software used by and required for the evaluation framework developed in this thesis. Accordingly, the evaluation framework was only tested to run on these versions.</p>
+<ul>
+<li><p><strong>:</strong> ROS1 Noetic Ninjemys</p></li>
+<li><p><strong>Software Release:</strong> Fire Fly 3</p></li>
+<li><p><strong>Python:</strong> 3.8.10</p></li>
+<li><p><strong>C++:</strong> C++11</p></li>
+<li><p><strong>Software:</strong> 2.8.2.1</p></li>
+<li><p><strong>Packages:</strong> packages version is summarized in <em>package.xml</em> of the project</p></li>
+<li><p><strong>:</strong> v18.14.0</p></li>
+<li><p><strong>:</strong> 1.3.0</p></li>
+<li><p><strong>:</strong> 0.17.0</p></li>
+<li><p><strong>:</strong> 18.2.0</p></li>
+<li><p><strong>NPM packages:</strong> packages list for the web server can be found in <em>package.json</em> of the project</p></li>
+</ul>
+<p>The following list summarizes all development environments used to implement all code during the course of this thesis:</p>
+<ul>
+<li><p><strong>Development :</strong> Ubuntu 20.04.6 LTS (Focal Fossa) for Simulations and Windows 10 for Software</p></li>
+<li><p><strong>:</strong> Visual Studio Code (version 1.91)</p></li>
+<li><p><strong>:</strong> Visual Studio Code (version 1.85) Required by for Development which is running Dev containers of Ubuntu 18.04 Linux OS</p></li>
+</ul>
+<div id="refs" class="references hanging-indent" role="doc-bibliography">
+<div id="ref-jrautomation">
+<p>A Hitachi Group Company, JR Automation -. 2024a. “How the Manufacturing Industry Uses Robotics &amp; Automation.” 2024. <a href="https://www.jrautomation.com/resources/manufacturing-robotics-automation">https://www.jrautomation.com/resources/manufacturing-robotics-automation</a>.</p>
+</div>
+<div id="ref-jrautomation2">
+<p>———. 2024b. “The Future of Manufacturing Automation.” 2024. <a href="https://www.jrautomation.com/resources/the-future-of-manufacturing-automation">https://www.jrautomation.com/resources/the-future-of-manufacturing-automation</a>.</p>
+</div>
+<div id="ref-ALPHONSUS20161185">
+<p>Alphonsus, Ephrem Ryan, and Mohammad Omar Abdullah. 2016. “A Review on the Applications of Programmable Logic Controllers (Plcs).” <em>Renewable and Sustainable Energy Reviews</em> 60: 1185–1205. <a href="https://doi.org/https://doi.org/10.1016/j.rser.2016.01.025">https://doi.org/https://doi.org/10.1016/j.rser.2016.01.025</a>.</p>
+</div>
+<div id="ref-alvaautomated">
+<p>Alva, Ujval, and Satyandra K Gupta. n.d. “AUTOMATED Design of Sheet Metal Bending Tools.”</p>
+</div>
+<div id="ref-amada-machine">
+<p>AMADA. 2005. “HFP Description.” 2005. <a href="https://www.amada.de/en/bending/hfp/description.html">https://www.amada.de/en/bending/hfp/description.html</a>.</p>
+</div>
+<div id="ref-bmspecifications">
+<p>———. 2024a. “Bending Technology Hfp Specifications.” 2024. <a href="https://m.amada.de/en/bending/hfp/specifications.html">https://m.amada.de/en/bending/hfp/specifications.html</a>.</p>
+</div>
+<div id="ref-astro100">
+<p>———. 2024b. “In Zweiter Generation – Die Roboter-Biegezellen Der Serie Astro-100 Ii Nt.” 2024. <a href="https://m.amada.de/de/abkanten/astro-100-ii/biegeroboter.html">https://m.amada.de/de/abkanten/astro-100-ii/biegeroboter.html</a>.</p>
+</div>
+<div id="ref-Bahadir2024">
+<p>Bahadir, Ozan, Jan Paul Siebert, and Gerardo Aragon-Camarasa. 2024. “Continual Learning Approaches to Hand–Eye Calibration in Robots.” <em>Machine Vision and Applications</em> 35 (4): 97. <a href="https://doi.org/10.1007/s00138-024-01572-w">https://doi.org/10.1007/s00138-024-01572-w</a>.</p>
+</div>
+<div id="ref-BAI2020107776">
+<p>Bai, Chunguang, Patrick Dallasega, Guido Orzes, and Joseph Sarkis. 2020. “Industry 4.0 Technologies Assessment: A Sustainability Perspective.” <em>International Journal of Production Economics</em> 229: 107776. <a href="https://doi.org/https://doi.org/10.1016/j.ijpe.2020.107776">https://doi.org/https://doi.org/10.1016/j.ijpe.2020.107776</a>.</p>
+</div>
+<div id="ref-BARNES2010339">
+<p>Barnes, Michael, Tom Duckett, Grzegorz Cielniak, Graeme Stroud, and Glyn Harper. 2010. “Visual Detection of Blemishes in Potatoes Using Minimalist Boosted Classifiers.” <em>Journal of Food Engineering</em> 98 (3): 339–46. <a href="https://doi.org/https://doi.org/10.1016/j.jfoodeng.2010.01.010">https://doi.org/https://doi.org/10.1016/j.jfoodeng.2010.01.010</a>.</p>
+</div>
+<div id="ref-bolton2015programmable">
+<p>Bolton, William. 2015. <em>Programmable Logic Controllers</em>. Newnes.</p>
+</div>
+<div id="ref-firstrobot">
+<p>BPM, Infosys. 2024. “Rise of the Machines: Robotics’ Impact on the Evolution of Manufacturing.” 2024. <a href="https://www.infosysbpm.com/blogs/manufacturing/robotics-in-manufacturing.html">https://www.infosysbpm.com/blogs/manufacturing/robotics-in-manufacturing.html</a>.</p>
+</div>
+<div id="ref-BREZANI2022298">
+<p>Brezani, S., R. Hrasko, and P. Vojtas. 2022. “Smart Extensions to Regular Cameras in the Industrial Environment.” <em>Procedia Computer Science</em> 200: 298–307. <a href="https://doi.org/https://doi.org/10.1016/j.procs.2022.01.228">https://doi.org/https://doi.org/10.1016/j.procs.2022.01.228</a>.</p>
+</div>
+<div id="ref-gazebo-pkgs">
+<p>Buehler, Jennifer. 2021. “Gazebo-Pkgs.” 2021. <a href="https://github.com/JenniferBuehler/gazebo-pkgs?tab=readme-ov-file">https://github.com/JenniferBuehler/gazebo-pkgs?tab=readme-ov-file</a>.</p>
+</div>
+<div id="ref-BURGOSARTIZZU2010138">
+<p>Burgos-Artizzu, Xavier P., Angela Ribeiro, Alberto Tellaeche, Gonzalo Pajares, and Cesar Fernández-Quintanilla. 2010. “Analysis of Natural Images Processing for the Extraction of Agricultural Elements.” <em>Image and Vision Computing</em> 28 (1): 138–49. <a href="https://doi.org/https://doi.org/10.1016/j.imavis.2009.05.009">https://doi.org/https://doi.org/10.1016/j.imavis.2009.05.009</a>.</p>
+</div>
+<div id="ref-CHEN2001199">
+<p>Chen, I-Ming. 2001. “Rapid Response Manufacturing Through a Rapidly Reconfigurable Robotic Workcell.” <em>Robotics and Computer-Integrated Manufacturing</em> 17 (3): 199–213. <a href="https://doi.org/https://doi.org/10.1016/S0736-5845(00)00028-4">https://doi.org/https://doi.org/10.1016/S0736-5845(00)00028-4</a>.</p>
+</div>
+<div id="ref-COIFMAN1998271">
+<p>Coifman, Benjamin, David Beymer, Philip McLauchlan, and Jitendra Malik. 1998. “A Real-Time Computer Vision System for Vehicle Tracking and Traffic Surveillance.” <em>Transportation Research Part C: Emerging Technologies</em> 6 (4): 271–88. <a href="https://doi.org/https://doi.org/10.1016/S0968-090X(98)00019-9">https://doi.org/https://doi.org/10.1016/S0968-090X(98)00019-9</a>.</p>
+</div>
+<div id="ref-rosblog">
+<p>community, ROS. 2024. “Why Ros? It’s the Fastest Way to Build a Robot!” 2024. <a href="https://www.ros.org/blog/why-ros/">https://www.ros.org/blog/why-ros/</a>.</p>
+</div>
+<div id="ref-cobotfabricator">
+<p>Davis, Dan. 2023. “Metal Fabricator Finds Flexibility in Its Bending Department with Cobots.” 2023. <a href="https://www.youtube.com/watch?v=EhQ7DvXjDCA">https://www.youtube.com/watch?v=EhQ7DvXjDCA</a>.</p>
+</div>
+<div id="ref-ISO13849">
+<p>“EN ISO 13849-1:2015 Safety of Machinery - Safety-related Parts of Control Systems.” 2015. International Organization for Standardization. <a href="https://www.iso.org/standard/69883.html">https://www.iso.org/standard/69883.html</a>.</p>
+</div>
+<div id="ref-gambao2012new">
+<p>Gambao, Ernesto, Miguel Hernando, and Dragoljub Surdilovic. 2012. “A New Generation of Collaborative Robots for Material Handling.” In <em>ISARC. Proceedings of the International Symposium on Automation and Robotics in Construction</em>, 29:1. IAARC Publications.</p>
+</div>
+<div id="ref-gazebo-classic">
+<p>Gazebo. 2014. “Beginner: Overview. What Is Gazebo?” 2014. <a href="https://classic.gazebosim.org/tutorials?cat=guided_b&amp;tut=guided_b1">https://classic.gazebosim.org/tutorials?cat=guided_b&amp;tut=guided_b1</a>.</p>
+</div>
+<div id="ref-10381692">
+<p>Gómez-Hernández, José-Francisco, José-María Gutiérrez-Hernández, Antonio Jimeno-Morenilla, José-Luis Sánchez-Romero, and María-Dolores Fabregat-Periago. 2024. “Development of an Integrated Robotic Workcell for Automated Bonding in Footwear Manufacturing.” <em>IEEE Access</em> 12: 5066–80. <a href="https://doi.org/10.1109/ACCESS.2024.3350441">https://doi.org/10.1109/ACCESS.2024.3350441</a>.</p>
+</div>
+<div id="ref-guimaraes2009bending">
+<p>Guimarães, Rui J, José A Pacheco, José F Meireles, and Jaime F Fonseca. 2009. “A Bending Cell for Small Batches.” In <em>7th Euromech Solid Mechanics Conference</em>.</p>
+</div>
+<div id="ref-HAVLIK2011327">
+<p>Havlík, Š. 2011. “14 - Robotic Tools for de-Mining and Risky Operations.” In <em>Using Robots in Hazardous Environments</em>, edited by Y. Baudoin and Maki K. Habib, 327–52. Woodhead Publishing. <a href="https://doi.org/https://doi.org/10.1533/9780857090201.3.327">https://doi.org/https://doi.org/10.1533/9780857090201.3.327</a>.</p>
+</div>
+<div id="ref-digitaltwinblog">
+<p>Industry, and Trends. 2022. “Digital Twins and Virtual Commissioning in the Manufacturing Industry (Updated for 2023).” 2022. <a href="https://www.visualcomponents.com/blog/digital-twins-and-virtual-commissioning-in-industry-4-0/">https://www.visualcomponents.com/blog/digital-twins-and-virtual-commissioning-in-industry-4-0/</a>.</p>
+</div>
+<div id="ref-10070046">
+<p>Islam, Md. Touhidul, Imtiaz Reza Hameem, Shuvra Saha, Mohammad Jamilur Reza Chowdhury, and Md. Ether Deowan. 2023. “A Simulation of a Robot Operating System Based Autonomous Wheelchair with Web Based Hmi Using Rosbridge.” In <em>2023 3rd International Conference on Robotics, Electrical and Signal Processing Techniques (Icrest)</em>, 175–80. <a href="https://doi.org/10.1109/ICREST57604.2023.10070046">https://doi.org/10.1109/ICREST57604.2023.10070046</a>.</p>
+</div>
+<div id="ref-ji2021learning">
+<p>Ji, Sanghoon, Sukhan Lee, Sujeong Yoo, Ilhong Suh, Inso Kwon, Frank C Park, Sanghyoung Lee, and Hongseok Kim. 2021. “Learning-Based Automation of Robotic Assembly for Smart Manufacturing.” <em>Proceedings of the IEEE</em> 109 (4): 423–40.</p>
+</div>
+<div id="ref-jordan2016robots">
+<p>Jordan, John M. 2016. <em>Robots</em>. Mit Press.</p>
+</div>
+<div id="ref-backend">
+<p>kamrify. 2024a. “What Is Backend Development?” 2024. <a href="https://roadmap.sh/backend">https://roadmap.sh/backend</a>.</p>
+</div>
+<div id="ref-frontend">
+<p>———. 2024b. “What Is Frontend Development?” 2024. <a href="https://roadmap.sh/frontend">https://roadmap.sh/frontend</a>.</p>
+</div>
+<div id="ref-koubaa2017robot">
+<p>Koubaa, Anis, and others. 2017. <em>Robot Operating System (Ros).</em> Vol. 1. Springer.</p>
+</div>
+<div id="ref-7892717">
+<p>Krishna, Madhav Poddar, Giridhar M K, Amit Suresh Prabhu, and Umadevi V. 2016. “Automated Traffic Monitoring System Using Computer Vision.” In <em>2016 International Conference on Ict in Business Industry and Government (Ictbig)</em>, 1–5. <a href="https://doi.org/10.1109/ICTBIG.2016.7892717">https://doi.org/10.1109/ICTBIG.2016.7892717</a>.</p>
+</div>
+<div id="ref-lee2021intelligent">
+<p>Lee, Jeng-Dao, Chen-Huan Chang, En-Shuo Cheng, Chia-Chen Kuo, and Chia-Ying Hsieh. 2021. “Intelligent Robotic Palletizer System.” <em>Applied Sciences</em> 11 (24): 12159.</p>
+</div>
+<div id="ref-li2020robotics">
+<p>Li, Ming, Andrija Milojević, and Heikki Handroos. 2020. “Robotics in Manufacturing—the Past and the Present.” <em>Technical, Economic and Societal Effects of Manufacturing 4.0: Automation, Adaption and Manufacturing in Finland and Beyond</em>, 85–95.</p>
+</div>
+<div id="ref-liu2022metalwiremanipulationplanning">
+<p>Liu, Ruishuang, Weiwei Wan, Emiko Isomura, and Kensuke Harada. 2022. “Metal Wire Manipulation Planning for 3D Curving – How a Low Payload Robot Can Use a Bending Machine to Bend Stiff Metal Wire.” <a href="https://arxiv.org/abs/2203.04024">https://arxiv.org/abs/2203.04024</a>.</p>
+</div>
+<div id="ref-mekoprint">
+<p>Mechanics, Mekoprint. 2024. “Robotic Bending Solution - Mekoprint Mechanics.” 2024. <a href="https://www.youtube.com/watch?v=EhQ7DvXjDCA">https://www.youtube.com/watch?v=EhQ7DvXjDCA</a>.</p>
+</div>
+<div id="ref-rviz">
+<p>MoveIt. 2020. “Rviz - User Guide.” 2020. <a href="http://wiki.ros.org/rviz/UserGuide">http://wiki.ros.org/rviz/UserGuide</a>.</p>
+</div>
+<div id="ref-moveit">
+<p>———. 2024. “Moving Robots into the Future.” 2024. <a href="https://moveit.ai/">https://moveit.ai/</a>.</p>
+</div>
+<div id="ref-nodejs">
+<p>node.js. 2024. “About Node.js.” 2024. <a href="https://nodejs.org/en/about">https://nodejs.org/en/about</a>.</p>
+</div>
+<div id="ref-npm">
+<p>npm. 2024. “About Node.js.” 2024. <a href="https://www.npmjs.com/">https://www.npmjs.com/</a>.</p>
+</div>
+<div id="ref-PANERU2021103940">
+<p>Paneru, Suman, and Idris Jeelani. 2021. “Computer Vision Applications in Construction: Current State, Opportunities and Challenges.” <em>Automation in Construction</em> 132: 103940. <a href="https://doi.org/https://doi.org/10.1016/j.autcon.2021.103940">https://doi.org/https://doi.org/10.1016/j.autcon.2021.103940</a>.</p>
+</div>
+<div id="ref-profinet">
+<p>Profinet. 2024. “PROFINET Explained - the Technology in Detail.” 2024. <a href="https://www.profinet.com/profinet-explained">https://www.profinet.com/profinet-explained</a>.</p>
+</div>
+<div id="ref-qian2014manipulation">
+<p>Qian, Wei, Zeyang Xia, Jing Xiong, Yangzhou Gan, Yangchao Guo, Shaokui Weng, Hao Deng, Ying Hu, and Jianwei Zhang. 2014. “Manipulation Task Simulation Using Ros and Gazebo.” In <em>2014 Ieee International Conference on Robotics and Biomimetics (Robio 2014)</em>, 2594–8. IEEE.</p>
+</div>
+<div id="ref-reactjs">
+<p>React. 2024. “React: The Library for Web and Native User Interfaces.” 2024. <a href="https://react.dev/">https://react.dev/</a>.</p>
+</div>
+<div id="ref-cbun-device">
+<p>Robots, Kassow. 2024a. “CBun Device.” 2024. <a href="https://docs.kassowrobots.com/cbuns/development/CBun-Device">https://docs.kassowrobots.com/cbuns/development/CBun-Device</a>.</p>
+</div>
+<div id="ref-Cbun">
+<p>———. 2024b. “CBuns Development.” 2024. <a href="https://docs.kassowrobots.com/en/cbuns/development">https://docs.kassowrobots.com/en/cbuns/development</a>.</p>
+</div>
+<div id="ref-kassow-manual">
+<p>———. 2024c. <em>Product Manual</em>. Vols. Generation 2, 4.0. <a href="https://www.kassowrobots.com/downloads/product-manuals">https://www.kassowrobots.com/downloads/product-manuals</a>.</p>
+</div>
+<div id="ref-kr-profinet">
+<p>———. 2024d. “Profinet Support.” 2024. <a href="https://docs.kassowrobots.com/en/resources/Profinet">https://docs.kassowrobots.com/en/resources/Profinet</a>.</p>
+</div>
+<div id="ref-kassow-ros">
+<p>———. 2024e. “ROS Interface.” 2024. <a href="https://www.kassowrobots.com/ecosystem/kr-pulse/manufacturers/kassow-robots">https://www.kassowrobots.com/ecosystem/kr-pulse/manufacturers/kassow-robots</a>.</p>
+</div>
+<div id="ref-kassow-software-manual">
+<p>———. 2024f. <em>Software Manual Pdf</em>. Vol. 1.3.0. <a href="https://docs.kassowrobots.com/kr-assets/manuals/software-manual-kassowrobots_v1.3.0p.pdf">https://docs.kassowrobots.com/kr-assets/manuals/software-manual-kassowrobots_v1.3.0p.pdf</a>.</p>
+</div>
+<div id="ref-rosservice">
+<p>ROS.org. 2011. “Rosservice.” 2011. <a href="http://wiki.ros.org/rosservice">http://wiki.ros.org/rosservice</a>.</p>
+</div>
+<div id="ref-parameterserver">
+<p>———. 2018a. “Parameter Server.” 2018. <a href="http://wiki.ros.org/Parameter%20Server">http://wiki.ros.org/Parameter%20Server</a>.</p>
+</div>
+<div id="ref-actionserver">
+<p>———. 2018b. “Writing a Simple Action Server Using the Execute Callback.” 2018. <a href="http://wiki.ros.org/actionlib_tutorials/Tutorials/SimpleActionServer%28ExecuteCallbackMethod%29">http://wiki.ros.org/actionlib_tutorials/Tutorials/SimpleActionServer%28ExecuteCallbackMethod%29</a>.</p>
+</div>
+<div id="ref-roslaunch">
+<p>———. 2019. “Roslaunch.” 2019. <a href="http://wiki.ros.org/roslaunch">http://wiki.ros.org/roslaunch</a>.</p>
+</div>
+<div id="ref-rospackage">
+<p>———. 2022a. “Creating a Ros Package.” 2022. <a href="http://wiki.ros.org/ROS/Tutorials/CreatingPackage">http://wiki.ros.org/ROS/Tutorials/CreatingPackage</a>.</p>
+</div>
+<div id="ref-rosnode">
+<p>———. 2022b. “Understanding Ros Nodes.” 2022. <a href="http://wiki.ros.org/ROS/Tutorials/UnderstandingNodes">http://wiki.ros.org/ROS/Tutorials/UnderstandingNodes</a>.</p>
+</div>
+<div id="ref-rostopic">
+<p>———. 2022c. “Understanding Ros Topics.” 2022. <a href="http://wiki.ros.org/ROS/Tutorials/UnderstandingTopics">http://wiki.ros.org/ROS/Tutorials/UnderstandingTopics</a>.</p>
+</div>
+<div id="ref-russmann2015industry">
+<p>Rüßmann, Michael, Markus Lorenz, Philipp Gerbert, Manuela Waldner, Jan Justus, Pascal Engel, and Michael Harnisch. 2015. “Industry 4.0: The Future of Productivity and Growth in Manufacturing Industries.”</p>
+</div>
+<div id="ref-10201199">
+<p>Sahan, A. S. Mohamed, S. Kathiravan, M. Lokesh, and R. Raffik. 2023. “Role of Cobots over Industrial Robots in Industry 5.0: A Review.” In <em>2023 2nd International Conference on Advancements in Electrical, Electronics, Communication, Computing and Automation (Icaeca)</em>, 1–5. <a href="https://doi.org/10.1109/ICAECA56562.2023.10201199">https://doi.org/10.1109/ICAECA56562.2023.10201199</a>.</p>
+</div>
+<div id="ref-SathishKumar2023">
+<p>Sathish Kumar, A., S. Naveen, R. Vijayakumar, V. Suresh, Abdul Rab Asary, S. Madhu, and Kumaran Palani. 2023. “An Intelligent Fuzzy-Particle Swarm Optimization Supervisory-Based Control of Robot Manipulator for Industrial Welding Applications.” <em>Scientific Reports</em> 13 (1): 8253. <a href="https://doi.org/10.1038/s41598-023-35189-2">https://doi.org/10.1038/s41598-023-35189-2</a>.</p>
+</div>
+<div id="ref-schunk-gripper">
+<p>Schunk. 2024. “PGN-Plus-P, Universal Gripper.” 2024. <a href="https://schunk.com/de/en/gripping-systems/parallel-gripper/pgn-plus-p/pgn-plus-p-80-1/p/000000000000318520">https://schunk.com/de/en/gripping-systems/parallel-gripper/pgn-plus-p/pgn-plus-p-80-1/p/000000000000318520</a>.</p>
+</div>
+<div id="ref-SEMERARO2021103469">
+<p>Semeraro, Concetta, Mario Lezoche, Hervé Panetto, and Michele Dassisti. 2021. “Digital Twin Paradigm: A Systematic Literature Review.” <em>Computers in Industry</em> 130: 103469. <a href="https://doi.org/https://doi.org/10.1016/j.compind.2021.103469">https://doi.org/https://doi.org/10.1016/j.compind.2021.103469</a>.</p>
+</div>
+<div id="ref-sensopart-visor">
+<p>SENSOPART. 2024a. “Hardware + Software = Visor®.” 2024. <a href="https://www.sensopart.com/en/products/vision-sensors/">https://www.sensopart.com/en/products/vision-sensors/</a>.</p>
+</div>
+<div id="ref-sensopart-software">
+<p>———. 2024b. “VISOR® Pc Software.” 2024. <a href="https://www.sensopart.com/en/service/downloads/90-visor-pc-software/">https://www.sensopart.com/en/service/downloads/90-visor-pc-software/</a>.</p>
+</div>
+<div id="ref-visor-object">
+<p>———. 2024c. “VISOR® V20 Object Advanced, Wide Field of View.” 2024. <a href="https://www.sensopart.com/en/products/details/632-91034/">https://www.sensopart.com/en/products/details/632-91034/</a>.</p>
+</div>
+<div id="ref-visor-robotic">
+<p>———. 2024d. “VISOR® V20 Robotic Advanced, Wide Field of View.” 2024. <a href="https://www.sensopart.com/en/products/details/632-91067/">https://www.sensopart.com/en/products/details/632-91067/</a>.</p>
+</div>
+<div id="ref-visor_communication_manual">
+<p>———. 2024e. <em>VISOR<sup></sup> Communication Manual</em>.</p>
+</div>
+<div id="ref-visor_user_manual">
+<p>———. 2024f. <em>VISOR<sup></sup> User Manual Software Version 2.8</em>.</p>
+</div>
+<div id="ref-shah2021design">
+<p>Shah, Vijesh, Nandkumar Gilke, Vilas Dhore, Chandrashekhar Phutane, and Bhavisha Kondhol. 2021. “Design of Gripper and Selection of Robotic Arm for Automation of a Pick and Place Process.” In <em>Advances in Manufacturing Systems: Select Proceedings of Ram 2020</em>, 95–107. Springer.</p>
+</div>
+<div id="ref-shenchong">
+<p>Shenchong. 2024. “Automated Bending Cell- Robot Press Brake.” 2024. <a href="https://www.shenchong.com/robotic-press-brake.html">https://www.shenchong.com/robotic-press-brake.html</a>.</p>
+</div>
+<div id="ref-siemens">
+<p>SIEMENS. 2024. “SIMATIC Controllers – Passion for Automation.” 2024. <a href="https://www.siemens.com/global/en/products/automation/systems/industrial/plc.html">https://www.siemens.com/global/en/products/automation/systems/industrial/plc.html</a>.</p>
+</div>
+<div id="ref-SKIBNIEWSKI1992251">
+<p>Skibniewski, Mirosław J., and Stephen C. Wooldridge. 1992. “Robotic Materials Handling for Automated Building Construction Technology.” <em>Automation in Construction</em> 1 (3): 251–66. <a href="https://doi.org/https://doi.org/10.1016/0926-5805(92)90017-E">https://doi.org/https://doi.org/10.1016/0926-5805(92)90017-E</a>.</p>
+</div>
+<div id="ref-kassowrobotsblog">
+<p>Steger, Adam. 2024. “What Is Robotic Process Automation(RPA)? The Complete 2024 Guide.” 2024. <a href="https://www.kassowrobots.com/blog/what-is-robotic-process-automation-rpa">https://www.kassowrobots.com/blog/what-is-robotic-process-automation-rpa</a>.</p>
+</div>
+<div id="ref-takaya2016simulation">
+<p>Takaya, Kenta, Toshinori Asai, Valeri Kroumov, and Florentin Smarandache. 2016. “Simulation Environment for Mobile Robots Testing Using Ros and Gazebo.” In <em>2016 20th International Conference on System Theory, Control and Computing (Icstcc)</em>, 96–101. IEEE.</p>
+</div>
+<div id="ref-tarn2011robotic">
+<p>Tarn, Tzyh-Jong, Shan-Ben Chen, and Gu Fang. 2011. <em>Robotic Welding, Intelligence and Automation: RWIA’2010</em>. Vol. 88. Springer Science &amp; Business Media.</p>
+</div>
+<div id="ref-shopmetal">
+<p>Techology, Shop Metalworking. 2023. “Robotic Bending Cell.” 2023. <a href="https://www.youtube.com/watch?v=EhQ7DvXjDCA">https://www.youtube.com/watch?v=EhQ7DvXjDCA</a>.</p>
+</div>
+<div id="ref-threejs">
+<p>three.js. 2024. “Fundamentals.” 2024. <a href="https://threejs.org/manual/#en/fundamentals">https://threejs.org/manual/#en/fundamentals</a>.</p>
+</div>
+<div id="ref-THROOP2005281">
+<p>Throop, J. A., D. J. Aneshansley, W. C. Anger, and D. L. Peterson. 2005. “Quality Evaluation of Apples Based on Surface Defects: Development of an Automated Inspection System.” <em>Postharvest Biology and Technology</em> 36 (3): 281–90. <a href="https://doi.org/https://doi.org/10.1016/j.postharvbio.2005.01.004">https://doi.org/https://doi.org/10.1016/j.postharvbio.2005.01.004</a>.</p>
+</div>
+<div id="ref-webtools">
+<p>tools, Robot Web. 2024a. “Robot Web Tools.” 2024. <a href="https://robotwebtools.github.io/">https://robotwebtools.github.io/</a>.</p>
+</div>
+<div id="ref-websocket">
+<p>———. 2024b. “The Websocket Api (Websockets).” 2024. <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API</a>.</p>
+</div>
+<div id="ref-visualization-rwt">
+<p>tork-a. 2024. “Visualization-Rwt.” 2024. <a href="https://github.com/tork-a/visualization_rwt">https://github.com/tork-a/visualization_rwt</a>.</p>
+</div>
+<div id="ref-Uhrhan1995">
+<p>Uhrhan, Christoph, René Roshardt, and Gerhard Schweitzer. 1995. “User Oriented Automation of Flexible Sheet Bending.” In <em>Proceedings of the Third Conference on Mechatronics and Robotics: “From Design Methods to Industrial Applications”</em>, edited by Joachim Lückel, 202–11. Wiesbaden: Vieweg+Teubner Verlag. <a href="https://doi.org/10.1007/978-3-322-91170-4_15">https://doi.org/10.1007/978-3-322-91170-4_15</a>.</p>
+</div>
+<div id="ref-WAGNER201988">
+<p>Wagner, Raphael, Benjamin Schleich, Benjamin Haefner, Andreas Kuhnle, Sandro Wartzack, and Gisela Lanza. 2019. “Challenges and Potentials of Digital Twins and Industry 4.0 in Product Design and Production for High Performance Products.” <em>Procedia CIRP</em> 84: 88–93. <a href="https://doi.org/https://doi.org/10.1016/j.procir.2019.04.219">https://doi.org/https://doi.org/10.1016/j.procir.2019.04.219</a>.</p>
+</div>
+<div id="ref-Wakizako">
+<p>Wakizako, Hitoshi. 2015. “Industrial Robots and Machine Vision.” <em>The 3rd International Conference on Industrial Application Engineering 2015 (ICIAE2015)</em>. <a href="https://doi.org/10.12792/iciae2015.003">https://doi.org/10.12792/iciae2015.003</a>.</p>
+</div>
+<div id="ref-roslib">
+<p>Wiki, ROS. 2013. “Roslib: Package Summary.” 2013. <a href="http://wiki.ros.org/roslib">http://wiki.ros.org/roslib</a>.</p>
+</div>
+<div id="ref-ros3djs">
+<p>———. 2015a. “3D Visualization Library for Use with the Ros Javascript Libraries.” 2015. <a href="https://wiki.ros.org/ros3djs">https://wiki.ros.org/ros3djs</a>.</p>
+</div>
+<div id="ref-rosmaster">
+<p>———. 2015b. “Rosmaster: Package Summary.” 2015. <a href="http://wiki.ros.org/rosmaster">http://wiki.ros.org/rosmaster</a>.</p>
+</div>
+<div id="ref-rosbridge">
+<p>———. 2022. “Rosbridge-Suite.” 2022. <a href="http://wiki.ros.org/rosbridge_suite">http://wiki.ros.org/rosbridge_suite</a>.</p>
+</div>
+<div id="ref-urdf">
+<p>———. 2024. “Urdf.” 2024. <a href="http://wiki.ros.org/urdf">http://wiki.ros.org/urdf</a>.</p>
+</div>
+<div id="ref-Wilkinson">
+<p>Wilkinson, Alexander, Michael Gonzales, Patrick Hoey, David Kontak, Dian Wang, Noah Torname, Amelia Sinclaire, et al. 2021. <em>Paladyn</em> 12 (1): 392–401. <a href="https://doi.org/doi:10.1515/pjbr-2021-0023">https://doi.org/doi:10.1515/pjbr-2021-0023</a>.</p>
+</div>
+<div id="ref-Xiao_2019">
+<p>Xiao, Zixuan, and Yulin Xu. 2019. “Web-Based Robot Control Interface.” <em>IOP Conference Series: Earth and Environmental Science</em> 252 (4): 042112. <a href="https://doi.org/10.1088/1755-1315/252/4/042112">https://doi.org/10.1088/1755-1315/252/4/042112</a>.</p>
+</div>
+<div id="ref-8361333">
+<p>Yang, Sida, Wenjun Xu, Zhihao Liu, Zude Zhou, and Duc Truong Pham. 2018. “Multi-Source Vision Perception for Human-Robot Collaboration in Manufacturing.” In <em>2018 Ieee 15th International Conference on Networking, Sensing and Control (Icnsc)</em>, 1–6. <a href="https://doi.org/10.1109/ICNSC.2018.8361333">https://doi.org/10.1109/ICNSC.2018.8361333</a>.</p>
+</div>
+<div id="ref-9761203">
+<p>Zhou, Longfei, Lin Zhang, and Nicholas Konz. 2023. “Computer Vision Techniques in Manufacturing.” <em>IEEE Transactions on Systems, Man, and Cybernetics: Systems</em> 53 (1): 105–17. <a href="https://doi.org/10.1109/TSMC.2022.3166397">https://doi.org/10.1109/TSMC.2022.3166397</a>.</p>
+</div>
+</div>
+</body>
+</html>

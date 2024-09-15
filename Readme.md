@@ -1,5 +1,7 @@
 # Thesis
-Current word count: About 12600 words
+```texcount file.tex -inc -incbib -sum -1```
+<!-- If you remove the -1, then you can get more information: -->
+Current word count: About 14880 words
 To load thesis open -> main.pdf
 
 # Task List
