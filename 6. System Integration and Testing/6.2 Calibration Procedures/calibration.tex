@@ -3,11 +3,27 @@ Calibration is a crucial procedure in the development of
 an automated robotic workcell, ensuring that all components
 operate accurately and in harmony.
 
+    
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, angle=0]{figures/001calibration/calibration-process-left.jpeg} % Replace with your image file
+        \label{fig:calibration-process-left}
+    \end{subfigure}\hspace{0cm}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, angle=0]{figures/001calibration/calibration-process-right.jpeg} % Replace with your image file
+        \label{fig:calibration-process-right}
+    \end{subfigure}
+    \caption{KR1410 subprogram to perform calibration automatically}
+    \label{fig:auto-calibration-process}
+\end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG}
-    \caption{TCP is set at the end of gripper at a distance of 216mm from robot TOOL-IO}
+    \includegraphics[width=0.75\textwidth]{6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG}
+    \caption{TCP is set at the end of gripper at a distance of 216 mm from robot TFC}
     \label{fig:tcp}
 \end{figure}
 
@@ -16,6 +32,7 @@ operate accurately and in harmony.
 
 \subsection{Robot Calibration}
 Robot calibration ensures that the Kassow robot can accurately position its end effector for loading, bending, and unloading metal sheets. This involves:
+
 
 \begin{itemize}
     \item \textbf{Kinematic Calibration}: Adjusting the robot's kinematic model to correct any discrepancies between the theoretical model and the actual hardware. This includes measuring and compensating for joint offsets, link lengths, and joint angles.
@@ -32,13 +49,6 @@ reference between "Hand" (TCP) and "Eye" Camera coordinate system
 This allows different image acquisition positions and still to output the object positions
 in robot coordinates directly from the camera.
 \cite[page 102]{visor_user_manual}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.9\textwidth]{6. System Integration and Testing/6.2 Calibration Procedures/shutter_speed.PNG}
-    \caption{A working distance of 300mm is set for the robotic camera}
-    \label{fig:working-distance}
-\end{figure}
 
 Camera calibration is essential for the accurate detection of metal sheets and measurement of bending angles. The process involves:
 
@@ -60,10 +70,89 @@ bending operation and then in next cycle, start with the auto-calibration.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{6. System Integration and Testing/6.2 Calibration Procedures/graph.png}
-    \caption{Calibration procedure using telegram}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/001calibration/calibration.png}
+    \end{subfigure}\hspace{0cm}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/001calibration/calibration1.png}
+    \end{subfigure}
+    \vspace{0.1cm}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/001calibration/calibration2.PNG}
+    \end{subfigure}
+    \vspace{0.1cm}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/001calibration/calibration3.png}
+    \end{subfigure}\hspace{0cm}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/001calibration/calibration4.png}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/001calibration/calibration5.PNG}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/001calibration/calibration6.png}
+    \end{subfigure}\hspace{0cm}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/001calibration/calibration7.png}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/001calibration/calibration8.PNG}
+    \end{subfigure}
+
+    \caption{Acquiring images for the calibration process}
+    \label{fig:calibration-steps}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \footnotesize
+    \begin{tikzpicture}[node distance=2cm]
+    
+        % Nodes
+        \node (ready) [process] {Move TCP in front of the calibration plate};
+        \node (job) [process, below of=ready] {Change active job to Calibration\\ Telegram: CJN1011Calibration};
+        \node (start) [process, right of=job, xshift=4.5cm] {Select/activate calibration method\\ Telegram: CSP1100200000015};
+        \node (plate) [process, below of=start,yshift=-0.5cm] {Select calibration plate Telegram: CSP1100230000045\\ Calibration plate 15x13 200mm Crosshair 1pc};
+        \node (clear) [process, left of=plate,xshift=-4.5cm] {Clear calibration data \\ Telegram: CCD};
+        \node (move) [process, below of=clear] {Move to image position};
+        \node (point) [coordinate, right of=move, xshift=4.5cm] {};
+        \node (acquire) [process, below of=move] {Acquire image \\ Telegram: CAI12000002 + POSE};
+        \node (decision) [decision, below of=acquire, yshift=-1cm] {Desired number of images reached?};
+        \node (calibrate) [process, below of=decision, yshift=-1cm] {Performing a Hand-Eye calibration \\ Telegram: CRP1140};
+        \node (copy) [process, right of=calibrate,xshift=4.5cm] {Copy Calibration to all jobs \\ Telegram: CCC110001};
+        \node (complete) [process, below of=copy] {Calibration\\ Complete};
+
+        
+        % Arrows
+        \draw [arrow] (ready) -- (job);
+        \draw [arrow] (job) -- (start);
+        \draw [arrow] (start) -- (plate);
+        \draw [arrow] (plate) -- (clear);
+        \draw [arrow] (clear) -- (move);
+        \draw [arrow] (move) -- (acquire);
+        \draw [arrow] (acquire) -- (decision);
+        \draw [arrow] (decision) -- node[anchor=east] {Yes} (calibrate);
+        \draw [-] (decision) -| node[anchor=west, xshift=-4cm, yshift=0.25cm] {No} (point);
+        \draw [arrow] (point) -- (move);
+        \draw [arrow] (calibrate) -- (copy);
+        \draw [arrow] (copy) -- (complete);
+
+        
+    \end{tikzpicture}
+    \caption{Hand-eye calibration procedure using telegram}
     \label{fig:calib-graph}
 \end{figure}
+
 
 The calibration process involves several systematic steps:
 

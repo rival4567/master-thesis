@@ -62,13 +62,13 @@ of the bending process were revised several times. The final result of these ite
 activities to be performed by the KR1410 robot can be seen in flowchart \ref{tab:flowchart}. 
 
 \begin{longtable}{c}
-    \small
+    \footnotesize
     \begin{tikzpicture}[node distance=3.5cm]
         \node (start) [startstop] {Start};
         \node (proc0) [process, below of=start, yshift=1cm] {Initialisation of camera, \hyperref[acro:PLC]{PLC} and configuration of storage system parameters};
         \node (loop)  [process, below of=proc0, yshift=1.5cm] {Loop};
         \node (nodeint) [nodepage, left of=loop] {3};
-        \node (dec0) [decision, below of=loop] {Is calibration requested from operator?};
+        \node (dec0) [decision, below of=loop] {Is calibration \\ requested from operator?};
         \node (intersection0) [coordinate, below of=dec0] {};
         \node (proc1) [process, right of=dec0, xshift=3cm] {Perform hand-eye calibration};
         \node (dec1) [decision, below of=intersection0, yshift=0.5cm] {Is drawer of shelf open?};
@@ -89,6 +89,8 @@ activities to be performed by the KR1410 robot can be seen in flowchart \ref{tab
     \end{tikzpicture} \\
 
     \begin{tikzpicture}[node distance=3.5cm]
+        \footnotesize
+
         \node (intersection1) [nodepage] {1};
         \node (proc3) [processorange, below of=intersection1, yshift=1.75cm] {Wait until sheet metal part is available at unloading station};
         \node (proc4) [process, below of=proc3, yshift=1.5cm] {Detect sheet metal part using camera};
@@ -143,11 +145,12 @@ activities to be performed by the KR1410 robot can be seen in flowchart \ref{tab
     \end{tikzpicture} \\
 
     \begin{tikzpicture}[node distance=2cm]
+        \footnotesize
         \node (intersection3) [nodepage] {2};
         \node (proc10) [process, below of=intersection3] {Place the sheet in the drawer of shelf};
         \node (dec5) [decision, below of=proc10, yshift=-1.5cm] {Is current drawer of shelf filled?};
         \node (proc11) [process, right of=dec5, xshift=4.5cm] {Close the drawer of shelf};
-        \node (dec6) [decision, below of=proc11, yshift=-2cm] {Is storage station full?};
+        \node (dec6) [decision, below of=proc11, yshift=-2cm] {Is storage station\\ full?};
         \node (intersection4) [nodepage, below of=dec5, yshift=-2cm] {3};
         \node (stop) [startstop, below of=dec6, yshift=-1.75cm] {Stop};
 
