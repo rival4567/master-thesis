@@ -1,2 +1,47 @@
 \chapter{Discussion}
 \label{chap:discussion}
+A single handling robot is able to perform the bending process of a sheet metal part. This thesis demonstrates that it is possible to reduce or replace the need of a human operator for physically labored tasks like bending sheets. The experimental results provided a detailed performance evaluation of the bending process. KR1410 is a suitable choice as a collaborative robot for a low-volume, customizable and flexibile production process.
+
+A total of 65 ($13 \times 5$) finished sheet metal parts of the test variant can be stored in a drawer of the shelf. A shelf has $10$ drawers. This means the shelf can hold $65 \times 10 = 650$ sheet metal parts in the shelf. The KR1410 robot takes 4 minutes and 10 seconds to complete all bending operations for a single part. Thus, time taken to complete 650 sheet metal parts comes out to be around 45 hours and 10 minutes.
+The unloading stations could contain around 1200 raw sheet metal parts. This means the the workcell could keep on operating for almost 2 days without any human intervation. This is particularly useful for the production of this part variant. A new shelf placed in the robotic workcell on the last human shift of the week \textit{i.e.} Friday would continue to fill until Sunday evening. The next shift on Monday would be able to receive 650 finished parts for assembly that were automatically completed by robotic workcell.
+
+\begin{table}[ht]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.2} % Adjusts row height
+    \begin{tabular}{>{\raggedright}p{2.5cm}>{\centering}p{3.5cm}>{\centering}p{3.5cm}>{\centering\arraybackslash}p{3.5cm}}
+    \hline
+    \textbf{Parameter}           & \textbf{Manual Production} & \textbf{AMADA ASTRO II 100NT HDS 1030} & \textbf{KR1410 Robotic Workcell} \\ 
+    \hline
+    \textbf{Cycle Time}          & 1 minute 10 seconds & 2 minutes 30 seconds & 4 minutes 10 seconds \\ 
+    \textbf{Repeatability}       & Varied & 0.01 mm & 0.5 mm \\ 
+    \textbf{Inspection}          & Required & Not required & Automated \\
+    \textbf{Labor Cost}          & High & Low & Low \\ 
+    \textbf{Productivity}        & Low & Very high & high \\ 
+    \textbf{Quality Consistency} & Varied & Consistent & Consistent \\ 
+    \textbf{Setup Cost}          & Low & High & Medium \\ 
+    \textbf{Flexibility}         & High & Limited & Moderate \\ 
+    \textbf{Maintenance Cost}    & Low & High & Moderate \\ 
+    \textbf{Scalability}         & Difficult & Highly scalable  &  Easier to scale \\ 
+    \textbf{Error Rate}          & Higher & Lower & Very low \\ 
+    \textbf{Initial Investment}  & Low & High & Moderate \\ 
+    \hline
+    \end{tabular}
+    \caption{Comparison between manual production, AMADA ASTRO II 100NT HDS 1030 bending cell, and KR1410 Robotic Workcell}
+    \label{tab:comparison}
+\end{table}
+
+
+Table \ref{tab:comparison} shows the comparison between manual production, AMADA bending cell, and the KR1410 robotic workcell for the bending of the test sheet metal part. From the table, it is clear that AMADA bending cell is useful for high-volume production. The robotic workcell though slower in production, offers more flexibility, allowing for low downtime during changing the sheet metal part variant. It can also test a part after each bending step allowing for corrective measures.
+With a collaborative robot, it is also easier to teach a new bending process.
+
+The calibration process which is only completed in 98 seconds, allowed the robot to pick up and manipulate parts accurately. This finding reinforces that using robotic perception can still maintain high levels of precision in industrial automation, while also allowing decision making in process, particularly in a system where repeatability is important for ensuring consistent product quality.
+
+\section{Challenges and limitations}
+\begin{enumerate}
+    \item The biggest challenge during this project, was working with a teach pendant with a limited memory. The teach pendant is not suitable for complex trajectory planning. As the program tree got bigger, the number of bugs in teach pendant increased. To mitigate this issue, only a limited number of variables are created in the program tree and subprograms are created and reused to do a sub-task. The storage station requires a number of waypoints to reach the placement pose. The poses are created in reference to poses which are defined by the scanning of the target marker pose. These limitations didn't allow better path planning to each placement pose and the cycle time is increased.
+    \item The VISOR has no official support with the KR. A custom made CBun device is created to setup communication with the KR. However, this communication has limitations in terms of all available features in VISOR Software.
+    \item ROS and gazebo simulations requires a fast computation device with \hyperref[acro:GPU]{GPU}. KR provides only a handful of ROS topics for controlling the robot. These needed to be integrated with the MoveIt package for collision-free path planning.
+    \item The KR1410 has a payload carrying capacity of 10 kg. But that is only available at shorter distances. The KR1410 robot has limitations on how fast it could move without triggering the torque limit warning. Planning of trajectories matching the bending of sheet is a challenge. Currently, the gripper is open during the bending operation, and the bending press holds the sheet in place.
+\end{enumerate}
+

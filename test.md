@@ -1998,55 +1998,52 @@ Calibration {#sec:calibration}
 
 Calibration is a crucial procedure in the development of an automated
 robotic workcell, ensuring that all components operate accurately and in
-harmony.
+harmony. Firstly, there is a requirement for calibrating the gantry
+robot on the unloading station. The gantry robot should give the sheet
+metal part accurately to the unloading station gripper and shouldn't
+lose the part on the way. This is done using a process known as home
+position calibration. Upon a new boot of the PLC, the gantry robot move
+along linear axes (X, Y, Z) and go to a consistent reference point (home
+position). This point is where all the axes are set to zero.
 
-![KR1410 subprogram to perform calibration
-automatically](figures/001calibration/calibration-process-left.jpeg "fig:"){#fig:auto-calibration-process
-width="\\textwidth"}
-[\[fig:calibration-process-left\]]{#fig:calibration-process-left
-label="fig:calibration-process-left"}
+A laser sensor is added to the bending machine to measure the distance
+between the tool and die with the reproducibility in the range of 10m.
+This sensor help in coordinating the bending timings between the bending
+machine and the robot. This sensor also requires a baseline or zero
+point to eliminate any offsets or biases in their readings.
 
-![KR1410 subprogram to perform calibration
-automatically](figures/001calibration/calibration-process-right.jpeg "fig:"){#fig:auto-calibration-process
-width="\\textwidth"}
-[\[fig:calibration-process-right\]]{#fig:calibration-process-right
-label="fig:calibration-process-right"}
+Finally, robot's calibration ensures that the KR1410 can accurately
+position its TCP for loading, bending, and unloading metal sheets. The
+KR1410 requires the kinematic calibration, hand-eye calibration and the
+workspace calibration to achieve good results.
 
-![TCP is set at the end of gripper at a distance of 216 mm from robot
-TFC](6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG){#fig:tcp
-width="75%"}
+### Kinematic Calibration {#subsec:kinematic-calibration}
 
-### Robot Calibration
+![Kinematic model of KR1410 in
+RViz](6. System Integration and Testing/6.2 Calibration Procedures/tcp.PNG){#fig:tcp
+width="100%"}
 
-Robot calibration ensures that the Kassow robot can accurately position
-its end effector for loading, bending, and unloading metal sheets. This
-involves:
+It refers to the KR1410's kinematic model which needs to correct any
+discrepancies between the theoretical model and the actual hardware.
+This includes measuring and compensating for joint offsets, link
+lengths, and joint angles. The KR1410 is already calibrated from the
+factory and does not need to be setup. Though in simulation, robot
+kinematic model is generated from the URDF and needs to be updated to
+match the real hardware. Figure [6.1](#fig:tcp){reference-type="ref"
+reference="fig:tcp"} shows the kinematic model of KR1410 and also the
+TCP link which is set at 216 mm from the TFC.
 
--   **Kinematic Calibration**: Adjusting the robot's kinematic model to
-    correct any discrepancies between the theoretical model and the
-    actual hardware. This includes measuring and compensating for joint
-    offsets, link lengths, and joint angles.
+### Hand-eye calibration {#subsubsec:tcp-calibration}
 
--   **Tool Center Point (TCP) Calibration**: Determining the exact
-    position of the end effector or tool relative to the robot's last
-    joint. This is crucial for precise manipulation of metal sheets.
-
--   **Workspace Calibration**: Defining the robot's operational
-    workspace and ensuring that all tasks are performed within this
-    defined area, avoiding collisions and ensuring smooth operation.
-
-The KR1410 is already calibrated from the factory and does not need to
-be setup. Though in simulation, robot kinematic model is generated from
-the URDF and needs to be updated to match the real hardware.
-
-### Camera Calibration
-
-The \"Hand-Eye calibration (Robotics)\" calibration method is used to
-determine the reference between \"Hand\" (TCP) and \"Eye\" Camera
-coordinate system (position and orientation) when the VISOR is attached
-to the gripper. This allows different image acquisition positions and
-still to output the object positions in robot coordinates directly from
-the camera. [@visor_user_manual page 102]
+The hand-eye calibration is the determination of the exact position of
+the end effector or TCP *w.r.t.* to the camera frame. This is crucial
+for precise manipulation of metal sheets. The \"Hand-Eye calibration
+(Robotics)\" calibration method is used to determine the reference
+between \"Hand\" (TCP) and \"Eye\" Camera coordinate system (position
+and orientation) when the VISOR is attached to the gripper. This allows
+different image acquisition positions and still to output the object
+positions in robot coordinates directly from the camera.
+[@visor_user_manual page 102]
 
 Camera calibration is essential for the accurate detection of metal
 sheets and measurement of bending angles. The process involves:
@@ -2061,57 +2058,94 @@ sheets and measurement of bending angles. The process involves:
     aligning the camera's coordinate system with the robot's coordinate
     system to ensure accurate detection and measurement.
 
-### Sensor Calibration
-
-Laser sensor is added to the bending machine to measure the distance
-between the tool and die with the reproducibility in the range of 10m.
-This sensor help in coordinating the bending timings between the bending
-machine and the robot. This sensor also requires a baseline or zero
-point to eliminate any offsets or biases in their readings.
-
-### Calibration Procedures
-
 The calibration process is automated within the robot program such that
-operator could request to re-calibrate the camera w.r.t robot TCP from
-the touch panel. This allows to update the image quality as it degrades
-over time. The robot finishes the current bending operation and then in
-next cycle, start with the auto-calibration.
+operator could request to re-calibrate the camera *w.r.t.* robot TCP
+from the touch panel. This allows to update the image quality as it
+degrades over time. The robot finishes the current bending operation and
+then in next cycle, start with the auto-calibration. Figure
+[\[fig:calib-graph\]](#fig:calib-graph){reference-type="ref"
+reference="fig:calib-graph"} shows the calibration algorithm and the
+communication setup between VISOR camera and KR1410 using telegram.
 
-![Acquiring images for the calibration
+The hand-eye calibration can only be used with the camera mounted on the
+gripper. To perform this, 20 images are taken of the calibration plate
+with the VISOR. Figure
+[6.10](#fig:calibration-steps){reference-type="ref"
+reference="fig:calibration-steps"} shows 9 of these 20 acquired
+calibration plate images. The accuracy of the calibration can often be
+further increased by adding more images. The TCP is tilted between each
+pose especially along two axes strongly. Also, necessary translation
+between each pose is done so that the calibration plate stays in the
+field of view of the camera. This allowing the calibration to have a
+field of view of 100%.
+
+![Acquiring calibration plate images for the calibration
 process](figures/001calibration/calibration.png){#fig:calibration-steps
 width="\\textwidth"}
 
-![Acquiring images for the calibration
+![Acquiring calibration plate images for the calibration
 process](figures/001calibration/calibration1.png){#fig:calibration-steps
 width="\\textwidth"}
 
-![Acquiring images for the calibration
+![Acquiring calibration plate images for the calibration
 process](figures/001calibration/calibration2.PNG){#fig:calibration-steps
 width="\\textwidth"}
 
-![Acquiring images for the calibration
+![Acquiring calibration plate images for the calibration
 process](figures/001calibration/calibration3.png){#fig:calibration-steps
 width="\\textwidth"}
 
-![Acquiring images for the calibration
+![Acquiring calibration plate images for the calibration
 process](figures/001calibration/calibration4.png){#fig:calibration-steps
 width="\\textwidth"}
 
-![Acquiring images for the calibration
+![Acquiring calibration plate images for the calibration
 process](figures/001calibration/calibration5.PNG){#fig:calibration-steps
 width="\\textwidth"}
 
-![Acquiring images for the calibration
+![Acquiring calibration plate images for the calibration
 process](figures/001calibration/calibration6.png){#fig:calibration-steps
 width="\\textwidth"}
 
-![Acquiring images for the calibration
+![Acquiring calibration plate images for the calibration
 process](figures/001calibration/calibration7.png){#fig:calibration-steps
 width="\\textwidth"}
 
-![Acquiring images for the calibration
+![Acquiring calibration plate images for the calibration
 process](figures/001calibration/calibration8.PNG){#fig:calibration-steps
 width="\\textwidth"}
+
+The calibration is done in front of the bending machine target marker.
+This marker is chosen because bending machine wouldn't move in the
+robotic workcell. Once, a request is made by the operator for the
+calibration, the robot goes to a set pose in front of the calibration
+plate in the next sheet cycle and runs the program according to the
+flowchart in figure
+[\[fig:calib-graph\]](#fig:calib-graph){reference-type="ref"
+reference="fig:calib-graph"}. The KR1410 moves TCP to saved poses that
+captures calibration plates from different poses as shown in the figure
+[6.14](#fig:auto-calibration-process){reference-type="ref"
+reference="fig:auto-calibration-process"}. After successful calibration
+the relation between \"Hand\" (Tool Center Point) and \"Eye\" (VISOR) is
+known.
+
+![KR1410 program capturing images to perform calibration
+automatically](figures/001calibration/calibration-process-left.jpeg "fig:"){#fig:auto-calibration-process
+width="\\textwidth"}
+[\[fig:calibration-process-left\]]{#fig:calibration-process-left
+label="fig:calibration-process-left"}
+
+![KR1410 program capturing images to perform calibration
+automatically](figures/001calibration/calibration-process-right.jpeg "fig:"){#fig:auto-calibration-process
+width="\\textwidth"}
+[\[fig:calibration-process-right\]]{#fig:calibration-process-right
+label="fig:calibration-process-right"}
+
+### Workspace Calibration {#subsec:workspace-calibration}
+
+Defining the robot's operational workspace and ensuring that all tasks
+are performed within this defined area, avoiding collisions and ensuring
+smooth operation.
 
 The calibration process involves several systematic steps:
 
@@ -2185,6 +2219,83 @@ width="\\textwidth"}
 
 ### Bending Operation {#subsec:bending-operation}
 
+![Go to bending station
+1](figures/bending/bending1-002.png){#subfig:bending1-before
+width="\\textwidth"}
+
+![bend the sheet metal
+part](figures/bending/bending1-003.png){#subfig:bending1
+width="\\textwidth"}
+
+![take away the bent
+sheet](figures/bending/bending1-001.png){#subfig:bending1-after
+width="\\textwidth"}
+
+![Go to bending station
+2](figures/bending/bending2-003.png){#subfig:bending2-before
+width="\\textwidth"}
+
+![bend the sheet metal
+part](figures/bending/bending2-001.png){#subfig:bending2
+width="\\textwidth"}
+
+![take away the bent
+sheet](figures/bending/bending2-002.png){#subfig:bending2-after
+width="\\textwidth"}
+
+![Go to bending station
+2](figures/bending/bending3-001.png){#subfig:bending3-before
+width="\\textwidth"}
+
+![bend the sheet metal
+part](figures/bending/bending3-002.png){#subfig:bending3
+width="\\textwidth"}
+
+![take away the bent
+sheet](figures/bending/bending3-003.png){#subfig:bending3-after
+width="\\textwidth"}
+
+![Go to bending station
+3](figures/bending/bending4-001.png){#subfig:bending4-before
+width="\\textwidth"}
+
+![bend the sheet metal
+part](figures/bending/bending4-002.png){#subfig:bending4
+width="\\textwidth"}
+
+![take away the bent
+sheet](figures/bending/bending4-003.png){#subfig:bending4-after
+width="\\textwidth"}
+
+![Go to bending station
+1](figures/bending/bending5-001.png){#subfig:bending5-before
+width="\\textwidth"}
+
+![bend the sheet metal
+part](figures/bending/bending5-002.png){#subfig:bending5
+width="\\textwidth"}
+
+![take away the bent
+sheet](figures/bending/bending5-003.png){#subfig:bending5-after
+width="\\textwidth"}
+
+![Go to bending station
+1](figures/bending/bending6-001.png){#subfig:bending6-before
+width="\\textwidth"}
+
+![bend the sheet metal
+part](figures/bending/bending6-003.png){#subfig:bending6
+width="\\textwidth"}
+
+![take away the bent
+sheet](figures/bending/bending6-002.png){#subfig:bending6-after
+width="\\textwidth"}
+
+### Inspection Setup {#subsec:inspection}
+
+![Robot aligns bent sheet in front of inspection
+camera](figures/inspection-setup.png){#fig:inspection-setup width="60%"}
+
 ### Shelf Control {#subsec:shelf-control}
 
 ![Reach shelf
@@ -2206,7 +2317,7 @@ width="\\textwidth"}
 
 [\[fig:open-drawer\]]{#fig:open-drawer label="fig:open-drawer"}
 
-![Turn handle -100 to fix drawer in open
+![Turn handle -100 to fix drawer in closed
 position](figures/shelf-control/close-handle.jpeg){#fig:close-handle
 width="\\textwidth"}
 
@@ -2214,13 +2325,25 @@ width="\\textwidth"}
 open](figures/shelf-control/drawer-opened.jpeg){#subfig:drawer-opened
 width="\\textwidth"}
 
+![place bent
+sheet](figures/shelf-control/sheet-placement-01.png){#subfig:sheet-placement1
+width="\\textwidth"}
+
+![final
+position](figures/shelf-control/sheet-placement-02.png){#subfig:sheet-placement2
+width="\\textwidth"}
+
+Experimental Results {#chap:results}
+====================
+
 Performance Evaluation {#sec:performance}
 ----------------------
 
 ### Calibration Results {#subsec:calibration-results}
 
 Calibration is fundamental to ensuring the accuracy and reliability of
-an automated robotic workcell. Proper calibration:
+an automated robotic workcell.The calibration process takes exactly 98
+seconds for the robot. Proper calibration:
 
 -   **Enhances Precision**: Ensures that the robot and sensors operate
     with high accuracy, essential for tasks like metal sheet bending
@@ -2274,9 +2397,6 @@ width="\\textwidth"}
 width="\\textwidth"}
 
 ### Bending Operation Review {#subsec:calibration-results}
-
-Experimental Results {#chap:results}
-====================
 
 Setup and Methodology
 ---------------------

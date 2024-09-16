@@ -3085,5 +3085,180 @@
     \endverb
     \field{year}{2024}
   \endentry
+
+  \entry{rosbridge}{online}{}
+    \name{author}{1}{}{%
+      {{hash=WR}{%
+         family={Wiki},
+         familyi={W\bibinitperiod},
+         given={ROS},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WR1}
+    \strng{fullhash}{WR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2024-08-12}
+    \field{title}{rosbridge-suite}
+    \verb{url}
+    \verb http://wiki.ros.org/rosbridge_suite
+    \endverb
+    \field{year}{2022}
+  \endentry
+
+  \entry{roslib}{online}{}
+    \name{author}{1}{}{%
+      {{hash=WR}{%
+         family={Wiki},
+         familyi={W\bibinitperiod},
+         given={ROS},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WR1}
+    \strng{fullhash}{WR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2024-08-12}
+    \field{title}{roslib: Package Summary}
+    \verb{url}
+    \verb http://wiki.ros.org/roslib
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{threejs}{online}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={three.js},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2024-08-12}
+    \field{title}{Fundamentals}
+    \verb{url}
+    \verb https://threejs.org/manual/#en/fundamentals
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{ros3djs}{online}{}
+    \name{author}{1}{}{%
+      {{hash=WR}{%
+         family={Wiki},
+         familyi={W\bibinitperiod},
+         given={ROS},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WR1}
+    \strng{fullhash}{WR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2024-08-12}
+    \field{title}{3D Visualization Library for use with the ROS JavaScript
+  Libraries}
+    \verb{url}
+    \verb https://wiki.ros.org/ros3djs
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{visualization-rwt}{online}{}
+    \name{author}{1}{}{%
+      {{hash=ta}{%
+         prefix={tork},
+         prefixi={t\bibinitperiod},
+         family={a},
+         familyi={a},
+      }}%
+    }
+    \strng{namehash}{at1}
+    \strng{fullhash}{at1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2024-08-12}
+    \field{title}{visualization-rwt}
+    \verb{url}
+    \verb https://github.com/tork-a/visualization_rwt
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{kr-profinet}{online}{}
+    \name{author}{1}{}{%
+      {{hash=RK}{%
+         family={Robots},
+         familyi={R\bibinitperiod},
+         given={Kassow},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RK1}
+    \strng{fullhash}{RK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2024-08-06}
+    \field{title}{Profinet Support}
+    \verb{url}
+    \verb https://docs.kassowrobots.com/en/resources/Profinet
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{visor_communication_manual}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={SENSOPART},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{VISOR\textsuperscript{\textregistered} Communication Manual}
+    \field{year}{2024}
+  \endentry
+
+  \entry{rosmaster}{online}{}
+    \name{author}{1}{}{%
+      {{hash=WR}{%
+         family={Wiki},
+         familyi={W\bibinitperiod},
+         given={ROS},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WR1}
+    \strng{fullhash}{WR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2024-08-15}
+    \field{title}{rosmaster: Package Summary}
+    \verb{url}
+    \verb http://wiki.ros.org/rosmaster
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{ISO13849}{misc}{}
+    \list{organization}{1}{%
+      {International Organization for Standardization}%
+    }
+    \field{labeltitlesource}{title}
+    \field{note}{Standard No. ISO 13849-1:2015}
+    \field{title}{{EN ISO 13849-1:2015 Safety of Machinery - Safety-related
+  Parts of Control Systems}}
+    \verb{url}
+    \verb https://www.iso.org/standard/69883.html
+    \endverb
+    \field{year}{2015}
+  \endentry
 \enddatalist
 \endinput

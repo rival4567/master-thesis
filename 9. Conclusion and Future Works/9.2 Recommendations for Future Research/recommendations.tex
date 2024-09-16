@@ -10,11 +10,26 @@ the individual subsystems (unloading station, bending machine, storage station) 
 advance without having to remove the real robot unit from any ongoing production, which can
 then be easily integrated into the new robot program on the real robot.
 
-\subsection{Web UI update}
+\subsection{Scaling Web UI}
 \label{subsec:web-ui-update}
-\begin{itemize}
-    \item Adding camera data to the web ui.
-    \item Storage for web applications.
-    \item Creating App for phones.
-    \item Provide access to login through nodejs backend.
-\end{itemize}
+At this stage, the web user interface is very limited in terms of functionality. Future work could add or improve the following features:
+\begin{enumerate}
+    \item \textbf{Add camera data}: Integrate the VISOR camera in the web user interface, visualizing current feed from camera.
+    \item \textbf{User Authentication}: Create secure login using Node.js backend for access control.
+    \item \textbf{Responsive App Development}: Allow the app to work on various devices including the mobile.
+    \item \textbf{Interactive User Guide}: Develop a tutorial that shows users the usage of the UI. Make UI more intuitive.
+    \item \textbf{Data Storage}: Implement a database for storing production data, inspection results, and logs, which would allow for analysis and troubleshooting directly on the UI.
+\end{enumerate}
+
+\subsection{KR VISOR Support}
+The custom made CBun device offers limited functionality at the moment, allowing only for detector result and detector pose to be shared with the KR through telegram. Development of this support would allow KR to use other detectors than contour or target mark 3D in VISOR software as well.
+
+\subsection{Flexibility and Customization}
+
+While the current system handles a smaller size sheet metal part variant sheet. There is a need to test out the workcell capability to handle larger parts especially during the bending process where the robot would have to hold the part. The robot trajectory would have to match the bending of the part in this case.
+
+Currently, incorrectly bent sheet metal parts are discarded. Advanced trajectory planning of robot and error handling could allow corrective bending without the need to throw away parts.
+
+
+\vspace{1\baselineskip}
+These recommendations would build upon the successes of this thesis, offering significant improvements in flexibility, efficiency, and user experience.

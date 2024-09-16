@@ -1,15 +1,21 @@
-\subsection{Calibration Results}
-\label{subsec:calibration-results}
+After the integration tests of each bending operation, the program for each bending stage is compiled together to create a main program which cycles through all bending operations for the test sheet metal part. After bending operations, it loads the sheet in the drawer of sheet placement.
+
+A cycle starts when a new sheet is requested by the KR1410 to the placement of bent sheet in the drawer of the shelf. After all the optimizations for trajectory planning in teach pendant, the cycle time comes out to be around 4 minutes and 10 seconds with inspection active. Without any inspection, the cycle time reduces to 3 minutes and 40 seconds.
+
+The performance of the bending process is evaluated in the following sections using the calibration results, inspection assessment and reviewing the bending operation.
+
+\section{Calibration Results}
+\label{sec:calibration-results}
 \input{6. System Integration and Testing/6.3 Performance Evaluation/calibration-results.tex}
 \FloatBarrier  % Force all figures of the first section to be placed before the next section
 
-\subsection{Inspection Assessment}
-\label{subsec:inspection-assessment}
+\section{Inspection Assessment}
+\label{sec:inspection-assessment}
 \input{6. System Integration and Testing/6.3 Performance Evaluation/inspection.tex}
 \FloatBarrier  % Force all figures of the first section to be placed before the next section
 
-\subsection{Bending Operation Review}
-\label{subsec:calibration-results}
+\section{Bending Operation Review}
+\label{sec:calibration-results}
 \input{6. System Integration and Testing/6.3 Performance Evaluation/bending-review.tex}
 \FloatBarrier  % Force all figures of the first section to be placed before the next section
 
