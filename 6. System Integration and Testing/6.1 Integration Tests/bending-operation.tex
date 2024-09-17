@@ -1,5 +1,10 @@
 % Bending operations
 
+The test part undergoes a sequence of six bendings, with different angles and setups. Specifically, bending operations 1, 5, and 6 are performed at bending station 1 and undergoes a bending of 90° angle, whereas bending operations 2 and 3 are performed at bending station 2 with a bending of 135°, and the fourth bending operation is simply done to flatten the sheet metal part.
+
+The first step before the bending for all bending operations is the correct alignment of the part in the backgauges of the bending machine. The bending machine program is automatically set by the terminal operating robot. Once the correct sequence is selected in the terminal of the bending machine, PLC send a signal to the KR1410 robot which gives permission to align the sheet in the backgauges.
+Then only the KR1410 arm secures the part in the backgauges of the bending machine.
+
 \begin{figure}[h]
     \centering
     \begin{subfigure}[b]{0.32\textwidth}
@@ -47,6 +52,12 @@
     \caption{Bending operation number 2 at bending station 2}
     \label{fig:bending-operation-2}
 \end{figure}
+
+
+Figure \ref{fig:bending-operation-1} shows the transfer of sheet metal part to the first bending station where a 90° bend is performed. The handling robot secures the sheet first. A signal is sent by KR1410 robot to PLC to start bending. The robot opens the gripper as soon as the tool of the bending machine hits the sheet. The sheet is secured by the bending machine and the robot moves to a different pose. From there, the robot moves back to the bent part and grip it. Another signal is sent to PLC to move the tool upwards. Once the tool is clear of the part, robot goes to the inspection camera for angle measurement. Bending machine open height measurement laser sensor is responsible for the timings of the opening and closing of bending machine signals. It helps in making robot work together with the bending machine and avoid any collision.
+
+
+Figures \ref{fig:bending-operation-2} and \ref{fig:bending-operation-3} shows the bending of part at bending station 2. The process is similar to the first bending. The robot leaves the part during bending and regrip it once the bending is complete. For bending number 3, an inspection is not done, because the bending is done very close to the edge, and the small edge is not measurable by the inspection camera.
 
 
 \begin{figure}[h]
@@ -98,6 +109,9 @@
 \end{figure}
 
 
+Figure \ref{fig:bending-operation-4} shows the bending opertion number 4. Since the tool and die are only used for pressing the sheet to flatten it, the robotic gripper doesn't have to open the gripper during bending. Once the sheet is pressed for a specific duration, tool moves up and the robot takes the part out.  Again the inspection is not done, because there is no warping of sheet in this bending operation.
+
+
 \begin{figure}[h]
     \centering
     \begin{subfigure}[b]{0.32\textwidth}
@@ -146,3 +160,5 @@
     \caption{Bending operation number 6 at bending station 1}
     \label{fig:bending-operation-6}
 \end{figure}
+
+Bending operation 5 and 6 are performed at bending station 1 as showing in figures \ref{fig:bending-operation-5} and \ref{fig:bending-operation-6} respectively. The process is similar to bending operation 1 as the robot doesn't hold the part during bending. Inspection is done after both bending operations. If after bending operation 6, the angle measurement is within tolerances, the current bending cycle is termed as successful.
