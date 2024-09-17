@@ -40,7 +40,6 @@ The picking up of sheet metal part is the first step in the automated bending op
 The KR1410 uses the camera to detect and then securely pick the sheet. There are two stages of scanning as shown in figure \ref{fig:sheet-scanning}. A first scan aligns the camera perfectly with the sheet pattern. The second image capture detects the sheet with high accuracy in this way and sends the pose to the robot in world frame as shown in figure \ref{fig:sensoconfig-pattern}. Both stages uses detector contour to get the sheet pose.
 The accuracy of the pickup is crucial for the success of the subsequent bending operations. Any misalignment at this stage could lead to errors in the final dimensions of the bent part.
 
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{figures/sheet-pickup/sensoconfig.PNG}
@@ -49,6 +48,7 @@ The accuracy of the pickup is crucial for the success of the subsequent bending 
 \end{figure}
 
 In some instances, to avoid collisions during next bending operation or for better handling of part, regripping of the sheet from a different position is required. This is where the unloading station gripper plays a crucial role in repositioning the sheet. The unloading station gripper is controlled from the KR1410 robot if the robot program state Int[0] is $\ge$3. (See table \ref{tab:kr1410-to-plc}). Otherwise the unloading station gripper is controlled by the PLC. 
+\vspace{1\baselineskip}
 
 First, the robot transfers the bent sheet to the unloading station gripper. Then, it is the same process as the sheet pickup in the first step of the bending cycle. The robot moves to the scanning pose, scans and aligns with the sheet, detects and grips the sheet and finally move out the part from the unloading station gripper.
 Figure \ref{fig:sheet-pickup-before-placement} illustrates the step-by-step process of regrasping of sheet metal part for sheet placement in the storage station after all the bending operations are complete.

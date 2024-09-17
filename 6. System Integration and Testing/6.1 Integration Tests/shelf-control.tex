@@ -1,12 +1,7 @@
-The final step in the process is the controlled placement of the bent parts in storage or shelves. The robot system is integrated with a shelving control mechanism, which assigns each finished part a specific storage location based on its dimensions and characteristics.
-
-Using a predefined pattern, the robot places each part onto the shelf, ensuring optimal space utilization. This process also keeps track of the number of parts produced and stored, with automatic alerts if the shelves reach capacity.
-
-In the event that a shelf is full, the system can dynamically assign a new storage location or pause the production until the storage is made available again.
-
-This final stage ensures that the entire workflow—from pickup, bending, inspection, to shelving—is seamlessly integrated and automated, maximizing efficiency and accuracy.
-
-\begin{figure}[h]
+The final step in the bending process is the controlled placement of the bent parts in the storage station. The storage station is a shelf with ten drawers. The robot gripper is used to open and close a drawer of the shelf.
+Before the placement of the bent sheet metal part, an empty drawer is open. Figure \ref{fig:shelf-control} illustrates the steps taken by the robotic gripper to open an empty drawer of the shelf. Once the drawer is open, it doesn't move because of a locking mechanism. After a drawer is completely filled, robotic gripper is used again to close the drawer. The steps are similar to opening of shelf but in reverse order.
+\FloatBarrier
+\begin{figure}[!ht]
     \centering
     \begin{subfigure}[b]{0.32\textwidth}
         \centering
@@ -52,9 +47,7 @@ This final stage ensures that the entire workflow—from pickup, bending, inspec
     \label{fig:shelf-control}
 \end{figure}
 
-
-
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
@@ -71,5 +64,14 @@ This final stage ensures that the entire workflow—from pickup, bending, inspec
     \caption{Sheet placement}
     \label{fig:sheet-placement}
 \end{figure}
+
+
+Using a predefined pattern, the robot places each part onto the designated section on the drawer shelf, ensuring optimal space utilization. In total 65 parts can be placed in a single empty drawer, 13 in a single row and 5 in a column. So, in total the storage station with ten drawers has a capacity of 650 bent parts. The robot also keeps track of the number of parts produced and stored, with automatic handling of a drawer once a drawer is filled.
+
+In the event that a shelf is full, the production is paused and the robot goes in a waiting state. It waits for the human operator to change the filled shelf with an empty one and update it on the SIMATIC HMI.
+
+The placement of the test part marks the end of the bending cycle. After it is determined that all the bending operations and handling of shelf is working correctly, the production of a part can begin.
+Th integration tests ensured that the entire workflow—from pickup, bending, inspection, to placement—is seamlessly integrated and automated.
+
 
 
