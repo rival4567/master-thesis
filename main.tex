@@ -106,26 +106,28 @@
 % Set the depth of the table of contents
 \setcounter{tocdepth}{2}
 
-% \excludecomment{figure}  % Exclude all figure environments
-% \let\endfigure\relax
+\excludecomment{figure}  % Exclude all figure environments
+\let\endfigure\relax
 % \setlength{\parskip}{0.1\baselineskip}
-
 % Start thesis
 \begin{document}
 
 % Title according to guidelines
-\includepdf[pages={1,2}]{Pre-introduction/abschlussarbeit_titel-1.pdf}
+% \includepdf[pages={1,2}]{Pre-introduction/abschlussarbeit_titel-1.pdf}
 
-\title{Robotic Workcell for Automated Bending Process}
+% \title{Robotic Workcell for Automated Bending Process}
 
-\author{Shivam Shivam}
+% \author{Shivam Shivam}
 
-\date{September 2024}
+% \date{September 2024}
 
-% Abstract
-\input{Pre-introduction/abstract.tex}
+% % Acknowledgement
+% \input{Pre-introduction/acknowledgement.tex}
 
-% %Table of contents and other information
+% % Abstract
+% \input{Pre-introduction/abstract.tex}
+
+% % %Table of contents and other information
 \tableofcontents
 \listoffigures
 \listoftables
@@ -160,7 +162,7 @@
 \setcounter{page}{0}
 \pagenumbering{roman}
 
-\printbibliography
-\include{A. Appendices/appendix}
+% \printbibliography
+% \include{A. Appendices/appendix}
 
 \end{document}

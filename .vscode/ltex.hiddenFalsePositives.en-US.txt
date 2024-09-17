@@ -1,0 +1,2 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCobots are vastly more advanced and affordable than industrial robots.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, a cobot is used to collaborate with a bending machine to perform 3D curving of metal wire and discusses the difficulties in holding the part in low payload robot gripper during bending and defines the generation of optimum robot motion considering the combined task and motion level constraints.\\E$"}

@@ -1,7 +1,7 @@
 According to \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} \cite[page 22]{visor_user_manual} user manual, the \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} vision sensor is an optical sensor and is used for the non-contact acquisition or identification of objects.
-The vision sensor features a number of different evaluation methods (detectors), like contour, pattern matching, Target Mark 3D, BLOB and others.
+The vision sensor features a number of different evaluation methods (detectors), like contour, pattern matching, Target Mark \hyperref[acro:3D]{3D}, blob and others.
 The \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} vision sensor is a cost-effective alternative to conventional image processing systems as discussed in
-section \ref{sec:CV_2} The processing is done inside the camera housing only. It is a combination of sophisticated hardware and easily configurable sofware. \cite{sensopart-visor}
+section \ref{sec:CV_2} The processing is done inside the camera housing only. It is a combination of sophisticated hardware and easily configurable software. \cite{sensopart-visor}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/vision-sensor.png}
@@ -22,9 +22,9 @@ section \ref{sec:CV_2} The processing is done inside the camera housing only. It
         & EtherNet/IP, SensoWeb\\ 
         Weight & Approx. 200 g \\ 
         Ambient air temperature operation & 0$^\circ$C - 50$^\circ$C (80 \% humidity,\\
-        & non-condesing) \\ 
+        & non-condensing) \\ 
         Protection Class & IP 65/IP 67 EN 60529\\
-        Housing Material & Die-cast aluminium\\
+        Housing Material & Die-cast aluminum\\
         Camera type & V20 \\ 
         Number of pixels (H $\times$ V) &s 1440 $\times$ 1080\\
         Sensor size & 1/2.9$^{\prime\prime}$ \\ 
@@ -39,9 +39,9 @@ section \ref{sec:CV_2} The processing is done inside the camera housing only. It
     \label{visor-technical-data}
 \end{table}
 
-\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} vision sensor is a suitable choice for the identification and classification of metal sheets for the automated bending process. These sensors enable precise detection and processing of features on sheet metal parts, which leads to the efficiency and accuracy of automated bending process. The camera can be connected to a PLC or PC through ethernet or profinet. The VISOR software is installed on the PC and then the camera can be configured and jobs can be added.\cite{sensopart-software}. A total of 255 jobs with 255 detectors each can be configured on the camera.
+\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} vision sensor is a suitable choice for the identification and classification of metal sheets for the automated bending process. These sensors enable precise detection and processing of features on sheet metal parts, which leads to the efficiency and accuracy of automated bending process. The camera can be connected to a PLC or PC through ethernet or profinet. The VISOR software is installed on the \hyperref[acro:PC]{PC} and then the camera can be configured and jobs can be added.\cite{sensopart-software}. A total of 255 jobs with 255 detectors each can be configured on the camera.
 
-Two camera are selected from SENSOPART. One for the robot which is used to detect the sheet metal parts and the target mark; and the other for inspection jobs.
+Two cameras are selected from \hyperref[acro:SENSOPART]{SENSOPART}. One for the robot which is used to detect the sheet metal parts and the target mark; and the other for inspection jobs.
 
 \begin{figure}[h]
     \centering
@@ -53,15 +53,15 @@ Two camera are selected from SENSOPART. One for the robot which is used to detec
 
 \subsubsection{Robotic Camera}
 \label{subsubsec:robotic-camera}
-This camera is a \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} Robotic V20 vision sensor with $1440 \times 1080$ resolution, wide lens and a red LED light.
+This camera is a \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} Robotic V20 vision sensor with $1440 \times 1080$ resolution, wide lens and a red \hyperref[acro:LED]{LED} light.
 \cite{visor-robotic}
 A hand-eye calibration is required in order to transform camera poses to robot frame. This camera does not use internal illumination to detect
 objects as the working distance is 300.0 mm which is large enough for internal illumination to full brighten the sheet metal part.
-A tailored interface is developed for KR teach pendant for this camera to make it communicate with the robot using CBuns.
+A tailored interface is developed for KR teach pendant for this camera to make it communicate with the robot using \hyperref[acro:CBun]{CBuns}.
 
 \subsubsection{Inspection Camera}
 \label{subsubsec:inspection-camera}
-The inspection camera is a \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} V20 Object vision sensor with $1440 \times 1080$ resolution and red LED light.
+The inspection camera is a \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} V20 Object vision sensor with $1440 \times 1080$ resolution and red \hyperref[acro:LEDs]{LED} light.
 \cite{visor-object}
 This camera gets the bending angle
 of the bent sheet metal part. The robot brings the bent sheet metal parts to the inspection camera. 

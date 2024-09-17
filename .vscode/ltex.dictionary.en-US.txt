@@ -1,3 +1,15 @@
 workcell
 Workcell
 AMADA
+cobot
+cobots
+regrasping
+regrip
+ASTRO-II
+ASTRO
+ASTRO-CAM
+mech-tron
+Ds
+Cobots
+backgauge
+Profinet
