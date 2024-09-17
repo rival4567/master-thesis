@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: Pre-introduction/symbols.aux
+A level-1 auxiliary file: Pre-introduction/acronyms.aux
+White space in argument---line 28 of file main.aux
+ : \@input{1.
+ :            Introduction/main.aux}
+I'm skipping whatever remains of this command
+White space in argument---line 62 of file main.aux
+ : \@input{2.
+ :            Literature Review/main.aux}
+I'm skipping whatever remains of this command
+White space in argument---line 218 of file main.aux
+ : \@input{3.
+ :            System Design/main.aux}
+I'm skipping whatever remains of this command
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 12140 items from 5000.
+Database file #1: main-blx.bib
+Database file #2: references.bib
+Warning--I'm ignoring Wilkinson's extra "title" field
+--line 156 of file references.bib
+Warning--I didn't find a database entry for "biblatex-control"
+Biblatex version: 3.17
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 50 entries,
+            6399 wiz_defined-function locations,
+            1588 strings with 44612 characters,
+and the built_in function-call counts, 480082 in all, are:
+= -- 40032
+> -- 7014
+< -- 1465
++ -- 15014
+- -- 3145
+* -- 35813
+:= -- 57486
+add.period$ -- 0
+call.type$ -- 50
+change.case$ -- 558
+chr.to.int$ -- 2
+cite$ -- 100
+duplicate$ -- 49252
+empty$ -- 40051
+format.name$ -- 4429
+if$ -- 95446
+int.to.chr$ -- 0
+int.to.str$ -- 121
+missing$ -- 0
+newline$ -- 1976
+num.names$ -- 2155
+pop$ -- 19308
+preamble$ -- 1
+purify$ -- 1056
+quote$ -- 0
+skip$ -- 9286
+stack$ -- 0
+substring$ -- 76494
+swap$ -- 7993
+text.length$ -- 1439
+text.prefix$ -- 2
+top$ -- 1
+type$ -- 1700
+warning$ -- 0
+while$ -- 6767
+width$ -- 0
+write$ -- 1926
+(There were 3 error messages)

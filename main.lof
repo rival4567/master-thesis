@@ -12,8 +12,8 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Franka emika panda robot as terminal operating robot in simulation\relax }}{13}{figure.caption.15}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Functional parts of the KR collaborative robot (Source: \blx@tocontentsinit {0}\cite {kassow-manual})\relax }}{16}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } vision sensor\relax }}{18}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } V20, Field of view Wide, Internal lens (Source: \blx@tocontentsinit {0}\cite [page 357]{visor_user_manual})\relax }}{19}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Schunk gripper\relax }}{21}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } V20, Field of view Wide, Internal lens (Source: \blx@tocontentsinit {0}\cite [page 357]{visor_user_manual})\relax }}{20}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Schunk gripper\relax }}{20}{figure.caption.23}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces ROSGraph\relax }}{22}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Robotic workcell in Gazebo simulator (left) and RViz (right)\relax }}{23}{figure.caption.25}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces CBun Project Setup for SENSOPART Integration in KR\relax }}{24}{figure.caption.26}%
@@ -41,31 +41,31 @@
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Using robotic camera for sheet detection (left) and marker detection (right)\relax }}{51}{figure.caption.48}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Job configuration for the object camera\relax }}{52}{figure.caption.49}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Detectors in Inspection Camera for angle measurement\relax }}{52}{figure.caption.50}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Web User Interface\relax }}{53}{figure.caption.51}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Web User Interface previewing task execution\relax }}{54}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Web User Interface\relax }}{54}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Web User Interface previewing task execution\relax }}{55}{figure.caption.52}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Kinematic model of KR1410 in RViz\relax }}{56}{figure.caption.53}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Flowchart showing automated hand-eye calibration procedure using telegram\relax }}{57}{figure.caption.54}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Acquiring calibration plate images for the calibration process\relax }}{58}{figure.caption.55}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces KR1410 program capturing images to perform calibration automatically\relax }}{59}{figure.caption.56}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Sheet pickup using robotic gripper\relax }}{60}{figure.caption.57}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Sheet pattern detection using detector contour\relax }}{60}{figure.caption.58}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection and sending of sheet pose using telegram (SensoConfig)\relax }}{61}{figure.caption.59}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Regrasping bent sheet from a different position before placement in drawer\relax }}{62}{figure.caption.60}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Bending operation number 1 at bending station 1\relax }}{63}{figure.caption.61}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Bending operation number 2 at bending station 2\relax }}{63}{figure.caption.62}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Bending operation number 3 at bending station 2\relax }}{64}{figure.caption.63}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Bending operation number 4 at bending station 3\relax }}{64}{figure.caption.64}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Bending operation number 5 at bending station 1\relax }}{65}{figure.caption.65}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Bending operation number 6 at bending station 1\relax }}{65}{figure.caption.66}%
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Robot aligns bent sheet in front of inspection camera\relax }}{66}{figure.caption.67}%
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Opening a shelf drawer for placement of bent sheet metal parts\relax }}{67}{figure.caption.68}%
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Sheet placement\relax }}{68}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Kinematic model of KR1410 in RViz\relax }}{59}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Flowchart showing automated hand-eye calibration procedure using telegram\relax }}{60}{figure.caption.54}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Acquiring calibration plate images for the calibration process\relax }}{61}{figure.caption.55}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces KR1410 program capturing images to perform calibration automatically\relax }}{62}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Sheet pickup using robotic gripper\relax }}{63}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Sheet pattern detection using detector contour\relax }}{63}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection and sending of sheet pose using telegram (SensoConfig)\relax }}{64}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Regrasping bent sheet from a different position before placement in drawer\relax }}{65}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Bending operation number 1 at bending station 1\relax }}{66}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Bending operation number 2 at bending station 2\relax }}{66}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Bending operation number 3 at bending station 2\relax }}{67}{figure.caption.63}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Bending operation number 4 at bending station 3\relax }}{67}{figure.caption.64}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Bending operation number 5 at bending station 1\relax }}{68}{figure.caption.65}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Bending operation number 6 at bending station 1\relax }}{68}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Robot aligns bent sheet in front of inspection camera\relax }}{69}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Opening a shelf drawer for placement of bent sheet metal parts\relax }}{70}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Sheet placement\relax }}{71}{figure.caption.69}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Calibration parameters\relax }}{70}{figure.caption.70}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Inspection after (a) bending 1 (b) bending 2 (c) bending 5 (d) bending 6\relax }}{71}{figure.caption.71}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Final bent sheet metal part (a) top view (b) bottom view\relax }}{72}{figure.caption.73}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Commissioning of robotic workcell in project partner floor space\relax }}{73}{figure.caption.74}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Calibration parameters\relax }}{73}{figure.caption.70}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Inspection after (a) bending 1 (b) bending 2 (c) bending 5 (d) bending 6\relax }}{74}{figure.caption.71}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Final bent sheet metal part (a) top view (b) bottom view\relax }}{75}{figure.caption.73}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Commissioning of robotic workcell in project partner floor space\relax }}{76}{figure.caption.74}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
