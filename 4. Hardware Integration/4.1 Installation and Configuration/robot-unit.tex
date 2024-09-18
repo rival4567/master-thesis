@@ -1,6 +1,6 @@
 The robot unit consists of three assemblies: a base, a robot and an end-effector. (Figure \ref{fig:robot-installation}).
-The robot is a manipulator from kassow robots with pneumatic parallel grippers as the end-effector.
-Pneumatic gripper is controlled by PLC. \hyperref[acro:VISOR]{VISOR\textsuperscript{\textregistered}} camera is also mounted on the tool-IO which is used for robotic perception.
+The robot is a manipulator from \textbf{Kassow Robots} with pneumatic parallel grippers as the end-effector.
+Pneumatic gripper is controlled by \hyperref[acro:PLC]{PLC}. \hyperref[acro:VISOR]{VISOR\textsuperscript{\textregistered}} camera is also mounted on the tool-IO which is used for robotic perception.
 
 
 \begin{figure}[h]
@@ -14,7 +14,7 @@ Pneumatic gripper is controlled by PLC. \hyperref[acro:VISOR]{VISOR\textsuperscr
 
 
 \subsubsection{Robot base}
-The base is a simple welded construction made of steel. The choice of steel material ensures that the base has
+The base is a simply welded construction made of steel. The choice of steel material ensures that the base has
 sufficient dead weight so that it can be transported together with the robot and gripper using a pallet
 truck without the risk of tipping over. During operation, the robot unit is fixed to the floor with four M12
 screws. 
@@ -23,7 +23,7 @@ screws.
 The robot used is a 7-axis robot from Kassow Robots with model KR1410. This robot model fulfills the requirements defined in 
 the section \ref{sec:requirements}. Simulations have shown that this robot is above to reach even the lowest drawers of the shelf of the
 storage station. Two full rotations (720\textdegree) of five out of seven joints allows complex motions in limited space.
-A flexible conduit containing pneumatic hose for the pneumatic parallel gripper and communication cabel for the camera goes around the manipulator to reach the end-effector.
+A flexible conduit containing pneumatic hose for the pneumatic parallel gripper and communication cable for the camera goes around the manipulator to reach the end-effector.
 
 
 
@@ -38,9 +38,9 @@ user-friendly changeover.
 The gripper is a Schunk pneumatic parallel gripper. It is powered and controlled by the Tool-IO board on the KR1410.
 The robotic gripper grips an object with an applied pressure of five bar. This is enough to hold the sheet metal part
 in place during motion of the arm. 
-The fingers are made from aluminium material and finger tips are 3D printed using a \hyperref[acro:FDM]{FDM} printer.  The tips are worn out
-after some period of time, but are easily replacable by 3D printing.
-In the program tree, the center of finger tips sets the \hyperref[acro:TCP]{TCP} for the robot and is 216 mm from the \hyperref[acro:TFC]{TFC}.
+The fingers are made from aluminum material and fingertips are \hyperref[acro:3D]{3D} printed using a \hyperref[acro:FDM]{FDM} printer.  The tips are worn out
+after some period of time, but are easily replaceable by \hyperref[acro:3D]{3D} printing.
+In the program tree, the center of fingertips sets the \hyperref[acro:TCP]{TCP} for the robot and is 216 mm from the \hyperref[acro:TFC]{TFC}.
 
 
 \subsubsection{Robotic Camera}
@@ -48,5 +48,5 @@ A camera system is installed on the robot itself. This is used to determine the 
 position between the robot unit and the unloading station, bending machine and storage station using the markers
 and between the robot unit and the sheet metal part (when it is first made available at the
 unloading station or is gripped) using features on the sheet metal part.
-As the working distance of this camera is large \textit{300mm}, using external light source is required to protect against ambient light. 
+As the working distance of this camera is large (300 mm), using external light source is required to protect against ambient light. 
 This is because light reflections or changing extraneous light can distort evaluation results.

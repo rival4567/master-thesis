@@ -1,6 +1,6 @@
 Bending machine is set to operate automatically by controlling the foot pedal with \hyperref[acro:PLC]{PLC}.
 To automate the bending process, several devices and components are installed on the bending machine.
-Bending machine is operated freely upto a certain point \textit{i.e.} without any pressure and only starts
+Bending machine is operated freely up to a certain point \textit{i.e.} without any pressure and only starts
 applying pressure when it is in contact with the sheet metal part.
 Figure \ref{fig:bending_machine} shows these components.
 
@@ -22,11 +22,11 @@ Since the bending machine is fixed, this marker is also used for auto calibratio
 \label{subsubsec:laser-sensor}
 
 It is important to know exactly the current open height of the bending machine.
-This value tells the KR to open the pneumatic parallel gripper as sheet starts bending at a bending station to avoid any deformation in the sheet.
-Once the bending is complete, the KR can move out safely without any collision if a set-point on the open height is reached.
+This value tells the \hyperref[acro:KR]{KR} to open the pneumatic parallel gripper as sheet starts bending at a bending station to avoid any deformation in the sheet.
+Once the bending is complete, the \hyperref[acro:KR]{KR} can move out safely without any collision if a set-point on the open height is reached.
 
 For this, a laser sensor is mounted on the bending machine which measures the open height of the bending machine.
-The sensor values are sent to the PLC. KR makes decision to do bending operation based on this laser sensor value.
+The sensor values are sent to the \hyperref[acro:PLC]{PLC}. \hyperref[acro:KR]{KR} makes decision to do bending operation based on this laser sensor value.
 
 
 \subsubsection{Bending station}
@@ -42,10 +42,10 @@ And finally, bending station is used to press down the sheet and make it flat.
     \label{fig:bending-station}
 \end{figure}
 
-These three stations are enough for the sheet bending operation. KR1410 will take the sheet metal part to one of these bending station
+These three stations are enough for the sheet bending operation. \hyperref[acro:KR]{KR1410} will take the sheet metal part to one of these bending station
 to perform a bending of a particular angle. A sheet metal part could require the use of one or more of these bending stations.
 
 \subsubsection{Terminal Fixture}
 The bending machine comes with a terminal which is used to operate the bending machine. However, this terminal is free to rotate and move.
-It is required to fix the movement of terminal, so that terminal operating robot could operate reliably. The fixtures made from aluminium profiles fixes the bending machine
+It is required to fix the movement of terminal, so that terminal operating robot could operate reliably. The fixtures made from aluminum profiles fixes the bending machine
 terminal.

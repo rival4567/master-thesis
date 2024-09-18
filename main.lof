@@ -1,9 +1,69 @@
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Industry 4.0 is changing traditional manufacturing relationships (Source: \blx@tocontentsinit {0}\cite {russmann2015industry})\relax }}{1}{figure.caption.8}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces ASTRO-II 100NT HDS 1030 bending cell. (Source: \blx@tocontentsinit {0}\cite {astro100})\relax }}{5}{figure.caption.9}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Robotic workcell layout. 1) Bending machine 2) Storage station 3) Unloading station 4) Handling robot 5) Bending machine terminal operating robot 6) Safety fence\relax }}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Energy, data and material flow in the robotic workcell\relax }}{10}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Bending machine asset in simulation\relax }}{11}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Storage Station asset in simulation\relax }}{11}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Unloading station in simulation\relax }}{12}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Handling Robot KR1410 in simulation\relax }}{13}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Franka emika panda robot as terminal operating robot in simulation\relax }}{13}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Functional parts of the KR collaborative robot (Source: \blx@tocontentsinit {0}\cite {kassow-manual})\relax }}{16}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } vision sensor\relax }}{18}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } V20, Field of view Wide, Internal lens (Source: \blx@tocontentsinit {0}\cite [page 357]{visor_user_manual})\relax }}{19}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Schunk gripper\relax }}{21}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces ROSGraph\relax }}{22}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Robotic workcell in Gazebo simulator (left) and RViz (right)\relax }}{23}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces \hyperref [acro:CBun]{CBun} Project Setup for SENSOPART Integration in KR\relax }}{24}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } Communication to KR1410 using Telegram\relax }}{24}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Programming in teach pendant for a sheet metal part variant\relax }}{26}{figure.caption.29}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Detection marker\relax }}{28}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \hyperref [acro:AMADA]{AMADA} Bending Machine. 1) Marker 2) Bending machine open height measurement sensor 3) Bending station 4) Terminal fixture 5) Laser monitoring\relax }}{29}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Three bending stations for the bending operation\relax }}{30}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Three bending stations for the bending operation\relax }}{31}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Components of the robot unit: 1) robot base 2) KR1410 manipulator 3) manual quick-change system 4) robotic gripper 5) robotic camera\relax }}{31}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Storage station of ten drawers 1) drawer 2) marker 3) shelf handle\relax }}{33}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \parbox [t]{12cm}{Unloading station configuration. 1) Marker 2) Gantry 3) Magnetic gripper 4) Gripper 5) Inspection Camera 6) Control cabinets 7) KR1410 Teach pendant holder 8) SIMATIC HMI}\relax }}{34}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces System Networking and IP Addressing\relax }}{35}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Dialog Box in teach pendant GUI showing transmission of data over port 2006\relax }}{38}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces ROS connection to KR1410 and web UI\relax }}{39}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Payload diagram for KR1410 manipulator\relax }}{41}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Addition of safety zones to the robotic workcell\relax }}{42}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Safety buttons. 1) Emergency STOP 2) Protective STOP 3) Robot State 4) Reset \hyperref [acro:PLC]{PLC} fault\relax }}{43}{figure.caption.44}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Five stages of bending process\relax }}{46}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Job configuration for the robotic camera\relax }}{50}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Using robotic camera for sheet detection (left) and marker detection (right)\relax }}{51}{figure.caption.47}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Job configuration for the object camera\relax }}{52}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Detectors in Inspection Camera for angle measurement\relax }}{52}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Web User Interface\relax }}{54}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Web User Interface previewing task execution\relax }}{55}{figure.caption.51}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Kinematic model of KR1410 in RViz\relax }}{59}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Flowchart showing automated hand-eye calibration procedure using telegram\relax }}{60}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Acquiring calibration plate images for the calibration process\relax }}{61}{figure.caption.54}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces KR1410 program capturing images to perform calibration automatically\relax }}{62}{figure.caption.55}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Sheet pickup using robotic gripper\relax }}{63}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Sheet pattern detection using detector contour\relax }}{63}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection and sending of sheet pose using telegram (SensoConfig)\relax }}{64}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Regrasping bent sheet from a different position before placement in drawer\relax }}{65}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Bending operation number 1 at bending station 1\relax }}{66}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Bending operation number 2 at bending station 2\relax }}{66}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Bending operation number 3 at bending station 2\relax }}{67}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Bending operation number 4 at bending station 3\relax }}{67}{figure.caption.63}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Bending operation number 5 at bending station 1\relax }}{68}{figure.caption.64}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Bending operation number 6 at bending station 1\relax }}{68}{figure.caption.65}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Robot aligns bent sheet in front of inspection camera\relax }}{69}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Opening a shelf drawer for placement of bent sheet metal parts\relax }}{70}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Sheet placement\relax }}{71}{figure.caption.68}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Calibration parameters\relax }}{73}{figure.caption.69}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Inspection after (a) bending 1 (b) bending 2 (c) bending 5 (d) bending 6\relax }}{74}{figure.caption.70}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Final bent sheet metal part (a) top view (b) bottom view\relax }}{75}{figure.caption.72}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Commissioning of robotic workcell in project partner floor space\relax }}{76}{figure.caption.73}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

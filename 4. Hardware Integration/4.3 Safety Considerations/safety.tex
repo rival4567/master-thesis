@@ -1,12 +1,12 @@
 Even though the robot chosen is a collaborative robot, the payload is a metal sheet which poses a safety concern for the human operator.
 To avoid such scenarios a safety fence is installed at the boundary of robotic workcell as mentioned in section \ref{sub:safety-fence}.
 Still several considerations are required for the safe operation of robot in the workcell like the speed at which the robot should operate. These factors depends on the payload attached to the robot and the distance between payload and the joint axis 1 or joint axis 2.
-Following subsections explains the reasoning behind safety parameters that were considered for the safe operation of KR1410.
+Following subsections explains the reasoning behind safety parameters that were considered for the safe operation of \hyperref[acro:KR]{KR1410}.
 
 \subsection{Payload}
 \label{subsec:payload}
-The pneumatic parellel gripper, manual quick-change system and robotic camera constitutes a weight of 2.0 \textit{kg}.
-This is the fixed load on the tool flange center (\hyperref[acro:TFC]{TFC}). The sheet metal parts counts as the payload.
+The pneumatic parallel gripper, manual quick-change system and robotic camera constitutes a weight of 2.0 \textit{kg}.
+This is the fixed load on the tool flange center (\hyperref[acro:TFC]{TFC}). The sheet metal parts count as the payload.
 It is a variable load of only 0.1 \textit{kg} and is thus ignored for the calculations in \ref{subsec:stoppage-distance}.
 
 
@@ -51,8 +51,8 @@ It is a variable load of only 0.1 \textit{kg} and is thus ignored for the calcul
 
 
 The permissible payload is constrained due to the static torque limit of the wrist joints. The payload is
-reduced according to the proximity of the payload's centre of gravity in relation to joint axis 5, 6 and 7. \cite[page 35]{kassow-manual}
-Only about 1100 \textit{mm} out of 1400 \textit{mm} of workspace is utilized by the KR in the workcell. 
+reduced according to the proximity of the payload's center of gravity in relation to joint axis 5, 6 and 7. \cite[page 35]{kassow-manual}
+Only about 1100 \textit{mm} out of 1400 \textit{mm} of workspace is utilized by the \hyperref[acro:KR]{KR} in the workcell. 
 Figure \ref{fig:kr1410-payload-diagram}
 illustrates the allowable payload as a function of distance. It's evident from this it is safe to operate with a load a 2.0 \textit{kg}.
 
@@ -93,8 +93,8 @@ The values can be seen in the Table \ref{tab:braking_accelerations}.
 
     The stopping time \hyperref[sym:t-brake]{$t_{\text{brake}}$} and stopping distance \hyperref[sym:s-brake]{$s_{\text{brake}}$} can now be conservatively estimated based on the knowledge of the set speed
     in the robot program and equations \ref{eq:t-brake} and \ref{eq:s-brake}. Joint speed \hyperref[sym:omega]{$\omega$} is used for \hyperref[acro:Move J]{Move J} and linear speed \hyperref[sym:v-max]{$v_{\text{max}}$} for \hyperref[acro:Move L]{Move L} and \hyperref[acro:Move S]{Move S} commands.
-    By default in normal run mode of program, Move J command runs a maximum joint speed of 90 \textit{deg/s} and
-    Move L command runs a maximum linear speed of 1000 \textit{mm/s}. This linear speed can be converted to joint speed
+    By default, in normal run mode of program, \hyperref[acro:Move J]{Move J} command runs a maximum joint speed of 90 \textit{deg/s} and
+    \hyperref[acro:Move L]{Move L} command runs a maximum linear speed of 1000 \textit{mm/s}. This linear speed can be converted to joint speed
     using the equation \ref{eq:omega}.
 
     \begin{equation}
@@ -136,7 +136,7 @@ equipment or areas with human presence. \cite[page 96]{kassow-software-manual}
 A safety zone for unloading station, storage station, bending machine and terminal operating
 robot is created. Since the
 robot can actually touch the floor, an additional safety zone is added for the floor. 
-The robot will stop immediately if it ever exceeds the safety zone boundary. It it exceeds, 
+The robot will stop immediately if it ever exceeds the safety zone boundary. If it exceeds, 
 then the operator
 has to manually move the robotic arm back inside the safety zone. 
 
@@ -144,18 +144,18 @@ has to manually move the robotic arm back inside the safety zone.
 \label{subsec:safety-functions}
 Safety functions evaluate external and internal signals of the whole system which can act immediately to
 halt the robot or cut him loose from power if necessary. 
-The safety function of KR complies with EN ISO 13849-1:2015. \cite{ISO13849}
+The safety function of \hyperref[acro:KR]{KR1410} complies with EN ISO 13849-1:2015. \cite{ISO13849}
 \cite[page 13]{kassow-software-manual}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/safety-buttons.png}
-    \caption{Safety buttons. 1) Emergency STOP 2) Protective STOP 3) Robot State 4) Reset PLC fault}
+    \caption{Safety buttons. 1) Emergency STOP 2) Protective STOP 3) Robot State 4) Reset \hyperref[acro:PLC]{PLC} fault}
     \label{fig:safety-buttons}
 \end{figure}
 
 In the main program of teach pendant, there are two sequences programmed to run in parallel to halt or stop the program if a signal is detected
-from the PLC. The former sequence pauses the robot motion and waits for a new signal from PLC to continue the robot motion from the same configuration while the latter sequence triggers the E-Stop on the robot and stops the robot immediately. 
+from the \hyperref[acro:PLC]{PLC}. The former sequence pauses the robot motion and waits for a new signal from \hyperref[acro:PLC]{PLC} to continue the robot motion from the same configuration while the latter sequence triggers the E-Stop on the robot and stops the robot immediately. 
 
 
 

@@ -1,6 +1,6 @@
 \subsection{Control Software Update}
 \label{subsec:control-software-update}
-For a single sheet metal part, teach pendant from the kassow robot is enough for the control program.
+For a single sheet metal part, teach pendant from the \textbf{Kassow Robot} is enough for the control program.
 However, to allow flexibility in production with different sheet metal part, a separate hardware is required
 to run \hyperref[acro:ROS]{ROS} controller manager.
 At the moment, \hyperref[acro:ROS]{ROS} is only used for visualizing the robot motion in the web app.
@@ -14,15 +14,15 @@ then be easily integrated into the new robot program on the real robot.
 \label{subsec:web-ui-update}
 At this stage, the web user interface is very limited in terms of functionality. Future work could add or improve the following features:
 \begin{enumerate}
-    \item \textbf{Add camera data}: Integrate the VISOR camera in the web user interface, visualizing current feed from camera.
+    \item \textbf{Add camera data}: Integrate the \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} camera in the web user interface, visualizing current feed from camera.
     \item \textbf{User Authentication}: Create secure login using Node.js backend for access control.
     \item \textbf{Responsive App Development}: Allow the app to work on various devices including mobile devices.
-    \item \textbf{Interactive User Guide}: Develop a tutorial that shows users the usage of the UI. Make UI more intuitive.
-    \item \textbf{Data Storage}: Implement a database for storing production data, inspection results, and logs, which would allow for analysis and troubleshooting directly on the UI.
+    \item \textbf{Interactive User Guide}: Develop a tutorial that shows users the usage of the \hyperref[acro:UI]{UI}. Make UI more intuitive.
+    \item \textbf{Data Storage}: Implement a database for storing production data, inspection results, and logs, which would allow for analysis and troubleshooting directly on the \hyperref[acro:UI]{UI}.
 \end{enumerate}
 
 \subsection{KR VISOR Support}
-The custom made CBun device offers limited functionality at the moment, allowing only for detector result and detector pose to be shared with the KR through telegram. Development of this support would allow KR to use other detectors than contour or target mark 3D in VISOR software as well.
+The custom-made \hyperref[acro:CBun]{CBun} device offers limited functionality at the moment, allowing only for detector result and detector pose to be shared with the \hyperref[acro:KR]{KR} through telegram. Development of this support would allow \hyperref[acro:KR]{KR} to use other detectors than contour or target mark \hyperref[acro:3D]{3D} in \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} software as well.
 
 \subsection{Flexibility and Customization}
 

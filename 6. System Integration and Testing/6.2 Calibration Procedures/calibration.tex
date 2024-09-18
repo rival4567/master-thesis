@@ -1,11 +1,11 @@
 
 Calibration is a crucial procedure in the development of 
 an automated robotic workcell which ensures that all components
-operate accurately and in harmony. Firstly, there is a requirement for calibrating the gantry robot on the unloading station. The gantry robot should give the sheet metal part accurately to the unloading station gripper and shouldn't lose the part on the way. This is done using a process known as home position calibration. Upon a new boot of the PLC, the gantry robot move along linear axes (X, Y, Z) and go to a consistent reference point (home position). This point is where all the axes are set to zero.
+operate accurately and in harmony. Firstly, there is a requirement for calibrating the gantry robot on the unloading station. The gantry robot should give the sheet metal part accurately to the unloading station gripper and shouldn't lose the part on the way. This is done using a process known as home position calibration. Upon a new boot of the \hyperref[acro:PLC]{PLC}, the gantry robot move along linear axes (X, Y, Z) and go to a consistent reference point (home position). This point is where all the axes are set to zero.
 
 A laser sensor is added to the bending machine to measure the distance between the tool and die with the reproducibility in the range of 10\textmu m. This sensor help in coordinating the bending timings between the bending machine and the robot. This sensor also requires a baseline or zero point to eliminate any offsets or biases in their readings.
 
-Finally, robot's calibration ensures that the KR1410 can accurately position its TCP for loading, bending, and unloading metal sheets. The KR1410 requires the kinematic calibration, hand-eye calibration and the workspace calibration to achieve good results.
+Finally, robot's calibration ensures that the \hyperref[acro:KR]{KR1410} can accurately position its \hyperref[acro:TCP]{TCP} for loading, bending, and unloading metal sheets. The \hyperref[acro:KR]{KR1410} requires the kinematic calibration, hand-eye calibration and the workspace calibration to achieve good results.
 
 \subsection{Kinematic Calibration}
 \label{subsec:kinematic-calibration}
@@ -18,12 +18,12 @@ Finally, robot's calibration ensures that the KR1410 can accurately position its
 \end{figure}
 
 
-It refers to the KR1410's kinematic model which needs to correct any discrepancies between the theoretical model and the actual hardware. This includes measuring and compensating for joint offsets, link lengths, and joint angles. 
-The KR1410 is already calibrated from the factory and does not need to be setup. Though in simulation, robot kinematic model is generated from the URDF and needs to be updated to match the real hardware. Figure \ref{fig:tcp} shows the kinematic model of KR1410 and also the TCP link which is set at 216 mm from the TFC.
+It refers to the \hyperref[acro:KR]{KR1410}'s kinematic model which needs to correct any discrepancies between the theoretical model and the actual hardware. This includes measuring and compensating for joint offsets, link lengths, and joint angles. 
+The \hyperref[acro:KR]{KR1410} is already calibrated from the factory and does not need to be setup. Though in simulation, robot kinematic model is generated from the \hyperref[acro:URDF]{URDF} and needs to be updated to match the real hardware. Figure \ref{fig:tcp} shows the kinematic model of \hyperref[acro:KR]{KR1410} and also the \hyperref[acro:TCP]{TCP} link which is set at 216 mm from the \hyperref[acro:TFC]{TFC}.
 
 \subsection{Hand-eye calibration}
 \label{subsubsec:tcp-calibration}
-The hand-eye calibration is the determination of the exact position of the end effector or TCP \textit{w.r.t.} to the camera frame. This is crucial for precise manipulation of metal sheets. The "Hand-Eye calibration (Robotics)" calibration method is used to determine the
+The hand-eye calibration is the determination of the exact position of the end effector or \hyperref[acro:TCP]{TCP} \textit{w.r.t.} to the camera frame. This is crucial for precise manipulation of metal sheets. The "Hand-Eye calibration (Robotics)" calibration method is used to determine the
 reference between "Hand" (TCP) and "Eye" Camera coordinate system
 (position and orientation) when the VISOR\textsuperscript{\textregistered} is attached to the gripper.
 This allows different image acquisition positions and still to output the object positions
@@ -40,9 +40,9 @@ Camera calibration is essential for the accurate detection of metal sheets and m
 \vspace{1\baselineskip}
 The calibration process is automated within the robot program
 such that operator could request to re-calibrate the camera \textit{w.r.t.}
-robot TCP from the touch panel. This allows to update the image quality as it degrades over time. 
+robot \hyperref[acro:TCP]{TCP} from the touch panel. This allows to update the image quality as it degrades over time. 
 The robot finishes the current
-bending operation and then in next cycle, start with the auto-calibration. Figure \ref{fig:calib-graph} shows the calibration algorithm and the communication setup between VISOR camera and KR1410 using telegram.
+bending operation and then in next cycle, start with the auto-calibration. Figure \ref{fig:calib-graph} shows the calibration algorithm and the communication setup between \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} camera and \hyperref[acro:KR]{KR1410} using telegram.
 
 \begin{figure}
     \centering
@@ -86,7 +86,7 @@ bending operation and then in next cycle, start with the auto-calibration. Figur
 
 The hand-eye calibration can only be used with the camera
 mounted on the gripper. To perform this, 20 images are taken of the calibration plate with the
-VISOR. Figure \ref{fig:calibration-steps}  shows 9 of these 20 acquired calibration plate images. The accuracy of the calibration can often be further increased by adding more images. The TCP is tilted between each pose especially along two axes strongly. Also, necessary translation between each pose is done so that the calibration plate stays in the field of view of the camera. This allowing the calibration to have a field of view of 100\%.
+VISOR camera. Figure \ref{fig:calibration-steps}  shows 9 of these 20 acquired calibration plate images. The accuracy of the calibration can often be further increased by adding more images. The \hyperref[acro:TCP]{TCP} is tilted between each pose especially along two axes strongly. Also, necessary translation between each pose is done so that the calibration plate stays in the field of view of the camera. This allowing the calibration to have a field of view of 100\%.
 
 
 
@@ -157,7 +157,7 @@ After successful calibration the relation between "Hand" (Tool Center Point) and
 \FloatBarrier
 \subsection{Workspace Calibration}
 \label{subsec:workspace-calibration}
-Defining the robot's operational workspace and ensuring that all tasks are performed within this defined area, while avoiding collisions and ensuring smooth operation is crucial for the safe operation of the robot. For this purpose, several target markers are installed in the workcell. Each drawer of the shelf is marked by a target marker to get the pose of the drawer. Similarly, bending machine and unloading station poses are defined in workcell by a target marker. After a replacement of shelf, the workcell is slightly different than before. Hence, a new workspace calibration is required. A calibration is done after replacement of shelf or after a restart of the robot program.
+Defining the robot's operational workspace and ensuring that all tasks are performed within this defined area, while avoiding collisions and ensuring smooth operation is crucial for the safe operation of the robot. For this purpose, several target markers are installed in the workcell. Each drawer of the shelf is marked by a target marker to get the pose of the drawer. Similarly, bending machine and unloading station poses are defined in workcell by a target marker. After a replacement of shelf, the workcell is slightly different from before. Hence, a new workspace calibration is required. A calibration is done after replacement of shelf or after a restart of the robot program.
 
 
 

@@ -1,5 +1,5 @@
-PLC is used to control the subsystems in the robotic workcell. PLC controls the bending process by controlling the bending machine,
-operates the unloading station to get new sheet metal parts to the unloading station gripper using the gantry robot, triggers the inspection camera for testing the bending process and cooperates with the KR1410 to select the correct bending task. To achieve all of this, communication needs to be setup between various subsystems. Figure \ref{fig:communication-protocols} shows the networking diagram between various devices in the workcell. ROS PC has not been commissioned in the robotic workcell, but a setup could easily be made by connecting an ethernet cable between
+\hyperref[acro:PLC]{PLC} is used to control the subsystems in the robotic workcell. \hyperref[acro:PLC]{PLC} controls the bending process by controlling the bending machine,
+operates the unloading station to get new sheet metal parts to the unloading station gripper using the gantry robot, triggers the inspection camera for testing the bending process and cooperates with the KR1410 to select the correct bending task. To achieve all of this, communication needs to be setup between various subsystems. Figure \ref{fig:communication-protocols} shows the networking diagram between various devices in the workcell. \hyperref[acro:ROS]{ROS} \hyperref[acro:PC]{PC} has not been commissioned in the robotic workcell, but a setup could easily be made by connecting an ethernet cable between
 robot controller and laptop.
 
 
@@ -80,7 +80,7 @@ robot controller and laptop.
       Int[2] is not 0 & Not working, camera restart required\\
       \hline
   \end{tabular}
-  \caption{Sending data from KR1410 to PLC over Profinet}
+  \caption{Sending data from KR1410 to \hyperref[acro:PLC]{PLC} over Profinet}
   \label{tab:kr1410-to-plc}
 \end{table}
 
@@ -128,27 +128,27 @@ robot controller and laptop.
       \textbf{Int[1]=1-10} & \textbf{Start placement from drawer}\\
       \hline
   \end{tabular}
-  \caption{Sending data from PLC to KR1410 over Profinet}
+  \caption{Sending data from \hyperref[acro:PLC]{PLC} to KR1410 over Profinet}
   \label{tab:plc-to-kr1410}
 \end{table}
 
 \subsection{Communication between KR1410 Robot and PLC}
-The communication between the PLC and KR1410 is established over Profinet, a leading industrial ethernet protocol for communication between devices in industrial automation systems. Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net) ensures real-time data transmission and supports various network topologies. \cite{profinet}
+The communication between the \hyperref[acro:PLC]{PLC} and \hyperref[acro:KR]{KR1410} is established over Profinet, a leading industrial ethernet protocol for communication between devices in industrial automation systems. Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net) ensures real-time data transmission and supports various network topologies. \cite{profinet}
 
-A number of robot data can be monitored and controller through PLC over Profinet. These include monitoring of system state, joint configuration,
-TCP kinematics, IO Board, Tool IO state, and controlling of master speed, IO Board, and Tool IO outputs. The profinet also allows the transfer of
-data from Robot to PLC over user defined 64 Bit Input, 24 Int Input, 24 Real Input and from PLC to Robot over 64 Bit Output, 24 Int Output and 24 Real Output. \cite{kr-profinet} Table \ref{tab:kr1410-to-plc} and \ref{tab:plc-to-kr1410} shows the defined variables for cooperation between PLC and KR1410 which are shared over profinet.
+A number of robot data can be monitored and controller through \hyperref[acro:PLC]{PLC} over Profinet. These include monitoring of system state, joint configuration,
+\hyperref[acro:TCP]{TCP} kinematics, \hyperref[acro:IO]{IO} Board, Tool \hyperref[acro:IO]{IO} state, and controlling of master speed, \hyperref[acro:IO]{IO} Board, and Tool \hyperref[acro:IO]{IO} outputs. The Profinet also allows the transfer of
+data from Robot to \hyperref[acro:PLC]{PLC} over user defined 64 Bit Input, 24 Int Input, 24 Real Input and from \hyperref[acro:PLC]{PLC} to Robot over 64 Bit Output, 24 Int Output and 24 Real Output. \cite{kr-profinet} Table \ref{tab:kr1410-to-plc} and \ref{tab:plc-to-kr1410} shows the defined variables for cooperation between \hyperref[acro:PLC]{PLC} and KR1410 which are shared over profinet.
 
 
-\subsection{VISOR Communication Protocols}
-Both VISOR camera has been configured beforehand for camera settings like shutter speed, gain, working distance, resolution, internal illumination and other parameters. VISOR has been connected to a PC running SensoConfig software from SENSOPART for configuring the camera.
-Using this software, separate jobs could also be added for each task. The task could include detecting a particular sheet pattern, target marker detection or bend angle measurement. CBun \textbf{VISOR} device added to KR teach pendant only allows switching of jobs, triggering camera,
-performing calibration and a few other tasks. But training to recognise a pattern needs to be done beforehand using a PC.
+\subsection{\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} Communication Protocols}
+Both \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} camera has been configured beforehand for camera settings like shutter speed, gain, working distance, resolution, internal illumination and other parameters. \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} has been connected to a \hyperref[acro:PC]{PC} running SensoConfig software from \hyperref[acro:SensoPart]{SENSOPART} for configuring the camera.
+Using this software, separate jobs could also be added for each task. The task could include detecting a particular sheet pattern, target marker detection or bend angle measurement. CBun \textbf{VISOR} device added to \hyperref[acro:KR]{KR} teach pendant only allows switching of jobs, triggering camera,
+performing calibration and a few other tasks. But training to recognize a pattern needs to be done beforehand using a \hyperref[acro:PC]{PC}.
 
-\subsubsection{VISOR to KR1410}
+\subsubsection{\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} to KR1410}
 Kassow robot is interfaced to the robotic camera using ethernet.
-CBun Device installed on KR teach pendant allows for communication between
-Kassow robot and the VISOR. It is build and installed using CBun development as mentioned in subsection \ref{subsec:computer-vision}. The following ports are used for communications between the Kassow Robot and the VISOR. 
+CBun Device installed on \hyperref[acro:KR]{KR} teach pendant allows for communication between
+Kassow robot and the \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered}. It is build and installed using CBun development as mentioned in subsection \ref{subsec:computer-vision}. The following ports are used for communications between the Kassow Robot and the \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered}. 
 
 \begin{itemize}
   \item \textbf{Port 2005}, Transmission control protocol TCP (Implicit results, \textit{i.e.} user-configured result data)
@@ -165,16 +165,16 @@ Kassow robot and the VISOR. It is build and installed using CBun development as 
 
 Figure \ref{fig:calib-graph} shows the use of this communication setup to perform auto-calibration with the Kassow robots and the mounted camera.
 
-\subsubsection{VISOR to PLC}
-PLC is interfaced with the inspection camera using Profinet.
-UDP (User Datagram Protocol) is used over ports 161, 34962, 34963, 34964 to establish communication between the PLC and the VISOR. \cite{visor_communication_manual}
+\subsubsection{\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} to PLC}
+\hyperref[acro:PLC]{PLC} is interfaced with the inspection camera using Profinet.
+UDP (User Datagram Protocol) is used over ports 161, 34962, 34963, 34964 to establish communication between the \hyperref[acro:PLC]{PLC} and the \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered}. \cite{visor_communication_manual}
 
 
 \subsection{Communication between KR1410 Robot, ROS and Web UI}
 \label{subsec:KR1410ROS}
 
-The communication between the Web UI and the nodejs server happens via HTTP for standard page loading. The websocket connection through rosbridge provides real-time, bidirectional data exchange between the real or simulated robot and the web interface. This allows visualization, monitoring
-and also control of the robot through web application. Figure \ref{fig:ros-web-graph} shows the communication diagram between ROS, Web application and the KR.
+The communication between the Web \hyperref[acro:UI]{UI} and the nodejs server happens via \hyperref[acro:HTTP]{HTTP} for standard page loading. The websocket connection through rosbridge provides real-time, bidirectional data exchange between the real or simulated robot and the web interface. This allows visualization, monitoring
+and also control of the robot through web application. Figure \ref{fig:ros-web-graph} shows the communication diagram between \hyperref[acro:ROS]{ROS}, Web application and the \hyperref[acro:KR]{KR}.
 
 \begin{figure}[h]
   \centering
@@ -183,12 +183,12 @@ and also control of the robot through web application. Figure \ref{fig:ros-web-g
   \label{fig:ros-web-graph}
 \end{figure}
 
-Web UI is build using the frontend development tool ReactJS. It utilizes libraries like \hyperref[par:roslibjs]{\textbf{roslibjs}} and \hyperref[par:ros3djs]{\textbf{ros3djs}} to visualize or publish on ROS topics which monitors or controls the robot respectively. Rosbridge acts as a bridge between the web application and the ROS system. It converts ROS messages into JSON format which can be sent over the websocket.
+Web \hyperref[acro:UI]{UI} is build using the frontend development tool ReactJS. It utilizes libraries like \hyperref[par:roslibjs]{\textbf{roslibjs}} and \hyperref[par:ros3djs]{\textbf{ros3djs}} to visualize or publish on \hyperref[acro:ROS]{ROS} topics which monitors or controls the robot respectively. Rosbridge acts as a bridge between the web application and the \hyperref[acro:ROS]{ROS} system. It converts ROS messages into JSON format which can be sent over the websocket.
 
-ROS nodes uses either TCP/IP or UDP communication protocol. 
-The ROS Master acts as the central node manager in the ROS network. It coordinates communication between the robot (KR1410) and other ROS nodes.
-Here the machine running ROS provides the ROS master \cite{rosmaster} and the KR1410 robot is connected to it through ethernet where KR ROS support provides few nodes and rostopics through which real robot can be monitored and controlled. These topics are republished to \textit{joint\_state\_publisher} so that they can be controlled using MoveIt package.
-KR1410 could also be simulated in gazebo software for testing of the web UI. Gazebo also publishes joints on \textit{joint\_states\_publisher} which are used in ROS and MoveIt to control the robot.
+ROS nodes use either TCP/IP or UDP communication protocol. 
+The ROS Master acts as the central node manager in the ROS network. It coordinates communication between the robot (KR1410) and other \hyperref[acro:ROS]{ROS} nodes.
+Here the machine running ROS provides the ROS master \cite{rosmaster} and the \hyperref[acro:KR]{KR1410} robot is connected to it through ethernet where KR ROS support provides few nodes and rostopics through which real robot can be monitored and controlled. These topics are republished to \textit{joint\_state\_publisher} so that they can be controlled using MoveIt package.
+\hyperref[acro:KR]{KR1410} could also be simulated in \hyperref[acro:Gazebo]{gazebo} software for testing of the web UI. Gazebo also publishes joints on \textit{joint\_states\_publisher} which are used in \hyperref[acro:ROS]{ROS} and MoveIt to control the robot.
 
-A number of ROS nodes runs on the ROS machine which includes MoveIt nodes, unloading station gripper controller nodes, \textit{visualization\_rwt} for MoveIt controls through the Web UI, \textit{joint\_state\_controller}, \textit{robot\_state\_controller}, rosbridge, \textit{tf2\_web\_publisher} etc. Nodes are written in python or C++. \textit{robot\_state\_controller} publishes the state of the robot on \textbf{tf} rostopic using \textit{joint\_states} and parameter \textit{robot\_description}. The \textbf{tf} (transform) rostopic is responsible for managing transforms between different links of the robot. \textit{tf2\_web\_publisher} uses this rostopic to recreate the robot in the web application.
+A number of \hyperref[acro:ROS]{ROS} nodes runs on the \hyperref[acro:ROS]{ROS} machine which includes MoveIt nodes, unloading station gripper controller nodes, \textit{visualization\_rwt} for MoveIt controls through the Web UI, \textit{joint\_state\_controller}, \textit{robot\_state\_controller}, rosbridge, \textit{tf2\_web\_publisher} etc. Nodes are written in python or C++. \textit{robot\_state\_controller} publishes the state of the robot on \textbf{tf} rostopic using \textit{joint\_states} and parameter \textit{robot\_description}. The \textbf{tf} (transform) rostopic is responsible for managing transforms between different links of the robot. \textit{tf2\_web\_publisher} uses this rostopic to recreate the robot in the web application.
 

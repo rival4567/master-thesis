@@ -1,13 +1,13 @@
-The inspection of only four bending operations out of six bendings are required for the test part. Figure \ref{fig:bending-inspection} shows these inspection camera images upon trigger. Figure \ref{subfig:inspection-1}, \ref{subfig:inspection-5} and \ref{subfig:inspection-6} tests the bending operation of 90\textdegree{} which is performed at bending station 1. Figure \ref{subfig:inspection-2} is the testing of bending of 135\textdegree{} which happens at bending station 2.
+The inspection of only four bending operations out of six bending are required for the test part. Figure \ref{fig:bending-inspection} shows these inspection camera images upon trigger. Figure \ref{subfig:inspection-1}, \ref{subfig:inspection-5} and \ref{subfig:inspection-6} tests the bending operation of 90\textdegree{} which is performed at bending station 1. Figure \ref{subfig:inspection-2} is the testing of bending of 135\textdegree{} which happens at bending station 2.
 
-Table \ref{tab:bending-data} shows the bending angles as measured by the inspection camera for ten sheet metal parts. The angle measurement is pretty close to each other. The angle is measured by the light reflected by the edge of sheet metal part. Because of different surface roughness and impurities on surface, there is slight deviation in the bending angles measured. A tolerance of 90$\pm5$\textdegree{} is set for the bending 1, bending 5 and bending 6. For bending 2, a tolerance of 135$\pm10$\textdegree{} is set. These tolerance values can be adjusted on the SIMATIC HMI.
+Table \ref{tab:bending-data} shows the bending angles as measured by the inspection camera for ten sheet metal parts. The angle measurement is pretty close to each other. The angle is measured by the light reflected by the edge of sheet metal part. Because of different surface roughness and impurities on surface, there is slight deviation in the bending angles measured. A tolerance of 90$\pm5$\textdegree{} is set for the bending 1, bending 5 and bending 6. For bending 2, a tolerance of 135$\pm10$\textdegree{} is set. These tolerance values can be adjusted on the SIMATIC \hyperref[acro:HMI]{HMI}.
 
 \begin{figure}[h]
     \centering
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/008_inspection/inpection_1_overlay2.png}
-        \caption{bending  operation 1}
+        \caption{bending operation 1}
         \label{subfig:inspection-1}
         \vspace{0.5cm}
     \end{subfigure}\hspace{0.25cm}
@@ -59,4 +59,4 @@ Table \ref{tab:bending-data} shows the bending angles as measured by the inspect
     \label{tab:bending-data}
 \end{table}
 
-The bending angles measured by the inspection camera are saved by the PLC in a \textit{.csv} file. Simatic HMI also shows the current cycle bending angles for the operator to overview the current status of bending operation. This \textit{.csv} file provides insights in the quality of bending process. It is evident from the angles captured that the bending process is consistent over time, without any requirement for a new calibration.
+The bending angles measured by the inspection camera are saved by the \hyperref[acro:PLC]{PLC} in a \textit{.csv} file. SIMATIC \hyperref[acro:HMI]{HMI} also shows the current cycle bending angles for the operator to overview the current status of bending operation. This \textit{.csv} file provides insights in the quality of bending process. It is evident from the angles captured that the bending process is consistent over time, without any requirement for a new calibration.

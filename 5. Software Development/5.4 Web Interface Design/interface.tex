@@ -1,7 +1,7 @@
-The design of a web interface for an automated robotic workcell must prioritize user experience, system performance, and availability. In this section, we delve into the key components of a web-based UI that allows operators to monitor and control the system effectively, ensuring streamlined performance during sheet metal bending process. The web interface uses the React.js framework for the front end and integrates with ROS (Robot Operating System) for robot control and 3D visualization of workcell. React.js is a component based development environment. This means even if a single component on the screen fails, the interface wouldn't crash. The web interface is currently hosted locally on port 3000. It is possible to make this web interface available on the internet, but that would require hosting on a 24/7 available server and a domain.
+The design of a web interface for an automated robotic workcell must prioritize user experience, system performance, and availability. In this section, we delve into the key components of a web-based \hyperref[acro:UI]{UI} that allows operators to monitor and control the system effectively, ensuring streamlined performance during sheet metal bending process. The web interface uses the React.js framework for the front end and integrates with ROS (Robot Operating System) for robot control and 3D visualization of workcell. React.js is a component based development environment. This means even if a single component on the screen fails, the interface wouldn't crash. The web interface is currently hosted locally on port 3000. It is possible to make this web interface available on the internet, but that would require hosting on a 24/7 available server and a domain.
 
 
-The web interface has two main sections, viewer and ROS control panel. Viewer is used for visualizing and monitoring the KR1410 robot in the workcell. The second section include buttons and sliders which controls the robot loaded in the viewer.
+The web interface has two main sections, viewer and ROS control panel. Viewer is used for visualizing and monitoring the \hyperref[acro:KR]{KR1410} robot in the workcell. The second section include buttons and sliders which controls the robot loaded in the viewer.
 
 \begin{figure}[h]
     \centering
@@ -12,11 +12,11 @@ The web interface has two main sections, viewer and ROS control panel. Viewer is
 
 \subsection{Viewer}
 \label{subsec:web-ui-viewer}
-The Viewer component provides a 3D visualization of the robot model within the web application. It leverages ros3djs to render a real-time representation of the robot, including its physical structure and the workspace. Users can manipulate the camera to explore the robot from various angles, zoom in and out, and observe its movements in real-time as it receives ROS data.
+The Viewer component provides a \hyperref[acro:3D]{3D} visualization of the robot model within the web application. It leverages \hyperref[par:ros3djs]{ros3djs} to render a real-time representation of the robot, including its physical structure and the workspace. Users can manipulate the camera to explore the robot from various angles, zoom in and out, and observe its movements in real-time as it receives \hyperref[acro:ROS]{ROS} data.
 
 The viewer is customizable, with options to control the size, background color, change workspace models, and field of view to optimize visualization based on user needs. This is particularly useful for monitoring the robot's operations in complex environments. However, this would require a web server restart.
 
-The viewer has two modes: simulation mode and reality mode. It has a button on the top right side, which allows switching from gazebo simulations to real robot. Hence allowing simulations or controlling of real robot directly from a single interface without the need to restart the web server. This prevents errors in real-world operations and ensures that the robot performs the necessary movements accurately and collision-free after testing in simulations.
+The viewer has two modes: simulation mode and reality mode. It has a button on the top right side, which allows switching from gazebo simulations to real robot. Hence, allowing simulations or controlling of real robot directly from a single interface without the need to restart the web server. This prevents errors in real-world operations and ensures that the robot performs the necessary movements accurately and collision-free after testing in simulations.
 
 
 \subsubsection{Auto connection}
@@ -25,22 +25,21 @@ To ensure smooth operations, the Auto connection feature establishes a real-time
 
 The Auto Connection feature is build on \textbf{AutoRos} package which can handle intermittent network failures by automatically re-establishing the WebSocket connection when needed. This reduces downtime and ensures that the system remains responsive, even in situations where network instability might otherwise interrupt operations.
 
-\subsubsection{Robot URDF Visualization}
+\subsubsection{Robot \hyperref[acro:URDF]{URDF} Visualization}
 \label{subsubsec:web-ui-urdf-visualization}
-The Unified Robot Description Format (URDF) visualization provides a detailed, kinemtic model of the robot within the web interface. This feature uses ROS to generate a real-time model of the robot using ROS parameter \textit{robot\_description}, showcasing its joints, links, and kinematics. The URDF model is not just a static image; it actively updates as the robot moves using ROS topic \textit{$\backslash$joint\_states}, providing valuable informtion about the robot's physical status and positioning in the workcell.
+The Unified Robot Description Format (URDF) visualization provides a detailed, kinematic model of the robot within the web interface. This feature uses ROS to generate a real-time model of the robot using ROS parameter \textit{robot\_description}, showcasing its joints, links, and kinematics. The \hyperref[acro:URDF]{URDF} model is not just a static image; it actively updates as the robot moves using ROS topic \textit{$\backslash$joint\_states}, providing valuable information about the robot's physical status and positioning in the workcell.
 
-There are three Robot URDF visualizations in the web UI as illustrated in figure \ref{fig:web-ui-preview}. The green marked robot is for determining the starting pose of the robot from which path planning begins. The red URDF model of robot is the target pose to perform path planning to. The grey robot URDF models shows the current pose of the robot either in Gazebo simulator or real world.
+There are three Robot \hyperref[acro:URDF]{URDF} visualizations in the web \hyperref[acro:UI]{UI} as illustrated in figure \ref{fig:web-ui-preview}. The green marked robot is for determining the starting pose of the robot from which path planning begins. The red \hyperref[acro:URDF]{URDF} model of robot is the target pose to perform path planning to. The gray robot \hyperref[acro:URDF]{URDF} models shows the current pose of the robot either in Gazebo simulator or real world.
 
 \subsubsection{Interactive Marker}
 \label{subsubsec:web-ui-interactive-marker}
-Interactive markers enable direct manipulation of the robot's joint in the web interface. Using a drag-and-drop interface, operator can position the robot's TCP in the desired position and automatically change the robot configuration. This is particularly useful for tasks such as path planning between stations or small adjustments in the robot's pose.
+Interactive markers enable direct manipulation of the robot's joint in the web interface. Using a drag-and-drop interface, operator can position the robot's \hyperref[acro:TCP]{TCP} in the desired position and automatically change the robot configuration. This is particularly useful for tasks such as path planning between stations or small adjustments in the robot's pose.
 
-By interacting with the interative marker in the Viewer, operator can simulate robot movements before sending final commands. The interactive marker is controlled and updated with the MoveIt package, which performs motion planning and collision avoidance in the background.
-
+By interacting with the interactive marker in the Viewer, operator can simulate robot movements before sending final commands. The interactive marker is controlled and updated with the MoveIt package, which performs motion planning and collision avoidance in the background.
 
 \subsection{ROS Control Panel}
 \label{subsec:web-ui-ros-control}
-The ROS Control panel is on the right side of the web interface. It includes several inputs and buttons through which operator can interact with the robot in the viewer. Designed with usability and accessibility in mind, the control panel offers various functionalities for real-time robot operation, task management, and motion planning. The control panel is divided into several key sections, which includes manipulating start/target URDF models, showing current TCP pose, joint configuration and other control buttons. The key subcomponents of the ROS Control Panel are elaborated below.
+The \hyperref[acro:ROS]{ROS} Control panel is on the right side of the web interface. It includes several inputs and buttons through which operator can interact with the robot in the viewer. Designed with usability and accessibility in mind, the control panel offers various functionalities for real-time robot operation, task management, and motion planning. The control panel is divided into several key sections, which includes manipulating start/target \hyperref[acro:URDF]{URDF} models, showing current TCP pose, joint configuration and other control buttons. The key subcomponents of the \hyperref[acro:ROS]{ROS} Control Panel are elaborated below.
 
 
 
@@ -53,21 +52,21 @@ The ROS Control panel is on the right side of the web interface. It includes sev
 
 \subsubsection{View and Manipulation}
 \label{subsubsec:web-ui-view-manipulation}
-Motion is always planned from the start robot URDF model (green) to target robot URDF model (red). Unless the reality mode is turned on which plans from the current pose of the robot (grey) to the target robot URDF model (red). \textbf{View} toggle switch shows the start/target robot model respectively. \textbf{Manipulation} toggle allows the manipulation of the start/target robot model in the viewer. Only one Robot model in the viewer can be actively manipulated at a time.
+Motion is always planned from the start robot \hyperref[acro:URDF]{URDF} model (green) to target robot \hyperref[acro:URDF]{URDF} model (red). Unless the reality mode is turned on which plans from the current pose of the robot (gray) to the target robot \hyperref[acro:URDF]{URDF} model (red). \textbf{View} toggle switch shows the start/target robot model respectively. \textbf{Manipulation} toggle allows the manipulation of the start/target robot model in the viewer. Only one Robot model in the viewer can be actively manipulated at a time.
 
 
 \subsubsection{Interactive marker size}
 \label{subsubsec:web-ui-im-size}
-This settings changes the size of interactive marker on the start/target robot model. It helps in the precise placement of the TCP in the robot workcell. A smaller interactive marker would be able to make small movements during zoom-in. In total, there are five sizes of interactive markers available in the web interface.
+This setting changes the size of interactive marker on the start/target robot model. It helps in the precise placement of the \hyperref[acro:TCP]{TCP} in the robot workcell. A smaller interactive marker would be able to make small movements during zoom-in. In total, there are five sizes of interactive markers available in the web interface.
 
 
 \subsubsection{Current pose}
 \label{subsubsec:web-ui-current-pose}
-The \textbf{Current pose} section always shows the TCP pose of the real robot (or simulated robot from gazebo) from the viewer. The TCP pose has three position coordinates (X,Y,Z) and euler angles (R,P,Y).
+The \textbf{Current pose} section always shows the \hyperref[acro:TCP]{TCP} pose of the real robot (or simulated robot from \hyperref[acro:Gazebo]{gazebo}) from the viewer. The \hyperref[acro:TCP]{TCP} pose has three position coordinates (X,Y,Z) and euler angles (R,P,Y).
 
 \subsubsection{Joint Slider}
 \label{subsubsec:web-ui-joint-slider}
-The joint shows the joint configuration of active URDF robot model. If both the \textbf{Manipulation} toggle switch are in off position, the joint configuration of the real robot or gazebo simulator robot is shown. The joint configuration can be changed by sliding the slider for the respective joint.
+The joint shows the joint configuration of active \hyperref[acro:URDF]{URDF} robot model. If both the \textbf{Manipulation} toggle switch are in off position, the joint configuration of the real robot or \hyperref[acro:Gazebo]{gazebo} simulator robot is shown. The joint configuration can be changed by sliding the slider for the respective joint.
 
 \subsubsection{Buttons}
 \label{subsubsec:web-ui-buttons}

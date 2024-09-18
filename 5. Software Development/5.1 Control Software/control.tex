@@ -45,8 +45,8 @@ After analyzing the current manual bending process on the bending machine by an 
     \item \par{\textbf{Checking}}
     \label{par:checking}
     A camera system is used to record the bending angle of the sheet metal part after each individual
-    bending process. The angle is used to determine the quality of the bending operation. After the inspection is complete, the process continues  for a good part and the sheet is taken to the bending machine for the next bending process. If the bending angle does not lie within the tolerances, the part is thrown away and the bending machine is resetted for a new sheet metal part using the terminal operating robot. The loop restart again for a new sheet. If a large number of rejects occur in a very short time, the entire automated bending process is to be stopped.
-    If all the bendings on a sheet metal type variants is finished, it is taken to the storage station for loading.
+    bending process. The angle is used to determine the quality of the bending operation. After the inspection is complete, the process continues  for a good part and the sheet is taken to the bending machine for the next bending process. If the bending angle does not lie within the tolerances, the part is thrown away and the bending machine is resetted for a new sheet metal part using the terminal operating robot. The loop restart again for a new sheet. If many rejects occur in a very short time, the entire automated bending process is to be stopped.
+    If all the bending on a sheet metal type variants is finished, it is taken to the storage station for loading.
     
     \item \par{\textbf{Loading}}
     \label{par:loading}
@@ -55,11 +55,11 @@ After analyzing the current manual bending process on the bending machine by an 
 \end{enumerate}
 
 \vspace{1\baselineskip}
-A flowchart for the robot unit is developed based on the above mentioned stages for the automated bending process of the sheet metal part. This
-flowchart, which is still partly abstract, enables the individual activities of the KR1410 to be identified and
+A flowchart for the robot unit is developed based on the above-mentioned stages for the automated bending process of the sheet metal part. This
+flowchart, which is still partly abstract, enables the individual activities of the \hyperref[acro:KR]{KR1410} to be identified and
 the interactions between various subsystems to be described. The description of the process and the definition of the overall requirements in section \ref{sec:requirements} represent an interacting process that inevitably had to be iterated through. This means that the results
 of the bending process were revised several times. The final result of these iterations regarding the
-activities to be performed by the KR1410 robot can be seen in flowchart \ref{tab:flowchart}. 
+activities to be performed by the \hyperref[acro:KR]{KR1410} robot can be seen in flowchart \ref{tab:flowchart}. 
 
 \begin{longtable}{c}
     \footnotesize
@@ -169,9 +169,9 @@ activities to be performed by the KR1410 robot can be seen in flowchart \ref{tab
     \caption{Control program flowchart of robot unit} \label{tab:flowchart}
 \end{longtable}
 
-The flowchart \ref{tab:flowchart} is used to create the control software for the KR1410 robot in teach pendant. A number of variables are also required to coordinate the bending process with the PLC as seen in the flowchart. The required data is shared between PLC and KR1410 as shown in table \ref{tab:kr1410-to-plc} and \ref{tab:plc-to-kr1410}.
+The flowchart \ref{tab:flowchart} is used to create the control software for the \hyperref[acro:KR]{KR1410} robot in teach pendant. A number of variables are also required to coordinate the bending process with the \hyperref[acro:PLC]{PLC} as seen in the flowchart. The required data is shared between \hyperref[acro:PLC]{PLC} and \hyperref[acro:KR]{KR1410} as shown in table \ref{tab:kr1410-to-plc} and \ref{tab:plc-to-kr1410}.
 
-The unloading station gripper is also used for the regrasping of the bent part. This allows the robot to grip the sheet metal at a new position, if necessary, for the subsequent bendings as otherwise collisions between the robot and the bending machine may occur. To achieve this, robot brings back the bent metal part to the unloading station gripper at a different configuration, scans the bent sheet, detect the sheet pattern and at last picks up the sheet from a new position.
+The unloading station gripper is also used for the regrasping of the bent part. This allows the robot to grip the sheet metal at a new position, if necessary, for the subsequent bending as otherwise collisions between the robot and the bending machine may occur. To achieve this, robot brings back the bent metal part to the unloading station gripper at a different configuration, scans the bent sheet, detect the sheet pattern and at last picks up the sheet from a new position.
 
 
 

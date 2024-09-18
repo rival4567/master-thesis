@@ -18,7 +18,7 @@ section \ref{sec:CV_2} The processing is done inside the camera housing only. It
         Operating Voltage & 24 V DC (18 V - 30 V) \\
         Startup time & $<$ 14 s\\
         Current consumption & $\leq$ 300 mA \\
-        Interfaces & 100 Mbit LAN, PROFINET,\\
+        Interfaces & 100 Mbit \hyperref[acro:LAN]{LAN}, PROFINET,\\
         & EtherNet/IP, SensoWeb\\ 
         Weight & Approx. 200 g \\ 
         Ambient air temperature operation & 0$^\circ$C - 50$^\circ$C (80 \% humidity,\\
@@ -29,8 +29,8 @@ section \ref{sec:CV_2} The processing is done inside the camera housing only. It
         Number of pixels (H $\times$ V) &s 1440 $\times$ 1080\\
         Sensor size & 1/2.9$^{\prime\prime}$ \\ 
         Pixel size & 3.4 $\mu$m $\times$ 3.45 $\mu$m\\
-        Technology & CMOS Mono / Color\\
-        Light type & LED Red\\ 
+        Technology & \hyperref[acro:CMOS]{CMOS} Mono / Color\\
+        Light type & \hyperref[acro:LED]{LED} Red\\ 
         Target laser & Red, laser class 1\\ 
         Integrated Lens, focal length & 6.5 (Wide)\\
         Focus (Working distance) & Motorized \\ \hline
@@ -39,9 +39,9 @@ section \ref{sec:CV_2} The processing is done inside the camera housing only. It
     \label{visor-technical-data}
 \end{table}
 
-\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} vision sensor is a suitable choice for the identification and classification of metal sheets for the automated bending process. These sensors enable precise detection and processing of features on sheet metal parts, which leads to the efficiency and accuracy of automated bending process. The camera can be connected to a PLC or PC through ethernet or profinet. The VISOR software is installed on the \hyperref[acro:PC]{PC} and then the camera can be configured and jobs can be added.\cite{sensopart-software}. A total of 255 jobs with 255 detectors each can be configured on the camera.
+\hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} vision sensor is a suitable choice for the identification and classification of metal sheets for the automated bending process. These sensors enable precise detection and processing of features on sheet metal parts, which leads to the efficiency and accuracy of automated bending process. The camera can be connected to a \hyperref[acro:PLC]{PLC} or \hyperref[acro:PC]{PC} through ethernet or profinet. The \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} software is installed on the \hyperref[acro:PC]{PC} and then the camera can be configured and jobs can be added.\cite{sensopart-software}. A total of 255 jobs with 255 detectors each can be configured on the camera.
 
-Two cameras are selected from \hyperref[acro:SENSOPART]{SENSOPART}. One for the robot which is used to detect the sheet metal parts and the target mark; and the other for inspection jobs.
+Two cameras are selected from \hyperref[acro:SensoPart]{SENSOPART}. One for the robot which is used to detect the sheet metal parts and the target mark; and the other for inspection jobs.
 
 \begin{figure}[h]
     \centering
@@ -57,11 +57,11 @@ This camera is a \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} R
 \cite{visor-robotic}
 A hand-eye calibration is required in order to transform camera poses to robot frame. This camera does not use internal illumination to detect
 objects as the working distance is 300.0 mm which is large enough for internal illumination to full brighten the sheet metal part.
-A tailored interface is developed for KR teach pendant for this camera to make it communicate with the robot using \hyperref[acro:CBun]{CBuns}.
+A tailored interface is developed for \hyperref[acro:KR]{KR} teach pendant for this camera to make it communicate with the robot using \hyperref[acro:CBun]{CBuns}.
 
 \subsubsection{Inspection Camera}
 \label{subsubsec:inspection-camera}
-The inspection camera is a \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} V20 Object vision sensor with $1440 \times 1080$ resolution and red \hyperref[acro:LEDs]{LED} light.
+The inspection camera is a \hyperref[acro:VISOR]{VISOR}\textsuperscript{\textregistered} V20 Object vision sensor with $1440 \times 1080$ resolution and red \hyperref[acro:LED]{LED} light.
 \cite{visor-object}
 This camera gets the bending angle
 of the bent sheet metal part. The robot brings the bent sheet metal parts to the inspection camera. 

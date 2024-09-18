@@ -1,4 +1,4 @@
-The picking up of sheet metal part is the first step in the automated bending operation. In this phase, the robot arm (KR1410) approaches the raw sheet metal part gripped by the unloading station gripper. The unloading station is equipped with target marker which ensures that the robot reaches the correct scanning position which is perpendicularly over the sheet. (Figure \ref{fig:sheet-pickup})
+The picking up of sheet metal part is the first step in the automated bending operation. In this phase, the robot arm (\hyperref[acro:KR]{KR1410}) approaches the raw sheet metal part gripped by the unloading station gripper. The unloading station is equipped with target marker which ensures that the robot reaches the correct scanning position which is perpendicularly over the sheet. (Figure \ref{fig:sheet-pickup})
 
 
 \begin{figure}[h]
@@ -30,14 +30,14 @@ The picking up of sheet metal part is the first step in the automated bending op
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/sheet-pickup/sheet-pose.png}
-        \caption{send sheet pose to pickup the sheet}
+        \caption{send sheet pose to pick up the part}
         \label{subfig:sheet-0}
     \end{subfigure}
     \caption{Sheet pattern detection using detector contour}
     \label{fig:sheet-scanning}
 \end{figure}
 
-The KR1410 uses the camera to detect and then securely pick the sheet. There are two stages of scanning as shown in figure \ref{fig:sheet-scanning}. A first scan aligns the camera perfectly with the sheet pattern. The second image capture detects the sheet with high accuracy in this way and sends the pose to the robot in world frame as shown in figure \ref{fig:sensoconfig-pattern}. Both stages uses detector contour to get the sheet pose.
+The KR1410 uses the camera to detect and then securely pick the sheet. There are two stages of scanning as shown in figure \ref{fig:sheet-scanning}. A first scan aligns the camera perfectly with the sheet pattern. The second image capture detects the sheet with high accuracy in this way and sends the pose to the robot in world frame as shown in figure \ref{fig:sensoconfig-pattern}. Both stages use detector contour to get the sheet pose.
 The accuracy of the pickup is crucial for the success of the subsequent bending operations. Any misalignment at this stage could lead to errors in the final dimensions of the bent part.
 
 \begin{figure}[h]
@@ -47,7 +47,7 @@ The accuracy of the pickup is crucial for the success of the subsequent bending 
     \label{fig:sensoconfig-pattern}
 \end{figure}
 
-In some instances, to avoid collisions during next bending operation or for better handling of part, regripping of the sheet from a different position is required. This is where the unloading station gripper plays a crucial role in repositioning the sheet. The unloading station gripper is controlled from the KR1410 robot if the robot program state Int[0] is $\ge$3. (See table \ref{tab:kr1410-to-plc}). Otherwise the unloading station gripper is controlled by the PLC. 
+In some instances, to avoid collisions during next bending operation or for better handling of part, regripping of the sheet from a different position is required. This is where the unloading station gripper plays a crucial role in repositioning the sheet. The unloading station gripper is controlled from the \hyperref[acro:KR]{KR1410} robot if the robot program state Int[0] is $\ge$3. (See table \ref{tab:kr1410-to-plc}). Otherwise, the unloading station gripper is controlled by the \hyperref[acro:PLC]{PLC}. 
 \vspace{1\baselineskip}
 
 First, the robot transfers the bent sheet to the unloading station gripper. Then, it is the same process as the sheet pickup in the first step of the bending cycle. The robot moves to the scanning pose, scans and aligns with the sheet, detects and grips the sheet and finally move out the part from the unloading station gripper.
