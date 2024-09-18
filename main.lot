@@ -6,15 +6,15 @@
 \contentsline {table}{\numberline {3.3}{\ignorespaces \hyperref [acro:VISOR]{VISOR}\textsuperscript {\textregistered } Technical Data (Robotic and Object Camera)\relax }}{18}{table.caption.21}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces Schunk gripper technical details (Source: \blx@tocontentsinit {0}\cite {schunk-gripper})\relax }}{20}{table.caption.23}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Sending data from KR1410 to \hyperref [acro:PLC]{PLC} over Profinet\relax }}{36}{table.caption.37}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Sending data from \hyperref [acro:PLC]{PLC} to KR1410 over Profinet\relax }}{37}{table.caption.38}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Braking accelerations \hyperref [sym:a-brake]{$a_{\text {brake}}$} \textit {$[\text {deg/s}^2]$} for KR1410\relax }}{41}{table.caption.42}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Sending data from KR1410 to \hyperref [acro:PLC]{PLC} over Profinet\relax }}{37}{table.caption.39}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Sending data from \hyperref [acro:PLC]{PLC} to KR1410 over Profinet\relax }}{38}{table.caption.40}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Braking accelerations \hyperref [sym:a-brake]{$a_{\text {brake}}$} \textit {$[\text {deg/s}^2]$} for KR1410\relax }}{42}{table.caption.44}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Control program flowchart of robot unit\relax }}{49}{table.5.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Bending angle as measured by inspection camera\relax }}{74}{table.caption.71}%
+\contentsline {table}{\numberline {7.1}{\ignorespaces Bending angle as measured by inspection camera\relax }}{74}{table.caption.73}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Comparison between manual production, AMADA ASTRO II 100NT HDS 1030 bending cell, and KR1410 Robotic Workcell\relax }}{77}{table.caption.74}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Comparison between manual production, AMADA ASTRO II 100NT HDS 1030 bending cell, and KR1410 Robotic Workcell\relax }}{77}{table.caption.76}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
