@@ -18,7 +18,7 @@ To load thesis open -> main.pdf
 
 A brief summary of the research objectives, methodology, results, and conclusions.
 
-## 2. Acknowledgements ⏳
+## 2. Acknowledgements ✅
 
 A section to thank those who contributed to the completion of your thesis.
 
@@ -122,88 +122,88 @@ A list of all tables included in the thesis, along with their titles and page nu
 
 ---
 
-## Chapter 5: Software Development 🔄 
+## Chapter 5: Software Development ✅
 
-### 5.1 Control Software 🔄 
+### 5.1 Control Software ✅
 
 - Programming the robot for bending, loading, and unloading tasks.
 
-### 5.2 Computer Vision Algorithms 🔜
+### 5.2 Computer Vision Algorithms ✅
 
 - Metal sheet detection and bending angle measurement techniques.
 
-### 5.3 Web Interface Design
+### 5.3 Web Interface Design ✅
 
 - Technologies and frameworks used.
 - Features and functionalities of the web interface.
 
 ---
 
-## Chapter 6: System Integration and Testing 🔜
+## Chapter 6: System Integration and Testing ✅
 
-### 6.1 Integration Tests
+### 6.1 Integration Tests ✅
 
 - Ensuring compatibility and seamless operation of all components.
 
-### 6.2 Calibration Procedures
+### 6.2 Calibration Procedures ✅
 
 - Techniques for accurate detection and measurement.
 
-### 6.3 Performance Evaluation
+### 6.3 Performance Evaluation ✅
 
 - Testing the workcell’s efficiency, accuracy, and reliability.
 
 ---
 
-## Chapter 7: Experimental Results
+## Chapter 7: Experimental Results ✅
 
-### 7.1 Setup and Methodology
+### 7.1 Setup and Methodology ✅
 
 - Description of the experimental setup.
 
-### 7.2 Data Collection
+### 7.2 Data Collection ✅
 
 - Metrics for evaluating performance.
 
-### 7.3 Results and Analysis
+### 7.3 Results and Analysis ✅
 
 - Presentation and discussion of experimental findings.
 
 ---
 
-## Chapter 8: Discussion
+## Chapter 8: Discussion ✅
 
-### 8.1 Interpretation of Results
+### 8.1 Interpretation of Results ✅
 
 - Implications of the findings for the manufacturing industry.
 
-### 8.2 Comparison with Existing Solutions
+### 8.2 Comparison with Existing Solutions ✅
 
 - Benchmarking against manual and other automated systems.
 
-### 8.3 Limitations
+### 8.3 Limitations ✅
 
 - Constraints and challenges faced during the project.
 
 ---
 
-## Chapter 9: Conclusion and Future Work
+## Chapter 9: Conclusion and Future Work ✅
 
-### 9.1 Summary of Contributions
+### 9.1 Summary of Contributions ✅
 
 - Key achievements and contributions of the research.
 
-### 9.2 Recommendations for Future Research
+### 9.2 Recommendations for Future Research ✅
 
 - Suggestions for further improvements and studies.
 
 ---
 
-## References
+## References ✅
 
 A comprehensive list of all sources cited in the thesis, formatted according to the required citation style.
 
-## Appendices
+## Appendices ✅
 
 Supplementary materials such as detailed data, code snippets, and additional figures or tables.
 
